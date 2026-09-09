@@ -190,6 +190,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
             A_StopSound(CHAN_VOICE);
             VoiceUntil = 0;
         }
+        Vector2 positionBeforeTick = pos.XY;
         if (HoldsPosition()) { vel.X=0;vel.Y=0; }
         super.Tick();
         if (HoldsPosition() && master && bSHOOTABLE && !InStateSequence(curstate,FindState("FakeDeath")))
@@ -198,6 +199,11 @@ case 5: clip="carmack/line5"; duration=2421; break;
             CloseFollowStep();
             if (target && target != master && !target.bFRIENDLY) A_FaceTarget();
         }
+        // A-D are walking poses. Keep AI/state timing running, but show a
+        // stable standing pose if collision or a camp order prevented movement.
+        // Attack, pain and falling frames remain untouched.
+        if (frame >= 0 && frame <= 3 && (pos.XY-positionBeforeTick).Length() < 0.01)
+            frame = 0;
         // Appearance changes do not restart states or alter weapon behavior.
         if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK"))
         {
