@@ -181,6 +181,20 @@ Class NNR_JohnMainMenu : ListMenu
 	Override void Init(Menu parent, ListMenuDescriptor desc)
 	{
 		Super.Init(parent, desc);
+        // Add-ons may append items with an explicit Position already used by
+        // another mod. Reflow selectable rows, including their mouse hitboxes.
+        int rows=0;double top=200;
+        for(int i=0;i<desc.mItems.Size();i++)
+            if(desc.mItems[i].Selectable()){rows++;top=Min(top,desc.mItems[i].GetY());}
+        if(rows>0)
+        {
+            double spacing=16;
+            top=Min(top,184-rows*spacing);
+            int row=0;
+            for(int i=0;i<desc.mItems.Size();i++)
+                if(desc.mItems[i].Selectable())desc.mItems[i].SetY(top+(row++)*spacing);
+        }
+
 		DontDim = true;
 		DontBlur = true;
 	}
