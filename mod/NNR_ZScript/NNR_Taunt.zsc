@@ -1,0 +1,204 @@
+Class FriendTauntHandler : EventHandler
+{
+	Override Void WorldLoaded(WorldEvent e)
+	{
+		// Preserve the counter when loading a save or reopening a hub map.
+		if (e.IsSaveGame || e.IsReopen) return;
+		for (int i = 0; i < MAXPLAYERS; i++)
+		{
+			if (playeringame[i] && players[i].mo)
+			{
+				players[i].mo.TakeInventory("NNR_JohnKillCounter", 2147483647);
+				players[i].mo.TakeInventory("NNR_JohnLevelKillCounter", 2147483647);
+                players[i].mo.TakeInventory("NNR_CarmackLevelKillCounter", 2147483647);
+                players[i].mo.TakeInventory("NNR_CarmackKillCounter", 2147483647);
+
+				int previousFact = players[i].mo.CountInv("NNR_JohnFactToken");
+				int nextFact = Random(1, 100);
+				if (nextFact == previousFact)
+					nextFact = (nextFact % 100) + 1;
+				players[i].mo.TakeInventory("NNR_JohnFactToken", 100);
+				players[i].mo.GiveInventory("NNR_JohnFactToken", nextFact);
+			}
+		}
+	}
+
+	Override Void WorldThingDied(WorldEvent e)
+	{
+		Let victim = e.Thing;
+		Let source = e.Thing.Target;
+		NNR_JohnMarine john = NNR_JohnMarine(source);
+		If (!john && source && source.Target is "NNR_JohnMarine")
+		{
+			john = NNR_JohnMarine(source.Target);
+		}
+		If((victim.bISMONSTER || victim.bCOUNTKILL) && john)
+		{
+			If(john.Health > 0)			
+			{
+				if (john.Master && john.Master.Player)
+				{
+					if (john.IsCarmack())
+                    {
+                        john.Master.GiveInventory("NNR_CarmackKillCounter", 1);
+                        john.Master.GiveInventory("NNR_CarmackLevelKillCounter", 1);
+                    }
+                    else
+                    {
+                        john.Master.GiveInventory("NNR_JohnKillCounter", 1);
+                        john.Master.GiveInventory("NNR_JohnLevelKillCounter", 1);
+                    }
+				}
+				If(Random(0,100) <= 25 || Victim.bBOSS) 
+				{ 
+					john.A_RomeroVoice("yohn/laugh", CHAN_VOICE, CHANF_DEFAULT, 1, ATTN_NONE);
+				}
+			}
+		}
+	}
+}
+
+Class NNR_JohnHUDHandler : EventHandler
+{
+	ui int FaceFrame;
+	ui int FaceTicks;
+	ui int FaceSeed;
+	ui int LastFact;
+	ui int FactDelay;
+	ui int FactTicks;
+
+	Override void UiTick()
+	{
+		if (consoleplayer >= 0 && players[consoleplayer].mo)
+		{
+			int currentFact = players[consoleplayer].mo.CountInv("NNR_JohnFactToken");
+			if (currentFact > 0 && currentFact != LastFact)
+			{
+				LastFact = currentFact;
+				FactDelay = 70;
+				FactTicks = 420;
+			}
+			if (FactDelay > 0) FactDelay--;
+			else if (FactTicks > 0) FactTicks--;
+		}
+
+		if (FaceSeed == 0)
+		{
+			FaceFrame = 1;
+			FaceTicks = 175;
+			FaceSeed = 17321;
+		}
+		FaceTicks--;
+		if (FaceTicks > 0) return;
+
+		FaceSeed = (FaceSeed * 1103515245 + 12345) & 0x7fffffff;
+		if (FaceFrame == 1)
+		{
+			FaceFrame = ((FaceSeed >> 8) & 1) == 0 ? 0 : 2;
+			FaceTicks = 10 + ((FaceSeed >> 16) % 16);
+		}
+		else
+		{
+			FaceFrame = 1;
+			FaceTicks = 175 + ((FaceSeed >> 12) % 246);
+		}
+	}
+
+	Override void RenderOverlay(RenderEvent e)
+	{
+        if (level.MapName=="TITLEMAP") return;
+        if (Menu.GetCurrentMenu() is "NNR_CompanionPreviewMenu") return;
+		if (consoleplayer < 0 || !players[consoleplayer].mo) return;
+
+		CVar hudStyle = CVar.FindCVar("blnk_hudstyle");
+		bool classic = hudStyle && hudStyle.GetInt() != 0;
+		String faceName = classic ? "JHCCENTR" : "JHFCENTR";
+		if (FaceFrame == 0) faceName = classic ? "JHCLEFT" : "JHFLEFT";
+		else if (FaceFrame == 2) faceName = classic ? "JHCRIGHT" : "JHFRIGHT";
+
+		CVar bodySkin = CVar.FindCVar("blnk_bodyskin");
+        bool both = CVar.FindCVar("blnk_both").GetBool();
+        bool carmack = !both && bodySkin && (bodySkin.GetInt() == 2 || (bodySkin.GetInt() == 4 || bodySkin.GetInt() == 5));
+        if (carmack) faceName = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
+        TextureID face = TexMan.CheckForTexture(faceName, TexMan.Type_Any);
+		int kills = carmack ? players[consoleplayer].mo.CountInv("NNR_CarmackLevelKillCounter") : players[consoleplayer].mo.CountInv("NNR_JohnLevelKillCounter");
+		String killText = String.Format(carmack ? "CARMACK  KILLS: %d" : "ROMERO  KILLS: %d", kills);
+
+		Screen.DrawTexture(face, false, 584, 6,
+			DTA_VirtualWidth, 640,
+			DTA_VirtualHeight, 360,
+			DTA_DestWidth, 46,
+			DTA_DestHeight, 49,
+			DTA_LeftOffset, 0,
+			DTA_TopOffset, 0,
+			DTA_KeepRatio, true);
+
+		int textWidth = SmallFont.StringWidth(killText);
+		Screen.DrawText(SmallFont, Font.CR_GOLD, 632 - textWidth, 58, killText,
+			DTA_VirtualWidth, 640,
+			DTA_VirtualHeight, 360,
+			DTA_KeepRatio, true);
+
+        if (both)
+        {
+            String cmFace = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
+            TextureID cm = TexMan.CheckForTexture(cmFace, TexMan.Type_Any);
+            Screen.DrawTexture(cm, false, 584, 82,
+                DTA_VirtualWidth, 640, DTA_VirtualHeight, 360,
+                DTA_DestWidth, 46, DTA_DestHeight, 49,
+                DTA_LeftOffset, 0, DTA_TopOffset, 0, DTA_KeepRatio, true);
+            String cmKills = String.Format("CARMACK  KILLS: %d", players[consoleplayer].mo.CountInv("NNR_CarmackLevelKillCounter"));
+            Screen.DrawText(SmallFont, Font.CR_GOLD, 632 - SmallFont.StringWidth(cmKills), 134, cmKills,
+                DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
+        }
+		CVar factsEnabled = CVar.FindCVar("blnk_mapfacts");
+		if (!carmack && factsEnabled && factsEnabled.GetBool() && LastFact > 0 && FactDelay <= 0 && FactTicks > 0)
+		{
+			String heading = "JOHN'S GAME FACT";
+			int headingX = 300 - SmallFont.StringWidth(heading) / 2;
+			Screen.DrawText(SmallFont, Font.CR_BLACK, headingX + 1, 78 + 1, heading,
+				DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
+			Screen.DrawText(SmallFont, Font.CR_GOLD, headingX, 78, heading,
+				DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
+
+			String fact = NNR_JohnFacts.GetFact(LastFact);
+			BrokenLines lines = SmallFont.BreakLines(fact, 440);
+			for (int line = 0; line < lines.Count(); line++)
+			{
+				int lineX = 300 - lines.StringWidth(line) / 2;
+				int lineY = 90 + line * 9;
+				Screen.DrawText(SmallFont, Font.CR_BLACK, lineX + 1, lineY + 1, lines.StringAt(line),
+					DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
+				Screen.DrawText(SmallFont, Font.CR_WHITE, lineX, lineY, lines.StringAt(line),
+					DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
+			}
+		}
+	}
+}
+
+Class NNR_JohnMainMenu : ListMenu
+{
+	Override void Init(Menu parent, ListMenuDescriptor desc)
+	{
+		Super.Init(parent, desc);
+		DontDim = true;
+		DontBlur = true;
+	}
+
+	Override void Drawer()
+	{
+		if (level.MapName=="TITLEMAP") { Super.Drawer();return; }
+        TextureID background = TexMan.CheckForTexture("JMENUBG", TexMan.Type_Any);
+		Screen.DrawTexture(background, false, 0, 0,
+			DTA_DestWidth, Screen.GetWidth(),
+			DTA_DestHeight, Screen.GetHeight(),
+			DTA_LeftOffset, 0,
+			DTA_TopOffset, 0,
+			DTA_KeepRatio, false);
+		Super.Drawer();
+	}
+}
+
+
+
+//Source.A_StartSound("yohn/laugh",CHAN_VOICE);

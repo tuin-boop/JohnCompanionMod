@@ -1,0 +1,111 @@
+// Doom single-player tally screen with John's per-level contribution.
+class NNR_JohnStatusScreen : DoomStatusScreen
+{
+	int JohnKills;
+    int CarmackKills;
+	int FaceFrame;
+	int FaceTicks;
+	int FaceSeed;
+	String JohnRemark;
+
+	void PickRemark()
+	{
+		int pick = (JohnKills * 17 + wbs.totaltime) % 3;
+
+		if (JohnKills <= 0)
+		{
+			JohnRemark = pick == 0 ? "I WAS SUPERVISING." :
+				pick == 1 ? "YOU HAD THAT ONE COVERED." : "I'LL GET THE NEXT MAP.";
+		}
+		else if (wbs.maxkills > 0 && JohnKills * 2 >= wbs.maxkills)
+		{
+			JohnRemark = pick == 0 ? "I CALL THAT QUALITY ASSURANCE." :
+				pick == 1 ? "YOU MISSED A FEW. I DIDN'T." : "THAT MAP HAS BEEN DEBUGGED.";
+		}
+		else if (JohnKills <= 3)
+		{
+			JohnRemark = pick == 0 ? "JUST GETTING WARMED UP." :
+				pick == 1 ? "EVERY KILL COUNTS." : "A SOLID OPENING.";
+		}
+		else if (JohnKills <= 9)
+		{
+			JohnRemark = pick == 0 ? "GOOD MAP. NEEDS MORE BARRELS." :
+				pick == 1 ? "THAT LEVEL HAD IT COMING." : "NOT BAD FOR A COMPANION.";
+		}
+		else
+		{
+			JohnRemark = pick == 0 ? "THAT'S HOW YOU SHIP A LEVEL." :
+				pick == 1 ? "YOU BUILD THEM. I BREAK THEM." : "ANOTHER MAP, CLEANED UP.";
+		}
+	}
+
+	override void Start(wbstartstruct data)
+	{
+		Super.Start(data);
+		JohnKills = 0;
+        CarmackKills = 0;
+		if (me >= 0 && me < MAXPLAYERS && players[me].mo)
+		{
+			JohnKills = players[me].mo.CountInv("NNR_JohnLevelKillCounter");
+            CarmackKills = players[me].mo.CountInv("NNR_CarmackLevelKillCounter");
+		}
+		FaceFrame = 1;
+		FaceTicks = 70;
+		FaceSeed = 17321 + JohnKills * 97 + wbs.totaltime;
+		PickRemark();
+	}
+
+	override void Ticker()
+	{
+		Super.Ticker();
+		FaceTicks--;
+		if (FaceTicks > 0) return;
+
+		FaceSeed = (FaceSeed * 1103515245 + 12345) & 0x7fffffff;
+		if (FaceFrame == 1)
+		{
+			FaceFrame = ((FaceSeed >> 8) & 1) == 0 ? 0 : 2;
+			FaceTicks = 10 + ((FaceSeed >> 16) % 16);
+		}
+		else
+		{
+			FaceFrame = 1;
+			FaceTicks = 70 + ((FaceSeed >> 12) % 106);
+		}
+	}
+
+	override void drawStats(void)
+	{
+		Super.drawStats();
+		CVar enabled = CVar.FindCVar("blnk_intermission");
+		if (enabled && !enabled.GetBool()) return;
+
+		CVar hudStyle = CVar.FindCVar("blnk_hudstyle");
+		bool classic = hudStyle && hudStyle.GetInt() != 0;
+		String faceName = classic ? "JICCENTR" : "JIFCENTR";
+		if (FaceFrame == 0) faceName = classic ? "JICLEFT" : "JIFLEFT";
+		else if (FaceFrame == 2) faceName = classic ? "JICRIGHT" : "JIFRIGHT";
+
+		CVar bodySkin = CVar.FindCVar("blnk_bodyskin");
+        bool both = CVar.FindCVar("blnk_both").GetBool();
+        bool carmack = !both && bodySkin && (bodySkin.GetInt() == 2 || (bodySkin.GetInt() == 4 || bodySkin.GetInt() == 5));
+        if (carmack) faceName = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
+        TextureID face = TexMan.CheckForTexture(faceName, TexMan.Type_Any);
+		DrawTexture(face, 2, 50);
+
+		String nameText = carmack ? "CARMACK" : "ROMERO";
+		String killText = String.Format("%d KILLS", carmack ? CarmackKills : JohnKills);
+		DrawText(SmallFont, Font.CR_GOLD, 25 - SmallFont.StringWidth(nameText) / 2, 100, nameText, shadow:true);
+		DrawText(SmallFont, Font.CR_GOLD, 25 - SmallFont.StringWidth(killText) / 2, 108, killText, shadow:true);
+		if (both)
+        {
+            String cmFace = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
+            DrawTexture(TexMan.CheckForTexture(cmFace, TexMan.Type_Any), 272, 50);
+            String cmName = "CARMACK";
+            String cmKills = String.Format("%d KILLS", CarmackKills);
+            DrawText(SmallFont, Font.CR_GOLD, 295 - SmallFont.StringWidth(cmName) / 2, 100, cmName, shadow:true);
+            DrawText(SmallFont, Font.CR_GOLD, 295 - SmallFont.StringWidth(cmKills) / 2, 108, cmKills, shadow:true);
+        }
+        if (!carmack) DrawText(SmallFont, Font.CR_GOLD, 160 - SmallFont.StringWidth(JohnRemark) / 2, 196, JohnRemark, shadow:true);
+	}
+}

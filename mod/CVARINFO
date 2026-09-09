@@ -1,0 +1,19 @@
+Server Int blnk_idletalk = 500;
+Server Int blnk_weaponstyle = 0;
+User Int blnk_hudstyle = 0;
+User Bool blnk_intermission = true;
+User Bool blnk_mapfacts = true;
+
+Server Int blnk_bodyskin = 0;
+
+Server Bool blnk_both = false;
+Server Int blnk_duoromero = 0;
+
+Server Bool blnk_carmackvoice = true;
+Server Int blnk_carmackpause = 180;
+
+Server Int blnk_duocarmack = 0;
+
+Server Int blnk_companions = -1;
+
+Server Bool blnk_closefollow = false;

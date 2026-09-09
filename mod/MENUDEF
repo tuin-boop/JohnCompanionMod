@@ -1,0 +1,63 @@
+OptionValue "NNR_CompanionChoice" { 0, "Romero only" 1, "Carmack only" 2, "Both" }
+OptionValue "NNR_DuoCarmack" { 0, "Young Carmack" 1, "John Carmack 2006" 2, "SwoleMack" }
+OptionValue "NNR_DuoRomero" { 0, "Present-day Romero" 1, "Daikatana-era Romero" 3, "John Romero 2005" }
+OptionValue "NNR_JohnBodySkins"
+{
+    0, "Present-day John"
+    1, "Daikatana-era John"
+    2, "Young Carmack"
+    3, "John Romero 2005"
+    4, "John Carmack 2006"
+}
+
+OptionValue "NNR_JohnHUDStyles"
+{
+	0, "Glasses John"
+	1, "Classic John"
+}
+
+OptionValue "NNR_JohnWeaponStyles"
+{
+	0, "Daikatana weapons"
+	1, "Classic Doom weapons"
+}
+
+AddListMenu "MainMenu"
+{
+	Class "NNR_JohnMainMenu"
+}
+
+AddOptionMenu "OptionsMenu"
+{
+    StaticText ""
+    Submenu "Companion Control", "blnk_options"
+}
+
+OptionMenu "blnk_options"
+{
+    Class "NNR_StyledCompanionMenu"
+	Title "Friend Options"
+	StaticText "Friend Options", gold
+	StaticText " "
+	Option "Companions", "blnk_companions", "NNR_CompanionChoice"
+    Option "Romero skin", "blnk_duoromero", "NNR_DuoRomero"
+    Option "Carmack skin", "blnk_duocarmack", "NNR_DuoCarmack"
+    JohnEra "Present day", "Daikatana era - 2000", "Young Carmack", gold
+    JohnEra "Gray hair, glasses, and decades of Doom.", "After Doom and Quake, a new adventure:", "Blue shirt, glasses, and early id days."
+    JohnEra "Back in the fight, one more map to go.", "Ion Storm's time-travelling Daikatana.", "Romero tips and voice lines are off."
+    StaticText " "
+    Option "John HUD portrait", "blnk_hudstyle", "NNR_JohnHUDStyles"
+	Option "Companion weapon set", "blnk_weaponstyle", "NNR_JohnWeaponStyles"
+	Option "Companions on level tally", "blnk_intermission", "OnOff"
+	Option "John game facts", "blnk_mapfacts", "OnOff"
+	StaticText " "
+	Option "Carmack interview voice", "blnk_carmackvoice", "OnOff"
+    Slider "Carmack pause after clip (seconds)", "blnk_carmackpause", 60, 600, 30
+    Slider "Tics until John talks when Idle", "blnk_idletalk", 500, 2000, 50
+	StaticText " "
+}
+
+AddListMenu "MainMenu"
+{
+ TextItem "Companions", "c", "blnk_options"
+}

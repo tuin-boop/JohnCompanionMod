@@ -1,0 +1,7 @@
+Aligned artwork edition built from the supplied JohnRomero_Daikatana_Companion.pk3.
+Correct Doom left/right rotation mapping, opposite-foot rear walk cycle,
+56-unit body heights, hip-centered horizontal anchors, floor-aligned feet,
+dedicated aiming/firing poses, and target-facing at every firing action.
+Weapons, sounds, HUD, menus, facts and companion logic are retained.
+Six new bloodless collapse/revival frames match the new outfit and glasses.
+Load this PK3 instead of the original or the earlier JohnCompanion.pk3.

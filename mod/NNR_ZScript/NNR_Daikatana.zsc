@@ -1,0 +1,294 @@
+// John-only versions of the 1200 BC Greece Daikatana attacks.
+// These are deliberately not Weapon classes and replace no player inventory.
+
+class NNR_JohnKillCounter : Inventory
+{
+	Default
+	{
+		Inventory.MaxAmount 2147483647;
+		+INVENTORY.UNDROPPABLE;
+		+INVENTORY.UNTOSSABLE;
+	}
+}
+
+class NNR_JohnLevelKillCounter : Inventory
+{
+	Default
+	{
+		Inventory.MaxAmount 2147483647;
+		+INVENTORY.UNDROPPABLE;
+		+INVENTORY.UNTOSSABLE;
+	}
+}
+
+// The amount stores the selected fact ID. It survives normal map changes so
+// the next map can avoid choosing the same fact twice in a row.
+class NNR_JohnFactToken : Inventory
+{
+	Default
+	{
+		Inventory.MaxAmount 100;
+		+INVENTORY.UNDROPPABLE;
+		+INVENTORY.UNTOSSABLE;
+	}
+}
+
+class NNR_DKDiscusProjectile : Actor
+{
+	Default
+	{
+		Radius 5;
+		Height 4;
+		Speed 30;
+		DamageFunction (8);
+		Projectile;
+		DamageType "JohnDaikatanaDamage";
+		BounceType "Doom";
+		BounceCount 3;
+		BounceFactor 1.0;
+		WallBounceFactor 1.0;
+		+USEBOUNCESTATE;
+		+BOUNCEONWALLS;
+		+BOUNCEONFLOORS;
+		+BOUNCEONCEILINGS;
+		+DONTBOUNCEONSKY;
+	}
+	States
+	{
+	Spawn:
+		DISC A 1 Bright;
+		Loop;
+	Bounce:
+		DISC A 0 A_StartSound("disc/hit", CHAN_BODY);
+		Goto Spawn;
+	Death:
+		DISC A 0 A_StartSound("disc/hit", CHAN_BODY);
+		DISC A 0 A_SpawnItemEx("NNR_DKDiscusSpark", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS);
+		Stop;
+	}
+}
+
+class NNR_DKDiscusSpark : Actor
+{
+	Default
+	{
+		RenderStyle "Add";
+		Alpha 0.9;
+		+NOINTERACTION;
+	}
+	States
+	{
+	Spawn:
+		SPRN A 1 Bright A_FadeOut(0.08);
+		Loop;
+	}
+}
+
+class NNR_DKSunflareProjectile : Actor
+{
+	Default
+	{
+		Radius 4;
+		Height 8;
+		Speed 30;
+		DamageFunction (70);
+		Projectile;
+		-NOGRAVITY;
+		Gravity 0.11;
+		DamageType "JohnDaikatanaDamage";
+	}
+	States
+	{
+	Spawn:
+		FLAR A 1 Bright Light("FlareLight");
+		FLAR A 1 Bright A_SpawnItemEx("NNR_DKEmber", 0, 0, 0, frandom(-1,1), frandom(-1,1), frandom(-1,1));
+		Loop;
+	Death:
+		FLAR A 0 Bright A_StartSound("misc/explode1", CHAN_BODY);
+		FLAR A 0 Bright A_Explode(90, 128);
+		MISL BCD 4 Bright;
+		Stop;
+	}
+}
+
+class NNR_DKEmber : Actor
+{
+	Default
+	{
+		RenderStyle "Add";
+		Alpha 0.8;
+		Gravity 0.5;
+		+NOINTERACTION;
+	}
+	States
+	{
+	Spawn:
+		SPRK A 1 Bright A_FadeOut(0.08);
+		Loop;
+	}
+}
+
+class NNR_DKVenomProjectile : Actor
+{
+	Default
+	{
+		Radius 4;
+		Height 8;
+		Speed 30;
+		DamageFunction (45);
+		PoisonDamage 2, 35, 7;
+		Projectile;
+		DamageType "JohnDaikatanaDamage";
+		DeathSound "venom/hit";
+		BounceSound "venom/hit";
+		BounceType "Doom";
+		BounceCount 3;
+		BounceFactor 1.0;
+		WallBounceFactor 1.0;
+		+USEBOUNCESTATE;
+		+BOUNCEONWALLS;
+		+BOUNCEONFLOORS;
+		+BOUNCEONCEILINGS;
+		+DONTBOUNCEONSKY;
+	}
+	States
+	{
+	Spawn:
+		MEME A 1 Bright A_SpawnItemEx("NNR_DKVenomPuff", 0, 0, 0, frandom(-1,1), frandom(-1,1), frandom(-1,1));
+		Loop;
+	Death:
+		TNT1 A 0 A_SpawnItemEx("NNR_DKVenomPuff", 0, 0, 0, frandom(-5,5), frandom(-5,5), frandom(0,5));
+		TNT1 A 0 A_SpawnItemEx("NNR_DKVenomPuff", 0, 0, 0, frandom(-5,5), frandom(-5,5), frandom(0,5));
+		TNT1 A 0 A_SpawnItemEx("NNR_DKVenomPuff", 0, 0, 0, frandom(-5,5), frandom(-5,5), frandom(0,5));
+		Stop;
+	}
+}
+
+class NNR_DKVenomPuff : Actor
+{
+	Default
+	{
+		RenderStyle "Add";
+		Alpha 0.8;
+		+NOINTERACTION;
+	}
+	States
+	{
+	Spawn:
+		VENG ABCDEFGHIJKLMNO 1 Bright;
+		Stop;
+	}
+}
+
+class NNR_DKTridentProjectile : Actor
+{
+	Default
+	{
+		Radius 4;
+		Height 8;
+		Speed 30;
+		DamageFunction (17);
+		Projectile;
+		DamageType "JohnDaikatanaDamage";
+		BounceType "Doom";
+		BounceCount 2;
+		BounceFactor 1.0;
+		WallBounceFactor 1.0;
+		+USEBOUNCESTATE;
+		+BOUNCEONWALLS;
+		+BOUNCEONFLOORS;
+		+BOUNCEONCEILINGS;
+		+DONTBOUNCEONSKY;
+	}
+	States
+	{
+	Spawn:
+		MEME A 2 Bright Light("TridentLight");
+		Loop;
+	Bounce:
+	Death:
+		MEME A 0 A_SpawnItemEx("NNR_DKTridentShockwave", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS);
+		Stop;
+	}
+}
+
+class NNR_DKTridentShockwave : Actor
+{
+	Default
+	{
+		RenderStyle "Add";
+		Alpha 1.0;
+		+NOINTERACTION;
+	}
+	States
+	{
+	Spawn:
+		MEME ABCDEFGHIJ 1 Bright A_FadeOut(0.08);
+		Stop;
+	}
+}
+
+class NNR_DKHammerShockwave : Actor
+{
+	Default
+	{
+		RenderStyle "Add";
+		Alpha 1.0;
+		+NOGRAVITY;
+		+NOBLOCKMAP;
+	}
+	States
+	{
+	Spawn:
+		MEME A 0 A_StartSound("misc/explode1", CHAN_BODY);
+		MEME A 0 A_Quake(4, 12, 0, 300);
+		MEME A 0 A_Explode(10, 96, XF_HURTSOURCE, true, 0, 0, 10, "", "JohnDaikatanaDamage");
+		MEME "BCDEFGHIJKLMNOPQRSTUVWXYZ\\[]" 1 Bright A_FadeOut(0.06);
+		Stop;
+	}
+}
+
+class NNR_DKZeusProjectile : Actor
+{
+	Default
+	{
+		Radius 8;
+		Height 8;
+		Speed 35;
+		DamageFunction (75);
+		Projectile;
+		RenderStyle "Add";
+		DamageType "JohnDaikatanaDamage";
+	}
+	States
+	{
+	Spawn:
+		THND A 2 Bright Light("ZeusLight");
+		Loop;
+	Death:
+		THND A 0 Bright A_Explode(100, 160);
+		THND A 0 Bright A_BFGSpray("NNR_DKZeusTracer");
+		Stop;
+	}
+}
+
+class NNR_DKZeusTracer : Actor
+{
+	Default
+	{
+		+NOBLOCKMAP;
+		+NOGRAVITY;
+		RenderStyle "Add";
+		DamageFunction (20);
+		DamageType "JohnDaikatanaDamage";
+	}
+	States
+	{
+	Spawn:
+		THND A 4 Bright Light("ZeusLight");
+		Stop;
+	}
+}
+
+class NNR_CarmackLevelKillCounter : NNR_JohnLevelKillCounter {}
+class NNR_CarmackKillCounter : NNR_JohnKillCounter {}

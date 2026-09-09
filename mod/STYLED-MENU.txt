@@ -1,0 +1,1 @@
+TINYBABY lettering and blue/cyan panels adapted from DoomCleanupSIM/src/shop.zs. Open Companions from the main/pause menu, or press F8 (default binding; existing binds are respected). Rebind Open companion control in Customize Controls. Arrow keys select/change; Enter or click changes a value; Escape returns. Load this PK3 alone.

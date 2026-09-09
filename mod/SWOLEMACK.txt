@@ -1,0 +1,1 @@
+SwoleMack: modern John Carmack, short silver hair, fitted black T-shirt, defined arms. Select under Carmack Skin in Companion Control. Includes eight rotations, walking, firing, pain and non-bloody fall frames. Generated with built-in image generation using the supplied photo and existing Carmack sheet, then extracted and registered as Doom sprites.

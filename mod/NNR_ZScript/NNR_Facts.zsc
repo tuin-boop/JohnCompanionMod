@@ -1,0 +1,114 @@
+// A compact pool of map-opening facts about Doom, Quake, and Daikatana.
+// Keep the IDs contiguous: the map event chooses a random number from 1 to 100.
+class NNR_JohnFacts
+{
+	static ui String GetFact(int id)
+	{
+		switch (id)
+		{
+		case 1: return "DOOM's shareware episode was released on December 10, 1993.";
+		case 2: return "The original registered DOOM contains three episodes; The Ultimate DOOM added a fourth.";
+		case 3: return "DOOM II arrived in 1994 and introduced the Super Shotgun.";
+		case 4: return "E1M1 is named Hangar, and John Romero designed it to teach DOOM through play.";
+		case 5: return "The first episode of DOOM is Knee-Deep in the Dead.";
+		case 6: return "DOOM's second episode is The Shores of Hell.";
+		case 7: return "DOOM's third episode is Inferno.";
+		case 8: return "Thy Flesh Consumed was the new episode created for The Ultimate DOOM.";
+		case 9: return "DOOM was developed on NeXTSTEP computers, then built to run on DOS PCs.";
+		case 10: return "John Romero wrote DoomEd, id's level editor, in Objective-C.";
+		case 11: return "id's 1024x768 NeXT monitors gave the team a roomy view while building DOOM.";
+		case 12: return "The DOOM engine uses a binary space partition tree to draw the world efficiently.";
+		case 13: return "Angled walls, varied floor heights, and distance-darkened lighting helped DOOM feel 3D.";
+		case 14: return "Classic DOOM maps are built from vertices, linedefs, sidedefs, sectors, and things.";
+		case 15: return "A sector controls properties such as floor height, ceiling height, textures, and light.";
+		case 16: return "The original DOOM engine does not support true rooms stacked directly above rooms.";
+		case 17: return "Tom Hall's Doom Bible described early ideas that changed greatly during development.";
+		case 18: return "A demon invasion from id's long-running Dungeons & Dragons campaign helped inspire DOOM.";
+		case 19: return "DOOM deliberately mixed science-fiction bases with a descent into Hell.";
+		case 20: return "John Romero coined the multiplayer term 'deathmatch' during DOOM's development.";
+		case 21: return "DOOM supported both cooperative play and competitive deathmatch.";
+		case 22: return "John Romero imagined rockets flying across E1M7 while planning DOOM deathmatch.";
+		case 23: return "id kept DOOM's game data open to replacement, helping player-made WADs flourish.";
+		case 24: return "An IWAD supplies a game's main data; a PWAD adds or replaces selected data.";
+		case 25: return "id released the DOOM source code in 1997.";
+		case 26: return "Bobby Prince composed DOOM's music and created much of its sound design.";
+		case 27: return "The original games never give Doom's marine an on-screen personal name.";
+		case 28: return "The famous Cacodemon design was inspired by an Astral Dreadnought illustration.";
+		case 29: return "DOOM II added the Revenant, Mancubus, Arachnotron, Arch-vile, and Pain Elemental.";
+		case 30: return "The Icon of Sin is DOOM II's final boss encounter.";
+		case 31: return "John Romero's hidden head sprite sits behind DOOM II's Icon of Sin target.";
+		case 32: return "DOOM II's MAP32 hides several Commander Keen figures behind colored doors.";
+		case 33: return "IDDQD is the classic DOOM cheat for god mode.";
+		case 34: return "IDKFA gives the classic DOOM player weapons, ammunition, keys, and armor.";
+		case 35: return "On Nightmare difficulty, many classic DOOM monsters eventually respawn.";
+		case 36: return "The pistol and chaingun use the same bullet ammunition.";
+		case 37: return "The shotgun and Super Shotgun draw from the same shell supply.";
+		case 38: return "The plasma rifle and BFG9000 both consume energy cells.";
+		case 39: return "The Berserk Pack boosts fist damage for the rest of the current level.";
+		case 40: return "Green armor absorbs one third of ordinary damage; blue armor absorbs one half.";
+		case 41: return "Exploding barrels can damage other barrels and start destructive chain reactions.";
+		case 42: return "A telefrag occurs when a teleporting actor arrives inside another actor.";
+		case 43: return "The Spider Mastermind carries a rapid-fire hitscan weapon similar to a chaingun.";
+		case 44: return "The Cyberdemon attacks with volleys of three rockets.";
+		case 45: return "The Arch-vile can resurrect many slain monsters if their corpses remain intact.";
+
+		case 46: return "Quake was released on June 22, 1996.";
+		case 47: return "Quake built its characters, monsters, pickups, and levels from true 3D geometry.";
+		case 48: return "Quake used lightmaps to place detailed baked lighting across its 3D environments.";
+		case 49: return "Like DOOM, Quake organizes level visibility with binary space partitioning.";
+		case 50: return "Quake popularized a client-server design for networked action games.";
+		case 51: return "QuakeWorld was created to make Quake's Internet multiplayer more responsive.";
+		case 52: return "Trent Reznor and Nine Inch Nails supplied Quake's atmospheric soundtrack and sounds.";
+		case 53: return "The Nine Inch Nails logo appears on Quake's nail ammunition boxes.";
+		case 54: return "Quake's player character is commonly called Ranger.";
+		case 55: return "Slipgates carry Quake's Ranger between dimensions.";
+		case 56: return "Quake's campaign is divided into four episodes reached from a central start map.";
+		case 57: return "The shareware episode of Quake is Dimension of the Doomed.";
+		case 58: return "Shub-Niggurath is the final opponent in the original Quake campaign.";
+		case 59: return "The player defeats Shub-Niggurath by telefragging her through a moving portal.";
+		case 60: return "Quake's hidden Nightmare entrance is tucked inside its episode-selection map.";
+		case 61: return "John Romero created Quake's start map and its opening level, The Slipgate Complex.";
+		case 62: return "Tim Willits made E1M2 through E1M5 of Quake's shareware episode.";
+		case 63: return "American McGee made E1M6 through E1M8 of Quake's shareware episode.";
+		case 64: return "Quake shipped with six dedicated deathmatch arenas named DM1 through DM6.";
+		case 65: return "John Romero designed DM3, The Abandoned Base, one of Quake's classic arenas.";
+		case 66: return "DM3's computer room nods to a Cray supercomputer id once considered buying.";
+		case 67: return "id considered a $500,000 Cray system for building Quake, but the deal was canceled.";
+		case 68: return "DOOM and Quake were both programmed and edited on NeXTSTEP workstations.";
+		case 69: return "QuakeEd, like DoomEd before it, was written in Objective-C.";
+		case 70: return "During development, id cross-compiled Quake from NeXTSTEP to Intel DOS.";
+		case 71: return "An early Quake test rebuilt DOOM's E1M5 so the team could compare the engines.";
+		case 72: return "Quake's final creative direction was settled in an id meeting in November 1995.";
+		case 73: return "Early Quake screenshots still contained placeholder torches and digits from DOOM.";
+		case 74: return "Quake's player runs more slowly than Doom's marine.";
+		case 75: return "QuakeC scripts define much of Quake's game logic and compile into progs.dat.";
+		case 76: return "Quake map files are compiled into BSP level files.";
+		case 77: return "Quake stores much of its shipped game data inside PAK archives.";
+		case 78: return "id released Quake's engine source code under the GPL in 1999.";
+		case 79: return "John Romero released the original Quake map sources in 2006.";
+		case 80: return "Rocket jumping uses an explosion's push to launch the player to otherwise difficult spots.";
+		case 81: return "Bunny hopping grew from Quake's air-acceleration and momentum-based movement.";
+		case 82: return "Quake lets the player look and aim freely up and down through its fully 3D spaces.";
+		case 83: return "Ogres combine a chainsaw at close range with bouncing grenades at a distance.";
+		case 84: return "Vores launch spiked magical projectiles that steer toward their target.";
+		case 85: return "Quake's Zombies get back up unless an attack gibs them.";
+
+		case 86: return "Daikatana was released for Windows in 2000.";
+		case 87: return "Daikatana follows swordmaster Hiro Miyamoto through a time-altered history.";
+		case 88: return "Hiro's companions are Mikiko Ebihara and Superfly Johnson.";
+		case 89: return "Kage Mishima uses the time-traveling Daikatana to rewrite history for his own benefit.";
+		case 90: return "Daikatana's adventure crosses four different time periods.";
+		case 91: return "Daikatana begins in a dystopian Kyoto in the year 2455.";
+		case 92: return "Daikatana's second episode visits ancient Greece in 1200 BC.";
+		case 93: return "Daikatana's third episode travels to Norway in 560 AD.";
+		case 94: return "Daikatana's fourth episode visits an earthquake-ravaged San Francisco in 2030.";
+		case 95: return "Each Daikatana era has its own weapons, enemies, environments, and visual identity.";
+		case 96: return "The Discus of Daedalus can ricochet through the ancient Greek episode.";
+		case 97: return "The Trident of Poseidon is one of Daikatana's ancient Greek weapons.";
+		case 98: return "The Eye of Zeus is a rare and devastating weapon from Daikatana's Greek arsenal.";
+		case 99: return "Daikatana lets the player improve Power, Attack, Speed, Acro, and Vitality.";
+		case 100: return "Mikiko and Superfly can be told to follow, stay, move, or attack in the PC game.";
+		}
+		return "John is still searching the archives for this one.";
+	}
+}

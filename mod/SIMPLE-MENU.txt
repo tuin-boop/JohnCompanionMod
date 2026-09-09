@@ -1,0 +1,1 @@
+Choose Romero skin and Carmack skin once. Companions selects Romero only, Carmack only, or Both. Both animated previews remain visible with following status. Existing selections migrate on first use. Load this package alone instead of older versions.

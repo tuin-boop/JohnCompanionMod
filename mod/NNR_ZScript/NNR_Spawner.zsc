@@ -1,0 +1,63 @@
+Class FriendSpawnHandler : EventHandler
+{
+    // Reconcile live selection, player respawns, saves, and map transitions.
+    override void WorldTick()
+    {
+        if (level.MapName=="TITLEMAP") return;
+        
+        let mode = CVar.FindCVar("blnk_companions");
+        if (mode.GetInt() < 0)
+        {
+            int oldSkin = CVar.FindCVar("blnk_bodyskin").GetInt();
+            bool oldBoth = CVar.FindCVar("blnk_both").GetBool();
+            if (!oldBoth)
+            {
+                if (oldSkin == 2 || (oldSkin == 4 || oldSkin == 5)) CVar.FindCVar("blnk_duocarmack").SetInt((oldSkin == 4 || oldSkin == 5) ? 1 : 0);
+                else CVar.FindCVar("blnk_duoromero").SetInt(oldSkin);
+            }
+            mode.SetInt(oldBoth ? 2 : (oldSkin == 2 || (oldSkin == 4 || oldSkin == 5)) ? 1 : 0);
+        }
+
+        bool duo = mode.GetInt() == 2;
+        if (CVar.FindCVar("blnk_both").GetBool() != duo) CVar.FindCVar("blnk_both").SetBool(duo);
+        int skin = mode.GetInt() == 1 ? (CVar.FindCVar("blnk_duocarmack").GetInt() == 2 ? 5 : CVar.FindCVar("blnk_duocarmack").GetInt() == 1 ? 4 : 2) : CVar.FindCVar("blnk_duoromero").GetInt();
+        if (CVar.FindCVar("blnk_bodyskin").GetInt() != skin) CVar.FindCVar("blnk_bodyskin").SetInt(skin);
+bool both = CVar.FindCVar("blnk_both").GetBool();
+        for (int i = 0; i < MAXPLAYERS; i++)
+        {
+            if (!playeringame[i] || !players[i].mo || players[i].mo.health <= 0) continue;
+            Actor pl = players[i].mo;
+            NNR_JohnMarine romero;
+            NNR_JohnMarine carmack;
+            let it = ThinkerIterator.Create("NNR_JohnMarine");
+            NNR_JohnMarine a;
+            while ((a = NNR_JohnMarine(it.Next())) != null)
+            {
+                if (a.Master != pl) continue;
+                if (a is "NNR_CarmackMarine")
+                {
+                    if (!both || carmack) a.Destroy();
+                    else carmack = a;
+                }
+                else
+                {
+                    if (romero) a.Destroy();
+                    else romero = a;
+                }
+            }
+            if (!romero) SpawnFriend(pl, false);
+            if (both && !carmack) SpawnFriend(pl, true);
+        }
+    }
+    void SpawnFriend(Actor pl, bool carmack)
+    {
+        Actor a;
+        if (carmack) a = Actor.Spawn("NNR_CarmackMarine", pl.pos);
+        else a = Actor.Spawn("NNR_JohnMarine", pl.pos);
+        if (!a) return;
+        a.Master = pl;
+        a.Translation = pl.Translation;
+        a.Warp(pl, -56, carmack ? 40 : -40, 0, 0, WARPF_STOP | WARPF_TOFLOOR);
+        a.A_FaceMaster();
+    }
+}

@@ -1,0 +1,1 @@
+Friend Options now shows animated previews of the selected solo skin or both duo skins. Changes update immediately. Load this PK3 alone instead of previous versions.

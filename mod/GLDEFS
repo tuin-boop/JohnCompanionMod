@@ -1,0 +1,14 @@
+
+flickerlight2 NNR_TITLE_FIRE
+{
+ color 1.0 0.42 0.12
+ size 160
+ secondarySize 180
+ interval 0.12
+ offset 0 60 0
+ attenuate 1
+}
+object NNR_TitleTorch
+{
+ frame TRED { light NNR_TITLE_FIRE }
+}

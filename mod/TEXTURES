@@ -1,0 +1,2500 @@
+Sprite YOHNA1, 101, 182
+{
+ XScale 3.25000000
+ YScale 3.25000000
+ Offset 52, 182
+ Patch "PATCHES/johnaligned/walk0_0.png", 0, 0
+ {}
+}
+
+Sprite YOHNA2, 100, 178
+{
+ XScale 3.17857143
+ YScale 3.17857143
+ Offset 54, 178
+ Patch "PATCHES/johnaligned/walk0_1.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNA3, 104, 181
+{
+ XScale 3.23214286
+ YScale 3.23214286
+ Offset 56, 181
+ Patch "PATCHES/johnaligned/walk0_2.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNA4, 102, 179
+{
+ XScale 3.19642857
+ YScale 3.19642857
+ Offset 55, 179
+ Patch "PATCHES/johnaligned/walk0_3.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNA5, 99, 180
+{
+ XScale 3.21428571
+ YScale 3.21428571
+ Offset 47, 180
+ Patch "PATCHES/johnaligned/walk0_4.png", 0, 0
+ {}
+}
+
+Sprite YOHNA6, 102, 179
+{
+ XScale 3.19642857
+ YScale 3.19642857
+ Offset 47, 179
+ Patch "PATCHES/johnaligned/walk0_3.png", 0, 0
+ {}
+}
+
+Sprite YOHNA7, 104, 181
+{
+ XScale 3.23214286
+ YScale 3.23214286
+ Offset 48, 181
+ Patch "PATCHES/johnaligned/walk0_2.png", 0, 0
+ {}
+}
+
+Sprite YOHNA8, 100, 178
+{
+ XScale 3.17857143
+ YScale 3.17857143
+ Offset 46, 178
+ Patch "PATCHES/johnaligned/walk0_1.png", 0, 0
+ {}
+}
+
+Sprite YOHNB1, 100, 180
+{
+ XScale 3.21428571
+ YScale 3.21428571
+ Offset 50, 180
+ Patch "PATCHES/johnaligned/walk1_0.png", 0, 0
+ {}
+}
+
+Sprite YOHNB2, 102, 180
+{
+ XScale 3.21428571
+ YScale 3.21428571
+ Offset 55, 180
+ Patch "PATCHES/johnaligned/walk1_1.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNB3, 105, 182
+{
+ XScale 3.25000000
+ YScale 3.25000000
+ Offset 62, 182
+ Patch "PATCHES/johnaligned/walk1_2.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNB4, 98, 181
+{
+ XScale 3.23214286
+ YScale 3.23214286
+ Offset 58, 181
+ Patch "PATCHES/johnaligned/walk1_3.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNB5, 99, 183
+{
+ XScale 3.26785714
+ YScale 3.26785714
+ Offset 46, 183
+ Patch "PATCHES/johnaligned/walk1_4.png", 0, 0
+ {}
+}
+
+Sprite YOHNB6, 98, 181
+{
+ XScale 3.23214286
+ YScale 3.23214286
+ Offset 40, 181
+ Patch "PATCHES/johnaligned/walk1_3.png", 0, 0
+ {}
+}
+
+Sprite YOHNB7, 105, 182
+{
+ XScale 3.25000000
+ YScale 3.25000000
+ Offset 43, 182
+ Patch "PATCHES/johnaligned/walk1_2.png", 0, 0
+ {}
+}
+
+Sprite YOHNB8, 102, 180
+{
+ XScale 3.21428571
+ YScale 3.21428571
+ Offset 47, 180
+ Patch "PATCHES/johnaligned/walk1_1.png", 0, 0
+ {}
+}
+
+Sprite YOHNC1, 101, 180
+{
+ XScale 3.21428571
+ YScale 3.21428571
+ Offset 51, 180
+ Patch "PATCHES/johnaligned/walk2_0.png", 0, 0
+ {}
+}
+
+Sprite YOHNC2, 104, 179
+{
+ XScale 3.19642857
+ YScale 3.19642857
+ Offset 60, 179
+ Patch "PATCHES/johnaligned/walk2_1.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNC3, 105, 181
+{
+ XScale 3.23214286
+ YScale 3.23214286
+ Offset 58, 181
+ Patch "PATCHES/johnaligned/walk2_2.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNC4, 100, 178
+{
+ XScale 3.17857143
+ YScale 3.17857143
+ Offset 53, 178
+ Patch "PATCHES/johnaligned/walk2_3.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNC5, 99, 180
+{
+ XScale 3.21428571
+ YScale 3.21428571
+ Offset 52, 180
+ Patch "PATCHES/johnaligned/walk0_4.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNC6, 100, 178
+{
+ XScale 3.17857143
+ YScale 3.17857143
+ Offset 47, 178
+ Patch "PATCHES/johnaligned/walk2_3.png", 0, 0
+ {}
+}
+
+Sprite YOHNC7, 105, 181
+{
+ XScale 3.23214286
+ YScale 3.23214286
+ Offset 47, 181
+ Patch "PATCHES/johnaligned/walk2_2.png", 0, 0
+ {}
+}
+
+Sprite YOHNC8, 104, 179
+{
+ XScale 3.19642857
+ YScale 3.19642857
+ Offset 44, 179
+ Patch "PATCHES/johnaligned/walk2_1.png", 0, 0
+ {}
+}
+
+Sprite YOHND1, 101, 175
+{
+ XScale 3.12500000
+ YScale 3.12500000
+ Offset 51, 175
+ Patch "PATCHES/johnaligned/walk3_0.png", 0, 0
+ {}
+}
+
+Sprite YOHND2, 104, 175
+{
+ XScale 3.12500000
+ YScale 3.12500000
+ Offset 58, 175
+ Patch "PATCHES/johnaligned/walk3_1.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHND3, 105, 174
+{
+ XScale 3.10714286
+ YScale 3.10714286
+ Offset 61, 174
+ Patch "PATCHES/johnaligned/walk3_2.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHND4, 100, 176
+{
+ XScale 3.14285714
+ YScale 3.14285714
+ Offset 56, 176
+ Patch "PATCHES/johnaligned/walk3_3.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHND5, 99, 183
+{
+ XScale 3.26785714
+ YScale 3.26785714
+ Offset 53, 183
+ Patch "PATCHES/johnaligned/walk1_4.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHND6, 100, 176
+{
+ XScale 3.14285714
+ YScale 3.14285714
+ Offset 44, 176
+ Patch "PATCHES/johnaligned/walk3_3.png", 0, 0
+ {}
+}
+
+Sprite YOHND7, 105, 174
+{
+ XScale 3.10714286
+ YScale 3.10714286
+ Offset 44, 174
+ Patch "PATCHES/johnaligned/walk3_2.png", 0, 0
+ {}
+}
+
+Sprite YOHND8, 104, 175
+{
+ XScale 3.12500000
+ YScale 3.12500000
+ Offset 46, 175
+ Patch "PATCHES/johnaligned/walk3_1.png", 0, 0
+ {}
+}
+
+Sprite YOHNG1, 131, 163
+{
+ XScale 2.91071429
+ YScale 2.91071429
+ Offset 65, 163
+ Patch "PATCHES/johnaligned/walk5_0.png", 0, 0
+ {}
+}
+
+Sprite YOHNG2, 129, 161
+{
+ XScale 2.87500000
+ YScale 2.87500000
+ Offset 59, 161
+ Patch "PATCHES/johnaligned/walk5_1.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNG3, 137, 163
+{
+ XScale 2.91071429
+ YScale 2.91071429
+ Offset 63, 163
+ Patch "PATCHES/johnaligned/walk5_2.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNG4, 126, 164
+{
+ XScale 2.92857143
+ YScale 2.92857143
+ Offset 54, 164
+ Patch "PATCHES/johnaligned/walk5_3.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNG5, 124, 162
+{
+ XScale 2.89285714
+ YScale 2.89285714
+ Offset 74, 162
+ Patch "PATCHES/johnaligned/walk5_4.png", 0, 0
+ {}
+}
+
+Sprite YOHNG6, 126, 164
+{
+ XScale 2.92857143
+ YScale 2.92857143
+ Offset 72, 164
+ Patch "PATCHES/johnaligned/walk5_3.png", 0, 0
+ {}
+}
+
+Sprite YOHNG7, 137, 163
+{
+ XScale 2.91071429
+ YScale 2.91071429
+ Offset 74, 163
+ Patch "PATCHES/johnaligned/walk5_2.png", 0, 0
+ {}
+}
+
+Sprite YOHNG8, 129, 161
+{
+ XScale 2.87500000
+ YScale 2.87500000
+ Offset 70, 161
+ Patch "PATCHES/johnaligned/walk5_1.png", 0, 0
+ {}
+}
+
+Sprite YOHNE1, 196, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 97, 345
+ Patch "PATCHES/johnaligned/aim0_0.png", 0, 0
+ {}
+}
+
+Sprite YOHNE2, 208, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 108, 345
+ Patch "PATCHES/johnaligned/aim0_1.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNE3, 267, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 167, 345
+ Patch "PATCHES/johnaligned/aim0_2.png", 0, 0
+ {}
+}
+
+Sprite YOHNE4, 233, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 132, 345
+ Patch "PATCHES/johnaligned/aim0_3.png", 0, 0
+ {}
+}
+
+Sprite YOHNE5, 194, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 96, 345
+ Patch "PATCHES/johnaligned/aim0_4.png", 0, 0
+ {}
+}
+
+Sprite YOHNE6, 233, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 101, 345
+ Patch "PATCHES/johnaligned/aim0_3.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNE7, 267, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 100, 345
+ Patch "PATCHES/johnaligned/aim0_2.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNE8, 208, 345
+{
+ XScale 6.16071429
+ YScale 6.16071429
+ Offset 100, 345
+ Patch "PATCHES/johnaligned/aim0_1.png", 0, 0
+ {}
+}
+
+Sprite YOHNF1, 196, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 97, 338
+ Patch "PATCHES/johnaligned/aim1_0.png", 0, 0
+ {}
+}
+
+Sprite YOHNF2, 258, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 158, 338
+ Patch "PATCHES/johnaligned/aim1_1.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNF3, 310, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 210, 338
+ Patch "PATCHES/johnaligned/aim1_2.png", 0, 0
+ {}
+}
+
+Sprite YOHNF4, 274, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 172, 338
+ Patch "PATCHES/johnaligned/aim1_3.png", 0, 0
+ {}
+}
+
+Sprite YOHNF5, 194, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 96, 338
+ Patch "PATCHES/johnaligned/aim1_4.png", 0, 0
+ {}
+}
+
+Sprite YOHNF6, 274, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 102, 338
+ Patch "PATCHES/johnaligned/aim1_3.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNF7, 310, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 100, 338
+ Patch "PATCHES/johnaligned/aim1_2.png", 0, 0
+ { FlipX }
+}
+
+Sprite YOHNF8, 258, 338
+{
+ XScale 6.03571429
+ YScale 6.03571429
+ Offset 100, 338
+ Patch "PATCHES/johnaligned/aim1_1.png", 0, 0
+ {}
+}
+
+Sprite YOHNI0, 252, 383
+{
+ XScale 6.83928571
+ YScale 6.83928571
+ Offset 126, 383
+ Patch "PATCHES/johnaligned/fall0.png", 0, 0
+ {}
+}
+
+Sprite YOHNJ0, 259, 346
+{
+ XScale 6.83928571
+ YScale 6.83928571
+ Offset 129, 346
+ Patch "PATCHES/johnaligned/fall1.png", 0, 0
+ {}
+}
+
+Sprite YOHNK0, 321, 272
+{
+ XScale 6.83928571
+ YScale 6.83928571
+ Offset 160, 272
+ Patch "PATCHES/johnaligned/fall2.png", 0, 0
+ {}
+}
+
+Sprite YOHNL0, 354, 177
+{
+ XScale 6.83928571
+ YScale 6.83928571
+ Offset 177, 177
+ Patch "PATCHES/johnaligned/fall3.png", 0, 0
+ {}
+}
+
+Sprite YOHNM0, 390, 141
+{
+ XScale 6.83928571
+ YScale 6.83928571
+ Offset 195, 141
+ Patch "PATCHES/johnaligned/fall4.png", 0, 0
+ {}
+}
+
+Sprite YOHNN0, 379, 110
+{
+ XScale 6.83928571
+ YScale 6.83928571
+ Offset 189, 110
+ Patch "PATCHES/johnaligned/fall5.png", 0, 0
+ {}
+}
+
+Sprite JCLSA1, 102, 203
+{
+ XScale 3.62500000
+ YScale 3.62500000
+ Offset 50, 203
+ Patch "PATCHES/classicjohn/row0-view0.png", 0, 0 {}
+}
+
+Sprite JCLSA2, 112, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 61, 202
+ Patch "PATCHES/classicjohn/row0-view1.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSA3, 132, 203
+{
+ XScale 3.62500000
+ YScale 3.62500000
+ Offset 78, 203
+ Patch "PATCHES/classicjohn/row0-view2.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSA4, 113, 203
+{
+ XScale 3.62500000
+ YScale 3.62500000
+ Offset 65, 203
+ Patch "PATCHES/classicjohn/row0-view3.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSA5, 99, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 50, 202
+ Patch "PATCHES/classicjohn/row0-view4.png", 0, 0 {}
+}
+
+Sprite JCLSA6, 113, 203
+{
+ XScale 3.62500000
+ YScale 3.62500000
+ Offset 48, 203
+ Patch "PATCHES/classicjohn/row0-view3.png", 0, 0 {}
+}
+
+Sprite JCLSA7, 132, 203
+{
+ XScale 3.62500000
+ YScale 3.62500000
+ Offset 54, 203
+ Patch "PATCHES/classicjohn/row0-view2.png", 0, 0 {}
+}
+
+Sprite JCLSA8, 112, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 51, 202
+ Patch "PATCHES/classicjohn/row0-view1.png", 0, 0 {}
+}
+
+Sprite JCLSB1, 101, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 50, 202
+ Patch "PATCHES/classicjohn/row1-view0.png", 0, 0 {}
+}
+
+Sprite JCLSB2, 112, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 60, 202
+ Patch "PATCHES/classicjohn/row1-view1.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSB3, 130, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 76, 201
+ Patch "PATCHES/classicjohn/row1-view2.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSB4, 112, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 64, 202
+ Patch "PATCHES/classicjohn/row1-view3.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSB5, 99, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 50, 204
+ Patch "PATCHES/classicjohn/row1-view4.png", 0, 0 {}
+}
+
+Sprite JCLSB6, 112, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 48, 202
+ Patch "PATCHES/classicjohn/row1-view3.png", 0, 0 {}
+}
+
+Sprite JCLSB7, 130, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 54, 201
+ Patch "PATCHES/classicjohn/row1-view2.png", 0, 0 {}
+}
+
+Sprite JCLSB8, 112, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 52, 202
+ Patch "PATCHES/classicjohn/row1-view1.png", 0, 0 {}
+}
+
+Sprite JCLSC1, 101, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 50, 205
+ Patch "PATCHES/classicjohn/row2-view0.png", 0, 0 {}
+}
+
+Sprite JCLSC2, 112, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 58, 205
+ Patch "PATCHES/classicjohn/row2-view1.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSC3, 127, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 77, 204
+ Patch "PATCHES/classicjohn/row2-view2.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSC4, 114, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 64, 204
+ Patch "PATCHES/classicjohn/row2-view3.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSC5, 99, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 49, 202
+ Patch "PATCHES/classicjohn/row0-view4.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSC6, 114, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 50, 204
+ Patch "PATCHES/classicjohn/row2-view3.png", 0, 0 {}
+}
+
+Sprite JCLSC7, 127, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 50, 204
+ Patch "PATCHES/classicjohn/row2-view2.png", 0, 0 {}
+}
+
+Sprite JCLSC8, 112, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 54, 205
+ Patch "PATCHES/classicjohn/row2-view1.png", 0, 0 {}
+}
+
+Sprite JCLSD1, 102, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 51, 204
+ Patch "PATCHES/classicjohn/row3-view0.png", 0, 0 {}
+}
+
+Sprite JCLSD2, 113, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 62, 204
+ Patch "PATCHES/classicjohn/row3-view1.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSD3, 128, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 76, 204
+ Patch "PATCHES/classicjohn/row3-view2.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSD4, 114, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 66, 205
+ Patch "PATCHES/classicjohn/row3-view3.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSD5, 99, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 49, 204
+ Patch "PATCHES/classicjohn/row1-view4.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSD6, 114, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 48, 205
+ Patch "PATCHES/classicjohn/row3-view3.png", 0, 0 {}
+}
+
+Sprite JCLSD7, 128, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 52, 204
+ Patch "PATCHES/classicjohn/row3-view2.png", 0, 0 {}
+}
+
+Sprite JCLSD8, 113, 204
+{
+ XScale 3.64285714
+ YScale 3.64285714
+ Offset 51, 204
+ Patch "PATCHES/classicjohn/row3-view1.png", 0, 0 {}
+}
+
+Sprite JCLSE1, 98, 187
+{
+ XScale 3.33928571
+ YScale 3.33928571
+ Offset 49, 187
+ Patch "PATCHES/classicjohn/row4-view0.png", 0, 0 {}
+}
+
+Sprite JCLSE2, 127, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 77, 184
+ Patch "PATCHES/classicjohn/row4-view1.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSE3, 147, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 94, 184
+ Patch "PATCHES/classicjohn/row4-view2.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSE4, 106, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 56, 184
+ Patch "PATCHES/classicjohn/row4-view3.png", 0, 0 {}
+}
+
+Sprite JCLSE5, 102, 187
+{
+ XScale 3.33928571
+ YScale 3.33928571
+ Offset 52, 187
+ Patch "PATCHES/classicjohn/row4-view4.png", 0, 0 {}
+}
+
+Sprite JCLSE6, 106, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 50, 184
+ Patch "PATCHES/classicjohn/row4-view3.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSE7, 147, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 53, 184
+ Patch "PATCHES/classicjohn/row4-view2.png", 0, 0 {}
+}
+
+Sprite JCLSE8, 127, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 50, 184
+ Patch "PATCHES/classicjohn/row4-view1.png", 0, 0 {}
+}
+
+Sprite JCLSF1, 99, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 51, 184
+ Patch "PATCHES/classicjohn/row5-view0.png", 0, 0 {}
+}
+
+Sprite JCLSF2, 144, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 94, 185
+ Patch "PATCHES/classicjohn/row5-view1.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSF3, 182, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 128, 184
+ Patch "PATCHES/classicjohn/row5-view2.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSF4, 109, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 58, 185
+ Patch "PATCHES/classicjohn/row5-view3.png", 0, 0 {}
+}
+
+Sprite JCLSF5, 108, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 54, 184
+ Patch "PATCHES/classicjohn/row5-view4.png", 0, 0 {}
+}
+
+Sprite JCLSF6, 109, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 51, 185
+ Patch "PATCHES/classicjohn/row5-view3.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSF7, 182, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 54, 184
+ Patch "PATCHES/classicjohn/row5-view2.png", 0, 0 {}
+}
+
+Sprite JCLSF8, 144, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 50, 185
+ Patch "PATCHES/classicjohn/row5-view1.png", 0, 0 {}
+}
+
+Sprite JCLSG1, 105, 212
+{
+ XScale 3.78571429
+ YScale 3.78571429
+ Offset 52, 212
+ Patch "PATCHES/classicjohn/row6-view0.png", 0, 0 {}
+}
+
+Sprite JCLSG2, 117, 210
+{
+ XScale 3.75000000
+ YScale 3.75000000
+ Offset 53, 210
+ Patch "PATCHES/classicjohn/row6-view1.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSG3, 95, 210
+{
+ XScale 3.75000000
+ YScale 3.75000000
+ Offset 51, 210
+ Patch "PATCHES/classicjohn/row6-view2.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSG4, 102, 209
+{
+ XScale 3.73214286
+ YScale 3.73214286
+ Offset 50, 209
+ Patch "PATCHES/classicjohn/row6-view3.png", 0, 0 { FlipX }
+}
+
+Sprite JCLSG5, 102, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 52, 205
+ Patch "PATCHES/classicjohn/row6-view4.png", 0, 0 {}
+}
+
+Sprite JCLSG6, 102, 209
+{
+ XScale 3.73214286
+ YScale 3.73214286
+ Offset 52, 209
+ Patch "PATCHES/classicjohn/row6-view3.png", 0, 0 {}
+}
+
+Sprite JCLSG7, 95, 210
+{
+ XScale 3.75000000
+ YScale 3.75000000
+ Offset 44, 210
+ Patch "PATCHES/classicjohn/row6-view2.png", 0, 0 {}
+}
+
+Sprite JCLSG8, 117, 210
+{
+ XScale 3.75000000
+ YScale 3.75000000
+ Offset 64, 210
+ Patch "PATCHES/classicjohn/row6-view1.png", 0, 0 {}
+}
+
+Sprite JCLSI0, 242, 367
+{
+ XScale 6.55357143
+ YScale 6.55357143
+ Offset 121, 367
+ Patch "PATCHES/classicjohn/fall0.png", 0, 0 {}
+}
+
+Sprite JCLSJ0, 240, 325
+{
+ XScale 6.55357143
+ YScale 6.55357143
+ Offset 120, 325
+ Patch "PATCHES/classicjohn/fall1.png", 0, 0 {}
+}
+
+Sprite JCLSK0, 290, 235
+{
+ XScale 6.55357143
+ YScale 6.55357143
+ Offset 145, 235
+ Patch "PATCHES/classicjohn/fall2.png", 0, 0 {}
+}
+
+Sprite JCLSL0, 352, 173
+{
+ XScale 6.55357143
+ YScale 6.55357143
+ Offset 176, 173
+ Patch "PATCHES/classicjohn/fall3.png", 0, 0 {}
+}
+
+Sprite JCLSM0, 380, 148
+{
+ XScale 6.55357143
+ YScale 6.55357143
+ Offset 190, 148
+ Patch "PATCHES/classicjohn/fall4.png", 0, 0 {}
+}
+
+Sprite JCLSN0, 394, 105
+{
+ XScale 6.55357143
+ YScale 6.55357143
+ Offset 197, 105
+ Patch "PATCHES/classicjohn/fall5.png", 0, 0 {}
+}
+
+Sprite JCMAA1, 100, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 50, 198
+ Patch "PATCHES/carmack/0-0.png", 0, 0 {}
+}
+
+Sprite JCMAA2, 122, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 61, 198
+ Patch "PATCHES/carmack/0-1.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAA3, 132, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 66, 198
+ Patch "PATCHES/carmack/0-2.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAA4, 111, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 55, 198
+ Patch "PATCHES/carmack/0-3.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAA5, 92, 199
+{
+ XScale 3.55357143
+ YScale 3.55357143
+ Offset 46, 199
+ Patch "PATCHES/carmack/0-4.png", 0, 0 {}
+}
+
+Sprite JCMAA6, 111, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 55, 198
+ Patch "PATCHES/carmack/0-3.png", 0, 0 {}
+}
+
+Sprite JCMAA7, 132, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 66, 198
+ Patch "PATCHES/carmack/0-2.png", 0, 0 {}
+}
+
+Sprite JCMAA8, 122, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 61, 198
+ Patch "PATCHES/carmack/0-1.png", 0, 0 {}
+}
+
+Sprite JCMAB1, 98, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 49, 202
+ Patch "PATCHES/carmack/1-0.png", 0, 0 {}
+}
+
+Sprite JCMAB2, 122, 200
+{
+ XScale 3.57142857
+ YScale 3.57142857
+ Offset 61, 200
+ Patch "PATCHES/carmack/1-1.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAB3, 134, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 67, 201
+ Patch "PATCHES/carmack/1-2.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAB4, 108, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 54, 201
+ Patch "PATCHES/carmack/1-3.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAB5, 94, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 47, 201
+ Patch "PATCHES/carmack/1-4.png", 0, 0 {}
+}
+
+Sprite JCMAB6, 108, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 54, 201
+ Patch "PATCHES/carmack/1-3.png", 0, 0 {}
+}
+
+Sprite JCMAB7, 134, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 67, 201
+ Patch "PATCHES/carmack/1-2.png", 0, 0 {}
+}
+
+Sprite JCMAB8, 122, 200
+{
+ XScale 3.57142857
+ YScale 3.57142857
+ Offset 61, 200
+ Patch "PATCHES/carmack/1-1.png", 0, 0 {}
+}
+
+Sprite JCMAC1, 99, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 49, 205
+ Patch "PATCHES/carmack/2-0.png", 0, 0 {}
+}
+
+Sprite JCMAC2, 121, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 60, 201
+ Patch "PATCHES/carmack/2-1.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAC3, 137, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 68, 201
+ Patch "PATCHES/carmack/2-2.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAC4, 112, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 56, 205
+ Patch "PATCHES/carmack/2-3.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAC5, 92, 199
+{
+ XScale 3.55357143
+ YScale 3.55357143
+ Offset 46, 199
+ Patch "PATCHES/carmack/0-4.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAC6, 112, 205
+{
+ XScale 3.66071429
+ YScale 3.66071429
+ Offset 56, 205
+ Patch "PATCHES/carmack/2-3.png", 0, 0 {}
+}
+
+Sprite JCMAC7, 137, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 68, 201
+ Patch "PATCHES/carmack/2-2.png", 0, 0 {}
+}
+
+Sprite JCMAC8, 121, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 60, 201
+ Patch "PATCHES/carmack/2-1.png", 0, 0 {}
+}
+
+Sprite JCMAD1, 99, 197
+{
+ XScale 3.51785714
+ YScale 3.51785714
+ Offset 49, 197
+ Patch "PATCHES/carmack/3-0.png", 0, 0 {}
+}
+
+Sprite JCMAD2, 123, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 61, 201
+ Patch "PATCHES/carmack/3-1.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAD3, 136, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 68, 202
+ Patch "PATCHES/carmack/3-2.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAD4, 116, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 58, 198
+ Patch "PATCHES/carmack/3-3.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAD5, 94, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 47, 201
+ Patch "PATCHES/carmack/1-4.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAD6, 116, 198
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 58, 198
+ Patch "PATCHES/carmack/3-3.png", 0, 0 {}
+}
+
+Sprite JCMAD7, 136, 202
+{
+ XScale 3.60714286
+ YScale 3.60714286
+ Offset 68, 202
+ Patch "PATCHES/carmack/3-2.png", 0, 0 {}
+}
+
+Sprite JCMAD8, 123, 201
+{
+ XScale 3.58928571
+ YScale 3.58928571
+ Offset 61, 201
+ Patch "PATCHES/carmack/3-1.png", 0, 0 {}
+}
+
+Sprite JCMAE1, 90, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 45, 184
+ Patch "PATCHES/carmack/4-0.png", 0, 0 {}
+}
+
+Sprite JCMAE2, 147, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 73, 184
+ Patch "PATCHES/carmack/4-1.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAE3, 164, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 82, 185
+ Patch "PATCHES/carmack/4-2.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAE4, 124, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 62, 185
+ Patch "PATCHES/carmack/4-3.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAE5, 87, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 43, 185
+ Patch "PATCHES/carmack/4-4.png", 0, 0 {}
+}
+
+Sprite JCMAE6, 124, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 62, 185
+ Patch "PATCHES/carmack/4-3.png", 0, 0 {}
+}
+
+Sprite JCMAE7, 164, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 82, 185
+ Patch "PATCHES/carmack/4-2.png", 0, 0 {}
+}
+
+Sprite JCMAE8, 147, 184
+{
+ XScale 3.28571429
+ YScale 3.28571429
+ Offset 73, 184
+ Patch "PATCHES/carmack/4-1.png", 0, 0 {}
+}
+
+Sprite JCMAF1, 86, 187
+{
+ XScale 3.33928571
+ YScale 3.33928571
+ Offset 43, 187
+ Patch "PATCHES/carmack/5-0.png", 0, 0 {}
+}
+
+Sprite JCMAF2, 154, 186
+{
+ XScale 3.32142857
+ YScale 3.32142857
+ Offset 77, 186
+ Patch "PATCHES/carmack/5-1.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAF3, 152, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 76, 185
+ Patch "PATCHES/carmack/5-2.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAF4, 180, 183
+{
+ XScale 3.26785714
+ YScale 3.26785714
+ Offset 90, 183
+ Patch "PATCHES/carmack/5-3.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAF5, 85, 186
+{
+ XScale 3.32142857
+ YScale 3.32142857
+ Offset 42, 186
+ Patch "PATCHES/carmack/5-4.png", 0, 0 {}
+}
+
+Sprite JCMAF6, 180, 183
+{
+ XScale 3.26785714
+ YScale 3.26785714
+ Offset 90, 183
+ Patch "PATCHES/carmack/5-3.png", 0, 0 {}
+}
+
+Sprite JCMAF7, 152, 185
+{
+ XScale 3.30357143
+ YScale 3.30357143
+ Offset 76, 185
+ Patch "PATCHES/carmack/5-2.png", 0, 0 {}
+}
+
+Sprite JCMAF8, 154, 186
+{
+ XScale 3.32142857
+ YScale 3.32142857
+ Offset 77, 186
+ Patch "PATCHES/carmack/5-1.png", 0, 0 {}
+}
+
+Sprite JCMAG1, 112, 159
+{
+ XScale 2.83928571
+ YScale 2.83928571
+ Offset 56, 159
+ Patch "PATCHES/carmack/6-0.png", 0, 0 {}
+}
+
+Sprite JCMAG2, 140, 167
+{
+ XScale 2.98214286
+ YScale 2.98214286
+ Offset 70, 167
+ Patch "PATCHES/carmack/6-1.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAG3, 130, 166
+{
+ XScale 2.96428571
+ YScale 2.96428571
+ Offset 65, 166
+ Patch "PATCHES/carmack/6-2.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAG4, 110, 167
+{
+ XScale 2.98214286
+ YScale 2.98214286
+ Offset 55, 167
+ Patch "PATCHES/carmack/6-3.png", 0, 0 { FlipX }
+}
+
+Sprite JCMAG5, 105, 164
+{
+ XScale 2.92857143
+ YScale 2.92857143
+ Offset 52, 164
+ Patch "PATCHES/carmack/6-4.png", 0, 0 {}
+}
+
+Sprite JCMAG6, 110, 167
+{
+ XScale 2.98214286
+ YScale 2.98214286
+ Offset 55, 167
+ Patch "PATCHES/carmack/6-3.png", 0, 0 {}
+}
+
+Sprite JCMAG7, 130, 166
+{
+ XScale 2.96428571
+ YScale 2.96428571
+ Offset 65, 166
+ Patch "PATCHES/carmack/6-2.png", 0, 0 {}
+}
+
+Sprite JCMAG8, 140, 167
+{
+ XScale 2.98214286
+ YScale 2.98214286
+ Offset 70, 167
+ Patch "PATCHES/carmack/6-1.png", 0, 0 {}
+}
+
+Sprite JCMAI0, 124, 143
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 62, 143
+ Patch "PATCHES/carmack/fall0.png", 0, 0 {}
+}
+
+Sprite JCMAJ0, 166, 131
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 83, 131
+ Patch "PATCHES/carmack/fall1.png", 0, 0 {}
+}
+
+Sprite JCMAK0, 180, 113
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 90, 113
+ Patch "PATCHES/carmack/fall2.png", 0, 0 {}
+}
+
+Sprite JCMAL0, 199, 90
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 99, 90
+ Patch "PATCHES/carmack/fall3.png", 0, 0 {}
+}
+
+Sprite JCMAM0, 180, 72
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 90, 72
+ Patch "PATCHES/carmack/fall4.png", 0, 0 {}
+}
+
+Sprite JCMAN0, 180, 72
+{
+ XScale 3.53571429
+ YScale 3.53571429
+ Offset 90, 72
+ Patch "PATCHES/carmack/fall4.png", 0, 0 {}
+}
+
+Graphic CMLEFT, 1254, 1254
+{
+ XScale 27.26086957
+ YScale 25.59183673
+ Patch "PATCHES/carmackfaces/CMLEFT.png", 0, 0
+}
+
+Graphic CMCENTR, 1254, 1254
+{
+ XScale 27.26086957
+ YScale 25.59183673
+ Patch "PATCHES/carmackfaces/CMCENTR.png", 0, 0
+}
+
+Graphic CMRIGHT, 1254, 1254
+{
+ XScale 27.26086957
+ YScale 25.59183673
+ Patch "PATCHES/carmackfaces/CMRIGHT.png", 0, 0
+}
+
+Sprite JR05A1, 97, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 48, 190
+ Patch "PATCHES/romero2005/0-0.png", 0, 0 {}
+}
+
+Sprite JR05A2, 103, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 51, 191
+ Patch "PATCHES/romero2005/0-1.png", 0, 0 { FlipX }
+}
+
+Sprite JR05A3, 114, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 57, 191
+ Patch "PATCHES/romero2005/0-2.png", 0, 0 { FlipX }
+}
+
+Sprite JR05A4, 98, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 49, 193
+ Patch "PATCHES/romero2005/0-3.png", 0, 0 { FlipX }
+}
+
+Sprite JR05A5, 97, 194
+{ XScale 3.46428571 YScale 3.46428571 Offset 48, 194
+ Patch "PATCHES/romero2005/0-4.png", 0, 0 {}
+}
+
+Sprite JR05A6, 98, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 49, 193
+ Patch "PATCHES/romero2005/0-3.png", 0, 0 {}
+}
+
+Sprite JR05A7, 114, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 57, 191
+ Patch "PATCHES/romero2005/0-2.png", 0, 0 {}
+}
+
+Sprite JR05A8, 103, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 51, 191
+ Patch "PATCHES/romero2005/0-1.png", 0, 0 {}
+}
+
+Sprite JR05B1, 98, 187
+{ XScale 3.33928571 YScale 3.33928571 Offset 49, 187
+ Patch "PATCHES/romero2005/1-0.png", 0, 0 {}
+}
+
+Sprite JR05B2, 106, 185
+{ XScale 3.30357143 YScale 3.30357143 Offset 53, 185
+ Patch "PATCHES/romero2005/1-1.png", 0, 0 { FlipX }
+}
+
+Sprite JR05B3, 116, 187
+{ XScale 3.33928571 YScale 3.33928571 Offset 58, 187
+ Patch "PATCHES/romero2005/1-2.png", 0, 0 { FlipX }
+}
+
+Sprite JR05B4, 100, 184
+{ XScale 3.28571429 YScale 3.28571429 Offset 50, 184
+ Patch "PATCHES/romero2005/1-3.png", 0, 0 { FlipX }
+}
+
+Sprite JR05B5, 97, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 48, 190
+ Patch "PATCHES/romero2005/1-4.png", 0, 0 {}
+}
+
+Sprite JR05B6, 100, 184
+{ XScale 3.28571429 YScale 3.28571429 Offset 50, 184
+ Patch "PATCHES/romero2005/1-3.png", 0, 0 {}
+}
+
+Sprite JR05B7, 116, 187
+{ XScale 3.33928571 YScale 3.33928571 Offset 58, 187
+ Patch "PATCHES/romero2005/1-2.png", 0, 0 {}
+}
+
+Sprite JR05B8, 106, 185
+{ XScale 3.30357143 YScale 3.30357143 Offset 53, 185
+ Patch "PATCHES/romero2005/1-1.png", 0, 0 {}
+}
+
+Sprite JR05C1, 98, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 191
+ Patch "PATCHES/romero2005/2-0.png", 0, 0 {}
+}
+
+Sprite JR05C2, 107, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 53, 193
+ Patch "PATCHES/romero2005/2-1.png", 0, 0 { FlipX }
+}
+
+Sprite JR05C3, 114, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 57, 191
+ Patch "PATCHES/romero2005/2-2.png", 0, 0 { FlipX }
+}
+
+Sprite JR05C4, 100, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 189
+ Patch "PATCHES/romero2005/2-3.png", 0, 0 { FlipX }
+}
+
+Sprite JR05C5, 97, 194
+{ XScale 3.46428571 YScale 3.46428571 Offset 48, 194
+ Patch "PATCHES/romero2005/0-4.png", 0, 0 { FlipX }
+}
+
+Sprite JR05C6, 100, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 189
+ Patch "PATCHES/romero2005/2-3.png", 0, 0 {}
+}
+
+Sprite JR05C7, 114, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 57, 191
+ Patch "PATCHES/romero2005/2-2.png", 0, 0 {}
+}
+
+Sprite JR05C8, 107, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 53, 193
+ Patch "PATCHES/romero2005/2-1.png", 0, 0 {}
+}
+
+Sprite JR05D1, 96, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 186
+ Patch "PATCHES/romero2005/3-0.png", 0, 0 {}
+}
+
+Sprite JR05D2, 106, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188
+ Patch "PATCHES/romero2005/3-1.png", 0, 0 { FlipX }
+}
+
+Sprite JR05D3, 114, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 57, 189
+ Patch "PATCHES/romero2005/3-2.png", 0, 0 { FlipX }
+}
+
+Sprite JR05D4, 97, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 48, 188
+ Patch "PATCHES/romero2005/3-3.png", 0, 0 { FlipX }
+}
+
+Sprite JR05D5, 97, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 48, 190
+ Patch "PATCHES/romero2005/1-4.png", 0, 0 { FlipX }
+}
+
+Sprite JR05D6, 97, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 48, 188
+ Patch "PATCHES/romero2005/3-3.png", 0, 0 {}
+}
+
+Sprite JR05D7, 114, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 57, 189
+ Patch "PATCHES/romero2005/3-2.png", 0, 0 {}
+}
+
+Sprite JR05D8, 106, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188
+ Patch "PATCHES/romero2005/3-1.png", 0, 0 {}
+}
+
+Sprite JR05E1, 97, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 48, 182
+ Patch "PATCHES/romero2005/4-0.png", 0, 0 {}
+}
+
+Sprite JR05E2, 130, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 65, 180
+ Patch "PATCHES/romero2005/4-1.png", 0, 0 { FlipX }
+}
+
+Sprite JR05E3, 142, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 71, 182
+ Patch "PATCHES/romero2005/4-2.png", 0, 0 { FlipX }
+}
+
+Sprite JR05E4, 129, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 64, 182
+ Patch "PATCHES/romero2005/4-3.png", 0, 0 { FlipX }
+}
+
+Sprite JR05E5, 97, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 48, 182
+ Patch "PATCHES/romero2005/4-4.png", 0, 0 {}
+}
+
+Sprite JR05E6, 129, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 64, 182
+ Patch "PATCHES/romero2005/4-3.png", 0, 0 {}
+}
+
+Sprite JR05E7, 142, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 71, 182
+ Patch "PATCHES/romero2005/4-2.png", 0, 0 {}
+}
+
+Sprite JR05E8, 130, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 65, 180
+ Patch "PATCHES/romero2005/4-1.png", 0, 0 {}
+}
+
+Sprite JR05F1, 98, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 49, 181
+ Patch "PATCHES/romero2005/5-0.png", 0, 0 {}
+}
+
+Sprite JR05F2, 150, 179
+{ XScale 3.19642857 YScale 3.19642857 Offset 75, 179
+ Patch "PATCHES/romero2005/5-1.png", 0, 0 { FlipX }
+}
+
+Sprite JR05F3, 160, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 80, 182
+ Patch "PATCHES/romero2005/5-2.png", 0, 0 { FlipX }
+}
+
+Sprite JR05F4, 136, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 68, 181
+ Patch "PATCHES/romero2005/5-3.png", 0, 0 { FlipX }
+}
+
+Sprite JR05F5, 100, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 50, 181
+ Patch "PATCHES/romero2005/5-4.png", 0, 0 {}
+}
+
+Sprite JR05F6, 136, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 68, 181
+ Patch "PATCHES/romero2005/5-3.png", 0, 0 {}
+}
+
+Sprite JR05F7, 160, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 80, 182
+ Patch "PATCHES/romero2005/5-2.png", 0, 0 {}
+}
+
+Sprite JR05F8, 150, 179
+{ XScale 3.19642857 YScale 3.19642857 Offset 75, 179
+ Patch "PATCHES/romero2005/5-1.png", 0, 0 {}
+}
+
+Sprite JR05G1, 96, 173
+{ XScale 3.08928571 YScale 3.08928571 Offset 48, 173
+ Patch "PATCHES/romero2005/6-0.png", 0, 0 {}
+}
+
+Sprite JR05G2, 111, 167
+{ XScale 2.98214286 YScale 2.98214286 Offset 55, 167
+ Patch "PATCHES/romero2005/6-1.png", 0, 0 { FlipX }
+}
+
+Sprite JR05G3, 134, 164
+{ XScale 2.92857143 YScale 2.92857143 Offset 67, 164
+ Patch "PATCHES/romero2005/6-2.png", 0, 0 { FlipX }
+}
+
+Sprite JR05G4, 133, 164
+{ XScale 2.92857143 YScale 2.92857143 Offset 66, 164
+ Patch "PATCHES/romero2005/6-3.png", 0, 0 { FlipX }
+}
+
+Sprite JR05G5, 127, 161
+{ XScale 2.87500000 YScale 2.87500000 Offset 63, 161
+ Patch "PATCHES/romero2005/6-4.png", 0, 0 {}
+}
+
+Sprite JR05G6, 133, 164
+{ XScale 2.92857143 YScale 2.92857143 Offset 66, 164
+ Patch "PATCHES/romero2005/6-3.png", 0, 0 {}
+}
+
+Sprite JR05G7, 134, 164
+{ XScale 2.92857143 YScale 2.92857143 Offset 67, 164
+ Patch "PATCHES/romero2005/6-2.png", 0, 0 {}
+}
+
+Sprite JR05G8, 111, 167
+{ XScale 2.98214286 YScale 2.98214286 Offset 55, 167
+ Patch "PATCHES/romero2005/6-1.png", 0, 0 {}
+}
+
+Sprite JR05I0, 98, 162
+{ XScale 3.39285714 YScale 3.39285714 Offset 49, 162
+ Patch "PATCHES/romero2005/fall0.png", 0, 0 {}
+}
+
+Sprite JR05J0, 189, 147
+{ XScale 3.39285714 YScale 3.39285714 Offset 94, 147
+ Patch "PATCHES/romero2005/fall1.png", 0, 0 {}
+}
+
+Sprite JR05K0, 198, 117
+{ XScale 3.39285714 YScale 3.39285714 Offset 99, 117
+ Patch "PATCHES/romero2005/fall2.png", 0, 0 {}
+}
+
+Sprite JR05L0, 199, 86
+{ XScale 3.39285714 YScale 3.39285714 Offset 99, 86
+ Patch "PATCHES/romero2005/fall3.png", 0, 0 {}
+}
+
+Sprite JR05M0, 180, 71
+{ XScale 3.39285714 YScale 3.39285714 Offset 90, 71
+ Patch "PATCHES/romero2005/fall4.png", 0, 0 {}
+}
+
+Sprite JR05N0, 180, 71
+{ XScale 3.39285714 YScale 3.39285714 Offset 90, 71
+ Patch "PATCHES/romero2005/fall4.png", 0, 0 {}
+}
+
+Sprite JC06A1, 89, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 44, 192
+ Patch "PATCHES/carmack2006/0-0.png", 0, 0 {}
+}
+
+Sprite JC06A2, 106, 195
+{ XScale 3.48214286 YScale 3.48214286 Offset 53, 195
+ Patch "PATCHES/carmack2006/0-1.png", 0, 0 { FlipX }
+}
+
+Sprite JC06A3, 101, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 50, 193
+ Patch "PATCHES/carmack2006/0-2.png", 0, 0 { FlipX }
+}
+
+Sprite JC06A4, 92, 195
+{ XScale 3.48214286 YScale 3.48214286 Offset 46, 195
+ Patch "PATCHES/carmack2006/0-3.png", 0, 0 { FlipX }
+}
+
+Sprite JC06A5, 91, 194
+{ XScale 3.46428571 YScale 3.46428571 Offset 45, 194
+ Patch "PATCHES/carmack2006/0-4.png", 0, 0 {}
+}
+
+Sprite JC06A6, 92, 195
+{ XScale 3.48214286 YScale 3.48214286 Offset 46, 195
+ Patch "PATCHES/carmack2006/0-3.png", 0, 0 {}
+}
+
+Sprite JC06A7, 101, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 50, 193
+ Patch "PATCHES/carmack2006/0-2.png", 0, 0 {}
+}
+
+Sprite JC06A8, 106, 195
+{ XScale 3.48214286 YScale 3.48214286 Offset 53, 195
+ Patch "PATCHES/carmack2006/0-1.png", 0, 0 {}
+}
+
+Sprite JC06B1, 87, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 43, 190
+ Patch "PATCHES/carmack2006/1-0.png", 0, 0 {}
+}
+
+Sprite JC06B2, 106, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188
+ Patch "PATCHES/carmack2006/1-1.png", 0, 0 { FlipX }
+}
+
+Sprite JC06B3, 105, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 52, 186
+ Patch "PATCHES/carmack2006/1-2.png", 0, 0 { FlipX }
+}
+
+Sprite JC06B4, 92, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 46, 188
+ Patch "PATCHES/carmack2006/1-3.png", 0, 0 { FlipX }
+}
+
+Sprite JC06B5, 91, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 45, 190
+ Patch "PATCHES/carmack2006/1-4.png", 0, 0 {}
+}
+
+Sprite JC06B6, 92, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 46, 188
+ Patch "PATCHES/carmack2006/1-3.png", 0, 0 {}
+}
+
+Sprite JC06B7, 105, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 52, 186
+ Patch "PATCHES/carmack2006/1-2.png", 0, 0 {}
+}
+
+Sprite JC06B8, 106, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188
+ Patch "PATCHES/carmack2006/1-1.png", 0, 0 {}
+}
+
+Sprite JC06C1, 88, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 44, 191
+ Patch "PATCHES/carmack2006/2-0.png", 0, 0 {}
+}
+
+Sprite JC06C2, 105, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 52, 191
+ Patch "PATCHES/carmack2006/2-1.png", 0, 0 { FlipX }
+}
+
+Sprite JC06C3, 105, 187
+{ XScale 3.33928571 YScale 3.33928571 Offset 52, 187
+ Patch "PATCHES/carmack2006/2-2.png", 0, 0 { FlipX }
+}
+
+Sprite JC06C4, 91, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 191
+ Patch "PATCHES/carmack2006/2-3.png", 0, 0 { FlipX }
+}
+
+Sprite JC06C5, 91, 194
+{ XScale 3.46428571 YScale 3.46428571 Offset 45, 194
+ Patch "PATCHES/carmack2006/0-4.png", 0, 0 { FlipX }
+}
+
+Sprite JC06C6, 91, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 191
+ Patch "PATCHES/carmack2006/2-3.png", 0, 0 {}
+}
+
+Sprite JC06C7, 105, 187
+{ XScale 3.33928571 YScale 3.33928571 Offset 52, 187
+ Patch "PATCHES/carmack2006/2-2.png", 0, 0 {}
+}
+
+Sprite JC06C8, 105, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 52, 191
+ Patch "PATCHES/carmack2006/2-1.png", 0, 0 {}
+}
+
+Sprite JC06D1, 89, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 44, 192
+ Patch "PATCHES/carmack2006/3-0.png", 0, 0 {}
+}
+
+Sprite JC06D2, 113, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 56, 189
+ Patch "PATCHES/carmack2006/3-1.png", 0, 0 { FlipX }
+}
+
+Sprite JC06D3, 109, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 54, 186
+ Patch "PATCHES/carmack2006/3-2.png", 0, 0 { FlipX }
+}
+
+Sprite JC06D4, 93, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 46, 192
+ Patch "PATCHES/carmack2006/3-3.png", 0, 0 { FlipX }
+}
+
+Sprite JC06D5, 91, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 45, 190
+ Patch "PATCHES/carmack2006/1-4.png", 0, 0 { FlipX }
+}
+
+Sprite JC06D6, 93, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 46, 192
+ Patch "PATCHES/carmack2006/3-3.png", 0, 0 {}
+}
+
+Sprite JC06D7, 109, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 54, 186
+ Patch "PATCHES/carmack2006/3-2.png", 0, 0 {}
+}
+
+Sprite JC06D8, 113, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 56, 189
+ Patch "PATCHES/carmack2006/3-1.png", 0, 0 {}
+}
+
+Sprite JC06E1, 91, 183
+{ XScale 3.26785714 YScale 3.26785714 Offset 45, 183
+ Patch "PATCHES/carmack2006/4-0.png", 0, 0 {}
+}
+
+Sprite JC06E2, 131, 183
+{ XScale 3.26785714 YScale 3.26785714 Offset 65, 183
+ Patch "PATCHES/carmack2006/4-1.png", 0, 0 { FlipX }
+}
+
+Sprite JC06E3, 146, 183
+{ XScale 3.26785714 YScale 3.26785714 Offset 73, 183
+ Patch "PATCHES/carmack2006/4-2.png", 0, 0 { FlipX }
+}
+
+Sprite JC06E4, 121, 177
+{ XScale 3.16071429 YScale 3.16071429 Offset 60, 177
+ Patch "PATCHES/carmack2006/4-3.png", 0, 0 { FlipX }
+}
+
+Sprite JC06E5, 101, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 50, 186
+ Patch "PATCHES/carmack2006/4-4.png", 0, 0 {}
+}
+
+Sprite JC06E6, 121, 177
+{ XScale 3.16071429 YScale 3.16071429 Offset 60, 177
+ Patch "PATCHES/carmack2006/4-3.png", 0, 0 {}
+}
+
+Sprite JC06E7, 146, 183
+{ XScale 3.26785714 YScale 3.26785714 Offset 73, 183
+ Patch "PATCHES/carmack2006/4-2.png", 0, 0 {}
+}
+
+Sprite JC06E8, 131, 183
+{ XScale 3.26785714 YScale 3.26785714 Offset 65, 183
+ Patch "PATCHES/carmack2006/4-1.png", 0, 0 {}
+}
+
+Sprite JC06F1, 94, 183
+{ XScale 3.26785714 YScale 3.26785714 Offset 47, 183
+ Patch "PATCHES/carmack2006/5-0.png", 0, 0 {}
+}
+
+Sprite JC06F2, 163, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 81, 181
+ Patch "PATCHES/carmack2006/5-1.png", 0, 0 { FlipX }
+}
+
+Sprite JC06F3, 180, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 90, 182
+ Patch "PATCHES/carmack2006/5-2.png", 0, 0 { FlipX }
+}
+
+Sprite JC06F4, 157, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 78, 181
+ Patch "PATCHES/carmack2006/5-3.png", 0, 0 { FlipX }
+}
+
+Sprite JC06F5, 101, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 50, 186
+ Patch "PATCHES/carmack2006/4-4.png", 0, 0 {}
+}
+
+Sprite JC06F6, 157, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 78, 181
+ Patch "PATCHES/carmack2006/5-3.png", 0, 0 {}
+}
+
+Sprite JC06F7, 180, 182
+{ XScale 3.25000000 YScale 3.25000000 Offset 90, 182
+ Patch "PATCHES/carmack2006/5-2.png", 0, 0 {}
+}
+
+Sprite JC06F8, 163, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 81, 181
+ Patch "PATCHES/carmack2006/5-1.png", 0, 0 {}
+}
+
+Sprite JC06G1, 93, 179
+{ XScale 3.19642857 YScale 3.19642857 Offset 46, 179
+ Patch "PATCHES/carmack2006/6-0.png", 0, 0 {}
+}
+
+Sprite JC06G2, 89, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 44, 180
+ Patch "PATCHES/carmack2006/6-1.png", 0, 0 { FlipX }
+}
+
+Sprite JC06G3, 94, 177
+{ XScale 3.16071429 YScale 3.16071429 Offset 47, 177
+ Patch "PATCHES/carmack2006/6-2.png", 0, 0 { FlipX }
+}
+
+Sprite JC06G4, 87, 175
+{ XScale 3.12500000 YScale 3.12500000 Offset 43, 175
+ Patch "PATCHES/carmack2006/6-3.png", 0, 0 { FlipX }
+}
+
+Sprite JC06G5, 89, 170
+{ XScale 3.03571429 YScale 3.03571429 Offset 44, 170
+ Patch "PATCHES/carmack2006/6-4.png", 0, 0 {}
+}
+
+Sprite JC06G6, 87, 175
+{ XScale 3.12500000 YScale 3.12500000 Offset 43, 175
+ Patch "PATCHES/carmack2006/6-3.png", 0, 0 {}
+}
+
+Sprite JC06G7, 94, 177
+{ XScale 3.16071429 YScale 3.16071429 Offset 47, 177
+ Patch "PATCHES/carmack2006/6-2.png", 0, 0 {}
+}
+
+Sprite JC06G8, 89, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 44, 180
+ Patch "PATCHES/carmack2006/6-1.png", 0, 0 {}
+}
+
+Sprite JC06I0, 124, 160
+{ XScale 3.42857143 YScale 3.42857143 Offset 62, 160
+ Patch "PATCHES/carmack2006/fall0.png", 0, 0 {}
+}
+
+Sprite JC06J0, 192, 142
+{ XScale 3.42857143 YScale 3.42857143 Offset 96, 142
+ Patch "PATCHES/carmack2006/fall1.png", 0, 0 {}
+}
+
+Sprite JC06K0, 198, 127
+{ XScale 3.42857143 YScale 3.42857143 Offset 99, 127
+ Patch "PATCHES/carmack2006/fall2.png", 0, 0 {}
+}
+
+Sprite JC06L0, 199, 99
+{ XScale 3.42857143 YScale 3.42857143 Offset 99, 99
+ Patch "PATCHES/carmack2006/fall3.png", 0, 0 {}
+}
+
+Sprite JC06M0, 183, 83
+{ XScale 3.42857143 YScale 3.42857143 Offset 91, 83
+ Patch "PATCHES/carmack2006/fall4.png", 0, 0 {}
+}
+
+Sprite JC06N0, 183, 83
+{ XScale 3.42857143 YScale 3.42857143 Offset 91, 83
+ Patch "PATCHES/carmack2006/fall4.png", 0, 0 {}
+}
+
+Sprite SWMKA1, 91, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 45, 190
+ Patch "PATCHES/swolemack/0-0.png", 0, 0 {}
+}
+
+Sprite SWMKA2, 106, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 53, 192
+ Patch "PATCHES/swolemack/0-1.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKA3, 101, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 50, 192
+ Patch "PATCHES/swolemack/0-2.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKA4, 94, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 47, 193
+ Patch "PATCHES/swolemack/0-3.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKA5, 92, 194
+{ XScale 3.46428571 YScale 3.46428571 Offset 46, 194
+ Patch "PATCHES/swolemack/0-4.png", 0, 0 {}
+}
+
+Sprite SWMKA6, 94, 193
+{ XScale 3.44642857 YScale 3.44642857 Offset 47, 193
+ Patch "PATCHES/swolemack/0-3.png", 0, 0 {}
+}
+
+Sprite SWMKA7, 101, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 50, 192
+ Patch "PATCHES/swolemack/0-2.png", 0, 0 {}
+}
+
+Sprite SWMKA8, 106, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 53, 192
+ Patch "PATCHES/swolemack/0-1.png", 0, 0 {}
+}
+
+Sprite SWMKB1, 89, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 44, 188
+ Patch "PATCHES/swolemack/1-0.png", 0, 0 {}
+}
+
+Sprite SWMKB2, 108, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 54, 188
+ Patch "PATCHES/swolemack/1-1.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKB3, 105, 185
+{ XScale 3.30357143 YScale 3.30357143 Offset 52, 185
+ Patch "PATCHES/swolemack/1-2.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKB4, 93, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 46, 188
+ Patch "PATCHES/swolemack/1-3.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKB5, 91, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 45, 190
+ Patch "PATCHES/swolemack/1-4.png", 0, 0 {}
+}
+
+Sprite SWMKB6, 93, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 46, 188
+ Patch "PATCHES/swolemack/1-3.png", 0, 0 {}
+}
+
+Sprite SWMKB7, 105, 185
+{ XScale 3.30357143 YScale 3.30357143 Offset 52, 185
+ Patch "PATCHES/swolemack/1-2.png", 0, 0 {}
+}
+
+Sprite SWMKB8, 108, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 54, 188
+ Patch "PATCHES/swolemack/1-1.png", 0, 0 {}
+}
+
+Sprite SWMKC1, 90, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 191
+ Patch "PATCHES/swolemack/2-0.png", 0, 0 {}
+}
+
+Sprite SWMKC2, 107, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 53, 191
+ Patch "PATCHES/swolemack/2-1.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKC3, 105, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 188
+ Patch "PATCHES/swolemack/2-2.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKC4, 91, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 45, 190
+ Patch "PATCHES/swolemack/2-3.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKC5, 92, 194
+{ XScale 3.46428571 YScale 3.46428571 Offset 46, 194
+ Patch "PATCHES/swolemack/0-4.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKC6, 91, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 45, 190
+ Patch "PATCHES/swolemack/2-3.png", 0, 0 {}
+}
+
+Sprite SWMKC7, 105, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 188
+ Patch "PATCHES/swolemack/2-2.png", 0, 0 {}
+}
+
+Sprite SWMKC8, 107, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 53, 191
+ Patch "PATCHES/swolemack/2-1.png", 0, 0 {}
+}
+
+Sprite SWMKD1, 90, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 191
+ Patch "PATCHES/swolemack/3-0.png", 0, 0 {}
+}
+
+Sprite SWMKD2, 114, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 57, 188
+ Patch "PATCHES/swolemack/3-1.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKD3, 107, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 53, 186
+ Patch "PATCHES/swolemack/3-2.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKD4, 93, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 46, 190
+ Patch "PATCHES/swolemack/3-3.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKD5, 91, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 45, 190
+ Patch "PATCHES/swolemack/1-4.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKD6, 93, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 46, 190
+ Patch "PATCHES/swolemack/3-3.png", 0, 0 {}
+}
+
+Sprite SWMKD7, 107, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 53, 186
+ Patch "PATCHES/swolemack/3-2.png", 0, 0 {}
+}
+
+Sprite SWMKD8, 114, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 57, 188
+ Patch "PATCHES/swolemack/3-1.png", 0, 0 {}
+}
+
+Sprite SWMKE1, 92, 184
+{ XScale 3.28571429 YScale 3.28571429 Offset 46, 184
+ Patch "PATCHES/swolemack/4-0.png", 0, 0 {}
+}
+
+Sprite SWMKE2, 132, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 66, 181
+ Patch "PATCHES/swolemack/4-1.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKE3, 147, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 73, 180
+ Patch "PATCHES/swolemack/4-2.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKE4, 122, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 61, 180
+ Patch "PATCHES/swolemack/4-3.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKE5, 100, 187
+{ XScale 3.33928571 YScale 3.33928571 Offset 50, 187
+ Patch "PATCHES/swolemack/4-4.png", 0, 0 {}
+}
+
+Sprite SWMKE6, 122, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 61, 180
+ Patch "PATCHES/swolemack/4-3.png", 0, 0 {}
+}
+
+Sprite SWMKE7, 147, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 73, 180
+ Patch "PATCHES/swolemack/4-2.png", 0, 0 {}
+}
+
+Sprite SWMKE8, 132, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 66, 181
+ Patch "PATCHES/swolemack/4-1.png", 0, 0 {}
+}
+
+Sprite SWMKF1, 96, 183
+{ XScale 3.26785714 YScale 3.26785714 Offset 48, 183
+ Patch "PATCHES/swolemack/5-0.png", 0, 0 {}
+}
+
+Sprite SWMKF2, 172, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 86, 180
+ Patch "PATCHES/swolemack/5-1.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKF3, 185, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 92, 181
+ Patch "PATCHES/swolemack/5-2.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKF4, 165, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 82, 181
+ Patch "PATCHES/swolemack/5-3.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKF5, 100, 187
+{ XScale 3.33928571 YScale 3.33928571 Offset 50, 187
+ Patch "PATCHES/swolemack/4-4.png", 0, 0 {}
+}
+
+Sprite SWMKF6, 165, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 82, 181
+ Patch "PATCHES/swolemack/5-3.png", 0, 0 {}
+}
+
+Sprite SWMKF7, 185, 181
+{ XScale 3.23214286 YScale 3.23214286 Offset 92, 181
+ Patch "PATCHES/swolemack/5-2.png", 0, 0 {}
+}
+
+Sprite SWMKF8, 172, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 86, 180
+ Patch "PATCHES/swolemack/5-1.png", 0, 0 {}
+}
+
+Sprite SWMKG1, 95, 179
+{ XScale 3.19642857 YScale 3.19642857 Offset 47, 179
+ Patch "PATCHES/swolemack/6-0.png", 0, 0 {}
+}
+
+Sprite SWMKG2, 88, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 44, 180
+ Patch "PATCHES/swolemack/6-1.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKG3, 88, 177
+{ XScale 3.16071429 YScale 3.16071429 Offset 44, 177
+ Patch "PATCHES/swolemack/6-2.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKG4, 85, 175
+{ XScale 3.12500000 YScale 3.12500000 Offset 42, 175
+ Patch "PATCHES/swolemack/6-3.png", 0, 0 { FlipX }
+}
+
+Sprite SWMKG5, 89, 173
+{ XScale 3.08928571 YScale 3.08928571 Offset 44, 173
+ Patch "PATCHES/swolemack/6-4.png", 0, 0 {}
+}
+
+Sprite SWMKG6, 85, 175
+{ XScale 3.12500000 YScale 3.12500000 Offset 42, 175
+ Patch "PATCHES/swolemack/6-3.png", 0, 0 {}
+}
+
+Sprite SWMKG7, 88, 177
+{ XScale 3.16071429 YScale 3.16071429 Offset 44, 177
+ Patch "PATCHES/swolemack/6-2.png", 0, 0 {}
+}
+
+Sprite SWMKG8, 88, 180
+{ XScale 3.21428571 YScale 3.21428571 Offset 44, 180
+ Patch "PATCHES/swolemack/6-1.png", 0, 0 {}
+}
+
+Sprite SWMKI0, 125, 160
+{ XScale 3.39285714 YScale 3.39285714 Offset 62, 160
+ Patch "PATCHES/swolemack/fall0.png", 0, 0 {}
+}
+
+Sprite SWMKJ0, 192, 140
+{ XScale 3.39285714 YScale 3.39285714 Offset 96, 140
+ Patch "PATCHES/swolemack/fall1.png", 0, 0 {}
+}
+
+Sprite SWMKK0, 198, 127
+{ XScale 3.39285714 YScale 3.39285714 Offset 99, 127
+ Patch "PATCHES/swolemack/fall2.png", 0, 0 {}
+}
+
+Sprite SWMKL0, 199, 101
+{ XScale 3.39285714 YScale 3.39285714 Offset 99, 101
+ Patch "PATCHES/swolemack/fall3.png", 0, 0 {}
+}
+
+Sprite SWMKM0, 182, 85
+{ XScale 3.39285714 YScale 3.39285714 Offset 91, 85
+ Patch "PATCHES/swolemack/fall4.png", 0, 0 {}
+}
+
+Sprite SWMKN0, 182, 85
+{ XScale 3.39285714 YScale 3.39285714 Offset 91, 85
+ Patch "PATCHES/swolemack/fall4.png", 0, 0 {}
+}

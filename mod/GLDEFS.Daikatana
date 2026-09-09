@@ -1,0 +1,19 @@
+// Explosion light
+PointLight Explosion_X1 { Color 1.0 0.7 0.0 Size 32 }
+PointLight Explosion_X2 { Color 1.0 0.7 0.0 Size 50 }
+PointLight Explosion_X3 { Color 1.0 0.7 0.0 Size 64 }
+PointLight Explosion_X4 { Color 0.8 0.6 0.0 Size 55 }
+PointLight Explosion_X5 { Color 0.6 0.4 0.0 Size 50 }
+PointLight Explosion_X6 { Color 0.4 0.2 0.0 Size 45 }
+PointLight Explosion_X7 { Color 0.2 0.1 0.0 Size 40 }
+
+// Ionblaster bolt light
+PointLight IonLight {Color 0.0 1.0 0.0 Size 30}
+
+PointLight GunLight { Color 1.0 0.7 0.0 Size 64 }
+
+PointLight TridentLight {Color 0.0 0.5 0.5 Size 32}
+
+FlickerLight FlareLight { Color 1.0 0.7 0.0 Size 64 SecondarySize 68 chance 0.5}
+
+PointLight ZeusLight { Color 1.0 1.0 1.0 Size 72 }

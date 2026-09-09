@@ -1,0 +1,9 @@
+Version "4.7.1"
+#include "NNR_ZScript/NNR_Daikatana.zsc"
+#include "NNR_ZScript/NNR_Friend.zsc"
+#Include "NNR_ZScript/NNR_Spawner.zsc"
+#include "NNR_ZScript/NNR_Facts.zsc"
+#include "NNR_ZScript/NNR_Taunt.zsc"
+#include "NNR_ZScript/NNR_Intermission.zsc"
+
+#include "NNR_ZScript/NNR_Skins.zsc"

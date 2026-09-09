@@ -1,0 +1,94 @@
+//FriendMarine/Laugh		Sounds/DLAUGH
+
+
+
+
+FM/Pain					DSPLPAIN
+
+
+$Random yohn/laugh {ylaugh1 ylaugh2 ylaugh3 ylaugh4 ylaugh5 ylaugh6 ylaugh7 ylaugh8}
+
+ylaugh1					yhnt1
+ylaugh2					yhnt2
+ylaugh3					yhnt3
+ylaugh4					yhnt4
+ylaugh5					yhnt5
+ylaugh6					yhnt6
+ylaugh7					yhnt7
+ylaugh8					yhnt8
+
+$Random yohn/death		{yohn1 yohn2 yohn3 yohn4 yohn5 yohn6 yohn7 yohn8 yohn9 yohn10 yohn11}
+yohn1					curse1					
+yohn2					curse2
+yohn3					curse3
+yohn4					curse4
+yohn5					curse5
+yohn6					curse6
+yohn7				 	curse7
+yohn8					curse8
+yohn9					curse9
+yohn10					curse10
+yohn11					curse11
+//yohn12					curse12	
+			
+FM/Raise				DSSLOP
+
+FM/IntroSFX				DSSGCOCK
+
+FM/Punch				DSPUNCH
+
+$Random FM/Idle			{FMI1 FMI2}					
+FMI1					DSOOF
+FMI2					Sounds/OOFREV
+
+
+$Random yohn/start {ystart1 ystart2 ystart3 ystart4 ystart5 ystart6 ystart7}
+
+ystart1 				vocal1
+ystart2					vocal2
+ystart3					vocal3
+ystart4					vocal4
+ystart5					vocal5
+ystart6					vocal6
+ystart7					vocal7 
+
+// Daikatana 1200 BC Greece attack sounds used by John only.
+misc/explode1             BOOOOOOM
+glove/select              GLV_REDY
+glove/fire                GLV_FIRE
+glove/amba                GLV_AMBA
+glove/hit                 GLV_HITT
+disc/select               DISCREDY
+disc/amba                 DISCSPIN
+disc/fire                 DISCFIRE
+disc/fire2                DISCMELE
+disc/hit                  DISCHITT
+hammer/select             HAMRREDY
+hammer/windup             HAMRWIND
+hammer/swing              HAMRSWIN
+flare/select              FLARREDY
+flare/amba                FLARAMBA
+flare/deselect            FLARAWAY
+flare/fire                FLARFIRE
+trident/select            TRIDREDY
+trident/fire              TRIDFIRE
+venom/select              VENMREDY
+venom/fire                VENMFIRE
+venom/hit                 VENMHITA
+venom/melee               VENMSWIP
+venom/meleehit            VENMMEHT
+zeuseye/amba              ZEUSAMBA
+zeuseye/select            ZEUSREDY
+zeuseye/fire              ZEUSFIRE
+
+
+
+carmack/line1 sounds/carmack/line1.ogg
+
+carmack/line2 sounds/carmack/line2.ogg
+
+carmack/line3 sounds/carmack/line3.ogg
+
+carmack/line4 sounds/carmack/line4.ogg
+
+carmack/line5 sounds/carmack/line5.ogg
