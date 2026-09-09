@@ -18,4 +18,4 @@ Server Int blnk_companions = -1;
 
 Server Bool blnk_closefollow = false;
 
-User Bool blnk_hudkillcounts = true;
+User Bool blnk_companionhud = true;

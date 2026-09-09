@@ -106,6 +106,7 @@ Class NNR_JohnHUDHandler : EventHandler
 
 	Override void RenderOverlay(RenderEvent e)
 	{
+        if (!CVar.FindCVar("blnk_companionhud").GetBool()) return;
         if (level.MapName=="TITLEMAP") return;
         if (Menu.GetCurrentMenu() is "NNR_CompanionPreviewMenu") return;
 		if (consoleplayer < 0 || !players[consoleplayer].mo) return;
@@ -134,7 +135,6 @@ Class NNR_JohnHUDHandler : EventHandler
 			DTA_KeepRatio, true);
 
 		int textWidth = SmallFont.StringWidth(killText);
-		if (CVar.FindCVar("blnk_hudkillcounts").GetBool())
         Screen.DrawText(SmallFont, Font.CR_GOLD, 632 - textWidth, 58, killText,
 			DTA_VirtualWidth, 640,
 			DTA_VirtualHeight, 360,
@@ -149,7 +149,6 @@ Class NNR_JohnHUDHandler : EventHandler
                 DTA_DestWidth, 46, DTA_DestHeight, 49,
                 DTA_LeftOffset, 0, DTA_TopOffset, 0, DTA_KeepRatio, true);
             String cmKills = String.Format("CARMACK  KILLS: %d", players[consoleplayer].mo.CountInv("NNR_CarmackLevelKillCounter"));
-            if (CVar.FindCVar("blnk_hudkillcounts").GetBool())
             Screen.DrawText(SmallFont, Font.CR_GOLD, 632 - SmallFont.StringWidth(cmKills), 134, cmKills,
                 DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
         }
