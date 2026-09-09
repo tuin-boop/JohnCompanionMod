@@ -12,3 +12,4 @@ DoomEdNums { 15001 = NNR_TitleTorch }
 
 GameInfo { AddEventHandlers = "NNR_HellTitle" }
 map TITLEMAP "The Two Johns" { sky1 = "SKY3" music = "D_EVIL" nointermission }
+GameInfo { AddEventHandlers = "NNR_TuinCompatibility" }

@@ -45,3 +45,7 @@ The in-engine checks in `tests/aim-test.zs` verify hold/release behavior, exact 
 This project extends the supplied John Romero companion mod and preserves its bundled credits and resources in `mod/`. Sprite variants were generated using supplied reference photographs and then extracted and registered as Doom sprites. The SwoleMack generation prompt is in `art/SwoleMack-generation-prompt.txt`. The companion panel uses TINYBABY lettering and a blue/cyan style adapted from the Doom Cleanup Sim project. Carmack dialogue uses the interview clips supplied for this mod. Doom II game data and engine binaries are not included. No blanket license is asserted over third-party assets.
 
 If updating from the old instant camp bindings, rebind the two camp commands in Customize Controls to enable hold/release.
+
+## TuinDoomRPG compatibility
+
+Load `TuinRPG.pk3` first, followed by `Romero_Carmack_Companion_Control.pk3`. A green **TUIN RPG DETECTED - COMPATIBILITY ACTIVE** message confirms detection. The companion titlemap skips the RPG's per-level gameplay/HUD handlers so the mandatory class chooser does not open in the decorative title scene. The engine recreates those handlers normally on a real map; class selection and gameplay remain active. No TuinDoomRPG files are modified. Verified with the supplied TuinRPG package in UZDoom 4.14.3.

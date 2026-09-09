@@ -1,0 +1,24 @@
+class NNR_TuinCompatibility : EventHandler
+{
+ bool detected;
+ override void WorldLoaded(WorldEvent e)
+ {
+  detected=CVar.FindCVar("tuin_enabled")!=null;
+  if(!detected || level.MapName!="TITLEMAP")return;
+  // These are per-map handlers. The engine creates fresh instances when
+  // starting a real game; this decorative map must not initialize an RPG run.
+  static const String names[]={"TuinRPGHandler","TuinMinimapHandler","PSCompatWeaponHandler"};
+  for(int i=0;i<3;i++)
+  {
+   class<StaticEventHandler> type=(class<StaticEventHandler>)(names[i]);
+   if(type){let handler=EventHandler.Find(type);if(handler)handler.Destroy();}
+  }
+ }
+ override void RenderOverlay(RenderEvent e)
+ {
+  if(!detected)return;
+  if(level.MapName!="TITLEMAP" && (level.time>210 || Menu.GetCurrentMenu()!=null))return;
+  let font=Font.GetFont("TINYBABY");String msg="TUIN RPG DETECTED - COMPATIBILITY ACTIVE";
+  Screen.DrawText(font,Font.CR_GREEN,320-font.StringWidth(msg)*.75,302,msg,DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_ScaleX,1.5,DTA_ScaleY,1.5);
+ }
+}
