@@ -49,3 +49,5 @@ If updating from the old instant camp bindings, rebind the two camp commands in 
 ## TuinDoomRPG compatibility
 
 Load `TuinRPG.pk3` first, followed by `Romero_Carmack_Companion_Control.pk3`. A green **TUIN RPG DETECTED - COMPATIBILITY ACTIVE** message confirms detection. The companion titlemap skips the RPG's per-level gameplay/HUD handlers so the mandatory class chooser does not open in the decorative title scene. The engine recreates those handlers normally on a real map; class selection and gameplay remain active. No TuinDoomRPG files are modified. Verified with the supplied TuinRPG package in UZDoom 4.14.3.
+
+Companions scan for visible hostile monsters within 2048 map units once per second, speeding up to every 8 tics after five seconds without firing. Camping requests an immediate scan. More than 15 visible hostiles increases heavy ranged weapon selection for both weapon sets; camping and close-follow movement limits still apply.
