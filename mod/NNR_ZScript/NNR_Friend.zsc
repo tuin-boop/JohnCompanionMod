@@ -55,17 +55,13 @@ case 5: clip="carmack/line5"; duration=2421; break;
     Vector2 CampGoal;
     int NextCampWander;
     bool HoldsPosition() { return Camping || GetCVar("blnk_closefollow") != 0; }
-    bool CampHere(Actor pl)
+    bool CampAt(Actor pl, Vector3 spot, bool testOnly=false)
     {
-        // Check nearby landing positions, keeping clear of the player's body.
-        double gap=pl.radius+radius+12;
-        bool landed=false;
-        for(int i=0;i<8;i++)
-        {
-            double angleOffset=(IsCarmack()?90:-90)+i*45;
-            if(Warp(pl,cos(angleOffset)*gap,sin(angleOffset)*gap,0,0,WARPF_STOP|WARPF_TOFLOOR)) { landed=true;break; }
-        }
-        if(!landed)return false;
+        if ((spot.XY-pl.pos.XY).Length() < radius+pl.radius+4) return false;
+        int flags=WARPF_STOP|WARPF_ABSOLUTEPOSITION;
+        if(testOnly) flags|=WARPF_TESTONLY;
+        if(!Warp(pl,spot.X,spot.Y,spot.Z,0,flags))return false;
+        if(testOnly)return true;
         Camping=true;CampSpot=pos;CampGoal=pos.XY;NextCampWander=level.time+175;
         vel.X=0;vel.Y=0;
         Spawn("TeleportFog",pos);

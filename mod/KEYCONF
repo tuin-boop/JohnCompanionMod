@@ -2,9 +2,14 @@
 addkeysection "Romero and Carmack" NNRCompanionControls
 addmenukey "Open companion control" "menu blnk_options"
 addmenukey "Follow both - toggle close distance" "netevent nnr_closefollow"
-addmenukey "Romero teleport and camp (10 sec)" "netevent nnr_campro"
-addmenukey "Carmack teleport and camp (10 sec)" "netevent nnr_campca"
-defaultbind k "netevent nnr_campro"
-defaultbind l "netevent nnr_campca"
+addmenukey "Romero teleport and camp (10 sec)" "+nnr_campro"
+addmenukey "Carmack teleport and camp (10 sec)" "+nnr_campca"
+defaultbind k "+nnr_campro"
+defaultbind l "+nnr_campca"
 defaultbind F7 "netevent nnr_closefollow"
 defaultbind F8 "menu blnk_options"
+
+alias +nnr_campro "netevent nnr_campro 1"
+alias -nnr_campro "netevent nnr_campro 0"
+alias +nnr_campca "netevent nnr_campca 1"
+alias -nnr_campca "netevent nnr_campca 0"
