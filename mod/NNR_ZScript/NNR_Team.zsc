@@ -1,12 +1,15 @@
 class NNR_Team : Object
 {
  static bool ExtraLoaded(){String name="NNR_HimikoMarine";return (class<Actor>)(name)!=null;}
- static int Mask(int mode){if(mode>=16 && mode<=21){int partner=mode-16;return (ExtraLoaded()?32:0)|(partner>0?1<<(partner-1):0);}switch(mode){case 0:return 1;case 1:return 2;case 2:return 3;case 3:return 4;case 4:return 5;case 5:return 6;case 7:return 8;case 8:return 9;case 9:return 10;case 10:return 12;case 11:return 16;case 12:return 17;case 13:return 18;case 14:return 20;case 15:return 24;}return 0;}
- static int Mode(int mask){if(ExtraLoaded() && (mask&32)){int rest=mask&31;if(rest==0)return 16;for(int m=1;m<=5;m++)if(rest==(1<<(m-1)))return 16+m;}switch(mask){case 1:return 0;case 2:return 1;case 3:return 2;case 4:return 3;case 5:return 4;case 6:return 5;case 8:return 7;case 9:return 8;case 10:return 9;case 12:return 10;case 16:return 11;case 17:return 12;case 18:return 13;case 20:return 14;case 24:return 15;}return 6;}
- static int Slot(int mode,int slot){int mask=Mask(mode);for(int m=1;m<=6;m++)if(mask & (1<<(m-1))){if(slot==0)return m;slot--;}return 0;}
- static String Name(int member){return member==6?"HIMIKO":member==5?"ADRIAN":member==4?"TOM HALL":member==3?"JAY WILBUR":member==2?"CARMACK":member==1?"ROMERO":"NO COMPANION";}
- static String Counter(int member){return member==6?"NNR_ExtraLevelKillCounter":member==5?"NNR_AdrianLevelKillCounter":member==4?"NNR_TomLevelKillCounter":member==3?"NNR_JayLevelKillCounter":member==2?"NNR_CarmackLevelKillCounter":"NNR_JohnLevelKillCounter";}
+ static int CleanMask(int mask){int result=0;int count=0;for(int m=1;m<=8;m++){String name=m==8?"NNR_KarinMarine":m==7?"NNR_TinaMarine":"NNR_HimikoMarine";if((mask&(1<<(m-1))) && (m<=5 || (class<Actor>)(name)!=null) && count<2){result|=1<<(m-1);count++;}}return result;}
+ static int Mask(int mode){if(mode>=256)return CleanMask(mode-256);if(mode>=16 && mode<=21){int partner=mode-16;return (ExtraLoaded()?32:0)|(partner>0?1<<(partner-1):0);}switch(mode){case 0:return 1;case 1:return 2;case 2:return 3;case 3:return 4;case 4:return 5;case 5:return 6;case 7:return 8;case 8:return 9;case 9:return 10;case 10:return 12;case 11:return 16;case 12:return 17;case 13:return 18;case 14:return 20;case 15:return 24;}return 0;}
+ static int Mode(int mask){mask=CleanMask(mask);if(mask&192)return 256+mask;if(ExtraLoaded() && (mask&32)){int rest=mask&31;if(rest==0)return 16;for(int m=1;m<=5;m++)if(rest==(1<<(m-1)))return 16+m;}switch(mask){case 1:return 0;case 2:return 1;case 3:return 2;case 4:return 3;case 5:return 4;case 6:return 5;case 8:return 7;case 9:return 8;case 10:return 9;case 12:return 10;case 16:return 11;case 17:return 12;case 18:return 13;case 20:return 14;case 24:return 15;}return 6;}
+ static int Slot(int mode,int slot){int mask=Mask(mode);for(int m=1;m<=8;m++)if(mask & (1<<(m-1))){if(slot==0)return m;slot--;}return 0;}
+ static String Name(int member){return member==8?"KARIN":member==7?"TINA":member==6?"HIMIKO":member==5?"ADRIAN":member==4?"TOM HALL":member==3?"JAY WILBUR":member==2?"CARMACK":member==1?"ROMERO":"NO COMPANION";}
+ static String Counter(int member){return member==8?"NNR_KarinLevelKillCounter":member==7?"NNR_TinaLevelKillCounter":member==6?"NNR_ExtraLevelKillCounter":member==5?"NNR_AdrianLevelKillCounter":member==4?"NNR_TomLevelKillCounter":member==3?"NNR_JayLevelKillCounter":member==2?"NNR_CarmackLevelKillCounter":"NNR_JohnLevelKillCounter";}
  static String Face(int member,int frame,bool tally=false){
+ if(member==8)return "KRNFACE";
+ if(member==7)return tally || frame!=0?"TINFACE":"TINLEFT";
  if(member==6)return tally?"HIKFACE":frame==0?"HIKLEFT":frame==2?"HIKRIGHT":"HIKFACE";
  if(member==5)return tally?"ADRFACE":frame==0?"ADRLEFT":frame==2?"ADRRIGHT":"ADRFACE";
  if(member==4 && CVar.FindCVar("blnk_tomskin").GetInt()!=0)return tally?"TMPFACE":frame==0?"TMPLEFT":frame==2?"TMPRIGHT":"TMPFACE";

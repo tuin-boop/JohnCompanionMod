@@ -1,0 +1,47 @@
+"""Build all three extra companions. Source art stays at its original resolution."""
+from pathlib import Path
+import runpy
+from PIL import Image
+import numpy as np
+from zipfile import ZipFile, ZIP_DEFLATED
+root=Path(__file__).resolve().parent
+ctx=runpy.run_path(str(root/'import_assets.py'))
+runs=ctx['runs'];defs=[]
+for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7)]:
+ im=Image.open(root/f'../../art/{name}/{name}-Sprite-Sheet.png').convert('RGBA')
+ a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
+ a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0
+ a[a[:,:,3]==0,:3]=0;im=Image.fromarray(a)
+ ys=runs((a[:,:,3]>0).sum(axis=1)>5);assert len(ys)==expected,(name,ys)
+ arts={};out=root/f'mod/PATCHES/{name}';out.mkdir(exist_ok=True)
+ for row,(top,bottom) in enumerate(ys):
+  strip=im.crop((0,top,im.width,bottom));xs=runs((np.array(strip)[:,:,3]>0).sum(axis=0)>1)
+  assert len(xs)==5,(name,row,xs)
+  for col,(left,right) in enumerate(xs):
+   cell=strip.crop((left,0,right,strip.height));cell=cell.crop(cell.getbbox())
+   pad=Image.new('RGBA',(cell.width+4,cell.height+4));pad.alpha_composite(cell,(2,2));pad.save(out/f'{row}-{col}.png');arts[row,col]=pad
+ scale=(arts[0,0].height-4)/56
+ def sprite(frame,rot,row,col,flip=False):
+  w,h=arts[row,col].size
+  defs.append(f'Sprite {prefix}{frame}{rot}, {w}, {h}\n{{ XScale {scale:.8f} YScale {scale:.8f} Offset {w//2}, {h-2} Patch "PATCHES/{name}/{row}-{col}.png", 0, 0 {{'+(' FlipX ' if flip else '')+'} }\n')
+ # Karin has two walking rows; reuse the first for the third animation beat.
+ rows=list(range(7)) if expected==8 else [0,1,2,1,3,4,5]
+ for frame,row in zip('ABCDEFG',rows):
+  for rot,(col,flip) in ctx['mapping'].items():sprite(frame,rot,rows[4] if frame=='F' and rot==5 else row,col,flip)
+ for frame,col in zip('IJKLMN',[0,1,2,3,4,4]):sprite(frame,0,expected-1,col)
+ if name=='Karin':
+  # Temporary in-style portrait from the idle sprite until a supplied HUD portrait arrives.
+  head=arts[0,0];head=head.crop((0,0,head.width,int(head.height*.30)));head=head.crop(head.getbbox())
+  head.save(root/'mod/PATCHES/KRNFACE.png')
+  defs.append(f'Graphic KRNFACE, {head.width}, {head.height} {{ XScale {head.width/46} YScale {head.height/49} Patch "PATCHES/KRNFACE.png", 0, 0 }}\n')
+for src,name in [('Tina-center','TINFACE'),('Tina-side','TINLEFT')]:
+ face=Image.open(root/f'../../art/Tina/portraits/{src}.png').convert('RGBA');a=np.array(face)
+ r,g,b=[a[:,:,i].astype(int) for i in range(3)]
+ a[((b-r>20)&(b-g>20)&(b>35))|((r<5)&(g<5)&(b<5)&(np.indices(r.shape)[0]<22)),3]=0
+ a[a[:,:,3]==0,:3]=0;face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/f'mod/PATCHES/{name}.png')
+ defs.append(f'Graphic {name}, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/{name}.png", 0, 0 }}\n')
+with (root/'mod/TEXTURES').open('a') as f:f.write(''.join(defs))
+with ZipFile(root/'../../dist/Himiko_Companion_Addon.pk3','w',ZIP_DEFLATED) as z:
+ for f in sorted((root/'mod').rglob('*')):
+  if f.is_file():z.write(f,f.relative_to(root/'mod').as_posix())
+print('Packaged Himiko, Tina and Karin.')

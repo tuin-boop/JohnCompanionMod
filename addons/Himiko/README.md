@@ -1,12 +1,11 @@
-# Himiko companion addon
+# Extra companions addon
 
-Load the updated main mod first, then Himiko_Companion_Addon.pk3.
-Open ESC > Extras (or Options > Extra Companions: Himiko).
+Load the updated main mod first, then Himiko_Companion_Addon.pk3. This existing filename now contains Himiko, Tina and Karin. Open ESC > Extras or Options > Extra Companions.
 
-The animated character card uses the main mod's TINYBABY font. Character arrows currently show 1 / 1 because this is the first addon character. Select a partner with left/right, then Turn On. This chooses Himiko solo or a pair, replacing the previous team and keeping the maximum at two. Turn Off keeps the selected creator partner. Return to Companion Control for creator-only pairs.
+Use the character arrows to browse all three animated cards. Turn On/Off changes that character while preserving the other active companion. Enabling a third replaces the first active member and displays a warning. The partner arrows choose a pair with any creator or extra character; maximum two total. Tina + Karin is supported.
 
-Himiko uses the shared weapon/AI and K/L camp controls, with an independent camp cooldown, HUD and tally kill counter. No borrowed creator chatter or voice clips. Her full-resolution supplied portraits animate left/center/right in the HUD, with the center portrait on the tally. The decorative title lineup stays the five creators.
+All three use shared AI, weapons, K/L camp controls, independent camp cooldowns, HUD names and kill counters, and end tally portraits. They do not borrow creator dialogue or voice clips. Tina uses the supplied center and side portraits. Karin currently uses a temporary portrait extracted from her idle sprite. Her seven-row source sheet reuses a walking pose for the third walk beat.
 
-Requires the companion mod update packaged alongside this addon, not the older v1.1.0 release. Removing the addon removes its menu and character; a saved Himiko pair falls back to its creator partner.
+Requires the updated main PK3 shipped alongside this addon. Removing the addon hides its menu and filters absent characters out of saved teams. The title map remains the five creators.
 
-Build assets/package: Python with Pillow and NumPy, run import_assets.py. Art generated from the supplied Himiko reference with the built-in image tool. Fan-made character addon; no affiliation implied.
+Build with Python, Pillow and NumPy: run `python addons/Himiko/build.py` from the repository root. This imports Himiko, then Tina and Karin, and packages all three. Do not use import_assets.py alone for the combined addon.

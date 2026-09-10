@@ -132,7 +132,7 @@ class NNR_CompanionPreviewMenu : OptionMenu
 
 class NNR_FollowNotice : EventHandler
 {
- int RomeroCampReady[MAXPLAYERS];int CarmackCampReady[MAXPLAYERS];int JayCampReady[MAXPLAYERS];int TomCampReady[MAXPLAYERS];int AdrianCampReady[MAXPLAYERS];int ExtraCampReady[MAXPLAYERS];
+ int RomeroCampReady[MAXPLAYERS];int CarmackCampReady[MAXPLAYERS];int JayCampReady[MAXPLAYERS];int TomCampReady[MAXPLAYERS];int AdrianCampReady[MAXPLAYERS];int ExtraCampReady[MAXPLAYERS];int TinaCampReady[MAXPLAYERS];int KarinCampReady[MAXPLAYERS];
  int AimMode[MAXPLAYERS];Vector3 AimSpot[MAXPLAYERS];bool AimValid[MAXPLAYERS];
  String notice;int noticePlayer;int noticeUntil;bool closeMode;bool initialized;
  NNR_JohnMarine FindJohn(int who,int member)
@@ -164,12 +164,12 @@ class NNR_FollowNotice : EventHandler
    if(AimMode[e.Player]!=mode)return;
    UpdateAim(e.Player);AimMode[e.Player]=0;
    let john=FindJohn(e.Player,mode);
-   int ready=mode==6?ExtraCampReady[e.Player]:mode==5?AdrianCampReady[e.Player]:mode==4?TomCampReady[e.Player]:mode==3?JayCampReady[e.Player]:carmack?CarmackCampReady[e.Player]:RomeroCampReady[e.Player];
+   int ready=mode==8?KarinCampReady[e.Player]:mode==7?TinaCampReady[e.Player]:mode==6?ExtraCampReady[e.Player]:mode==5?AdrianCampReady[e.Player]:mode==4?TomCampReady[e.Player]:mode==3?JayCampReady[e.Player]:carmack?CarmackCampReady[e.Player]:RomeroCampReady[e.Player];
    if(!john)notice=String.Format("%s IS NOT IN YOUR TEAM",NNR_Team.Name(mode));
    else if(level.time<ready)notice=String.Format("CAMP READY IN %d SEC",(ready-level.time+34)/35);
    else if(AimValid[e.Player] && john.CampAt(players[e.Player].mo,AimSpot[e.Player]))
    {
-    if(mode==6)ExtraCampReady[e.Player]=level.time+350;else if(mode==5)AdrianCampReady[e.Player]=level.time+350;else if(mode==4)TomCampReady[e.Player]=level.time+350;else if(mode==3)JayCampReady[e.Player]=level.time+350;else if(carmack)CarmackCampReady[e.Player]=level.time+350;else RomeroCampReady[e.Player]=level.time+350;
+    if(mode==8)KarinCampReady[e.Player]=level.time+350;else if(mode==7)TinaCampReady[e.Player]=level.time+350;else if(mode==6)ExtraCampReady[e.Player]=level.time+350;else if(mode==5)AdrianCampReady[e.Player]=level.time+350;else if(mode==4)TomCampReady[e.Player]=level.time+350;else if(mode==3)JayCampReady[e.Player]=level.time+350;else if(carmack)CarmackCampReady[e.Player]=level.time+350;else RomeroCampReady[e.Player]=level.time+350;
     notice=String.Format("%s: CAMP SET - 10 SEC COOLDOWN",NNR_Team.Name(mode));
    }
    else notice="CANNOT LAND THERE - AIM AT CLEAR GROUND";
@@ -189,7 +189,7 @@ class NNR_FollowNotice : EventHandler
   {
    UpdateAim(who);
    if(AimMode[who]==0)continue;
-   int ready=AimMode[who]==6?ExtraCampReady[who]:AimMode[who]==5?AdrianCampReady[who]:AimMode[who]==4?TomCampReady[who]:AimMode[who]==3?JayCampReady[who]:AimMode[who]==2?CarmackCampReady[who]:RomeroCampReady[who];
+   int ready=AimMode[who]==8?KarinCampReady[who]:AimMode[who]==7?TinaCampReady[who]:AimMode[who]==6?ExtraCampReady[who]:AimMode[who]==5?AdrianCampReady[who]:AimMode[who]==4?TomCampReady[who]:AimMode[who]==3?JayCampReady[who]:AimMode[who]==2?CarmackCampReady[who]:RomeroCampReady[who];
    if(who==consoleplayer && level.time%2==0)
    {
     FSpawnParticleParams p;p.color1=AimValid[who] && level.time>=ready?Color(30,255,150):Color(255,60,40);
@@ -208,7 +208,7 @@ class NNR_FollowNotice : EventHandler
   String msg=notice;
   if(AimMode[consoleplayer]!=0)
   {
-   int mode=AimMode[consoleplayer];int ready=mode==6?ExtraCampReady[consoleplayer]:mode==5?AdrianCampReady[consoleplayer]:mode==4?TomCampReady[consoleplayer]:mode==3?JayCampReady[consoleplayer]:mode==2?CarmackCampReady[consoleplayer]:RomeroCampReady[consoleplayer];
+   int mode=AimMode[consoleplayer];int ready=mode==8?KarinCampReady[consoleplayer]:mode==7?TinaCampReady[consoleplayer]:mode==6?ExtraCampReady[consoleplayer]:mode==5?AdrianCampReady[consoleplayer]:mode==4?TomCampReady[consoleplayer]:mode==3?JayCampReady[consoleplayer]:mode==2?CarmackCampReady[consoleplayer]:RomeroCampReady[consoleplayer];
    msg=String.Format("%s: AIM AT GROUND - RELEASE TO CAMP",NNR_Team.Name(mode));
    if(level.time<ready)msg=String.Format("%s: CAMP READY IN %d SEC",NNR_Team.Name(mode),(ready-level.time+34)/35);
    else if(!AimValid[consoleplayer])msg="AIM AT CLEAR GROUND - RED = BLOCKED";
@@ -344,14 +344,14 @@ class NNR_StyledCompanionMenu : NNR_CompanionPreviewMenu
     {
         int mask=TeamMask(Value("blnk_companions"));
         bool active=(mask & bit)!=0;
-        String name=bit==16?"ADRIAN":bit==8?"TOM":bit==1?"ROMERO":bit==2?"CARMACK":"JAY";
+        String name=bit==128?"KARIN":bit==64?"TINA":bit==32?"HIMIKO":bit==16?"ADRIAN":bit==8?"TOM":bit==1?"ROMERO":bit==2?"CARMACK":"JAY";
         if(active){mask&=~bit;teamNotice=String.Format("%s OFF",name);}
         else
         {
             int removed=0;
             if(mask!=0 && (mask&(mask-1))!=0){removed=mask & -mask;mask&=~removed;}
             mask|=bit;
-            teamNotice=removed!=0?String.Format("LIMIT 2: %s OFF, %s ON",removed==1?"ROMERO":removed==2?"CARMACK":removed==4?"JAY":removed==8?"TOM":removed==16?"ADRIAN":"HIMIKO",name):String.Format("%s ON",name);
+            teamNotice=removed!=0?String.Format("LIMIT 2: %s OFF, %s ON",removed==1?"ROMERO":removed==2?"CARMACK":removed==4?"JAY":removed==8?"TOM":removed==16?"ADRIAN":removed==64?"TINA":removed==128?"KARIN":"HIMIKO",name):String.Format("%s ON",name);
         }
         CVar.FindCVar("blnk_companions").SetInt(TeamFromMask(mask));
         CVar.FindCVar("blnk_jay").SetBool((mask&4)!=0);

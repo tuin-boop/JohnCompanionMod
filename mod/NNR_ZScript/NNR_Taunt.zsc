@@ -16,6 +16,8 @@ Class FriendTauntHandler : EventHandler
                 players[i].mo.TakeInventory("NNR_TomLevelKillCounter", 2147483647);
                 players[i].mo.TakeInventory("NNR_AdrianLevelKillCounter", 2147483647);
                 players[i].mo.TakeInventory("NNR_ExtraLevelKillCounter",2147483647);
+ players[i].mo.TakeInventory("NNR_TinaLevelKillCounter",2147483647);
+ players[i].mo.TakeInventory("NNR_KarinLevelKillCounter",2147483647);
 
 				int previousFact = players[i].mo.CountInv("NNR_JohnFactToken");
 				int nextFact = Random(1, 100);
@@ -42,7 +44,7 @@ Class FriendTauntHandler : EventHandler
 			{
 				if (john.Master && john.Master.Player)
 				{
-					if (john.Member()==6) john.Master.GiveInventory("NNR_ExtraLevelKillCounter",1);
+					if (john.Member()>=6) john.Master.GiveInventory(NNR_Team.Counter(john.Member()),1);
                     else if (john.IsAdrian()) john.Master.GiveInventory("NNR_AdrianLevelKillCounter",1);
                     else if (john.IsTom()) john.Master.GiveInventory("NNR_TomLevelKillCounter",1);
                     else if (john.IsJay()) john.Master.GiveInventory("NNR_JayLevelKillCounter",1);
