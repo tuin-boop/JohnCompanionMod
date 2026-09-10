@@ -1,0 +1,2 @@
+Built-in image_gen edit mode. Preserve Tina's face and outfit. Keep visible orthodontic braces with small silver brackets connected by thin wire, white teeth and natural pink lips. Correct both center and side portraits.
+Sprite edit: add small silver braces to visible smiles while preserving all 40 frames and the 8x5 layout. Refine oversized smiles to half height and natural mouth width; preserve clothes, poses and single guns.

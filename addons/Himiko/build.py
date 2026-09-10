@@ -10,7 +10,8 @@ runs=ctx['runs'];defs=[]
 for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7)]:
  im=Image.open(root/f'../../art/{name}/{name}-Sprite-Sheet.png').convert('RGBA')
  a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
- a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0
+ key_delta=65 if name=="Tina" else 12
+ a[(r-g>key_delta)&(b-g>key_delta)&(r>25)&(b>25),3]=0
  a[a[:,:,3]==0,:3]=0;im=Image.fromarray(a)
  ys=runs((a[:,:,3]>0).sum(axis=1)>5);assert len(ys)==expected,(name,ys)
  arts={};out=root/f'mod/PATCHES/{name}';out.mkdir(exist_ok=True)
@@ -34,9 +35,10 @@ for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR
   head=arts[0,0];head=head.crop((0,0,head.width,int(head.height*.30)));head=head.crop(head.getbbox())
   head.save(root/'mod/PATCHES/KRNFACE.png')
   defs.append(f'Graphic KRNFACE, {head.width}, {head.height} {{ XScale {head.width/46} YScale {head.height/49} Patch "PATCHES/KRNFACE.png", 0, 0 }}\n')
-for src,name in [('Tina-center','TINFACE'),('Tina-side','TINLEFT')]:
+for src,name in [('Tina-center-v2','TINFACE'),('Tina-side-v2','TINLEFT')]:
  face=Image.open(root/f'../../art/Tina/portraits/{src}.png').convert('RGBA');a=np.array(face)
  r,g,b=[a[:,:,i].astype(int) for i in range(3)]
+ a[a[:,:,:3].max(axis=(1,2))<40,:,3]=0
  a[((b-r>20)&(b-g>20)&(b>35))|((r<5)&(g<5)&(b<5)&(np.indices(r.shape)[0]<22)),3]=0
  a[a[:,:,3]==0,:3]=0;face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/f'mod/PATCHES/{name}.png')
  defs.append(f'Graphic {name}, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/{name}.png", 0, 0 }}\n')

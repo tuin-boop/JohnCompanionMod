@@ -125,27 +125,27 @@ Sprite HIMKN0, 240, 76
 Graphic HIKFACE, 1254, 1254 { XScale 27.26086956521739 YScale 25.591836734693878 Patch "PATCHES/HIKFACE.png", 0, 0 }
 Graphic HIKLEFT, 1254, 1254 { XScale 27.26086956521739 YScale 25.591836734693878 Patch "PATCHES/HIKLEFT.png", 0, 0 }
 Graphic HIKRIGHT, 1254, 1254 { XScale 27.26086956521739 YScale 25.591836734693878 Patch "PATCHES/HIKRIGHT.png", 0, 0 }
-Sprite TINAA1, 105, 172
-{ XScale 3.00000000 YScale 3.00000000 Offset 52, 170 Patch "PATCHES/Tina/0-0.png", 0, 0 {} }
-Sprite TINAA2, 114, 173
-{ XScale 3.00000000 YScale 3.00000000 Offset 57, 171 Patch "PATCHES/Tina/0-1.png", 0, 0 { FlipX } }
-Sprite TINAA3, 104, 173
-{ XScale 3.00000000 YScale 3.00000000 Offset 52, 171 Patch "PATCHES/Tina/0-2.png", 0, 0 { FlipX } }
-Sprite TINAA4, 99, 171
-{ XScale 3.00000000 YScale 3.00000000 Offset 49, 169 Patch "PATCHES/Tina/0-3.png", 0, 0 { FlipX } }
+Sprite TINAA1, 106, 172
+{ XScale 3.00000000 YScale 3.00000000 Offset 53, 170 Patch "PATCHES/Tina/0-0.png", 0, 0 {} }
+Sprite TINAA2, 116, 172
+{ XScale 3.00000000 YScale 3.00000000 Offset 58, 170 Patch "PATCHES/Tina/0-1.png", 0, 0 { FlipX } }
+Sprite TINAA3, 106, 173
+{ XScale 3.00000000 YScale 3.00000000 Offset 53, 171 Patch "PATCHES/Tina/0-2.png", 0, 0 { FlipX } }
+Sprite TINAA4, 100, 171
+{ XScale 3.00000000 YScale 3.00000000 Offset 50, 169 Patch "PATCHES/Tina/0-3.png", 0, 0 { FlipX } }
 Sprite TINAA5, 103, 173
 { XScale 3.00000000 YScale 3.00000000 Offset 51, 171 Patch "PATCHES/Tina/0-4.png", 0, 0 {} }
-Sprite TINAA6, 99, 171
-{ XScale 3.00000000 YScale 3.00000000 Offset 49, 169 Patch "PATCHES/Tina/0-3.png", 0, 0 {} }
-Sprite TINAA7, 104, 173
-{ XScale 3.00000000 YScale 3.00000000 Offset 52, 171 Patch "PATCHES/Tina/0-2.png", 0, 0 {} }
-Sprite TINAA8, 114, 173
-{ XScale 3.00000000 YScale 3.00000000 Offset 57, 171 Patch "PATCHES/Tina/0-1.png", 0, 0 {} }
+Sprite TINAA6, 100, 171
+{ XScale 3.00000000 YScale 3.00000000 Offset 50, 169 Patch "PATCHES/Tina/0-3.png", 0, 0 {} }
+Sprite TINAA7, 106, 173
+{ XScale 3.00000000 YScale 3.00000000 Offset 53, 171 Patch "PATCHES/Tina/0-2.png", 0, 0 {} }
+Sprite TINAA8, 116, 172
+{ XScale 3.00000000 YScale 3.00000000 Offset 58, 170 Patch "PATCHES/Tina/0-1.png", 0, 0 {} }
 Sprite TINAB1, 103, 168
 { XScale 3.00000000 YScale 3.00000000 Offset 51, 166 Patch "PATCHES/Tina/1-0.png", 0, 0 {} }
-Sprite TINAB2, 116, 170
-{ XScale 3.00000000 YScale 3.00000000 Offset 58, 168 Patch "PATCHES/Tina/1-1.png", 0, 0 { FlipX } }
-Sprite TINAB3, 110, 171
+Sprite TINAB2, 115, 170
+{ XScale 3.00000000 YScale 3.00000000 Offset 57, 168 Patch "PATCHES/Tina/1-1.png", 0, 0 { FlipX } }
+Sprite TINAB3, 111, 171
 { XScale 3.00000000 YScale 3.00000000 Offset 55, 169 Patch "PATCHES/Tina/1-2.png", 0, 0 { FlipX } }
 Sprite TINAB4, 104, 169
 { XScale 3.00000000 YScale 3.00000000 Offset 52, 167 Patch "PATCHES/Tina/1-3.png", 0, 0 { FlipX } }
@@ -153,102 +153,102 @@ Sprite TINAB5, 102, 171
 { XScale 3.00000000 YScale 3.00000000 Offset 51, 169 Patch "PATCHES/Tina/1-4.png", 0, 0 {} }
 Sprite TINAB6, 104, 169
 { XScale 3.00000000 YScale 3.00000000 Offset 52, 167 Patch "PATCHES/Tina/1-3.png", 0, 0 {} }
-Sprite TINAB7, 110, 171
+Sprite TINAB7, 111, 171
 { XScale 3.00000000 YScale 3.00000000 Offset 55, 169 Patch "PATCHES/Tina/1-2.png", 0, 0 {} }
-Sprite TINAB8, 116, 170
-{ XScale 3.00000000 YScale 3.00000000 Offset 58, 168 Patch "PATCHES/Tina/1-1.png", 0, 0 {} }
-Sprite TINAC1, 93, 174
-{ XScale 3.00000000 YScale 3.00000000 Offset 46, 172 Patch "PATCHES/Tina/2-0.png", 0, 0 {} }
-Sprite TINAC2, 115, 176
-{ XScale 3.00000000 YScale 3.00000000 Offset 57, 174 Patch "PATCHES/Tina/2-1.png", 0, 0 { FlipX } }
-Sprite TINAC3, 108, 176
-{ XScale 3.00000000 YScale 3.00000000 Offset 54, 174 Patch "PATCHES/Tina/2-2.png", 0, 0 { FlipX } }
-Sprite TINAC4, 102, 175
-{ XScale 3.00000000 YScale 3.00000000 Offset 51, 173 Patch "PATCHES/Tina/2-3.png", 0, 0 { FlipX } }
-Sprite TINAC5, 101, 177
-{ XScale 3.00000000 YScale 3.00000000 Offset 50, 175 Patch "PATCHES/Tina/2-4.png", 0, 0 {} }
-Sprite TINAC6, 102, 175
-{ XScale 3.00000000 YScale 3.00000000 Offset 51, 173 Patch "PATCHES/Tina/2-3.png", 0, 0 {} }
-Sprite TINAC7, 108, 176
-{ XScale 3.00000000 YScale 3.00000000 Offset 54, 174 Patch "PATCHES/Tina/2-2.png", 0, 0 {} }
-Sprite TINAC8, 115, 176
-{ XScale 3.00000000 YScale 3.00000000 Offset 57, 174 Patch "PATCHES/Tina/2-1.png", 0, 0 {} }
-Sprite TINAD1, 83, 182
-{ XScale 3.00000000 YScale 3.00000000 Offset 41, 180 Patch "PATCHES/Tina/3-0.png", 0, 0 {} }
-Sprite TINAD2, 102, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 51, 179 Patch "PATCHES/Tina/3-1.png", 0, 0 { FlipX } }
+Sprite TINAB8, 115, 170
+{ XScale 3.00000000 YScale 3.00000000 Offset 57, 168 Patch "PATCHES/Tina/1-1.png", 0, 0 {} }
+Sprite TINAC1, 94, 174
+{ XScale 3.00000000 YScale 3.00000000 Offset 47, 172 Patch "PATCHES/Tina/2-0.png", 0, 0 {} }
+Sprite TINAC2, 116, 176
+{ XScale 3.00000000 YScale 3.00000000 Offset 58, 174 Patch "PATCHES/Tina/2-1.png", 0, 0 { FlipX } }
+Sprite TINAC3, 109, 175
+{ XScale 3.00000000 YScale 3.00000000 Offset 54, 173 Patch "PATCHES/Tina/2-2.png", 0, 0 { FlipX } }
+Sprite TINAC4, 103, 174
+{ XScale 3.00000000 YScale 3.00000000 Offset 51, 172 Patch "PATCHES/Tina/2-3.png", 0, 0 { FlipX } }
+Sprite TINAC5, 102, 178
+{ XScale 3.00000000 YScale 3.00000000 Offset 51, 176 Patch "PATCHES/Tina/2-4.png", 0, 0 {} }
+Sprite TINAC6, 103, 174
+{ XScale 3.00000000 YScale 3.00000000 Offset 51, 172 Patch "PATCHES/Tina/2-3.png", 0, 0 {} }
+Sprite TINAC7, 109, 175
+{ XScale 3.00000000 YScale 3.00000000 Offset 54, 173 Patch "PATCHES/Tina/2-2.png", 0, 0 {} }
+Sprite TINAC8, 116, 176
+{ XScale 3.00000000 YScale 3.00000000 Offset 58, 174 Patch "PATCHES/Tina/2-1.png", 0, 0 {} }
+Sprite TINAD1, 84, 182
+{ XScale 3.00000000 YScale 3.00000000 Offset 42, 180 Patch "PATCHES/Tina/3-0.png", 0, 0 {} }
+Sprite TINAD2, 102, 182
+{ XScale 3.00000000 YScale 3.00000000 Offset 51, 180 Patch "PATCHES/Tina/3-1.png", 0, 0 { FlipX } }
 Sprite TINAD3, 104, 182
 { XScale 3.00000000 YScale 3.00000000 Offset 52, 180 Patch "PATCHES/Tina/3-2.png", 0, 0 { FlipX } }
-Sprite TINAD4, 98, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 49, 179 Patch "PATCHES/Tina/3-3.png", 0, 0 { FlipX } }
-Sprite TINAD5, 84, 182
+Sprite TINAD4, 98, 182
+{ XScale 3.00000000 YScale 3.00000000 Offset 49, 180 Patch "PATCHES/Tina/3-3.png", 0, 0 { FlipX } }
+Sprite TINAD5, 85, 182
 { XScale 3.00000000 YScale 3.00000000 Offset 42, 180 Patch "PATCHES/Tina/3-4.png", 0, 0 {} }
-Sprite TINAD6, 98, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 49, 179 Patch "PATCHES/Tina/3-3.png", 0, 0 {} }
+Sprite TINAD6, 98, 182
+{ XScale 3.00000000 YScale 3.00000000 Offset 49, 180 Patch "PATCHES/Tina/3-3.png", 0, 0 {} }
 Sprite TINAD7, 104, 182
 { XScale 3.00000000 YScale 3.00000000 Offset 52, 180 Patch "PATCHES/Tina/3-2.png", 0, 0 {} }
-Sprite TINAD8, 102, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 51, 179 Patch "PATCHES/Tina/3-1.png", 0, 0 {} }
-Sprite TINAE1, 113, 178
-{ XScale 3.00000000 YScale 3.00000000 Offset 56, 176 Patch "PATCHES/Tina/4-0.png", 0, 0 {} }
-Sprite TINAE2, 121, 179
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 177 Patch "PATCHES/Tina/4-1.png", 0, 0 { FlipX } }
-Sprite TINAE3, 120, 180
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 178 Patch "PATCHES/Tina/4-2.png", 0, 0 { FlipX } }
+Sprite TINAD8, 102, 182
+{ XScale 3.00000000 YScale 3.00000000 Offset 51, 180 Patch "PATCHES/Tina/3-1.png", 0, 0 {} }
+Sprite TINAE1, 114, 179
+{ XScale 3.00000000 YScale 3.00000000 Offset 57, 177 Patch "PATCHES/Tina/4-0.png", 0, 0 {} }
+Sprite TINAE2, 122, 179
+{ XScale 3.00000000 YScale 3.00000000 Offset 61, 177 Patch "PATCHES/Tina/4-1.png", 0, 0 { FlipX } }
+Sprite TINAE3, 121, 179
+{ XScale 3.00000000 YScale 3.00000000 Offset 60, 177 Patch "PATCHES/Tina/4-2.png", 0, 0 { FlipX } }
 Sprite TINAE4, 109, 178
 { XScale 3.00000000 YScale 3.00000000 Offset 54, 176 Patch "PATCHES/Tina/4-3.png", 0, 0 { FlipX } }
-Sprite TINAE5, 102, 180
-{ XScale 3.00000000 YScale 3.00000000 Offset 51, 178 Patch "PATCHES/Tina/4-4.png", 0, 0 {} }
+Sprite TINAE5, 104, 180
+{ XScale 3.00000000 YScale 3.00000000 Offset 52, 178 Patch "PATCHES/Tina/4-4.png", 0, 0 {} }
 Sprite TINAE6, 109, 178
 { XScale 3.00000000 YScale 3.00000000 Offset 54, 176 Patch "PATCHES/Tina/4-3.png", 0, 0 {} }
-Sprite TINAE7, 120, 180
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 178 Patch "PATCHES/Tina/4-2.png", 0, 0 {} }
-Sprite TINAE8, 121, 179
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 177 Patch "PATCHES/Tina/4-1.png", 0, 0 {} }
-Sprite TINAF1, 127, 180
-{ XScale 3.00000000 YScale 3.00000000 Offset 63, 178 Patch "PATCHES/Tina/5-0.png", 0, 0 {} }
-Sprite TINAF2, 163, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 81, 179 Patch "PATCHES/Tina/5-1.png", 0, 0 { FlipX } }
-Sprite TINAF3, 172, 182
-{ XScale 3.00000000 YScale 3.00000000 Offset 86, 180 Patch "PATCHES/Tina/5-2.png", 0, 0 { FlipX } }
-Sprite TINAF4, 152, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 76, 179 Patch "PATCHES/Tina/5-3.png", 0, 0 { FlipX } }
-Sprite TINAF5, 102, 180
-{ XScale 3.00000000 YScale 3.00000000 Offset 51, 178 Patch "PATCHES/Tina/4-4.png", 0, 0 {} }
-Sprite TINAF6, 152, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 76, 179 Patch "PATCHES/Tina/5-3.png", 0, 0 {} }
-Sprite TINAF7, 172, 182
-{ XScale 3.00000000 YScale 3.00000000 Offset 86, 180 Patch "PATCHES/Tina/5-2.png", 0, 0 {} }
-Sprite TINAF8, 163, 181
-{ XScale 3.00000000 YScale 3.00000000 Offset 81, 179 Patch "PATCHES/Tina/5-1.png", 0, 0 {} }
-Sprite TINAG1, 120, 187
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 185 Patch "PATCHES/Tina/6-0.png", 0, 0 {} }
-Sprite TINAG2, 110, 190
-{ XScale 3.00000000 YScale 3.00000000 Offset 55, 188 Patch "PATCHES/Tina/6-1.png", 0, 0 { FlipX } }
-Sprite TINAG3, 120, 185
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 183 Patch "PATCHES/Tina/6-2.png", 0, 0 { FlipX } }
-Sprite TINAG4, 95, 187
-{ XScale 3.00000000 YScale 3.00000000 Offset 47, 185 Patch "PATCHES/Tina/6-3.png", 0, 0 { FlipX } }
-Sprite TINAG5, 91, 185
-{ XScale 3.00000000 YScale 3.00000000 Offset 45, 183 Patch "PATCHES/Tina/6-4.png", 0, 0 {} }
-Sprite TINAG6, 95, 187
-{ XScale 3.00000000 YScale 3.00000000 Offset 47, 185 Patch "PATCHES/Tina/6-3.png", 0, 0 {} }
-Sprite TINAG7, 120, 185
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 183 Patch "PATCHES/Tina/6-2.png", 0, 0 {} }
-Sprite TINAG8, 110, 190
-{ XScale 3.00000000 YScale 3.00000000 Offset 55, 188 Patch "PATCHES/Tina/6-1.png", 0, 0 {} }
-Sprite TINAI0, 165, 176
-{ XScale 3.00000000 YScale 3.00000000 Offset 82, 174 Patch "PATCHES/Tina/7-0.png", 0, 0 {} }
-Sprite TINAJ0, 120, 156
-{ XScale 3.00000000 YScale 3.00000000 Offset 60, 154 Patch "PATCHES/Tina/7-1.png", 0, 0 {} }
+Sprite TINAE7, 121, 179
+{ XScale 3.00000000 YScale 3.00000000 Offset 60, 177 Patch "PATCHES/Tina/4-2.png", 0, 0 {} }
+Sprite TINAE8, 122, 179
+{ XScale 3.00000000 YScale 3.00000000 Offset 61, 177 Patch "PATCHES/Tina/4-1.png", 0, 0 {} }
+Sprite TINAF1, 127, 181
+{ XScale 3.00000000 YScale 3.00000000 Offset 63, 179 Patch "PATCHES/Tina/5-0.png", 0, 0 {} }
+Sprite TINAF2, 163, 182
+{ XScale 3.00000000 YScale 3.00000000 Offset 81, 180 Patch "PATCHES/Tina/5-1.png", 0, 0 { FlipX } }
+Sprite TINAF3, 171, 183
+{ XScale 3.00000000 YScale 3.00000000 Offset 85, 181 Patch "PATCHES/Tina/5-2.png", 0, 0 { FlipX } }
+Sprite TINAF4, 151, 181
+{ XScale 3.00000000 YScale 3.00000000 Offset 75, 179 Patch "PATCHES/Tina/5-3.png", 0, 0 { FlipX } }
+Sprite TINAF5, 104, 180
+{ XScale 3.00000000 YScale 3.00000000 Offset 52, 178 Patch "PATCHES/Tina/4-4.png", 0, 0 {} }
+Sprite TINAF6, 151, 181
+{ XScale 3.00000000 YScale 3.00000000 Offset 75, 179 Patch "PATCHES/Tina/5-3.png", 0, 0 {} }
+Sprite TINAF7, 171, 183
+{ XScale 3.00000000 YScale 3.00000000 Offset 85, 181 Patch "PATCHES/Tina/5-2.png", 0, 0 {} }
+Sprite TINAF8, 163, 182
+{ XScale 3.00000000 YScale 3.00000000 Offset 81, 180 Patch "PATCHES/Tina/5-1.png", 0, 0 {} }
+Sprite TINAG1, 121, 188
+{ XScale 3.00000000 YScale 3.00000000 Offset 60, 186 Patch "PATCHES/Tina/6-0.png", 0, 0 {} }
+Sprite TINAG2, 109, 191
+{ XScale 3.00000000 YScale 3.00000000 Offset 54, 189 Patch "PATCHES/Tina/6-1.png", 0, 0 { FlipX } }
+Sprite TINAG3, 119, 186
+{ XScale 3.00000000 YScale 3.00000000 Offset 59, 184 Patch "PATCHES/Tina/6-2.png", 0, 0 { FlipX } }
+Sprite TINAG4, 95, 188
+{ XScale 3.00000000 YScale 3.00000000 Offset 47, 186 Patch "PATCHES/Tina/6-3.png", 0, 0 { FlipX } }
+Sprite TINAG5, 92, 186
+{ XScale 3.00000000 YScale 3.00000000 Offset 46, 184 Patch "PATCHES/Tina/6-4.png", 0, 0 {} }
+Sprite TINAG6, 95, 188
+{ XScale 3.00000000 YScale 3.00000000 Offset 47, 186 Patch "PATCHES/Tina/6-3.png", 0, 0 {} }
+Sprite TINAG7, 119, 186
+{ XScale 3.00000000 YScale 3.00000000 Offset 59, 184 Patch "PATCHES/Tina/6-2.png", 0, 0 {} }
+Sprite TINAG8, 109, 191
+{ XScale 3.00000000 YScale 3.00000000 Offset 54, 189 Patch "PATCHES/Tina/6-1.png", 0, 0 {} }
+Sprite TINAI0, 167, 177
+{ XScale 3.00000000 YScale 3.00000000 Offset 83, 175 Patch "PATCHES/Tina/7-0.png", 0, 0 {} }
+Sprite TINAJ0, 120, 157
+{ XScale 3.00000000 YScale 3.00000000 Offset 60, 155 Patch "PATCHES/Tina/7-1.png", 0, 0 {} }
 Sprite TINAK0, 149, 141
 { XScale 3.00000000 YScale 3.00000000 Offset 74, 139 Patch "PATCHES/Tina/7-2.png", 0, 0 {} }
 Sprite TINAL0, 184, 133
 { XScale 3.00000000 YScale 3.00000000 Offset 92, 131 Patch "PATCHES/Tina/7-3.png", 0, 0 {} }
-Sprite TINAM0, 215, 80
-{ XScale 3.00000000 YScale 3.00000000 Offset 107, 78 Patch "PATCHES/Tina/7-4.png", 0, 0 {} }
-Sprite TINAN0, 215, 80
-{ XScale 3.00000000 YScale 3.00000000 Offset 107, 78 Patch "PATCHES/Tina/7-4.png", 0, 0 {} }
+Sprite TINAM0, 215, 82
+{ XScale 3.00000000 YScale 3.00000000 Offset 107, 80 Patch "PATCHES/Tina/7-4.png", 0, 0 {} }
+Sprite TINAN0, 215, 82
+{ XScale 3.00000000 YScale 3.00000000 Offset 107, 80 Patch "PATCHES/Tina/7-4.png", 0, 0 {} }
 Sprite KARNA1, 88, 186
 { XScale 3.25000000 YScale 3.25000000 Offset 44, 184 Patch "PATCHES/Karin/0-0.png", 0, 0 {} }
 Sprite KARNA2, 100, 186
@@ -746,8 +746,8 @@ Sprite ESTHM0, 217, 99
 { XScale 3.35714286 YScale 3.35714286 Offset 108, 97 Patch "PATCHES/Esther/6-4.png", 0, 0 {} }
 Sprite ESTHN0, 217, 99
 { XScale 3.35714286 YScale 3.35714286 Offset 108, 97 Patch "PATCHES/Esther/6-4.png", 0, 0 {} }
-Graphic TINFACE, 204, 227 { XScale 4.434782608695652 YScale 4.63265306122449 Patch "PATCHES/TINFACE.png", 0, 0 }
-Graphic TINLEFT, 192, 204 { XScale 4.173913043478261 YScale 4.163265306122449 Patch "PATCHES/TINLEFT.png", 0, 0 }
+Graphic TINFACE, 1124, 1148 { XScale 24.434782608695652 YScale 23.428571428571427 Patch "PATCHES/TINFACE.png", 0, 0 }
+Graphic TINLEFT, 1022, 1062 { XScale 22.217391304347824 YScale 21.6734693877551 Patch "PATCHES/TINLEFT.png", 0, 0 }
 Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }
 Graphic TUINFACE, 953, 1208 { XScale 20.717391304347824 YScale 24.653061224489797 Patch "PATCHES/TUINFACE.png", 0, 0 }
 Graphic ESTFACE, 1119, 1109 { XScale 24.32608695652174 YScale 22.632653061224488 Patch "PATCHES/ESTFACE.png", 0, 0 }
