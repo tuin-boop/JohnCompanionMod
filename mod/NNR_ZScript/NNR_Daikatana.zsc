@@ -292,3 +292,5 @@ class NNR_DKZeusTracer : Actor
 
 class NNR_CarmackLevelKillCounter : NNR_JohnLevelKillCounter {}
 class NNR_CarmackKillCounter : NNR_JohnKillCounter {}
+
+class NNR_JayLevelKillCounter : NNR_JohnLevelKillCounter {}

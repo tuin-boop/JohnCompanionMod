@@ -1,0 +1,261 @@
+// Original fictional game banter, inspired by interviews; not authentic quotes.
+class NNR_CompanionBanter : EventHandler
+{
+ int NextLine[MAXPLAYERS];int NextIdle[MAXPLAYERS];int PersonalReady[MAXPLAYERS*3];
+ int LastChoice[MAXPLAYERS*3*25];String Message[MAXPLAYERS];int MessageUntil[MAXPLAYERS];int Speaker[MAXPLAYERS];
+ bool Introduced[MAXPLAYERS];
+ static String Line(int member,int category,int variant)
+ {
+  static const String lines[]={
+   "New map. Let us find the good fights.",
+   "All right. Show me the layout.",
+   "That wall looks suspicious.",
+   "Good maps always give you somewhere to move.",
+   "I have this angle covered.",
+   "Let them come through this doorway.",
+   "That is one way to finish an encounter.",
+   "Keep moving. There is always another room.",
+   "Imp down. Watch the next fireball.",
+   "Those imps love a good ambush.",
+   "Cyberdemon down! Now THAT was a fight.",
+   "That rocket launcher needs a new owner.",
+   "One less giant spider running the place.",
+   "That was a serious chaingun problem.",
+   "Arch-vile down. Keep those corpses down.",
+   "No more resurrection tricks.",
+   "Revenant down. Check for stray rockets.",
+   "That skeleton had enough screen time.",
+   "Caco down. Clear skies.",
+   "One less floating target.",
+   "Pinky down. Keep your escape route open.",
+   "That charge needed more room.",
+   "Shotgun. Still feels right.",
+   "A good shotgun makes a good entrance.",
+   "Two barrels. That is the whole argument.",
+   "The super shotgun never gets old.",
+   "A little chaingun crowd control.",
+   "Keep them flinching. Keep moving.",
+   "That rocket opened up the room.",
+   "Rocket launcher. Give it some space.",
+   "Plasma makes a nice light show.",
+   "That is how you clear a firing lane.",
+   "BFG. Now we are playtesting.",
+   "That room needed a BFG.",
+   "Sometimes you finish the fight up close.",
+   "The glove did the talking.",
+   "That hammer has some weight behind it.",
+   "A hammer makes its own opening.",
+   "Nice angle on that discus.",
+   "That discus found its mark.",
+   "Venom did the job.",
+   "That is a nasty little weapon.",
+   "Three shots. Plenty of attitude.",
+   "The trident likes a crowded room.",
+   "Sunflare. Turn up the heat.",
+   "That corner needed some fire.",
+   "Eye of Zeus. Big finish.",
+   "That is an excellent room-clearing tool.",
+   "Boss down. Find the exit.",
+   "That encounter had a proper ending.",
+   "Let us see how this level behaves.",
+   "I will watch the firing lanes.",
+   "There is probably a simpler route.",
+   "Visibility is doing a lot of work here.",
+   "Stationary fire is easier to control.",
+   "This position gives us a useful sightline.",
+   "One less active problem.",
+   "That resolves the immediate obstruction.",
+   "Imp down. The projectile was predictable.",
+   "Simple fireball pattern. Still worth respecting.",
+   "Cyberdemon down. Sustained fire solved it.",
+   "Large health pool. Finite, fortunately.",
+   "Spider Mastermind down. Fire rate is not everything.",
+   "That removes a substantial source of incoming fire.",
+   "Arch-vile down. Stop the resurrection loop first.",
+   "Removing the source prevents repeated work.",
+   "Revenant down. Tracking projectiles still need clearance.",
+   "The skeleton is gone. Its rocket may not be.",
+   "Cacodemon down. Slow targets still need tracking.",
+   "That frees up some airspace.",
+   "Pinky down. A very direct movement strategy.",
+   "The charge was predictable.",
+   "Shotgun spread is useful at this distance.",
+   "A simple weapon with a useful distribution.",
+   "Two barrels trade range for immediate output.",
+   "Good result for one trigger pull.",
+   "Sustained fire keeps the target occupied.",
+   "The chaingun gives fairly consistent feedback.",
+   "Rocket impact. Distance matters.",
+   "Splash damage changes the geometry of the fight.",
+   "Plasma offers useful sustained output.",
+   "Keep the stream on target.",
+   "The BFG is an efficient answer to a dense group.",
+   "That reduced the active target count considerably.",
+   "The glove requires a rather small working distance.",
+   "Contact confirmed.",
+   "The hammer trades reach for impact.",
+   "That was a fairly direct force calculation.",
+   "Discus trajectory was good.",
+   "Angle of approach mattered there.",
+   "Venom reached the target.",
+   "That delivery mechanism worked.",
+   "The trident distributes its output well.",
+   "Three projectiles improve coverage.",
+   "Sunflare makes that area less usable.",
+   "Area control is useful here.",
+   "Zeus provides substantial output.",
+   "That was an effective use of the heavy weapon.",
+   "Boss eliminated. Reassess the remaining targets.",
+   "The largest constraint is gone.",
+   "All right, team. Let us get this shipped.",
+   "You handle the route. I will cover you.",
+   "Hell could use a better distribution plan.",
+   "I have seen worse working conditions. Barely.",
+   "I will hold the fort. You keep things moving.",
+   "Consider this our temporary office.",
+   "One less item on the agenda.",
+   "That is some measurable progress.",
+   "Imp down. Small problem, closed.",
+   "That imp failed the pitch meeting.",
+   "Cyberdemon down. That was a major expense.",
+   "Someone just lost their entire rocket budget.",
+   "Spider Mastermind down. Management has changed.",
+   "That is one hostile takeover settled.",
+   "Arch-vile down. No reopening closed business.",
+   "Stop bringing back work we already finished.",
+   "Revenant down. No follow-up meeting needed.",
+   "That skeleton was all overhead.",
+   "Cacodemon down. Air freight cancelled.",
+   "That floating sales pitch went nowhere.",
+   "Pinky down. Aggressive approach, poor results.",
+   "That was not a sustainable growth strategy.",
+   "Shotgun. Reliable return on investment.",
+   "Keep it simple. Keep it effective.",
+   "Two barrels. Package deal.",
+   "That is what I call a bundle.",
+   "Chaingun. High-volume distribution.",
+   "We can handle bulk orders.",
+   "Rocket delivered. No signature required.",
+   "Express delivery to Hell.",
+   "Plasma. Moving units at a healthy rate.",
+   "That is a steady supply line.",
+   "BFG. Budget approved.",
+   "Sometimes you spend big to finish the job.",
+   "The glove keeps overhead low.",
+   "That was a hands-on demonstration.",
+   "Hammer. Deal closed.",
+   "Sometimes negotiations need a little impact.",
+   "Discus delivered right on schedule.",
+   "That is a different distribution channel.",
+   "Venom. Not a product you want returned.",
+   "The demonstration seems convincing.",
+   "Trident. Three for one.",
+   "That package has excellent coverage.",
+   "Sunflare. Now that is a hot launch.",
+   "We have made an impression.",
+   "Zeus. The premium package.",
+   "That purchase just justified itself.",
+   "Boss down. On to the next milestone.",
+   "That is a big item off the schedule."
+  };
+  return lines[member*50+category*2+variant];
+ }
+ static int EnemyCategory(Actor victim)
+ {
+  if(victim is "Cyberdemon")return 5;
+  if(victim is "SpiderMastermind")return 6;
+  if(victim is "Archvile")return 7;
+  if(victim is "Revenant")return 8;
+  if(victim is "Cacodemon")return 9;
+  if(victim is "Demon" || victim is "Spectre")return 10;
+  if(victim is "DoomImp")return 4;
+  if(victim.bBOSS)return 24;
+  return 3;
+ }
+ static int WeaponCategory(NNR_JohnMarine john,Actor inflictor)
+ {
+  // Use the projectile that hit, even if its owner has since switched weapons.
+  if(inflictor is "FriendRocketProjectile")return 14;
+  if(inflictor is "FriendPlasmaBall")return 15;
+  if(inflictor is "FriendBFGBall")return 16;
+  if(inflictor is "NNR_DKHammerShockwave")return 18;
+  if(inflictor is "NNR_DKDiscusProjectile" || inflictor is "NNR_DKDiscusSpark")return 19;
+  if(inflictor is "NNR_DKVenomProjectile" || inflictor is "NNR_DKVenomPuff")return 20;
+  if(inflictor is "NNR_DKTridentProjectile" || inflictor is "NNR_DKTridentShockwave")return 21;
+  if(inflictor is "NNR_DKSunflareProjectile" || inflictor is "NNR_DKEmber")return 22;
+  if(inflictor is "NNR_DKZeusProjectile" || inflictor is "NNR_DKZeusTracer")return 23;
+  return john.LastWeaponCategory;
+ }
+ bool Say(NNR_JohnMarine john,int category)
+ {
+  if(!CVar.FindCVar("blnk_banter").GetBool() || !john || !john.master || !john.master.player || john.health<=0 || !john.bSHOOTABLE)return false;
+  int who=john.master.PlayerNumber();if(who<0 || who>=MAXPLAYERS)return false;
+  int member=john.IsJay()?2:john.IsCarmack()?1:0;
+  if(level.time<NextLine[who] || level.time<PersonalReady[who*3+member])return false;
+  // Do not place text chatter on top of a long interview/voice clip.
+  if(john.CompanionVoiceBusy())return false;
+  int key=(who*3+member)*25+category;
+  int variant=Random[NNRBanter](0,1);
+  if(LastChoice[key]==variant+1)variant=1-variant;
+  LastChoice[key]=variant+1;
+  Message[who]=Line(member,category,variant);Speaker[who]=member;MessageUntil[who]=level.time+245;
+  NextLine[who]=level.time+Random[NNRBanter](30,50)*35;
+  PersonalReady[who*3+member]=level.time+75*35;
+  NextIdle[who]=level.time+Random[NNRBanter](90,150)*35;
+  return true;
+ }
+ void OnKill(NNR_JohnMarine john,Actor victim,Actor inflictor)
+ {
+  if(!victim || victim.bFRIENDLY || !victim.bISMONSTER)return;
+  int enemy=EnemyCategory(victim);
+  bool boss=enemy==5 || enemy==6 || enemy==24;
+  if(Random[NNRBanter](0,99)>=(boss?85:12))return;
+  int category=enemy;
+  if(!boss && Random[NNRBanter](0,99)<40)
+  {
+   int weapon=WeaponCategory(john,inflictor);
+   if(weapon>=11 && weapon<=23)category=weapon;
+  }
+  Say(john,category);
+ }
+ override void WorldTick()
+ {
+  if(level.MapName=="TITLEMAP" || level.time%35!=0)return;
+  for(int who=0;who<MAXPLAYERS;who++)
+  {
+   if(!playeringame[who] || !players[who].mo || players[who].mo.health<=0)continue;
+   if(level.time<NextIdle[who] || level.time<NextLine[who])continue;
+   if(level.time<350)continue;
+   NextIdle[who]=level.time+35*15;
+   NNR_JohnMarine selected;let it=ThinkerIterator.Create("NNR_JohnMarine");NNR_JohnMarine a;int count=0;
+   while((a=NNR_JohnMarine(it.Next()))!=null)
+   {
+    if(a.master!=players[who].mo || !a.bSHOOTABLE || a.health<=0 || a.Distance3D(a.master)>2048)continue;
+    if(a.CombatTarget(a.target) || level.time-a.LastShotTime<175)continue;
+    int member=a.IsJay()?2:a.IsCarmack()?1:0;
+    if(level.time<PersonalReady[who*3+member])continue;
+    count++;if(Random[NNRBanter](1,count)==1)selected=a;
+   }
+   if(selected && Say(selected,Introduced[who]?(selected.Camping?2:1):0))Introduced[who]=true;
+  }
+ }
+ override void RenderOverlay(RenderEvent e)
+ {
+  if(level.MapName=="TITLEMAP" || Menu.GetCurrentMenu()!=null || !CVar.FindCVar("blnk_banter").GetBool())return;
+  int who=consoleplayer;if(who<0 || who>=MAXPLAYERS || level.time>=MessageUntil[who])return;
+  int member=Speaker[who];int team=CVar.FindCVar("blnk_companions").GetInt();
+  if(member==0 && team!=0 && team!=2 && team!=4)return;
+  if(member==1 && team!=1 && team!=2 && team!=5)return;
+  if(member==2 && team<3)return;
+  String name=member==2?"JAY WILBUR":member==1?"CARMACK":"ROMERO";
+  int color=member==2?Font.CR_GOLD:member==1?Font.CR_LIGHTBLUE:Font.CR_GREEN;
+  double alpha=Min(1.,(MessageUntil[who]-level.time)/35.0);
+  Screen.DrawText(SmallFont,color,8,18,String.Format("%s:",name),DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_KeepRatio,true,DTA_Alpha,alpha);
+  let lines=SmallFont.BreakLines(Message[who],390);
+  for(int i=0;i<lines.Count();i++)
+  {
+   Screen.DrawText(SmallFont,Font.CR_BLACK,9,29+i*9,lines.StringAt(i),DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_KeepRatio,true,DTA_Alpha,alpha);
+   Screen.DrawText(SmallFont,Font.CR_WHITE,8,28+i*9,lines.StringAt(i),DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_KeepRatio,true,DTA_Alpha,alpha);
+  }
+ }
+}

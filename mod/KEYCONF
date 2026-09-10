@@ -13,3 +13,8 @@ alias +nnr_campro "netevent nnr_campro 1"
 alias -nnr_campro "netevent nnr_campro 0"
 alias +nnr_campca "netevent nnr_campca 1"
 alias -nnr_campca "netevent nnr_campca 0"
+
+addmenukey "Jay Wilbur teleport and camp (10 sec)" "+nnr_campjay"
+defaultbind j "+nnr_campjay"
+alias +nnr_campjay "netevent nnr_campjay 1"
+alias -nnr_campjay "netevent nnr_campjay 0"

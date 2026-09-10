@@ -4,6 +4,7 @@ class NNR_JohnMarine : actor
     {
         return GetCVar("blnk_both") == 0 && (GetCVar("blnk_bodyskin") == 2 || (GetCVar("blnk_bodyskin") == 4 || GetCVar("blnk_bodyskin") == 5));
     }
+    virtual bool IsJay() { return false; }
     int NextCarmackSpeech;
     int VoiceUntil;
     int LastCarmackClip;
@@ -41,6 +42,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
     }
     void A_RomeroVoice(Sound sound, int channel = CHAN_VOICE, int flags = CHANF_DEFAULT, double volume = 1, double attenuation = ATTN_NORM)
     {
+        if (IsJay()) return;
         if (IsCarmack())
         {
             // Full interviews fit idle/kill chatter, not a death reaction.
@@ -51,6 +53,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
     }
 
     int LastShotTime;
+    int LastWeaponCategory;
     int NextTargetScan;
     int VisibleThreats;
     bool CombatTarget(Actor a)
@@ -105,8 +108,9 @@ case 5: clip="carmack/line5"; duration=2421; break;
         CloseSettled = false;
         if (!HoldsPosition() || !master || master.health <= 0) return false;
         if (!Camping && !CheckSight(master)) return true;
-        double behind = master.radius + radius + 24;
+        double behind = master.radius + radius + (IsJay() ? 64 : 24);
         double side = GetCVar("blnk_both") ? (IsCarmack() ? 28 : -28) : 0;
+        if (IsJay()) side = 0;
         Vector2 forward = (cos(master.angle), sin(master.angle));
         Vector2 right = (-forward.Y, forward.X);
         Vector2 goal = master.pos.XY - forward * behind + right * side;
@@ -246,9 +250,10 @@ case 5: clip="carmack/line5"; duration=2421; break;
         if (frame >= 0 && frame <= 3 && (pos.XY-positionBeforeTick).Length() < 0.01)
             frame = 0;
         // Appearance changes do not restart states or alter weapon behavior.
-        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK"))
+        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK") || sprite == GetSpriteIndex("JAYW"))
         {
-            if (IsCarmack())
+            if (IsJay()) sprite = GetSpriteIndex("JAYW");
+            else if (IsCarmack())
             {
                 bool later = GetCVar("blnk_both") != 0 ? GetCVar("blnk_duocarmack") == 1 : (GetCVar("blnk_bodyskin") == 4 || GetCVar("blnk_bodyskin") == 5);
                 if ((GetCVar("blnk_both") != 0 ? GetCVar("blnk_duocarmack") == 2 : GetCVar("blnk_bodyskin") == 5)) sprite = GetSpriteIndex("SWMK");
@@ -437,6 +442,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			IdleTic = 0;
 			A_StartSound("glove/fire", CHAN_WEAPON);
+            LastWeaponCategory = 17;
 			A_CustomMeleeAttack(random(6,10), "glove/hit");
 			A_AlertMonsters(0, AMF_TARGETEMITTER);
 		}
@@ -450,6 +456,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			IdleTic = 0;
 			A_StartSound("hammer/swing", CHAN_WEAPON);
+            LastWeaponCategory = 18;
 			A_CustomMeleeAttack(25, "hammer/swing");
 			A_SpawnItemEx("NNR_DKHammerShockwave", 28, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPOINTERS);
 			A_AlertMonsters(0, AMF_TARGETEMITTER);
@@ -463,6 +470,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			IdleTic = 0;
 			A_StartSound("disc/fire", CHAN_WEAPON);
+            LastWeaponCategory = 19;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKDiscusProjectile");
 			A_AlertMonsters(0, AMF_TARGETEMITTER);
@@ -472,6 +480,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			A_StartSound("disc/fire", CHAN_WEAPON);
+            LastWeaponCategory = 19;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKDiscusProjectile");
 		}
@@ -480,6 +489,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			A_StartSound("disc/fire", CHAN_WEAPON);
+            LastWeaponCategory = 19;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKDiscusProjectile");
 		}
@@ -492,6 +502,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			IdleTic = 0;
 			A_StartSound("venom/fire", CHAN_WEAPON);
+            LastWeaponCategory = 20;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKVenomProjectile");
 			A_AlertMonsters(0, AMF_TARGETEMITTER);
@@ -505,6 +516,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			IdleTic = 0;
 			A_StartSound("trident/fire", CHAN_WEAPON);
+            LastWeaponCategory = 21;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKTridentProjectile");
 			A_AlertMonsters(0, AMF_TARGETEMITTER);
@@ -514,6 +526,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			A_StartSound("trident/fire", CHAN_WEAPON);
+            LastWeaponCategory = 21;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKTridentProjectile");
 		}
@@ -522,6 +535,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			A_StartSound("trident/fire", CHAN_WEAPON);
+            LastWeaponCategory = 21;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKTridentProjectile");
 		}
@@ -534,6 +548,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			IdleTic = 0;
 			A_StartSound("flare/fire", CHAN_WEAPON);
+            LastWeaponCategory = 22;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKSunflareProjectile");
 			A_AlertMonsters(0, AMF_TARGETEMITTER);
@@ -550,6 +565,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			IdleTic = 0;
 			A_StartSound("zeuseye/fire", CHAN_WEAPON);
 			A_Quake(4, 12, 0, 300);
+            LastWeaponCategory = 23;
 			LastShotTime = level.time;
 			A_SpawnProjectile("NNR_DKZeusProjectile");
 			A_AlertMonsters(0, AMF_TARGETEMITTER);
@@ -567,6 +583,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			CompanionVelocity(random(2,10), random(-10,10), random(1,2),CVF_RELATIVE);
 			A_FaceTarget();
 			A_AlertMonsters(0,AMF_TARGETEMITTER);
+            LastWeaponCategory = 11;
 			LastShotTime = level.time;
 			A_CustomBulletAttack(5.6, 0, 7, 4, "FriendMarinePuff");
 		}
@@ -583,6 +600,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			IdleTic = 0;
 			A_StartSound ("weapons/sshotf", CHAN_WEAPON);
+            LastWeaponCategory = 12;
 			LastShotTime = level.time;
 			A_CustomBulletAttack (11.2, 7.1, 20, 4, "FriendMarinePuff");
 			A_AlertMonsters(0,AMF_TARGETEMITTER);
@@ -605,6 +623,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();	
 			IdleTic = 0;
 			A_StartSound("weapons/chngun", CHAN_WEAPON);
+            LastWeaponCategory = 13;
 			LastShotTime = level.time;
 			A_CustomBulletAttack(5.6, 0, 1, 4, "FriendMarinePuff");
 			A_AlertMonsters(0,AMF_TARGETEMITTER);
@@ -617,6 +636,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();	
 			A_StartSound("weapons/chngun", CHAN_WEAPON);
+            LastWeaponCategory = 13;
 			LastShotTime = level.time;
 			A_CustomBulletAttack(5.6, 0, 1, 4, "FriendMarinePuff");
 		}
@@ -625,6 +645,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();	
 			A_StartSound("weapons/chngun", CHAN_WEAPON);
+            LastWeaponCategory = 13;
 			LastShotTime = level.time;
 			A_CustomBulletAttack(5.6, 0, 1, 4, "FriendMarinePuff");
 			A_AlertMonsters(0,AMF_TARGETEMITTER);
@@ -637,6 +658,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();	
 			A_StartSound("weapons/chngun", CHAN_WEAPON);
+            LastWeaponCategory = 13;
 			LastShotTime = level.time;
 			A_CustomBulletAttack(5.6, 0, 1, 4, "FriendMarinePuff");
 			A_AlertMonsters(0,AMF_TARGETEMITTER);
@@ -651,6 +673,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			IdleTic = 0;
+            LastWeaponCategory = 14;
 			LastShotTime = level.time;
 			A_SpawnProjectile("FriendRocketProjectile");
 			CompanionVelocity(random(2,10), random(-10,10), random(1,2),CVF_RELATIVE);
@@ -664,6 +687,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			IdleTic = 0;
+            LastWeaponCategory = 15;
 			LastShotTime = level.time;
 			A_SpawnProjectile("FriendPlasmaBall");
 			CompanionVelocity(random(2,10), random(-10,10), random(1,2),CVF_RELATIVE);
@@ -674,6 +698,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			A_FaceTarget();
+            LastWeaponCategory = 15;
 			LastShotTime = level.time;
 			A_SpawnProjectile("FriendPlasmaBall");
 			A_AlertMonsters(0,AMF_TARGETEMITTER);
@@ -683,6 +708,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			A_FaceTarget();
+            LastWeaponCategory = 15;
 			LastShotTime = level.time;
 			A_SpawnProjectile("FriendPlasmaBall");
 			CompanionVelocity(random(2,10), random(-10,10), random(1,2),CVF_RELATIVE);
@@ -693,6 +719,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 		{
 			A_FaceTarget();
 			A_FaceTarget();
+            LastWeaponCategory = 15;
 			LastShotTime = level.time;
 			A_SpawnProjectile("FriendPlasmaBall");
 			A_AlertMonsters(0,AMF_TARGETEMITTER);
@@ -712,6 +739,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
 			A_FaceTarget();
 			A_FaceTarget();
 			IdleTic = 0;
+            LastWeaponCategory = 16;
 			LastShotTime = level.time;
 			A_SpawnProjectile("FriendBFGBall");
 			CompanionVelocity(random(2,10), random(-10,10), random(1,2),CVF_RELATIVE);
@@ -756,4 +784,11 @@ case 5: clip="carmack/line5"; duration=2421; break;
 class NNR_CarmackMarine : NNR_JohnMarine
 {
     override bool IsCarmack() { return true; }
+}
+
+class NNR_JayMarine : NNR_JohnMarine
+{
+ override bool IsCarmack() { return false; }
+ override bool IsJay() { return true; }
+ Default { PainSound ""; }
 }

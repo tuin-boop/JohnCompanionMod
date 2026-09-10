@@ -1,4 +1,4 @@
-OptionValue "NNR_CompanionChoice" { 0, "Romero only" 1, "Carmack only" 2, "Both" }
+OptionValue "NNR_CompanionChoice" { 0, "Romero only" 1, "Carmack only" 2, "Romero + Carmack" 3, "Jay Wilbur" 4, "Romero + Jay" 5, "Carmack + Jay" }
 OptionValue "NNR_DuoCarmack" { 0, "Young Carmack" 1, "John Carmack 2006" 2, "SwoleMack" }
 OptionValue "NNR_DuoRomero" { 0, "Present-day Romero" 1, "Daikatana-era Romero" 3, "John Romero 2005" }
 OptionValue "NNR_JohnBodySkins"
@@ -46,6 +46,7 @@ OptionMenu "blnk_options"
     JohnEra "Gray hair, glasses, and decades of Doom.", "After Doom and Quake, a new adventure:", "Blue shirt, glasses, and early id days."
     JohnEra "Back in the fight, one more map to go.", "Ion Storm's time-travelling Daikatana.", "Romero tips and voice lines are off."
     StaticText " "
+    Option "Companion chat", "blnk_banter", "OnOff"
     Option "Companion HUD", "blnk_companionhud", "OnOff"
     Option "John HUD portrait", "blnk_hudstyle", "NNR_JohnHUDStyles"
 	Option "Companion weapon set", "blnk_weaponstyle", "NNR_JohnWeaponStyles"

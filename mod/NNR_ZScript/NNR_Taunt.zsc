@@ -12,6 +12,7 @@ Class FriendTauntHandler : EventHandler
 				players[i].mo.TakeInventory("NNR_JohnLevelKillCounter", 2147483647);
                 players[i].mo.TakeInventory("NNR_CarmackLevelKillCounter", 2147483647);
                 players[i].mo.TakeInventory("NNR_CarmackKillCounter", 2147483647);
+                players[i].mo.TakeInventory("NNR_JayLevelKillCounter", 2147483647);
 
 				int previousFact = players[i].mo.CountInv("NNR_JohnFactToken");
 				int nextFact = Random(1, 100);
@@ -38,7 +39,8 @@ Class FriendTauntHandler : EventHandler
 			{
 				if (john.Master && john.Master.Player)
 				{
-					if (john.IsCarmack())
+					if (john.IsJay()) john.Master.GiveInventory("NNR_JayLevelKillCounter",1);
+                    else if (john.IsCarmack())
                     {
                         john.Master.GiveInventory("NNR_CarmackKillCounter", 1);
                         john.Master.GiveInventory("NNR_CarmackLevelKillCounter", 1);
@@ -49,6 +51,8 @@ Class FriendTauntHandler : EventHandler
                         john.Master.GiveInventory("NNR_JohnLevelKillCounter", 1);
                     }
 				}
+                let chat=NNR_CompanionBanter(EventHandler.Find("NNR_CompanionBanter"));
+                if(chat)chat.OnKill(john,victim,e.Inflictor);
 				If(Random(0,100) <= 25 || Victim.bBOSS) 
 				{ 
 					john.A_RomeroVoice("yohn/laugh", CHAN_VOICE, CHANF_DEFAULT, 1, ATTN_NONE);
@@ -104,6 +108,15 @@ Class NNR_JohnHUDHandler : EventHandler
 		}
 	}
 
+
+    ui void DrawJayHud(int y)
+    {
+            Screen.DrawTexture(TexMan.CheckForTexture(FaceFrame==0?"JAYLEFT":FaceFrame==2?"JAYRIGHT":"JAYFACE",TexMan.Type_Any),false,584,y,
+                DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_DestWidth,46,DTA_DestHeight,49,DTA_LeftOffset,0,DTA_TopOffset,0,DTA_KeepRatio,true);
+            String jayKills=String.Format("JAY  KILLS: %d",players[consoleplayer].mo.CountInv("NNR_JayLevelKillCounter"));
+            Screen.DrawText(SmallFont,Font.CR_GOLD,632-SmallFont.StringWidth(jayKills),y+52,jayKills,
+                DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_KeepRatio,true);
+    }
 	Override void RenderOverlay(RenderEvent e)
 	{
         if (!CVar.FindCVar("blnk_companionhud").GetBool()) return;
@@ -111,6 +124,7 @@ Class NNR_JohnHUDHandler : EventHandler
         if (Menu.GetCurrentMenu() is "NNR_CompanionPreviewMenu") return;
 		if (consoleplayer < 0 || !players[consoleplayer].mo) return;
 
+        if(CVar.FindCVar("blnk_companions").GetInt()==3){DrawJayHud(6);return;}
 		CVar hudStyle = CVar.FindCVar("blnk_hudstyle");
 		bool classic = hudStyle && hudStyle.GetInt() != 0;
 		String faceName = classic ? "JHCCENTR" : "JHFCENTR";
@@ -152,6 +166,7 @@ Class NNR_JohnHUDHandler : EventHandler
             Screen.DrawText(SmallFont, Font.CR_GOLD, 632 - SmallFont.StringWidth(cmKills), 134, cmKills,
                 DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
         }
+        if (CVar.FindCVar("blnk_jay").GetBool()) DrawJayHud(82);
 		CVar factsEnabled = CVar.FindCVar("blnk_mapfacts");
 		if (!carmack && factsEnabled && factsEnabled.GetBool() && LastFact > 0 && FactDelay <= 0 && FactTicks > 0)
 		{

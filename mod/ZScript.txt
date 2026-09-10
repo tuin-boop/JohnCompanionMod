@@ -8,3 +8,5 @@ Version "4.7.1"
 
 #include "NNR_ZScript/NNR_Skins.zsc"
 #include "NNR_ZScript/NNR_TuinCompatibility.zsc"
+
+#include "NNR_ZScript/NNR_Banter.zsc"
