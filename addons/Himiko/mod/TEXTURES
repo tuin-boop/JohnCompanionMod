@@ -498,6 +498,256 @@ Sprite FRIRM0, 194, 94
 { XScale 3.23214286 YScale 3.23214286 Offset 97, 92 Patch "PATCHES/Frier/6-4.png", 0, 0 {} }
 Sprite FRIRN0, 194, 94
 { XScale 3.23214286 YScale 3.23214286 Offset 97, 92 Patch "PATCHES/Frier/6-4.png", 0, 0 {} }
+Sprite TUINA1, 114, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 57, 194 Patch "PATCHES/Tuin/0-0.png", 0, 0 {} }
+Sprite TUINA2, 118, 197
+{ XScale 3.42857143 YScale 3.42857143 Offset 59, 195 Patch "PATCHES/Tuin/0-1.png", 0, 0 { FlipX } }
+Sprite TUINA3, 109, 197
+{ XScale 3.42857143 YScale 3.42857143 Offset 54, 195 Patch "PATCHES/Tuin/0-2.png", 0, 0 { FlipX } }
+Sprite TUINA4, 109, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 54, 194 Patch "PATCHES/Tuin/0-3.png", 0, 0 { FlipX } }
+Sprite TUINA5, 113, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 56, 194 Patch "PATCHES/Tuin/0-4.png", 0, 0 {} }
+Sprite TUINA6, 109, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 54, 194 Patch "PATCHES/Tuin/0-3.png", 0, 0 {} }
+Sprite TUINA7, 109, 197
+{ XScale 3.42857143 YScale 3.42857143 Offset 54, 195 Patch "PATCHES/Tuin/0-2.png", 0, 0 {} }
+Sprite TUINA8, 118, 197
+{ XScale 3.42857143 YScale 3.42857143 Offset 59, 195 Patch "PATCHES/Tuin/0-1.png", 0, 0 {} }
+Sprite TUINB1, 115, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 57, 193 Patch "PATCHES/Tuin/1-0.png", 0, 0 {} }
+Sprite TUINB2, 117, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 58, 193 Patch "PATCHES/Tuin/1-1.png", 0, 0 { FlipX } }
+Sprite TUINB3, 118, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 59, 194 Patch "PATCHES/Tuin/1-2.png", 0, 0 { FlipX } }
+Sprite TUINB4, 104, 199
+{ XScale 3.42857143 YScale 3.42857143 Offset 52, 197 Patch "PATCHES/Tuin/1-3.png", 0, 0 { FlipX } }
+Sprite TUINB5, 112, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 56, 193 Patch "PATCHES/Tuin/1-4.png", 0, 0 {} }
+Sprite TUINB6, 104, 199
+{ XScale 3.42857143 YScale 3.42857143 Offset 52, 197 Patch "PATCHES/Tuin/1-3.png", 0, 0 {} }
+Sprite TUINB7, 118, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 59, 194 Patch "PATCHES/Tuin/1-2.png", 0, 0 {} }
+Sprite TUINB8, 117, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 58, 193 Patch "PATCHES/Tuin/1-1.png", 0, 0 {} }
+Sprite TUINC1, 114, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 57, 193 Patch "PATCHES/Tuin/2-0.png", 0, 0 {} }
+Sprite TUINC2, 122, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 61, 194 Patch "PATCHES/Tuin/2-1.png", 0, 0 { FlipX } }
+Sprite TUINC3, 122, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 61, 196 Patch "PATCHES/Tuin/2-2.png", 0, 0 { FlipX } }
+Sprite TUINC4, 115, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 57, 196 Patch "PATCHES/Tuin/2-3.png", 0, 0 { FlipX } }
+Sprite TUINC5, 114, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 57, 196 Patch "PATCHES/Tuin/2-4.png", 0, 0 {} }
+Sprite TUINC6, 115, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 57, 196 Patch "PATCHES/Tuin/2-3.png", 0, 0 {} }
+Sprite TUINC7, 122, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 61, 196 Patch "PATCHES/Tuin/2-2.png", 0, 0 {} }
+Sprite TUINC8, 122, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 61, 194 Patch "PATCHES/Tuin/2-1.png", 0, 0 {} }
+Sprite TUIND1, 115, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 57, 193 Patch "PATCHES/Tuin/1-0.png", 0, 0 {} }
+Sprite TUIND2, 117, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 58, 193 Patch "PATCHES/Tuin/1-1.png", 0, 0 { FlipX } }
+Sprite TUIND3, 118, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 59, 194 Patch "PATCHES/Tuin/1-2.png", 0, 0 { FlipX } }
+Sprite TUIND4, 104, 199
+{ XScale 3.42857143 YScale 3.42857143 Offset 52, 197 Patch "PATCHES/Tuin/1-3.png", 0, 0 { FlipX } }
+Sprite TUIND5, 112, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 56, 193 Patch "PATCHES/Tuin/1-4.png", 0, 0 {} }
+Sprite TUIND6, 104, 199
+{ XScale 3.42857143 YScale 3.42857143 Offset 52, 197 Patch "PATCHES/Tuin/1-3.png", 0, 0 {} }
+Sprite TUIND7, 118, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 59, 194 Patch "PATCHES/Tuin/1-2.png", 0, 0 {} }
+Sprite TUIND8, 117, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 58, 193 Patch "PATCHES/Tuin/1-1.png", 0, 0 {} }
+Sprite TUINE1, 137, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 68, 186 Patch "PATCHES/Tuin/3-0.png", 0, 0 {} }
+Sprite TUINE2, 145, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 72, 186 Patch "PATCHES/Tuin/3-1.png", 0, 0 { FlipX } }
+Sprite TUINE3, 153, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 76, 186 Patch "PATCHES/Tuin/3-2.png", 0, 0 { FlipX } }
+Sprite TUINE4, 131, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 187 Patch "PATCHES/Tuin/3-3.png", 0, 0 { FlipX } }
+Sprite TUINE5, 130, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 186 Patch "PATCHES/Tuin/3-4.png", 0, 0 {} }
+Sprite TUINE6, 131, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 187 Patch "PATCHES/Tuin/3-3.png", 0, 0 {} }
+Sprite TUINE7, 153, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 76, 186 Patch "PATCHES/Tuin/3-2.png", 0, 0 {} }
+Sprite TUINE8, 145, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 72, 186 Patch "PATCHES/Tuin/3-1.png", 0, 0 {} }
+Sprite TUINF1, 171, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 85, 187 Patch "PATCHES/Tuin/4-0.png", 0, 0 {} }
+Sprite TUINF2, 170, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 85, 187 Patch "PATCHES/Tuin/4-1.png", 0, 0 { FlipX } }
+Sprite TUINF3, 183, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 91, 187 Patch "PATCHES/Tuin/4-2.png", 0, 0 { FlipX } }
+Sprite TUINF4, 139, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 187 Patch "PATCHES/Tuin/4-3.png", 0, 0 { FlipX } }
+Sprite TUINF5, 130, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 186 Patch "PATCHES/Tuin/3-4.png", 0, 0 {} }
+Sprite TUINF6, 139, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 187 Patch "PATCHES/Tuin/4-3.png", 0, 0 {} }
+Sprite TUINF7, 183, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 91, 187 Patch "PATCHES/Tuin/4-2.png", 0, 0 {} }
+Sprite TUINF8, 170, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 85, 187 Patch "PATCHES/Tuin/4-1.png", 0, 0 {} }
+Sprite TUING1, 111, 185
+{ XScale 3.42857143 YScale 3.42857143 Offset 55, 183 Patch "PATCHES/Tuin/5-0.png", 0, 0 {} }
+Sprite TUING2, 111, 179
+{ XScale 3.42857143 YScale 3.42857143 Offset 55, 177 Patch "PATCHES/Tuin/5-1.png", 0, 0 { FlipX } }
+Sprite TUING3, 102, 178
+{ XScale 3.42857143 YScale 3.42857143 Offset 51, 176 Patch "PATCHES/Tuin/5-2.png", 0, 0 { FlipX } }
+Sprite TUING4, 113, 181
+{ XScale 3.42857143 YScale 3.42857143 Offset 56, 179 Patch "PATCHES/Tuin/5-3.png", 0, 0 { FlipX } }
+Sprite TUING5, 106, 181
+{ XScale 3.42857143 YScale 3.42857143 Offset 53, 179 Patch "PATCHES/Tuin/5-4.png", 0, 0 {} }
+Sprite TUING6, 113, 181
+{ XScale 3.42857143 YScale 3.42857143 Offset 56, 179 Patch "PATCHES/Tuin/5-3.png", 0, 0 {} }
+Sprite TUING7, 102, 178
+{ XScale 3.42857143 YScale 3.42857143 Offset 51, 176 Patch "PATCHES/Tuin/5-2.png", 0, 0 {} }
+Sprite TUING8, 111, 179
+{ XScale 3.42857143 YScale 3.42857143 Offset 55, 177 Patch "PATCHES/Tuin/5-1.png", 0, 0 {} }
+Sprite TUINI0, 137, 193
+{ XScale 3.42857143 YScale 3.42857143 Offset 68, 191 Patch "PATCHES/Tuin/6-0.png", 0, 0 {} }
+Sprite TUINJ0, 141, 163
+{ XScale 3.42857143 YScale 3.42857143 Offset 70, 161 Patch "PATCHES/Tuin/6-1.png", 0, 0 {} }
+Sprite TUINK0, 184, 152
+{ XScale 3.42857143 YScale 3.42857143 Offset 92, 150 Patch "PATCHES/Tuin/6-2.png", 0, 0 {} }
+Sprite TUINL0, 187, 126
+{ XScale 3.42857143 YScale 3.42857143 Offset 93, 124 Patch "PATCHES/Tuin/6-3.png", 0, 0 {} }
+Sprite TUINM0, 198, 104
+{ XScale 3.42857143 YScale 3.42857143 Offset 99, 102 Patch "PATCHES/Tuin/6-4.png", 0, 0 {} }
+Sprite TUINN0, 198, 104
+{ XScale 3.42857143 YScale 3.42857143 Offset 99, 102 Patch "PATCHES/Tuin/6-4.png", 0, 0 {} }
+Sprite ESTHA1, 101, 192
+{ XScale 3.35714286 YScale 3.35714286 Offset 50, 190 Patch "PATCHES/Esther/0-0.png", 0, 0 {} }
+Sprite ESTHA2, 100, 192
+{ XScale 3.35714286 YScale 3.35714286 Offset 50, 190 Patch "PATCHES/Esther/0-1.png", 0, 0 { FlipX } }
+Sprite ESTHA3, 111, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 55, 189 Patch "PATCHES/Esther/0-2.png", 0, 0 { FlipX } }
+Sprite ESTHA4, 116, 192
+{ XScale 3.35714286 YScale 3.35714286 Offset 58, 190 Patch "PATCHES/Esther/0-3.png", 0, 0 { FlipX } }
+Sprite ESTHA5, 86, 192
+{ XScale 3.35714286 YScale 3.35714286 Offset 43, 190 Patch "PATCHES/Esther/0-4.png", 0, 0 {} }
+Sprite ESTHA6, 116, 192
+{ XScale 3.35714286 YScale 3.35714286 Offset 58, 190 Patch "PATCHES/Esther/0-3.png", 0, 0 {} }
+Sprite ESTHA7, 111, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 55, 189 Patch "PATCHES/Esther/0-2.png", 0, 0 {} }
+Sprite ESTHA8, 100, 192
+{ XScale 3.35714286 YScale 3.35714286 Offset 50, 190 Patch "PATCHES/Esther/0-1.png", 0, 0 {} }
+Sprite ESTHB1, 99, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 49, 188 Patch "PATCHES/Esther/1-0.png", 0, 0 {} }
+Sprite ESTHB2, 107, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188 Patch "PATCHES/Esther/1-1.png", 0, 0 { FlipX } }
+Sprite ESTHB3, 121, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 60, 188 Patch "PATCHES/Esther/1-2.png", 0, 0 { FlipX } }
+Sprite ESTHB4, 117, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 58, 188 Patch "PATCHES/Esther/1-3.png", 0, 0 { FlipX } }
+Sprite ESTHB5, 82, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 41, 189 Patch "PATCHES/Esther/1-4.png", 0, 0 {} }
+Sprite ESTHB6, 117, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 58, 188 Patch "PATCHES/Esther/1-3.png", 0, 0 {} }
+Sprite ESTHB7, 121, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 60, 188 Patch "PATCHES/Esther/1-2.png", 0, 0 {} }
+Sprite ESTHB8, 107, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188 Patch "PATCHES/Esther/1-1.png", 0, 0 {} }
+Sprite ESTHC1, 100, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 50, 189 Patch "PATCHES/Esther/2-0.png", 0, 0 {} }
+Sprite ESTHC2, 114, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 57, 189 Patch "PATCHES/Esther/2-1.png", 0, 0 { FlipX } }
+Sprite ESTHC3, 126, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 63, 189 Patch "PATCHES/Esther/2-2.png", 0, 0 { FlipX } }
+Sprite ESTHC4, 122, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 61, 189 Patch "PATCHES/Esther/2-3.png", 0, 0 { FlipX } }
+Sprite ESTHC5, 83, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 41, 189 Patch "PATCHES/Esther/2-4.png", 0, 0 {} }
+Sprite ESTHC6, 122, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 61, 189 Patch "PATCHES/Esther/2-3.png", 0, 0 {} }
+Sprite ESTHC7, 126, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 63, 189 Patch "PATCHES/Esther/2-2.png", 0, 0 {} }
+Sprite ESTHC8, 114, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 57, 189 Patch "PATCHES/Esther/2-1.png", 0, 0 {} }
+Sprite ESTHD1, 99, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 49, 188 Patch "PATCHES/Esther/1-0.png", 0, 0 {} }
+Sprite ESTHD2, 107, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188 Patch "PATCHES/Esther/1-1.png", 0, 0 { FlipX } }
+Sprite ESTHD3, 121, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 60, 188 Patch "PATCHES/Esther/1-2.png", 0, 0 { FlipX } }
+Sprite ESTHD4, 117, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 58, 188 Patch "PATCHES/Esther/1-3.png", 0, 0 { FlipX } }
+Sprite ESTHD5, 82, 191
+{ XScale 3.35714286 YScale 3.35714286 Offset 41, 189 Patch "PATCHES/Esther/1-4.png", 0, 0 {} }
+Sprite ESTHD6, 117, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 58, 188 Patch "PATCHES/Esther/1-3.png", 0, 0 {} }
+Sprite ESTHD7, 121, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 60, 188 Patch "PATCHES/Esther/1-2.png", 0, 0 {} }
+Sprite ESTHD8, 107, 190
+{ XScale 3.35714286 YScale 3.35714286 Offset 53, 188 Patch "PATCHES/Esther/1-1.png", 0, 0 {} }
+Sprite ESTHE1, 104, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 187 Patch "PATCHES/Esther/3-0.png", 0, 0 {} }
+Sprite ESTHE2, 126, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 63, 186 Patch "PATCHES/Esther/3-1.png", 0, 0 { FlipX } }
+Sprite ESTHE3, 141, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 70, 187 Patch "PATCHES/Esther/3-2.png", 0, 0 { FlipX } }
+Sprite ESTHE4, 124, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 62, 187 Patch "PATCHES/Esther/3-3.png", 0, 0 { FlipX } }
+Sprite ESTHE5, 103, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 51, 187 Patch "PATCHES/Esther/3-4.png", 0, 0 {} }
+Sprite ESTHE6, 124, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 62, 187 Patch "PATCHES/Esther/3-3.png", 0, 0 {} }
+Sprite ESTHE7, 141, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 70, 187 Patch "PATCHES/Esther/3-2.png", 0, 0 {} }
+Sprite ESTHE8, 126, 188
+{ XScale 3.35714286 YScale 3.35714286 Offset 63, 186 Patch "PATCHES/Esther/3-1.png", 0, 0 {} }
+Sprite ESTHF1, 155, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 77, 187 Patch "PATCHES/Esther/4-0.png", 0, 0 {} }
+Sprite ESTHF2, 159, 187
+{ XScale 3.35714286 YScale 3.35714286 Offset 79, 185 Patch "PATCHES/Esther/4-1.png", 0, 0 { FlipX } }
+Sprite ESTHF3, 168, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 84, 187 Patch "PATCHES/Esther/4-2.png", 0, 0 { FlipX } }
+Sprite ESTHF4, 156, 187
+{ XScale 3.35714286 YScale 3.35714286 Offset 78, 185 Patch "PATCHES/Esther/4-3.png", 0, 0 { FlipX } }
+Sprite ESTHF5, 103, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 51, 187 Patch "PATCHES/Esther/3-4.png", 0, 0 {} }
+Sprite ESTHF6, 156, 187
+{ XScale 3.35714286 YScale 3.35714286 Offset 78, 185 Patch "PATCHES/Esther/4-3.png", 0, 0 {} }
+Sprite ESTHF7, 168, 189
+{ XScale 3.35714286 YScale 3.35714286 Offset 84, 187 Patch "PATCHES/Esther/4-2.png", 0, 0 {} }
+Sprite ESTHF8, 159, 187
+{ XScale 3.35714286 YScale 3.35714286 Offset 79, 185 Patch "PATCHES/Esther/4-1.png", 0, 0 {} }
+Sprite ESTHG1, 105, 192
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 190 Patch "PATCHES/Esther/5-0.png", 0, 0 {} }
+Sprite ESTHG2, 101, 179
+{ XScale 3.35714286 YScale 3.35714286 Offset 50, 177 Patch "PATCHES/Esther/5-1.png", 0, 0 { FlipX } }
+Sprite ESTHG3, 104, 179
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 177 Patch "PATCHES/Esther/5-2.png", 0, 0 { FlipX } }
+Sprite ESTHG4, 105, 176
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 174 Patch "PATCHES/Esther/5-3.png", 0, 0 { FlipX } }
+Sprite ESTHG5, 98, 178
+{ XScale 3.35714286 YScale 3.35714286 Offset 49, 176 Patch "PATCHES/Esther/5-4.png", 0, 0 {} }
+Sprite ESTHG6, 105, 176
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 174 Patch "PATCHES/Esther/5-3.png", 0, 0 {} }
+Sprite ESTHG7, 104, 179
+{ XScale 3.35714286 YScale 3.35714286 Offset 52, 177 Patch "PATCHES/Esther/5-2.png", 0, 0 {} }
+Sprite ESTHG8, 101, 179
+{ XScale 3.35714286 YScale 3.35714286 Offset 50, 177 Patch "PATCHES/Esther/5-1.png", 0, 0 {} }
+Sprite ESTHI0, 160, 182
+{ XScale 3.35714286 YScale 3.35714286 Offset 80, 180 Patch "PATCHES/Esther/6-0.png", 0, 0 {} }
+Sprite ESTHJ0, 163, 160
+{ XScale 3.35714286 YScale 3.35714286 Offset 81, 158 Patch "PATCHES/Esther/6-1.png", 0, 0 {} }
+Sprite ESTHK0, 187, 164
+{ XScale 3.35714286 YScale 3.35714286 Offset 93, 162 Patch "PATCHES/Esther/6-2.png", 0, 0 {} }
+Sprite ESTHL0, 207, 114
+{ XScale 3.35714286 YScale 3.35714286 Offset 103, 112 Patch "PATCHES/Esther/6-3.png", 0, 0 {} }
+Sprite ESTHM0, 217, 99
+{ XScale 3.35714286 YScale 3.35714286 Offset 108, 97 Patch "PATCHES/Esther/6-4.png", 0, 0 {} }
+Sprite ESTHN0, 217, 99
+{ XScale 3.35714286 YScale 3.35714286 Offset 108, 97 Patch "PATCHES/Esther/6-4.png", 0, 0 {} }
 Graphic TINFACE, 204, 227 { XScale 4.434782608695652 YScale 4.63265306122449 Patch "PATCHES/TINFACE.png", 0, 0 }
 Graphic TINLEFT, 192, 204 { XScale 4.173913043478261 YScale 4.163265306122449 Patch "PATCHES/TINLEFT.png", 0, 0 }
 Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }
+Graphic TUINFACE, 953, 1208 { XScale 20.717391304347824 YScale 24.653061224489797 Patch "PATCHES/TUINFACE.png", 0, 0 }
+Graphic ESTFACE, 1119, 1109 { XScale 24.32608695652174 YScale 22.632653061224488 Patch "PATCHES/ESTFACE.png", 0, 0 }

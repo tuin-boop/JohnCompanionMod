@@ -1,11 +1,11 @@
 # Extra companions addon
 
-Load the updated main mod first, then Himiko_Companion_Addon.pk3. This existing filename now contains Himiko, Tina, Karin and Frier. Open ESC > Extras or Options > Extra Companions.
+Load the updated main mod first, then Himiko_Companion_Addon.pk3. This existing filename now contains Himiko, Tina, Karin, Frier, Tuin and Esther. Open ESC > Extras or Options > Extra Companions.
 
-Use the character arrows to browse all four animated cards. Turn On/Off changes that character while preserving the other active companion. Enabling a third replaces the first active member and displays a warning. The partner arrows choose a pair with any creator or extra character; maximum two total. Tina + Karin is supported.
+Use the character arrows to browse all six animated cards. Turn On/Off changes that character while preserving the other active companion. Enabling a third replaces the first active member and displays a warning. The partner arrows choose a pair with any creator or extra character; maximum two total. Tina + Karin is supported.
 
-All four use shared AI, weapons, K/L camp controls, independent camp cooldowns, HUD names and kill counters, and end tally portraits. They do not borrow creator dialogue or voice clips. Tina uses the supplied center and side portraits. Frier has a generated portrait matching her reference. Karin currently uses a temporary portrait extracted from her idle sprite. Karin and Frier each have a seven-row source sheet sheet that reuses a walking pose for the third walk beat.
+All six use shared AI, weapons, K/L camp controls, independent camp cooldowns, HUD names and kill counters, and end tally portraits. They do not borrow creator dialogue or voice clips. Tina uses the supplied center and side portraits. Frier and Esther have generated portraits matching their references. Tuin uses the supplied portrait. Karin currently uses a temporary portrait extracted from her idle sprite. Karin, Frier, Tuin and Esther each have a seven-row source sheet that reuses a walking pose for the third walk beat.
 
 Requires the updated main PK3 shipped alongside this addon. Removing the addon hides its menu and filters absent characters out of saved teams. The title map remains the five creators.
 
-Build with Python, Pillow and NumPy: run `python addons/Himiko/build.py` from the repository root. This imports Himiko, then Tina and Karin, and packages all four. Do not use import_assets.py alone for the combined addon.
+Build with Python, Pillow and NumPy: run `python addons/Himiko/build.py` from the repository root. This imports Himiko, then the other five extras, and packages all six. Do not use import_assets.py alone for the combined addon.

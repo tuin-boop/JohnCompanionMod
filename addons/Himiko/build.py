@@ -1,4 +1,4 @@
-"""Build all four extra companions. Source art stays at its original resolution."""
+"""Build all six extra companions. Source art stays at its original resolution."""
 from pathlib import Path
 import runpy
 from PIL import Image
@@ -7,7 +7,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 root=Path(__file__).resolve().parent
 ctx=runpy.run_path(str(root/'import_assets.py'))
 runs=ctx['runs'];defs=[]
-for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7)]:
+for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7)]:
  im=Image.open(root/f'../../art/{name}/{name}-Sprite-Sheet.png').convert('RGBA')
  a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
  a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0
@@ -45,8 +45,24 @@ r,g,b=[a[:,:,i].astype(int) for i in range(3)]
 a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0;a[a[:,:,3]==0,:3]=0
 face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/'mod/PATCHES/FRIFACE.png')
 defs.append(f'Graphic FRIFACE, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/FRIFACE.png", 0, 0 }}\n')
+for who,texture in [('Tuin','TUINFACE'),('Esther','ESTFACE')]:
+ face=Image.open(root/f'../../art/{who}/{who}-Portrait.png').convert('RGBA');a=np.array(face)
+ if who=='Tuin':
+  # Remove only border-connected black background, preserving eyes and dark facial shading.
+  from collections import deque
+  mask=(a[:,:,:3].max(axis=2)<28);seen=np.zeros(mask.shape,dtype=bool);h,w=mask.shape
+  todo=deque([(x,0) for x in range(w)]+[(x,h-1) for x in range(w)]+[(0,y) for y in range(h)]+[(w-1,y) for y in range(h)])
+  while todo:
+   x,y=todo.popleft()
+   if x<0 or y<0 or x>=w or y>=h or seen[y,x] or not mask[y,x]:continue
+   seen[y,x]=True;todo.extend([(x-1,y),(x+1,y),(x,y-1),(x,y+1)])
+  a[seen,3]=0
+ else:
+  r,g,b=[a[:,:,i].astype(int) for i in range(3)];a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0
+ a[a[:,:,3]==0,:3]=0;face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/f'mod/PATCHES/{texture}.png')
+ defs.append(f'Graphic {texture}, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/{texture}.png", 0, 0 }}\n')
 with (root/'mod/TEXTURES').open('a') as f:f.write(''.join(defs))
 with ZipFile(root/'../../dist/Himiko_Companion_Addon.pk3','w',ZIP_DEFLATED) as z:
  for f in sorted((root/'mod').rglob('*')):
   if f.is_file():z.write(f,f.relative_to(root/'mod').as_posix())
-print('Packaged Himiko, Tina, Karin and Frier.')
+print('Packaged all six extras.')
