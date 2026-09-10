@@ -312,3 +312,13 @@ class NNR_EstherLevelKillCounter : NNR_JohnLevelKillCounter {}
 class NNR_KumiLevelKillCounter : NNR_JohnLevelKillCounter {}
 
 class NNR_ErnieLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_StewieLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_BrianLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_SpongeBobLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_PatrickLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_PeterLevelKillCounter : NNR_JohnLevelKillCounter {}

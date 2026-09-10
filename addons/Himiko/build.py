@@ -1,4 +1,4 @@
-"""Build all eight extra companions. Source art stays at its original resolution."""
+"""Build all thirteen extra companions. Source art stays at its original resolution."""
 from pathlib import Path
 import runpy
 from PIL import Image
@@ -7,17 +7,25 @@ from zipfile import ZipFile, ZIP_DEFLATED
 root=Path(__file__).resolve().parent
 ctx=runpy.run_path(str(root/'import_assets.py'))
 runs=ctx['runs'];defs=[]
-for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7),('Kumi','KUMI',7),('Ernie','ERNI',7)]:
+for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7),('Kumi','KUMI',7),('Ernie','ERNI',7),('Stewie','STEW',7),('Brian','BRIN',7),('SpongeBob','SPNG',7),('Patrick','PTRK',7),('Peter','PETR',7)]:
  im=Image.open(root/f'../../art/{name}/{name}-Sprite-Sheet.png').convert('RGBA')
  a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
  key_delta=65 if name=="Tina" else 12
- if name in ("Kumi","Ernie"):a[(b-r>20)&(b-g>20)&(b>35),3]=0
+ if name in ("Stewie","Patrick","Peter"):a[(b-r>70)&(b-g>70)&(b>120),3]=0
+ elif name in ("Kumi","Ernie","Brian","SpongeBob"):a[(b-r>20)&(b-g>20)&(b>35),3]=0
  else:a[(r-g>key_delta)&(b-g>key_delta)&(r>25)&(b>25),3]=0
  a[a[:,:,3]==0,:3]=0;im=Image.fromarray(a)
  ys=runs((a[:,:,3]>0).sum(axis=1)>5);assert len(ys)==expected,(name,ys)
  arts={};out=root/f'mod/PATCHES/{name}';out.mkdir(exist_ok=True)
  for row,(top,bottom) in enumerate(ys):
   strip=im.crop((0,top,im.width,bottom));xs=runs((np.array(strip)[:,:,3]>0).sum(axis=0)>1)
+  if name in ('Patrick','Peter') and row in (3,4):
+   # Water droplets are disconnected from the hand; keep them with their cell.
+   grouped=[]
+   for left,right in xs:
+    if grouped and left-grouped[-1][1]<=24:grouped[-1]=(grouped[-1][0],right)
+    else:grouped.append((left,right))
+   xs=grouped
   assert len(xs)==5,(name,row,xs)
   for col,(left,right) in enumerate(xs):
    cell=strip.crop((left,0,right,strip.height));cell=cell.crop(cell.getbbox())
@@ -34,12 +42,13 @@ for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR
    if name=='Ernie' and frame=='E' and col in (2,3):source=0 # use no-flash ready pose for these angles
    sprite(frame,rot,source,col,flip)
  for frame,col in zip('IJKLMN',[0,1,2,3,4,4]):sprite(frame,0,expected-1,col)
- if name=='Karin':
+ if name in ('Karin','Stewie','Brian','SpongeBob','Patrick','Peter'):
   # Temporary in-style portrait from the idle sprite until a supplied HUD portrait arrives.
-  head=arts[0,0];head=head.crop((0,0,head.width,int(head.height*.30)));head=head.crop(head.getbbox())
-  head.save(root/'mod/PATCHES/KRNFACE.png')
-  defs.append(f'Graphic KRNFACE, {head.width}, {head.height} {{ XScale {head.width/46} YScale {head.height/49} Patch "PATCHES/KRNFACE.png", 0, 0 }}\n')
-for src,name in [('Tina-center-v2','TINFACE'),('Tina-side-v2','TINLEFT')]:
+  head=arts[0,0];head=head.crop((0,0,head.width,int(head.height*({'Stewie':.55,'Brian':.43,'SpongeBob':.36,'Patrick':.43,'Peter':.34}.get(name,.30)))));head=head.crop(head.getbbox())
+  texture={'Karin':'KRNFACE','Stewie':'STWFACE','Brian':'BRIFACE','SpongeBob':'SPGFACE','Patrick':'PATFACE','Peter':'PETFACE'}[name]
+  head.save(root/f'mod/PATCHES/{texture}.png')
+  defs.append(f'Graphic {texture}, {head.width}, {head.height} {{ XScale {head.width/46} YScale {head.height/49} Patch "PATCHES/{texture}.png", 0, 0 }}\n')
+for src,name in [('Tina-center-v3','TINFACE'),('Tina-side-v3','TINLEFT')]:
  face=Image.open(root/f'../../art/Tina/portraits/{src}.png').convert('RGBA');a=np.array(face)
  r,g,b=[a[:,:,i].astype(int) for i in range(3)]
  a[a[:,:,:3].max(axis=(1,2))<40,:,3]=0
@@ -74,4 +83,4 @@ with (root/'mod/TEXTURES').open('a') as f:f.write(''.join(defs))
 with ZipFile(root/'../../dist/Himiko_Companion_Addon.pk3','w',ZIP_DEFLATED) as z:
  for f in sorted((root/'mod').rglob('*')):
   if f.is_file():z.write(f,f.relative_to(root/'mod').as_posix())
-print('Packaged all eight extras.')
+print('Packaged all thirteen extras.')

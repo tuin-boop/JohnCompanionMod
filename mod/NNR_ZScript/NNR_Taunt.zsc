@@ -23,6 +23,11 @@ Class FriendTauntHandler : EventHandler
  players[i].mo.TakeInventory("NNR_EstherLevelKillCounter",2147483647);
  players[i].mo.TakeInventory("NNR_KumiLevelKillCounter",2147483647);
  players[i].mo.TakeInventory("NNR_ErnieLevelKillCounter",2147483647);
+ players[i].mo.TakeInventory("NNR_PeterLevelKillCounter",2147483647);
+ players[i].mo.TakeInventory("NNR_PatrickLevelKillCounter",2147483647);
+ players[i].mo.TakeInventory("NNR_SpongeBobLevelKillCounter",2147483647);
+ players[i].mo.TakeInventory("NNR_BrianLevelKillCounter",2147483647);
+ players[i].mo.TakeInventory("NNR_StewieLevelKillCounter",2147483647);
 
 				int previousFact = players[i].mo.CountInv("NNR_JohnFactToken");
 				int nextFact = Random(1, 100);
