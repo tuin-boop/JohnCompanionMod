@@ -5,7 +5,10 @@ from zipfile import ZipFile
 root=Path(__file__).resolve().parent
 im=Image.open(root/'art/Himiko-Sprite-Sheet.png').convert('RGBA')
 a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
-a[(r>100)&(b>100)&(r-g>65)&(b-g>65),3]=0
+# Include dark magenta fringe pixels, not just the bright background.
+# Cyan tubes have more green than red and remain untouched.
+a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0
+a[a[:,:,3]==0,:3]=0
 im=Image.fromarray(a)
 def runs(v):
  out=[];start=None
