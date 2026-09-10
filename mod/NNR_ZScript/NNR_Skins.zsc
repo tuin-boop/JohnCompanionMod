@@ -274,10 +274,10 @@ class NNR_StyledCompanionMenu : NNR_CompanionPreviewMenu
         Label(x+16,130,jay?"JAY WILBUR":carmack?"CARMACK SKIN":"ROMERO SKIN",Font.CR_LIGHTBLUE,1.6);
         Label(x+16,151,title,Font.CR_WHITE,1.5);
         Label(x+16,179,detail,Font.CR_GRAY,1.0);
-        Label(x+16,221,active?(camping?"CAMPING":"ACTIVE"):"OFF",active?Font.CR_GREEN:Font.CR_GRAY,1.6);
+        Label(x+16,221,active?(camping?"CAMPING":"IN YOUR TEAM"):"PREVIEW ONLY",active?Font.CR_GREEN:Font.CR_GRAY,1.6);
         int toggle=jay?13:carmack?16:15;
         Panel(x+12,245,164,32,choice==toggle);
-        Label(x+22,256,active?"TURN OFF":"TURN ON",active?Font.CR_GREEN:Font.CR_CYAN,1.6);
+        Label(x+22,256,active?"ENABLED: YES":"ENABLED: NO",active?Font.CR_GREEN:Font.CR_GRAY,1.6);
         if(!jay)
         {
             Panel(x+12,286,164,28,choice==index);
@@ -291,7 +291,7 @@ class NNR_StyledCompanionMenu : NNR_CompanionPreviewMenu
             Vector2 size=TexMan.GetScaledSize(tex);
             double h=114,w=h*size.X/Max(1.,size.Y);
             Screen.DrawTexture(tex,false,px+(x+237-w/2)*uiScale,py+200*uiScale,
-                DTA_DestWidth,int(w*uiScale),DTA_DestHeight,int(h*uiScale),DTA_LeftOffset,0,DTA_TopOffset,0);
+                DTA_DestWidth,int(w*uiScale),DTA_DestHeight,int(h*uiScale),DTA_LeftOffset,0,DTA_TopOffset,0,DTA_Alpha,active?1.0:0.35);
         }
     }
     override void Drawer()
