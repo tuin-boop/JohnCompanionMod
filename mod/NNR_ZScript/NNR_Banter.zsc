@@ -288,7 +288,7 @@ class NNR_CompanionBanter : EventHandler
  }
  bool Say(NNR_JohnMarine john,int category)
  {
-  if(!CVar.FindCVar("blnk_banter").GetBool() || !john || !john.master || !john.master.player || john.health<=0 || !john.bSHOOTABLE)return false;
+  if(!CVar.FindCVar("blnk_banter").GetBool() || !john || john.Member()>5 || !john.master || !john.master.player || john.health<=0 || !john.bSHOOTABLE)return false;
   int who=john.master.PlayerNumber();if(who<0 || who>=MAXPLAYERS)return false;
   int member=john.Member()-1;
   if(level.time<NextLine[who] || level.time<PersonalReady[who*5+member])return false;
@@ -330,7 +330,7 @@ class NNR_CompanionBanter : EventHandler
    NNR_JohnMarine selected;let it=ThinkerIterator.Create("NNR_JohnMarine");NNR_JohnMarine a;int count=0;
    while((a=NNR_JohnMarine(it.Next()))!=null)
    {
-    if(a.master!=players[who].mo || !a.bSHOOTABLE || a.health<=0 || a.Distance3D(a.master)>2048)continue;
+    if(a.Member()>5 || a.master!=players[who].mo || !a.bSHOOTABLE || a.health<=0 || a.Distance3D(a.master)>2048)continue;
     if(a.CombatTarget(a.target) || level.time-a.LastShotTime<175)continue;
     int member=a.Member()-1;
     if(level.time<PersonalReady[who*5+member])continue;

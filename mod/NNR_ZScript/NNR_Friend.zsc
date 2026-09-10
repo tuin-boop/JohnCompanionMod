@@ -45,7 +45,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
     }
     void A_RomeroVoice(Sound sound, int channel = CHAN_VOICE, int flags = CHANF_DEFAULT, double volume = 1, double attenuation = ATTN_NORM)
     {
-        if (IsJay() || IsTom() || IsAdrian()) return;
+        if (Member()>5 || IsJay() || IsTom() || IsAdrian()) return;
         if (IsCarmack())
         {
             // Full interviews fit idle/kill chatter, not a death reaction.

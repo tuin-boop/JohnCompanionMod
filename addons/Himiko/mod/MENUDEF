@@ -1,0 +1,20 @@
+OptionValue "HimikoTeams" {
+ 16, "Himiko only"
+ 17, "Romero + Himiko"
+ 18, "John Carmack + Himiko"
+ 19, "Jay Wilbur + Himiko"
+ 20, "Tom Hall + Himiko"
+ 21, "Adrian Carmack + Himiko"
+ 6, "No companions"
+}
+AddOptionMenu "OptionsMenu" { Submenu "Extra Companions: Himiko", "HimikoOptions" }
+AddListMenu "MainMenu" { TextItem "Extras", "e", "HimikoOptions" }
+OptionMenu "HimikoOptions" {
+ Class "NNR_HimikoMenu"
+ Title "Extra Companions: Himiko"
+ StaticText "Himiko addon loaded", gold
+ Option "Team (maximum 2)", "blnk_companions", "HimikoTeams"
+ StaticText "Left/right selects Himiko alone or a pair."
+ StaticText "Use Companion Control to return to a creator-only team."
+ StaticText "K/L: aim camp. F7: follow / distance."
+}

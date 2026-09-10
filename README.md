@@ -73,3 +73,7 @@ Each character card has a separate Turn On / Turn Off button. Skin controls only
 Young Adrian Carmack wears a dark teal shirt, glasses and long brown hair. His three supplied 1254-pixel portraits drive the HUD and tally without downsampling. He has his own kill counter and camp cooldown, with his own text banter and no borrowed voice recordings. `tools/import_adrian.py` regenerates his assets using Pillow and NumPy. `tests/adrian-test.zs` checks all 16 roster choices, both camp slots, menu replacement, and asset registration.
 
 Adrian also has a Present-day skin: short brown-gray hair, thick dark glasses, gray stubble and a black Quake shirt. Change Skin on his card switches the live companion and title display without altering the team. His existing supplied HUD portrait remains in use pending the new portrait artwork. The title camera follows a slow 36-degree arc around the lineup, moving back and forth over about 34 seconds while looking inward; status labels track each character.
+
+## Optional character addons
+
+Load [Himiko_Companion_Addon.pk3](dist/Himiko_Companion_Addon.pk3) after the updated main PK3. ESC > Extras opens her animated character card and partner selector. Maximum two companions. See [addon instructions](addons/Himiko/README.md). The main ESC menu now uses the supplied five-creator background.

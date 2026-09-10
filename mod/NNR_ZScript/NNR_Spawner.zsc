@@ -30,6 +30,7 @@ Class FriendSpawnHandler : EventHandler
             for(int slot=0;slot<2;slot++){
                 int member=NNR_Team.Slot(selected,slot);if(!member || (found&(1<<(member-1))))continue;
                 class<Actor> kind=member==5?"NNR_AdrianMarine":member==4?"NNR_TomMarine":member==3?"NNR_JayMarine":member==2?"NNR_CarmackMarine":"NNR_JohnMarine";
+                if(member==6){String extra="NNR_HimikoMarine";kind=(class<Actor>)(extra);}
                 let a=Actor.Spawn(kind,players[i].mo.pos);if(a){a.master=players[i].mo;a.Warp(a.master,-64,slot==0?-40:40,0,0,WARPF_STOP|WARPF_TOFLOOR);a.A_FaceMaster();}
             }
         }

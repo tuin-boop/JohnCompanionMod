@@ -1,0 +1,65 @@
+version "4.8"
+class NNR_HimikoMarine : NNR_JohnMarine {
+ override int Member(){return 6;}
+ Default { PainSound ""; }
+ override void Tick(){Super.Tick();sprite=GetSpriteIndex("HIMK");}
+}
+class NNR_HimikoRegistry : Actor { States { Spawn: HIMK ABCDEFGIJKLMN -1;Stop; } }
+
+class NNR_HimikoMenu : NNR_StyledCompanionMenu {
+ int partner;
+ override void Init(Menu parent,OptionMenuDescriptor desc){
+ Super.Init(parent,desc);int mask=NNR_Team.Mask(Value("blnk_companions"))&31;
+ for(int m=1;m<=5;m++)if(mask&(1<<(m-1))){partner=m;break;}
+ }
+ void Apply(int delta){
+ if(choice==2){MenuSound("menu/change");return;}
+ bool active=(NNR_Team.Mask(Value("blnk_companions"))&32)!=0;
+ if(choice==1){partner=(partner+delta+6)%6;if(active)CVar.FindCVar("blnk_companions").SetInt(16+partner);}
+ else CVar.FindCVar("blnk_companions").SetInt(active?NNR_Team.Mode(partner>0?1<<(partner-1):0):16+partner);
+ MenuSound("menu/change");
+ }
+ override void Drawer(){
+ Layout();hasDrawn=true;
+ Screen.Dim(Color(2,9,21),.98,int(px),int(py),int(1000*uiScale),int(690*uiScale));
+ Label(24,24,"EXTRA COMPANIONS",Font.CR_WHITE,2.8);
+ Label(24,70,"CHOOSE YOUR TEAM - MAXIMUM 2",Font.CR_CYAN,1.7);
+ Panel(24,114,440,480);
+ Label(48,136,"< HIMIKO >",choice==2?Font.CR_CYAN:Font.CR_WHITE,2.6);
+ Label(370,142,"1 / 1",Font.CR_GRAY,1.4);
+ Label(48,174,"COMPANION ADDON",Font.CR_GRAY,1.5);
+ String pose=PreviewTics%28<7?"A":PreviewTics%28<14?"B":PreviewTics%28<21?"C":"D";
+ TextureID pic=TexMan.CheckForTexture("HIMK"..pose.."8",TexMan.Type_Sprite);
+ Screen.DrawTexture(pic,false,px+205*uiScale,py+220*uiScale,DTA_DestWidth,int(160*uiScale),DTA_DestHeight,int(220*uiScale),DTA_LeftOffset,0,DTA_TopOffset,0);
+ bool active=(NNR_Team.Mask(Value("blnk_companions"))&32)!=0;
+ Label(48,468,active?"ENABLED":"DISABLED",active?Font.CR_GREEN:Font.CR_GRAY,2);
+ Panel(48,520,390,46,choice==0);Label(64,534,active?"TURN OFF":"TURN ON",Font.CR_CYAN,1.9);
+ Panel(488,114,488,210,choice==1);
+ Label(512,138,"PARTNER",Font.CR_GRAY,1.6);
+ Label(512,192,"< "..(partner==0?"SOLO":NNR_Team.Name(partner)).." >",Font.CR_CYAN,2.2);
+ Label(512,270,"LEFT / RIGHT TO CHANGE",Font.CR_WHITE,1.4);
+ Panel(488,346,488,248);
+ Label(512,370,"YOUR TEAM",Font.CR_GRAY,1.6);
+ int mode=Value("blnk_companions");
+ Label(512,412,NNR_Team.Name(NNR_Team.Slot(mode,0)),Font.CR_WHITE,1.9);
+ Label(512,450,NNR_Team.Name(NNR_Team.Slot(mode,1)),Font.CR_WHITE,1.9);
+ Label(512,546,"MORE ADDONS CAN JOIN THIS COLLECTION",Font.CR_GRAY,1.05);
+ Label(24,626,"K / L: HOLD TO AIM CAMP   F7: FOLLOW",Font.CR_GRAY,1.5);
+ Label(24,662,"ESC: BACK",Font.CR_CYAN,1.5);
+ }
+ override bool MenuEvent(int key,bool controller){
+ if(key==MKEY_Back)return Super.MenuEvent(key,controller);
+ if(key==MKEY_Up || key==MKEY_Down)choice=(choice+(key==MKEY_Down?1:2))%3;
+ else if(key==MKEY_Left)Apply(-1);
+ else if(key==MKEY_Right || key==MKEY_Enter)Apply(1);
+ else return false;return true;
+ }
+ override bool MouseEvent(int type,int x,int y){
+ if(!hasDrawn)return true;Layout();double mx=(x-px)/uiScale,my=(y-py)/uiScale;
+ int hit=mx>=24 && mx<464 && my>=114 && my<196?2:mx>=48 && mx<438 && my>=520 && my<566?0:mx>=488 && mx<976 && my>=114 && my<324?1:-1;
+ if(type==MOUSE_Click){pressedChoice=hit;if(hit>=0)choice=hit;}
+ else if(type==MOUSE_Release){if(hit>=0 && hit==pressedChoice){choice=hit;Apply(hit==1 && mx<732?-1:1);}pressedChoice=-1;}
+ else if(type==MOUSE_Move && hit>=0)choice=hit;
+ return true;
+ }
+}
