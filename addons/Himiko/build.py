@@ -1,4 +1,4 @@
-"""Build all seven extra companions. Source art stays at its original resolution."""
+"""Build all eight extra companions. Source art stays at its original resolution."""
 from pathlib import Path
 import runpy
 from PIL import Image
@@ -7,11 +7,11 @@ from zipfile import ZipFile, ZIP_DEFLATED
 root=Path(__file__).resolve().parent
 ctx=runpy.run_path(str(root/'import_assets.py'))
 runs=ctx['runs'];defs=[]
-for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7),('Kumi','KUMI',7)]:
+for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7),('Kumi','KUMI',7),('Ernie','ERNI',7)]:
  im=Image.open(root/f'../../art/{name}/{name}-Sprite-Sheet.png').convert('RGBA')
  a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
  key_delta=65 if name=="Tina" else 12
- if name=="Kumi":a[(b-r>20)&(b-g>20)&(b>35),3]=0
+ if name in ("Kumi","Ernie"):a[(b-r>20)&(b-g>20)&(b>35),3]=0
  else:a[(r-g>key_delta)&(b-g>key_delta)&(r>25)&(b>25),3]=0
  a[a[:,:,3]==0,:3]=0;im=Image.fromarray(a)
  ys=runs((a[:,:,3]>0).sum(axis=1)>5);assert len(ys)==expected,(name,ys)
@@ -29,7 +29,10 @@ for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR
  # Karin has two walking rows; reuse the first for the third animation beat.
  rows=list(range(7)) if expected==8 else [0,1,2,1,3,4,5]
  for frame,row in zip('ABCDEFG',rows):
-  for rot,(col,flip) in ctx['mapping'].items():sprite(frame,rot,rows[4] if frame=='F' and rot==5 else row,col,flip)
+  for rot,(col,flip) in ctx['mapping'].items():
+   source=rows[4] if frame=='F' and rot==5 else row
+   if name=='Ernie' and frame=='E' and col in (2,3):source=0 # use no-flash ready pose for these angles
+   sprite(frame,rot,source,col,flip)
  for frame,col in zip('IJKLMN',[0,1,2,3,4,4]):sprite(frame,0,expected-1,col)
  if name=='Karin':
   # Temporary in-style portrait from the idle sprite until a supplied HUD portrait arrives.
@@ -48,9 +51,11 @@ r,g,b=[a[:,:,i].astype(int) for i in range(3)]
 a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0;a[a[:,:,3]==0,:3]=0
 face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/'mod/PATCHES/FRIFACE.png')
 defs.append(f'Graphic FRIFACE, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/FRIFACE.png", 0, 0 }}\n')
-for who,texture in [('Tuin','TUINFACE'),('Esther','ESTFACE'),('Kumi','KUMIFACE')]:
+for who,texture in [('Tuin','TUINFACE'),('Esther','ESTFACE'),('Kumi','KUMIFACE'),('Ernie','ERNFACE')]:
  face=Image.open(root/f'../../art/{who}/{who}-Portrait.png').convert('RGBA');a=np.array(face)
  if who=='Kumi':pass # supplied PNG already has transparency; preserve its black outlines
+ elif who=='Ernie':
+  r,g,b=[a[:,:,i].astype(int) for i in range(3)];a[(b-r>20)&(b-g>20)&(b>35),3]=0
  elif who=='Tuin':
   # Remove only border-connected black background, preserving eyes and dark facial shading.
   from collections import deque
@@ -69,4 +74,4 @@ with (root/'mod/TEXTURES').open('a') as f:f.write(''.join(defs))
 with ZipFile(root/'../../dist/Himiko_Companion_Addon.pk3','w',ZIP_DEFLATED) as z:
  for f in sorted((root/'mod').rglob('*')):
   if f.is_file():z.write(f,f.relative_to(root/'mod').as_posix())
-print('Packaged all seven extras.')
+print('Packaged all eight extras.')

@@ -12,7 +12,7 @@ AddListMenu "MainMenu" { TextItem "Extras", "e", "HimikoOptions" }
 OptionMenu "HimikoOptions" {
  Class "NNR_HimikoMenu"
  Title "Extra Companions"
- StaticText "Seven extra companions loaded", gold
+ StaticText "Eight extra companions loaded", gold
  Option "Team (maximum 2)", "blnk_companions", "HimikoTeams"
  StaticText "Left/right selects Himiko alone or a pair."
  StaticText "Use Companion Control to return to a creator-only team."

@@ -870,9 +870,134 @@ Sprite KUMIM0, 195, 136
 { XScale 3.53571429 YScale 3.53571429 Offset 97, 134 Patch "PATCHES/Kumi/6-4.png", 0, 0 {} }
 Sprite KUMIN0, 195, 136
 { XScale 3.53571429 YScale 3.53571429 Offset 97, 134 Patch "PATCHES/Kumi/6-4.png", 0, 0 {} }
+Sprite ERNIA1, 138, 205
+{ XScale 3.58928571 YScale 3.58928571 Offset 69, 203 Patch "PATCHES/Ernie/0-0.png", 0, 0 {} }
+Sprite ERNIA2, 158, 203
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 201 Patch "PATCHES/Ernie/0-1.png", 0, 0 { FlipX } }
+Sprite ERNIA3, 156, 205
+{ XScale 3.58928571 YScale 3.58928571 Offset 78, 203 Patch "PATCHES/Ernie/0-2.png", 0, 0 { FlipX } }
+Sprite ERNIA4, 161, 202
+{ XScale 3.58928571 YScale 3.58928571 Offset 80, 200 Patch "PATCHES/Ernie/0-3.png", 0, 0 { FlipX } }
+Sprite ERNIA5, 144, 205
+{ XScale 3.58928571 YScale 3.58928571 Offset 72, 203 Patch "PATCHES/Ernie/0-4.png", 0, 0 {} }
+Sprite ERNIA6, 161, 202
+{ XScale 3.58928571 YScale 3.58928571 Offset 80, 200 Patch "PATCHES/Ernie/0-3.png", 0, 0 {} }
+Sprite ERNIA7, 156, 205
+{ XScale 3.58928571 YScale 3.58928571 Offset 78, 203 Patch "PATCHES/Ernie/0-2.png", 0, 0 {} }
+Sprite ERNIA8, 158, 203
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 201 Patch "PATCHES/Ernie/0-1.png", 0, 0 {} }
+Sprite ERNIB1, 130, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 65, 197 Patch "PATCHES/Ernie/1-0.png", 0, 0 {} }
+Sprite ERNIB2, 152, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 76, 197 Patch "PATCHES/Ernie/1-1.png", 0, 0 { FlipX } }
+Sprite ERNIB3, 159, 198
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 196 Patch "PATCHES/Ernie/1-2.png", 0, 0 { FlipX } }
+Sprite ERNIB4, 155, 197
+{ XScale 3.58928571 YScale 3.58928571 Offset 77, 195 Patch "PATCHES/Ernie/1-3.png", 0, 0 { FlipX } }
+Sprite ERNIB5, 141, 200
+{ XScale 3.58928571 YScale 3.58928571 Offset 70, 198 Patch "PATCHES/Ernie/1-4.png", 0, 0 {} }
+Sprite ERNIB6, 155, 197
+{ XScale 3.58928571 YScale 3.58928571 Offset 77, 195 Patch "PATCHES/Ernie/1-3.png", 0, 0 {} }
+Sprite ERNIB7, 159, 198
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 196 Patch "PATCHES/Ernie/1-2.png", 0, 0 {} }
+Sprite ERNIB8, 152, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 76, 197 Patch "PATCHES/Ernie/1-1.png", 0, 0 {} }
+Sprite ERNIC1, 134, 206
+{ XScale 3.58928571 YScale 3.58928571 Offset 67, 204 Patch "PATCHES/Ernie/2-0.png", 0, 0 {} }
+Sprite ERNIC2, 151, 203
+{ XScale 3.58928571 YScale 3.58928571 Offset 75, 201 Patch "PATCHES/Ernie/2-1.png", 0, 0 { FlipX } }
+Sprite ERNIC3, 159, 203
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 201 Patch "PATCHES/Ernie/2-2.png", 0, 0 { FlipX } }
+Sprite ERNIC4, 156, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 78, 197 Patch "PATCHES/Ernie/2-3.png", 0, 0 { FlipX } }
+Sprite ERNIC5, 142, 204
+{ XScale 3.58928571 YScale 3.58928571 Offset 71, 202 Patch "PATCHES/Ernie/2-4.png", 0, 0 {} }
+Sprite ERNIC6, 156, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 78, 197 Patch "PATCHES/Ernie/2-3.png", 0, 0 {} }
+Sprite ERNIC7, 159, 203
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 201 Patch "PATCHES/Ernie/2-2.png", 0, 0 {} }
+Sprite ERNIC8, 151, 203
+{ XScale 3.58928571 YScale 3.58928571 Offset 75, 201 Patch "PATCHES/Ernie/2-1.png", 0, 0 {} }
+Sprite ERNID1, 130, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 65, 197 Patch "PATCHES/Ernie/1-0.png", 0, 0 {} }
+Sprite ERNID2, 152, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 76, 197 Patch "PATCHES/Ernie/1-1.png", 0, 0 { FlipX } }
+Sprite ERNID3, 159, 198
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 196 Patch "PATCHES/Ernie/1-2.png", 0, 0 { FlipX } }
+Sprite ERNID4, 155, 197
+{ XScale 3.58928571 YScale 3.58928571 Offset 77, 195 Patch "PATCHES/Ernie/1-3.png", 0, 0 { FlipX } }
+Sprite ERNID5, 141, 200
+{ XScale 3.58928571 YScale 3.58928571 Offset 70, 198 Patch "PATCHES/Ernie/1-4.png", 0, 0 {} }
+Sprite ERNID6, 155, 197
+{ XScale 3.58928571 YScale 3.58928571 Offset 77, 195 Patch "PATCHES/Ernie/1-3.png", 0, 0 {} }
+Sprite ERNID7, 159, 198
+{ XScale 3.58928571 YScale 3.58928571 Offset 79, 196 Patch "PATCHES/Ernie/1-2.png", 0, 0 {} }
+Sprite ERNID8, 152, 199
+{ XScale 3.58928571 YScale 3.58928571 Offset 76, 197 Patch "PATCHES/Ernie/1-1.png", 0, 0 {} }
+Sprite ERNIE1, 132, 195
+{ XScale 3.58928571 YScale 3.58928571 Offset 66, 193 Patch "PATCHES/Ernie/3-0.png", 0, 0 {} }
+Sprite ERNIE2, 152, 191
+{ XScale 3.58928571 YScale 3.58928571 Offset 76, 189 Patch "PATCHES/Ernie/3-1.png", 0, 0 { FlipX } }
+Sprite ERNIE3, 156, 205
+{ XScale 3.58928571 YScale 3.58928571 Offset 78, 203 Patch "PATCHES/Ernie/0-2.png", 0, 0 { FlipX } }
+Sprite ERNIE4, 161, 202
+{ XScale 3.58928571 YScale 3.58928571 Offset 80, 200 Patch "PATCHES/Ernie/0-3.png", 0, 0 { FlipX } }
+Sprite ERNIE5, 137, 195
+{ XScale 3.58928571 YScale 3.58928571 Offset 68, 193 Patch "PATCHES/Ernie/3-4.png", 0, 0 {} }
+Sprite ERNIE6, 161, 202
+{ XScale 3.58928571 YScale 3.58928571 Offset 80, 200 Patch "PATCHES/Ernie/0-3.png", 0, 0 {} }
+Sprite ERNIE7, 156, 205
+{ XScale 3.58928571 YScale 3.58928571 Offset 78, 203 Patch "PATCHES/Ernie/0-2.png", 0, 0 {} }
+Sprite ERNIE8, 152, 191
+{ XScale 3.58928571 YScale 3.58928571 Offset 76, 189 Patch "PATCHES/Ernie/3-1.png", 0, 0 {} }
+Sprite ERNIF1, 134, 194
+{ XScale 3.58928571 YScale 3.58928571 Offset 67, 192 Patch "PATCHES/Ernie/4-0.png", 0, 0 {} }
+Sprite ERNIF2, 171, 197
+{ XScale 3.58928571 YScale 3.58928571 Offset 85, 195 Patch "PATCHES/Ernie/4-1.png", 0, 0 { FlipX } }
+Sprite ERNIF3, 206, 192
+{ XScale 3.58928571 YScale 3.58928571 Offset 103, 190 Patch "PATCHES/Ernie/4-2.png", 0, 0 { FlipX } }
+Sprite ERNIF4, 176, 191
+{ XScale 3.58928571 YScale 3.58928571 Offset 88, 189 Patch "PATCHES/Ernie/4-3.png", 0, 0 { FlipX } }
+Sprite ERNIF5, 137, 195
+{ XScale 3.58928571 YScale 3.58928571 Offset 68, 193 Patch "PATCHES/Ernie/3-4.png", 0, 0 {} }
+Sprite ERNIF6, 176, 191
+{ XScale 3.58928571 YScale 3.58928571 Offset 88, 189 Patch "PATCHES/Ernie/4-3.png", 0, 0 {} }
+Sprite ERNIF7, 206, 192
+{ XScale 3.58928571 YScale 3.58928571 Offset 103, 190 Patch "PATCHES/Ernie/4-2.png", 0, 0 {} }
+Sprite ERNIF8, 171, 197
+{ XScale 3.58928571 YScale 3.58928571 Offset 85, 195 Patch "PATCHES/Ernie/4-1.png", 0, 0 {} }
+Sprite ERNIG1, 143, 189
+{ XScale 3.58928571 YScale 3.58928571 Offset 71, 187 Patch "PATCHES/Ernie/5-0.png", 0, 0 {} }
+Sprite ERNIG2, 167, 188
+{ XScale 3.58928571 YScale 3.58928571 Offset 83, 186 Patch "PATCHES/Ernie/5-1.png", 0, 0 { FlipX } }
+Sprite ERNIG3, 168, 183
+{ XScale 3.58928571 YScale 3.58928571 Offset 84, 181 Patch "PATCHES/Ernie/5-2.png", 0, 0 { FlipX } }
+Sprite ERNIG4, 168, 176
+{ XScale 3.58928571 YScale 3.58928571 Offset 84, 174 Patch "PATCHES/Ernie/5-3.png", 0, 0 { FlipX } }
+Sprite ERNIG5, 123, 182
+{ XScale 3.58928571 YScale 3.58928571 Offset 61, 180 Patch "PATCHES/Ernie/5-4.png", 0, 0 {} }
+Sprite ERNIG6, 168, 176
+{ XScale 3.58928571 YScale 3.58928571 Offset 84, 174 Patch "PATCHES/Ernie/5-3.png", 0, 0 {} }
+Sprite ERNIG7, 168, 183
+{ XScale 3.58928571 YScale 3.58928571 Offset 84, 181 Patch "PATCHES/Ernie/5-2.png", 0, 0 {} }
+Sprite ERNIG8, 167, 188
+{ XScale 3.58928571 YScale 3.58928571 Offset 83, 186 Patch "PATCHES/Ernie/5-1.png", 0, 0 {} }
+Sprite ERNII0, 167, 209
+{ XScale 3.58928571 YScale 3.58928571 Offset 83, 207 Patch "PATCHES/Ernie/6-0.png", 0, 0 {} }
+Sprite ERNIJ0, 177, 202
+{ XScale 3.58928571 YScale 3.58928571 Offset 88, 200 Patch "PATCHES/Ernie/6-1.png", 0, 0 {} }
+Sprite ERNIK0, 173, 187
+{ XScale 3.58928571 YScale 3.58928571 Offset 86, 185 Patch "PATCHES/Ernie/6-2.png", 0, 0 {} }
+Sprite ERNIL0, 196, 139
+{ XScale 3.58928571 YScale 3.58928571 Offset 98, 137 Patch "PATCHES/Ernie/6-3.png", 0, 0 {} }
+Sprite ERNIM0, 199, 129
+{ XScale 3.58928571 YScale 3.58928571 Offset 99, 127 Patch "PATCHES/Ernie/6-4.png", 0, 0 {} }
+Sprite ERNIN0, 199, 129
+{ XScale 3.58928571 YScale 3.58928571 Offset 99, 127 Patch "PATCHES/Ernie/6-4.png", 0, 0 {} }
 Graphic TINFACE, 1124, 1148 { XScale 24.434782608695652 YScale 23.428571428571427 Patch "PATCHES/TINFACE.png", 0, 0 }
 Graphic TINLEFT, 1022, 1062 { XScale 22.217391304347824 YScale 21.6734693877551 Patch "PATCHES/TINLEFT.png", 0, 0 }
 Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }
 Graphic TUINFACE, 953, 1208 { XScale 20.717391304347824 YScale 24.653061224489797 Patch "PATCHES/TUINFACE.png", 0, 0 }
 Graphic ESTFACE, 1119, 1109 { XScale 24.32608695652174 YScale 22.632653061224488 Patch "PATCHES/ESTFACE.png", 0, 0 }
 Graphic KUMIFACE, 1109, 1066 { XScale 24.108695652173914 YScale 21.755102040816325 Patch "PATCHES/KUMIFACE.png", 0, 0 }
+Graphic ERNFACE, 809, 1177 { XScale 17.58695652173913 YScale 24.020408163265305 Patch "PATCHES/ERNFACE.png", 0, 0 }
