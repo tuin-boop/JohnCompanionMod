@@ -25,3 +25,5 @@ Server Bool blnk_jay = false;
 Server Bool blnk_banter = true;
 
 Server Int blnk_tomskin = 0;
+
+Server Int blnk_adrianskin = 0;

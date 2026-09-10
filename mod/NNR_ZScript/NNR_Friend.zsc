@@ -253,9 +253,9 @@ case 5: clip="carmack/line5"; duration=2421; break;
         if (frame >= 0 && frame <= 3 && (pos.XY-positionBeforeTick).Length() < 0.01)
             frame = 0;
         // Appearance changes do not restart states or alter weapon behavior.
-        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK") || sprite == GetSpriteIndex("JAYW") || sprite == GetSpriteIndex("TOMH") || sprite == GetSpriteIndex("TMPR") || sprite == GetSpriteIndex("ADRN"))
+        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK") || sprite == GetSpriteIndex("JAYW") || sprite == GetSpriteIndex("TOMH") || sprite == GetSpriteIndex("TMPR") || sprite == GetSpriteIndex("ADRN") || sprite == GetSpriteIndex("ADRP"))
         {
-            if (IsAdrian()) sprite=GetSpriteIndex("ADRN");
+            if (IsAdrian()) sprite=GetSpriteIndex(GetCVar("blnk_adrianskin")!=0?"ADRP":"ADRN");
             else if (IsTom()) sprite = GetSpriteIndex(GetCVar("blnk_tomskin")!=0?"TMPR":"TOMH");
             else if (IsJay()) sprite = GetSpriteIndex("JAYW");
             else if (IsCarmack())
