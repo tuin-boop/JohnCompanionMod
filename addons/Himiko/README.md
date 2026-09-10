@@ -2,7 +2,7 @@
 
 Load the updated main mod first, then Himiko_Companion_Addon.pk3. This existing filename now contains Himiko, Tina, Karin, Frier, Tuin and Esther. Open ESC > Extras or Options > Extra Companions.
 
-Use the character arrows to browse all six animated cards. Turn On/Off changes that character while preserving the other active companion. Enabling a third replaces the first active member and displays a warning. The partner arrows choose a pair with any creator or extra character; maximum two total. Tina + Karin is supported.
+Use left/right arrows to browse the six characters. Browsing never changes the team. Click Add to team or Remove from team, or select the button and press Enter. The right panel shows the two active slots with portraits and individual remove buttons. When full, the preview tells you which companion adding will replace. The maximum remains two, including creators. Creator companions can be added from the main Companion Control menu.
 
 All six use shared AI, weapons, K/L camp controls, independent camp cooldowns, HUD names and kill counters, and end tally portraits. They do not borrow creator dialogue or voice clips. Tina uses the supplied center and side portraits. Frier and Esther have generated portraits matching their references. Tuin uses the supplied portrait. Karin currently uses a temporary portrait extracted from her idle sprite. Karin, Frier, Tuin and Esther each have a seven-row source sheet that reuses a walking pose for the third walk beat.
 
