@@ -30,7 +30,7 @@ Campers wander slightly around their individual spots and use ranged attacks wit
 
 Select skins independently and choose any one character or any pair. Maximum two companions, chosen from Romero, Carmack, Jay and Tom; all six pairings are supported. K and L follow roster order (Romero, Carmack, Jay, Tom), and their current names appear at the bottom of the menu. SwoleMack features short silver hair, glasses, a black T-shirt, and stronger arms. Skins include directional walking, shooting, pain, and non-bloody falling frames. Only selected companions appear in the title scene, HUD, and level tally. Jay has his own striped rugby-shirt sprite set, animated HUD portrait, and forward-looking tally portrait. His nickname is Bizz Guy; no borrowed Romero/Carmack voice lines play for him.
 
-Tom Hall Young wears a cream overshirt over a black shirt. His supplied three portraits animate in the HUD; the forward-looking portrait appears on the tally. He has no borrowed voice recordings.
+Tom has Young and Present-day skins, selected with Change Skin on his card. Young Tom wears a cream overshirt over a black shirt; present-day Tom is bald with black glasses, a white beard, and a patterned black shirt. Jay and young Tom retain their full 1254-pixel portrait artwork rather than downsampled thumbnails. Both Tom skins have matching portraits that animate in the HUD; the forward-looking portrait appears on the tally. He has no borrowed voice recordings.
 
 ## Build
 

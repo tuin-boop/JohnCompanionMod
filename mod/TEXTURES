@@ -3003,3 +3003,293 @@ Sprite TOMHN0, 182, 85
 }
 
 Graphic TOMTALLY,46,49 { XScale 1.4375 YScale 1.4375 Patch "GRAPHICS/TOMFACE.png",0,0 }
+
+// Full-detail Jay and Tom portraits
+Graphic JAYLEFT, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/jayfaces/JAYLEFT.png", 0, 0
+}
+Graphic JAYFACE, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/jayfaces/JAYFACE.png", 0, 0
+}
+Graphic JAYRIGHT, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/jayfaces/JAYRIGHT.png", 0, 0
+}
+Graphic TOMLEFT, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/tomfaces/TOMLEFT.png", 0, 0
+}
+Graphic TOMFACE, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/tomfaces/TOMFACE.png", 0, 0
+}
+Graphic TOMRIGHT, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/tomfaces/TOMRIGHT.png", 0, 0
+}
+// End full-detail portraits
+
+// Present-day Tom assets
+Sprite TMPRA1, 94, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 47, 186
+ Patch "PATCHES/tompresent/0-0.png", 0, 0 {}
+}
+Sprite TMPRA2, 116, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 58, 189
+ Patch "PATCHES/tompresent/0-1.png", 0, 0 { FlipX }
+}
+Sprite TMPRA3, 112, 191
+{ XScale 3.32142857 YScale 3.32142857 Offset 56, 191
+ Patch "PATCHES/tompresent/0-2.png", 0, 0 { FlipX }
+}
+Sprite TMPRA4, 98, 191
+{ XScale 3.32142857 YScale 3.32142857 Offset 49, 191
+ Patch "PATCHES/tompresent/0-3.png", 0, 0 { FlipX }
+}
+Sprite TMPRA5, 97, 191
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 191
+ Patch "PATCHES/tompresent/0-4.png", 0, 0 {}
+}
+Sprite TMPRA6, 98, 191
+{ XScale 3.32142857 YScale 3.32142857 Offset 49, 191
+ Patch "PATCHES/tompresent/0-3.png", 0, 0 {}
+}
+Sprite TMPRA7, 112, 191
+{ XScale 3.32142857 YScale 3.32142857 Offset 56, 191
+ Patch "PATCHES/tompresent/0-2.png", 0, 0 {}
+}
+Sprite TMPRA8, 116, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 58, 189
+ Patch "PATCHES/tompresent/0-1.png", 0, 0 {}
+}
+Sprite TMPRB1, 94, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 47, 186
+ Patch "PATCHES/tompresent/1-0.png", 0, 0 {}
+}
+Sprite TMPRB2, 114, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 57, 186
+ Patch "PATCHES/tompresent/1-1.png", 0, 0 { FlipX }
+}
+Sprite TMPRB3, 116, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 58, 185
+ Patch "PATCHES/tompresent/1-2.png", 0, 0 { FlipX }
+}
+Sprite TMPRB4, 97, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 189
+ Patch "PATCHES/tompresent/1-3.png", 0, 0 { FlipX }
+}
+Sprite TMPRB5, 97, 187
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 187
+ Patch "PATCHES/tompresent/1-4.png", 0, 0 {}
+}
+Sprite TMPRB6, 97, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 189
+ Patch "PATCHES/tompresent/1-3.png", 0, 0 {}
+}
+Sprite TMPRB7, 116, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 58, 185
+ Patch "PATCHES/tompresent/1-2.png", 0, 0 {}
+}
+Sprite TMPRB8, 114, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 57, 186
+ Patch "PATCHES/tompresent/1-1.png", 0, 0 {}
+}
+Sprite TMPRC1, 94, 184
+{ XScale 3.32142857 YScale 3.32142857 Offset 47, 184
+ Patch "PATCHES/tompresent/2-0.png", 0, 0 {}
+}
+Sprite TMPRC2, 113, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 56, 185
+ Patch "PATCHES/tompresent/2-1.png", 0, 0 { FlipX }
+}
+Sprite TMPRC3, 114, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 57, 185
+ Patch "PATCHES/tompresent/2-2.png", 0, 0 { FlipX }
+}
+Sprite TMPRC4, 97, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 188
+ Patch "PATCHES/tompresent/2-3.png", 0, 0 { FlipX }
+}
+Sprite TMPRC5, 98, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 49, 189
+ Patch "PATCHES/tompresent/2-4.png", 0, 0 {}
+}
+Sprite TMPRC6, 97, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 188
+ Patch "PATCHES/tompresent/2-3.png", 0, 0 {}
+}
+Sprite TMPRC7, 114, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 57, 185
+ Patch "PATCHES/tompresent/2-2.png", 0, 0 {}
+}
+Sprite TMPRC8, 113, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 56, 185
+ Patch "PATCHES/tompresent/2-1.png", 0, 0 {}
+}
+Sprite TMPRD1, 94, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 47, 186
+ Patch "PATCHES/tompresent/1-0.png", 0, 0 {}
+}
+Sprite TMPRD2, 114, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 57, 186
+ Patch "PATCHES/tompresent/1-1.png", 0, 0 { FlipX }
+}
+Sprite TMPRD3, 116, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 58, 185
+ Patch "PATCHES/tompresent/1-2.png", 0, 0 { FlipX }
+}
+Sprite TMPRD4, 97, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 189
+ Patch "PATCHES/tompresent/1-3.png", 0, 0 { FlipX }
+}
+Sprite TMPRD5, 97, 187
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 187
+ Patch "PATCHES/tompresent/1-4.png", 0, 0 {}
+}
+Sprite TMPRD6, 97, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 48, 189
+ Patch "PATCHES/tompresent/1-3.png", 0, 0 {}
+}
+Sprite TMPRD7, 116, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 58, 185
+ Patch "PATCHES/tompresent/1-2.png", 0, 0 {}
+}
+Sprite TMPRD8, 114, 186
+{ XScale 3.32142857 YScale 3.32142857 Offset 57, 186
+ Patch "PATCHES/tompresent/1-1.png", 0, 0 {}
+}
+Sprite TMPRE1, 93, 189
+{ XScale 3.32142857 YScale 3.32142857 Offset 46, 189
+ Patch "PATCHES/tompresent/3-0.png", 0, 0 {}
+}
+Sprite TMPRE2, 126, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 63, 188
+ Patch "PATCHES/tompresent/3-1.png", 0, 0 { FlipX }
+}
+Sprite TMPRE3, 118, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 59, 188
+ Patch "PATCHES/tompresent/3-2.png", 0, 0 { FlipX }
+}
+Sprite TMPRE4, 101, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 50, 188
+ Patch "PATCHES/tompresent/3-3.png", 0, 0 { FlipX }
+}
+Sprite TMPRE5, 99, 190
+{ XScale 3.32142857 YScale 3.32142857 Offset 49, 190
+ Patch "PATCHES/tompresent/3-4.png", 0, 0 {}
+}
+Sprite TMPRE6, 101, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 50, 188
+ Patch "PATCHES/tompresent/3-3.png", 0, 0 {}
+}
+Sprite TMPRE7, 118, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 59, 188
+ Patch "PATCHES/tompresent/3-2.png", 0, 0 {}
+}
+Sprite TMPRE8, 126, 188
+{ XScale 3.32142857 YScale 3.32142857 Offset 63, 188
+ Patch "PATCHES/tompresent/3-1.png", 0, 0 {}
+}
+Sprite TMPRF1, 102, 187
+{ XScale 3.32142857 YScale 3.32142857 Offset 51, 187
+ Patch "PATCHES/tompresent/4-0.png", 0, 0 {}
+}
+Sprite TMPRF2, 177, 184
+{ XScale 3.32142857 YScale 3.32142857 Offset 88, 184
+ Patch "PATCHES/tompresent/4-1.png", 0, 0 { FlipX }
+}
+Sprite TMPRF3, 190, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 95, 185
+ Patch "PATCHES/tompresent/4-2.png", 0, 0 { FlipX }
+}
+Sprite TMPRF4, 170, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 85, 185
+ Patch "PATCHES/tompresent/4-3.png", 0, 0 { FlipX }
+}
+Sprite TMPRF5, 99, 190
+{ XScale 3.32142857 YScale 3.32142857 Offset 49, 190
+ Patch "PATCHES/tompresent/3-4.png", 0, 0 {}
+}
+Sprite TMPRF6, 170, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 85, 185
+ Patch "PATCHES/tompresent/4-3.png", 0, 0 {}
+}
+Sprite TMPRF7, 190, 185
+{ XScale 3.32142857 YScale 3.32142857 Offset 95, 185
+ Patch "PATCHES/tompresent/4-2.png", 0, 0 {}
+}
+Sprite TMPRF8, 177, 184
+{ XScale 3.32142857 YScale 3.32142857 Offset 88, 184
+ Patch "PATCHES/tompresent/4-1.png", 0, 0 {}
+}
+Sprite TMPRG1, 100, 184
+{ XScale 3.32142857 YScale 3.32142857 Offset 50, 184
+ Patch "PATCHES/tompresent/5-0.png", 0, 0 {}
+}
+Sprite TMPRG2, 93, 179
+{ XScale 3.32142857 YScale 3.32142857 Offset 46, 179
+ Patch "PATCHES/tompresent/5-1.png", 0, 0 { FlipX }
+}
+Sprite TMPRG3, 98, 179
+{ XScale 3.32142857 YScale 3.32142857 Offset 49, 179
+ Patch "PATCHES/tompresent/5-2.png", 0, 0 { FlipX }
+}
+Sprite TMPRG4, 92, 180
+{ XScale 3.32142857 YScale 3.32142857 Offset 46, 180
+ Patch "PATCHES/tompresent/5-3.png", 0, 0 { FlipX }
+}
+Sprite TMPRG5, 91, 180
+{ XScale 3.32142857 YScale 3.32142857 Offset 45, 180
+ Patch "PATCHES/tompresent/5-4.png", 0, 0 {}
+}
+Sprite TMPRG6, 92, 180
+{ XScale 3.32142857 YScale 3.32142857 Offset 46, 180
+ Patch "PATCHES/tompresent/5-3.png", 0, 0 {}
+}
+Sprite TMPRG7, 98, 179
+{ XScale 3.32142857 YScale 3.32142857 Offset 49, 179
+ Patch "PATCHES/tompresent/5-2.png", 0, 0 {}
+}
+Sprite TMPRG8, 93, 179
+{ XScale 3.32142857 YScale 3.32142857 Offset 46, 179
+ Patch "PATCHES/tompresent/5-1.png", 0, 0 {}
+}
+Sprite TMPRI0, 138, 155
+{ XScale 3.32142857 YScale 3.32142857 Offset 69, 155
+ Patch "PATCHES/tompresent/7-0.png", 0, 0 {}
+}
+Sprite TMPRJ0, 197, 143
+{ XScale 3.32142857 YScale 3.32142857 Offset 98, 143
+ Patch "PATCHES/tompresent/7-1.png", 0, 0 {}
+}
+Sprite TMPRK0, 199, 130
+{ XScale 3.32142857 YScale 3.32142857 Offset 99, 130
+ Patch "PATCHES/tompresent/7-2.png", 0, 0 {}
+}
+Sprite TMPRL0, 199, 108
+{ XScale 3.32142857 YScale 3.32142857 Offset 99, 108
+ Patch "PATCHES/tompresent/7-3.png", 0, 0 {}
+}
+Sprite TMPRM0, 182, 89
+{ XScale 3.32142857 YScale 3.32142857 Offset 91, 89
+ Patch "PATCHES/tompresent/7-4.png", 0, 0 {}
+}
+Sprite TMPRN0, 182, 89
+{ XScale 3.32142857 YScale 3.32142857 Offset 91, 89
+ Patch "PATCHES/tompresent/7-4.png", 0, 0 {}
+}
+Graphic TMPLEFT, 724, 724
+{ XScale 15.73913043 YScale 14.77551020
+ Patch "PATCHES/tompresent/TMPLEFT.png", 0, 0
+}
+Graphic TMPFACE, 724, 724
+{ XScale 15.73913043 YScale 14.77551020
+ Patch "PATCHES/tompresent/TMPFACE.png", 0, 0
+}
+Graphic TMPRIGHT, 724, 724
+{ XScale 15.73913043 YScale 14.77551020
+ Patch "PATCHES/tompresent/TMPRIGHT.png", 0, 0
+}
+// End present-day Tom assets
