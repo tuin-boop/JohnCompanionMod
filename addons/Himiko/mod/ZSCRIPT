@@ -9,15 +9,15 @@ class NNR_HimikoRegistry : Actor { States { Spawn: HIMK ABCDEFGIJKLMN -1;Stop; }
 class NNR_HimikoMenu : NNR_StyledCompanionMenu {
  int partner;int selected;
  int Current(){return 6+selected;}
- String Prefix(){return selected==2?"KARN":selected==1?"TINA":"HIMK";}
- void SyncPartner(){partner=0;int mask=NNR_Team.Mask(Value("blnk_companions"));for(int m=1;m<=8;m++)if(m!=Current() && (mask&(1<<(m-1)))){partner=m;break;}}
+ String Prefix(){return selected==3?"FRIR":selected==2?"KARN":selected==1?"TINA":"HIMK";}
+ void SyncPartner(){partner=0;int mask=NNR_Team.Mask(Value("blnk_companions"));for(int m=1;m<=9;m++)if(m!=Current() && (mask&(1<<(m-1)))){partner=m;break;}}
  override void Init(Menu parent,OptionMenuDescriptor desc){
  Super.Init(parent,desc);SyncPartner();
  }
  void Apply(int delta){
- if(choice==2){selected=(selected+delta+3)%3;SyncPartner();MenuSound("menu/change");return;}
+ if(choice==2){selected=(selected+delta+4)%4;SyncPartner();MenuSound("menu/change");return;}
  bool active=(NNR_Team.Mask(Value("blnk_companions"))&(1<<(Current()-1)))!=0;
- if(choice==1){partner=(partner+delta+9)%9;if(partner==Current())partner=(partner+delta+9)%9;if(active)CVar.FindCVar("blnk_companions").SetInt(NNR_Team.Mode((1<<(Current()-1))|(partner>0?1<<(partner-1):0)));}
+ if(choice==1){partner=(partner+delta+10)%10;if(partner==Current())partner=(partner+delta+10)%10;if(active)CVar.FindCVar("blnk_companions").SetInt(NNR_Team.Mode((1<<(Current()-1))|(partner>0?1<<(partner-1):0)));}
  else {ToggleMember(1<<(Current()-1));SyncPartner();}
  MenuSound("menu/change");
  }
@@ -28,7 +28,7 @@ class NNR_HimikoMenu : NNR_StyledCompanionMenu {
  Label(24,70,"CHOOSE YOUR TEAM - MAXIMUM 2",Font.CR_CYAN,1.7);
  Panel(24,114,440,480);
  Label(48,136,"< "..NNR_Team.Name(Current()).." >",choice==2?Font.CR_CYAN:Font.CR_WHITE,2.6);
- Label(370,142,String.Format("%d / 3",selected+1),Font.CR_GRAY,1.4);
+ Label(370,142,String.Format("%d / 4",selected+1),Font.CR_GRAY,1.4);
  Label(48,174,"COMPANION ADDON",Font.CR_GRAY,1.5);
  String pose=PreviewTics%28<7?"A":PreviewTics%28<14?"B":PreviewTics%28<21?"C":"D";
  TextureID pic=TexMan.CheckForTexture(Prefix()..pose.."8",TexMan.Type_Sprite);
@@ -69,3 +69,6 @@ class NNR_HimikoMenu : NNR_StyledCompanionMenu {
 class NNR_TinaMarine : NNR_HimikoMarine {override int Member(){return 7;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("TINA");}}
 class NNR_KarinMarine : NNR_HimikoMarine {override int Member(){return 8;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("KARN");}}
 class NNR_NewExtrasRegistry : Actor {States {Spawn: TINA ABCDEFGIJKLMN -1; KARN ABCDEFGIJKLMN -1;Stop;}}
+
+class NNR_FrierMarine : NNR_HimikoMarine {override int Member(){return 9;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("FRIR");}}
+class NNR_FrierRegistry : Actor {States {Spawn: FRIR ABCDEFGIJKLMN -1;Stop;}}

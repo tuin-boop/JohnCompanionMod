@@ -374,5 +374,130 @@ Sprite KARNM0, 195, 78
 Sprite KARNN0, 195, 78
 { XScale 3.25000000 YScale 3.25000000 Offset 97, 76 Patch "PATCHES/Karin/6-4.png", 0, 0 {} }
 Graphic KRNFACE, 61, 53 { XScale 1.326086956521739 YScale 1.0816326530612246 Patch "PATCHES/KRNFACE.png", 0, 0 }
+Sprite FRIRA1, 112, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 56, 183 Patch "PATCHES/Frier/0-0.png", 0, 0 {} }
+Sprite FRIRA2, 121, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 60, 184 Patch "PATCHES/Frier/0-1.png", 0, 0 { FlipX } }
+Sprite FRIRA3, 116, 184
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 182 Patch "PATCHES/Frier/0-2.png", 0, 0 { FlipX } }
+Sprite FRIRA4, 110, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 55, 183 Patch "PATCHES/Frier/0-3.png", 0, 0 { FlipX } }
+Sprite FRIRA5, 107, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 53, 183 Patch "PATCHES/Frier/0-4.png", 0, 0 {} }
+Sprite FRIRA6, 110, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 55, 183 Patch "PATCHES/Frier/0-3.png", 0, 0 {} }
+Sprite FRIRA7, 116, 184
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 182 Patch "PATCHES/Frier/0-2.png", 0, 0 {} }
+Sprite FRIRA8, 121, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 60, 184 Patch "PATCHES/Frier/0-1.png", 0, 0 {} }
+Sprite FRIRB1, 110, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 55, 185 Patch "PATCHES/Frier/1-0.png", 0, 0 {} }
+Sprite FRIRB2, 127, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 63, 185 Patch "PATCHES/Frier/1-1.png", 0, 0 { FlipX } }
+Sprite FRIRB3, 116, 184
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 182 Patch "PATCHES/Frier/1-2.png", 0, 0 { FlipX } }
+Sprite FRIRB4, 117, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 183 Patch "PATCHES/Frier/1-3.png", 0, 0 { FlipX } }
+Sprite FRIRB5, 98, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 49, 183 Patch "PATCHES/Frier/1-4.png", 0, 0 {} }
+Sprite FRIRB6, 117, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 183 Patch "PATCHES/Frier/1-3.png", 0, 0 {} }
+Sprite FRIRB7, 116, 184
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 182 Patch "PATCHES/Frier/1-2.png", 0, 0 {} }
+Sprite FRIRB8, 127, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 63, 185 Patch "PATCHES/Frier/1-1.png", 0, 0 {} }
+Sprite FRIRC1, 111, 191
+{ XScale 3.23214286 YScale 3.23214286 Offset 55, 189 Patch "PATCHES/Frier/2-0.png", 0, 0 {} }
+Sprite FRIRC2, 123, 191
+{ XScale 3.23214286 YScale 3.23214286 Offset 61, 189 Patch "PATCHES/Frier/2-1.png", 0, 0 { FlipX } }
+Sprite FRIRC3, 115, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 57, 185 Patch "PATCHES/Frier/2-2.png", 0, 0 { FlipX } }
+Sprite FRIRC4, 116, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 186 Patch "PATCHES/Frier/2-3.png", 0, 0 { FlipX } }
+Sprite FRIRC5, 95, 189
+{ XScale 3.23214286 YScale 3.23214286 Offset 47, 187 Patch "PATCHES/Frier/2-4.png", 0, 0 {} }
+Sprite FRIRC6, 116, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 186 Patch "PATCHES/Frier/2-3.png", 0, 0 {} }
+Sprite FRIRC7, 115, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 57, 185 Patch "PATCHES/Frier/2-2.png", 0, 0 {} }
+Sprite FRIRC8, 123, 191
+{ XScale 3.23214286 YScale 3.23214286 Offset 61, 189 Patch "PATCHES/Frier/2-1.png", 0, 0 {} }
+Sprite FRIRD1, 110, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 55, 185 Patch "PATCHES/Frier/1-0.png", 0, 0 {} }
+Sprite FRIRD2, 127, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 63, 185 Patch "PATCHES/Frier/1-1.png", 0, 0 { FlipX } }
+Sprite FRIRD3, 116, 184
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 182 Patch "PATCHES/Frier/1-2.png", 0, 0 { FlipX } }
+Sprite FRIRD4, 117, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 183 Patch "PATCHES/Frier/1-3.png", 0, 0 { FlipX } }
+Sprite FRIRD5, 98, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 49, 183 Patch "PATCHES/Frier/1-4.png", 0, 0 {} }
+Sprite FRIRD6, 117, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 183 Patch "PATCHES/Frier/1-3.png", 0, 0 {} }
+Sprite FRIRD7, 116, 184
+{ XScale 3.23214286 YScale 3.23214286 Offset 58, 182 Patch "PATCHES/Frier/1-2.png", 0, 0 {} }
+Sprite FRIRD8, 127, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 63, 185 Patch "PATCHES/Frier/1-1.png", 0, 0 {} }
+Sprite FRIRE1, 105, 189
+{ XScale 3.23214286 YScale 3.23214286 Offset 52, 187 Patch "PATCHES/Frier/3-0.png", 0, 0 {} }
+Sprite FRIRE2, 132, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 66, 184 Patch "PATCHES/Frier/3-1.png", 0, 0 { FlipX } }
+Sprite FRIRE3, 150, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 75, 184 Patch "PATCHES/Frier/3-2.png", 0, 0 { FlipX } }
+Sprite FRIRE4, 138, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 69, 186 Patch "PATCHES/Frier/3-3.png", 0, 0 { FlipX } }
+Sprite FRIRE5, 102, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 51, 185 Patch "PATCHES/Frier/3-4.png", 0, 0 {} }
+Sprite FRIRE6, 138, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 69, 186 Patch "PATCHES/Frier/3-3.png", 0, 0 {} }
+Sprite FRIRE7, 150, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 75, 184 Patch "PATCHES/Frier/3-2.png", 0, 0 {} }
+Sprite FRIRE8, 132, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 66, 184 Patch "PATCHES/Frier/3-1.png", 0, 0 {} }
+Sprite FRIRF1, 105, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 52, 186 Patch "PATCHES/Frier/4-0.png", 0, 0 {} }
+Sprite FRIRF2, 154, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 77, 184 Patch "PATCHES/Frier/4-1.png", 0, 0 { FlipX } }
+Sprite FRIRF3, 153, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 76, 184 Patch "PATCHES/Frier/4-2.png", 0, 0 { FlipX } }
+Sprite FRIRF4, 145, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 72, 185 Patch "PATCHES/Frier/4-3.png", 0, 0 { FlipX } }
+Sprite FRIRF5, 102, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 51, 185 Patch "PATCHES/Frier/3-4.png", 0, 0 {} }
+Sprite FRIRF6, 145, 187
+{ XScale 3.23214286 YScale 3.23214286 Offset 72, 185 Patch "PATCHES/Frier/4-3.png", 0, 0 {} }
+Sprite FRIRF7, 153, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 76, 184 Patch "PATCHES/Frier/4-2.png", 0, 0 {} }
+Sprite FRIRF8, 154, 186
+{ XScale 3.23214286 YScale 3.23214286 Offset 77, 184 Patch "PATCHES/Frier/4-1.png", 0, 0 {} }
+Sprite FRIRG1, 115, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 57, 186 Patch "PATCHES/Frier/5-0.png", 0, 0 {} }
+Sprite FRIRG2, 114, 189
+{ XScale 3.23214286 YScale 3.23214286 Offset 57, 187 Patch "PATCHES/Frier/5-1.png", 0, 0 { FlipX } }
+Sprite FRIRG3, 104, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 52, 186 Patch "PATCHES/Frier/5-2.png", 0, 0 { FlipX } }
+Sprite FRIRG4, 109, 189
+{ XScale 3.23214286 YScale 3.23214286 Offset 54, 187 Patch "PATCHES/Frier/5-3.png", 0, 0 { FlipX } }
+Sprite FRIRG5, 100, 185
+{ XScale 3.23214286 YScale 3.23214286 Offset 50, 183 Patch "PATCHES/Frier/5-4.png", 0, 0 {} }
+Sprite FRIRG6, 109, 189
+{ XScale 3.23214286 YScale 3.23214286 Offset 54, 187 Patch "PATCHES/Frier/5-3.png", 0, 0 {} }
+Sprite FRIRG7, 104, 188
+{ XScale 3.23214286 YScale 3.23214286 Offset 52, 186 Patch "PATCHES/Frier/5-2.png", 0, 0 {} }
+Sprite FRIRG8, 114, 189
+{ XScale 3.23214286 YScale 3.23214286 Offset 57, 187 Patch "PATCHES/Frier/5-1.png", 0, 0 {} }
+Sprite FRIRI0, 176, 194
+{ XScale 3.23214286 YScale 3.23214286 Offset 88, 192 Patch "PATCHES/Frier/6-0.png", 0, 0 {} }
+Sprite FRIRJ0, 181, 175
+{ XScale 3.23214286 YScale 3.23214286 Offset 90, 173 Patch "PATCHES/Frier/6-1.png", 0, 0 {} }
+Sprite FRIRK0, 153, 150
+{ XScale 3.23214286 YScale 3.23214286 Offset 76, 148 Patch "PATCHES/Frier/6-2.png", 0, 0 {} }
+Sprite FRIRL0, 188, 120
+{ XScale 3.23214286 YScale 3.23214286 Offset 94, 118 Patch "PATCHES/Frier/6-3.png", 0, 0 {} }
+Sprite FRIRM0, 194, 94
+{ XScale 3.23214286 YScale 3.23214286 Offset 97, 92 Patch "PATCHES/Frier/6-4.png", 0, 0 {} }
+Sprite FRIRN0, 194, 94
+{ XScale 3.23214286 YScale 3.23214286 Offset 97, 92 Patch "PATCHES/Frier/6-4.png", 0, 0 {} }
 Graphic TINFACE, 204, 227 { XScale 4.434782608695652 YScale 4.63265306122449 Patch "PATCHES/TINFACE.png", 0, 0 }
 Graphic TINLEFT, 192, 204 { XScale 4.173913043478261 YScale 4.163265306122449 Patch "PATCHES/TINLEFT.png", 0, 0 }
+Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }

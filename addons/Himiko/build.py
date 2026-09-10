@@ -1,4 +1,4 @@
-"""Build all three extra companions. Source art stays at its original resolution."""
+"""Build all four extra companions. Source art stays at its original resolution."""
 from pathlib import Path
 import runpy
 from PIL import Image
@@ -7,7 +7,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 root=Path(__file__).resolve().parent
 ctx=runpy.run_path(str(root/'import_assets.py'))
 runs=ctx['runs'];defs=[]
-for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7)]:
+for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7)]:
  im=Image.open(root/f'../../art/{name}/{name}-Sprite-Sheet.png').convert('RGBA')
  a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
  a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0
@@ -40,8 +40,13 @@ for src,name in [('Tina-center','TINFACE'),('Tina-side','TINLEFT')]:
  a[((b-r>20)&(b-g>20)&(b>35))|((r<5)&(g<5)&(b<5)&(np.indices(r.shape)[0]<22)),3]=0
  a[a[:,:,3]==0,:3]=0;face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/f'mod/PATCHES/{name}.png')
  defs.append(f'Graphic {name}, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/{name}.png", 0, 0 }}\n')
+face=Image.open(root/'../../art/Frier/Frier-Portrait.png').convert('RGBA');a=np.array(face)
+r,g,b=[a[:,:,i].astype(int) for i in range(3)]
+a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0;a[a[:,:,3]==0,:3]=0
+face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/'mod/PATCHES/FRIFACE.png')
+defs.append(f'Graphic FRIFACE, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/FRIFACE.png", 0, 0 }}\n')
 with (root/'mod/TEXTURES').open('a') as f:f.write(''.join(defs))
 with ZipFile(root/'../../dist/Himiko_Companion_Addon.pk3','w',ZIP_DEFLATED) as z:
  for f in sorted((root/'mod').rglob('*')):
   if f.is_file():z.write(f,f.relative_to(root/'mod').as_posix())
-print('Packaged Himiko, Tina and Karin.')
+print('Packaged Himiko, Tina, Karin and Frier.')

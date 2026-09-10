@@ -28,7 +28,7 @@ class ExtrasMenuCheck : NNR_HimikoMenu {
  if(ticks==2){choice=2;Apply(1);}
  if(ticks==3){choice=0;Apply(1);}
  if(ticks==4){choice=2;Apply(1);}
- if(ticks==5){choice=2;Apply(1);choice=0;Apply(1);}
+ if(ticks==5){choice=2;Apply(1);Apply(1);choice=0;Apply(1);}
  if(ticks==10){int mask=NNR_Team.Mask(Value("blnk_companions"));Console.Printf("EXTRAS %s: carousel enable replaces third companion",mask==160?"PASS":"FAIL");level.MakeScreenShot();}
  }
 }
