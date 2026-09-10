@@ -1020,13 +1020,13 @@ Sprite JCLSJ0, 240, 325
  Patch "PATCHES/classicjohn/fall1.png", 0, 0 {}
 }
 
-Sprite JCLSK0, 935, 630
-{ XScale 21.03922414 YScale 21.03922414 Offset 467, 628
+Sprite JCLSK0, 934, 629
+{ XScale 21.01662562 YScale 21.01662562 Offset 467, 627
  Patch "PATCHES/deathfixed/JCLS/K.png", 0, 0 {}
 }
 
-Sprite JCLSL0, 977, 481
-{ XScale 18.11541194 YScale 18.11541194 Offset 488, 479
+Sprite JCLSL0, 977, 480
+{ XScale 18.11541194 YScale 18.11541194 Offset 488, 478
  Patch "PATCHES/deathfixed/JCLS/L.png", 0, 0 {}
 }
 
