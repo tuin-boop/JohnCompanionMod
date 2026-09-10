@@ -19,13 +19,6 @@ for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR
  arts={};out=root/f'mod/PATCHES/{name}';out.mkdir(exist_ok=True)
  for row,(top,bottom) in enumerate(ys):
   strip=im.crop((0,top,im.width,bottom));xs=runs((np.array(strip)[:,:,3]>0).sum(axis=0)>1)
-  if name in ('Patrick','Peter') and row in (3,4):
-   # Water droplets are disconnected from the hand; keep them with their cell.
-   grouped=[]
-   for left,right in xs:
-    if grouped and left-grouped[-1][1]<=24:grouped[-1]=(grouped[-1][0],right)
-    else:grouped.append((left,right))
-   xs=grouped
   assert len(xs)==5,(name,row,xs)
   for col,(left,right) in enumerate(xs):
    cell=strip.crop((left,0,right,strip.height));cell=cell.crop(cell.getbbox())

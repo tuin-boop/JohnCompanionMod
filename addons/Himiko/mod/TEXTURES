@@ -1369,256 +1369,256 @@ Sprite SPNGM0, 198, 91
 Sprite SPNGN0, 198, 91
 { XScale 3.14285714 YScale 3.14285714 Offset 99, 89 Patch "PATCHES/SpongeBob/6-4.png", 0, 0 {} }
 Graphic SPGFACE, 143, 62 { XScale 3.108695652173913 YScale 1.2653061224489797 Patch "PATCHES/SPGFACE.png", 0, 0 }
-Sprite PTRKA1, 154, 185
-{ XScale 3.23214286 YScale 3.23214286 Offset 77, 183 Patch "PATCHES/Patrick/0-0.png", 0, 0 {} }
-Sprite PTRKA2, 152, 180
-{ XScale 3.23214286 YScale 3.23214286 Offset 76, 178 Patch "PATCHES/Patrick/0-1.png", 0, 0 { FlipX } }
-Sprite PTRKA3, 113, 184
-{ XScale 3.23214286 YScale 3.23214286 Offset 56, 182 Patch "PATCHES/Patrick/0-2.png", 0, 0 { FlipX } }
-Sprite PTRKA4, 138, 184
-{ XScale 3.23214286 YScale 3.23214286 Offset 69, 182 Patch "PATCHES/Patrick/0-3.png", 0, 0 { FlipX } }
-Sprite PTRKA5, 151, 184
-{ XScale 3.23214286 YScale 3.23214286 Offset 75, 182 Patch "PATCHES/Patrick/0-4.png", 0, 0 {} }
-Sprite PTRKA6, 138, 184
-{ XScale 3.23214286 YScale 3.23214286 Offset 69, 182 Patch "PATCHES/Patrick/0-3.png", 0, 0 {} }
-Sprite PTRKA7, 113, 184
-{ XScale 3.23214286 YScale 3.23214286 Offset 56, 182 Patch "PATCHES/Patrick/0-2.png", 0, 0 {} }
-Sprite PTRKA8, 152, 180
-{ XScale 3.23214286 YScale 3.23214286 Offset 76, 178 Patch "PATCHES/Patrick/0-1.png", 0, 0 {} }
-Sprite PTRKB1, 131, 179
-{ XScale 3.23214286 YScale 3.23214286 Offset 65, 177 Patch "PATCHES/Patrick/1-0.png", 0, 0 {} }
-Sprite PTRKB2, 160, 179
-{ XScale 3.23214286 YScale 3.23214286 Offset 80, 177 Patch "PATCHES/Patrick/1-1.png", 0, 0 { FlipX } }
-Sprite PTRKB3, 134, 177
-{ XScale 3.23214286 YScale 3.23214286 Offset 67, 175 Patch "PATCHES/Patrick/1-2.png", 0, 0 { FlipX } }
-Sprite PTRKB4, 150, 181
-{ XScale 3.23214286 YScale 3.23214286 Offset 75, 179 Patch "PATCHES/Patrick/1-3.png", 0, 0 { FlipX } }
-Sprite PTRKB5, 130, 183
-{ XScale 3.23214286 YScale 3.23214286 Offset 65, 181 Patch "PATCHES/Patrick/1-4.png", 0, 0 {} }
-Sprite PTRKB6, 150, 181
-{ XScale 3.23214286 YScale 3.23214286 Offset 75, 179 Patch "PATCHES/Patrick/1-3.png", 0, 0 {} }
-Sprite PTRKB7, 134, 177
-{ XScale 3.23214286 YScale 3.23214286 Offset 67, 175 Patch "PATCHES/Patrick/1-2.png", 0, 0 {} }
-Sprite PTRKB8, 160, 179
-{ XScale 3.23214286 YScale 3.23214286 Offset 80, 177 Patch "PATCHES/Patrick/1-1.png", 0, 0 {} }
-Sprite PTRKC1, 130, 183
-{ XScale 3.23214286 YScale 3.23214286 Offset 65, 181 Patch "PATCHES/Patrick/2-0.png", 0, 0 {} }
-Sprite PTRKC2, 156, 181
-{ XScale 3.23214286 YScale 3.23214286 Offset 78, 179 Patch "PATCHES/Patrick/2-1.png", 0, 0 { FlipX } }
-Sprite PTRKC3, 125, 178
-{ XScale 3.23214286 YScale 3.23214286 Offset 62, 176 Patch "PATCHES/Patrick/2-2.png", 0, 0 { FlipX } }
-Sprite PTRKC4, 144, 183
-{ XScale 3.23214286 YScale 3.23214286 Offset 72, 181 Patch "PATCHES/Patrick/2-3.png", 0, 0 { FlipX } }
-Sprite PTRKC5, 131, 184
-{ XScale 3.23214286 YScale 3.23214286 Offset 65, 182 Patch "PATCHES/Patrick/2-4.png", 0, 0 {} }
-Sprite PTRKC6, 144, 183
-{ XScale 3.23214286 YScale 3.23214286 Offset 72, 181 Patch "PATCHES/Patrick/2-3.png", 0, 0 {} }
-Sprite PTRKC7, 125, 178
-{ XScale 3.23214286 YScale 3.23214286 Offset 62, 176 Patch "PATCHES/Patrick/2-2.png", 0, 0 {} }
-Sprite PTRKC8, 156, 181
-{ XScale 3.23214286 YScale 3.23214286 Offset 78, 179 Patch "PATCHES/Patrick/2-1.png", 0, 0 {} }
-Sprite PTRKD1, 131, 179
-{ XScale 3.23214286 YScale 3.23214286 Offset 65, 177 Patch "PATCHES/Patrick/1-0.png", 0, 0 {} }
-Sprite PTRKD2, 160, 179
-{ XScale 3.23214286 YScale 3.23214286 Offset 80, 177 Patch "PATCHES/Patrick/1-1.png", 0, 0 { FlipX } }
-Sprite PTRKD3, 134, 177
-{ XScale 3.23214286 YScale 3.23214286 Offset 67, 175 Patch "PATCHES/Patrick/1-2.png", 0, 0 { FlipX } }
-Sprite PTRKD4, 150, 181
-{ XScale 3.23214286 YScale 3.23214286 Offset 75, 179 Patch "PATCHES/Patrick/1-3.png", 0, 0 { FlipX } }
-Sprite PTRKD5, 130, 183
-{ XScale 3.23214286 YScale 3.23214286 Offset 65, 181 Patch "PATCHES/Patrick/1-4.png", 0, 0 {} }
-Sprite PTRKD6, 150, 181
-{ XScale 3.23214286 YScale 3.23214286 Offset 75, 179 Patch "PATCHES/Patrick/1-3.png", 0, 0 {} }
-Sprite PTRKD7, 134, 177
-{ XScale 3.23214286 YScale 3.23214286 Offset 67, 175 Patch "PATCHES/Patrick/1-2.png", 0, 0 {} }
-Sprite PTRKD8, 160, 179
-{ XScale 3.23214286 YScale 3.23214286 Offset 80, 177 Patch "PATCHES/Patrick/1-1.png", 0, 0 {} }
-Sprite PTRKE1, 128, 205
-{ XScale 3.23214286 YScale 3.23214286 Offset 64, 203 Patch "PATCHES/Patrick/3-0.png", 0, 0 {} }
-Sprite PTRKE2, 132, 204
-{ XScale 3.23214286 YScale 3.23214286 Offset 66, 202 Patch "PATCHES/Patrick/3-1.png", 0, 0 { FlipX } }
-Sprite PTRKE3, 71, 202
-{ XScale 3.23214286 YScale 3.23214286 Offset 35, 200 Patch "PATCHES/Patrick/3-2.png", 0, 0 { FlipX } }
-Sprite PTRKE4, 126, 204
-{ XScale 3.23214286 YScale 3.23214286 Offset 63, 202 Patch "PATCHES/Patrick/3-3.png", 0, 0 { FlipX } }
-Sprite PTRKE5, 142, 205
-{ XScale 3.23214286 YScale 3.23214286 Offset 71, 203 Patch "PATCHES/Patrick/3-4.png", 0, 0 {} }
-Sprite PTRKE6, 126, 204
-{ XScale 3.23214286 YScale 3.23214286 Offset 63, 202 Patch "PATCHES/Patrick/3-3.png", 0, 0 {} }
-Sprite PTRKE7, 71, 202
-{ XScale 3.23214286 YScale 3.23214286 Offset 35, 200 Patch "PATCHES/Patrick/3-2.png", 0, 0 {} }
-Sprite PTRKE8, 132, 204
-{ XScale 3.23214286 YScale 3.23214286 Offset 66, 202 Patch "PATCHES/Patrick/3-1.png", 0, 0 {} }
-Sprite PTRKF1, 181, 174
-{ XScale 3.23214286 YScale 3.23214286 Offset 90, 172 Patch "PATCHES/Patrick/4-0.png", 0, 0 {} }
-Sprite PTRKF2, 187, 174
-{ XScale 3.23214286 YScale 3.23214286 Offset 93, 172 Patch "PATCHES/Patrick/4-1.png", 0, 0 { FlipX } }
-Sprite PTRKF3, 152, 174
-{ XScale 3.23214286 YScale 3.23214286 Offset 76, 172 Patch "PATCHES/Patrick/4-2.png", 0, 0 { FlipX } }
-Sprite PTRKF4, 177, 171
-{ XScale 3.23214286 YScale 3.23214286 Offset 88, 169 Patch "PATCHES/Patrick/4-3.png", 0, 0 { FlipX } }
-Sprite PTRKF5, 142, 205
-{ XScale 3.23214286 YScale 3.23214286 Offset 71, 203 Patch "PATCHES/Patrick/3-4.png", 0, 0 {} }
-Sprite PTRKF6, 177, 171
-{ XScale 3.23214286 YScale 3.23214286 Offset 88, 169 Patch "PATCHES/Patrick/4-3.png", 0, 0 {} }
-Sprite PTRKF7, 152, 174
-{ XScale 3.23214286 YScale 3.23214286 Offset 76, 172 Patch "PATCHES/Patrick/4-2.png", 0, 0 {} }
-Sprite PTRKF8, 187, 174
-{ XScale 3.23214286 YScale 3.23214286 Offset 93, 172 Patch "PATCHES/Patrick/4-1.png", 0, 0 {} }
-Sprite PTRKG1, 150, 191
-{ XScale 3.23214286 YScale 3.23214286 Offset 75, 189 Patch "PATCHES/Patrick/5-0.png", 0, 0 {} }
-Sprite PTRKG2, 152, 190
-{ XScale 3.23214286 YScale 3.23214286 Offset 76, 188 Patch "PATCHES/Patrick/5-1.png", 0, 0 { FlipX } }
-Sprite PTRKG3, 125, 191
-{ XScale 3.23214286 YScale 3.23214286 Offset 62, 189 Patch "PATCHES/Patrick/5-2.png", 0, 0 { FlipX } }
-Sprite PTRKG4, 134, 188
-{ XScale 3.23214286 YScale 3.23214286 Offset 67, 186 Patch "PATCHES/Patrick/5-3.png", 0, 0 { FlipX } }
-Sprite PTRKG5, 148, 191
-{ XScale 3.23214286 YScale 3.23214286 Offset 74, 189 Patch "PATCHES/Patrick/5-4.png", 0, 0 {} }
-Sprite PTRKG6, 134, 188
-{ XScale 3.23214286 YScale 3.23214286 Offset 67, 186 Patch "PATCHES/Patrick/5-3.png", 0, 0 {} }
-Sprite PTRKG7, 125, 191
-{ XScale 3.23214286 YScale 3.23214286 Offset 62, 189 Patch "PATCHES/Patrick/5-2.png", 0, 0 {} }
-Sprite PTRKG8, 152, 190
-{ XScale 3.23214286 YScale 3.23214286 Offset 76, 188 Patch "PATCHES/Patrick/5-1.png", 0, 0 {} }
-Sprite PTRKI0, 166, 167
-{ XScale 3.23214286 YScale 3.23214286 Offset 83, 165 Patch "PATCHES/Patrick/6-0.png", 0, 0 {} }
-Sprite PTRKJ0, 164, 149
-{ XScale 3.23214286 YScale 3.23214286 Offset 82, 147 Patch "PATCHES/Patrick/6-1.png", 0, 0 {} }
-Sprite PTRKK0, 174, 119
-{ XScale 3.23214286 YScale 3.23214286 Offset 87, 117 Patch "PATCHES/Patrick/6-2.png", 0, 0 {} }
-Sprite PTRKL0, 185, 95
-{ XScale 3.23214286 YScale 3.23214286 Offset 92, 93 Patch "PATCHES/Patrick/6-3.png", 0, 0 {} }
-Sprite PTRKM0, 189, 78
-{ XScale 3.23214286 YScale 3.23214286 Offset 94, 76 Patch "PATCHES/Patrick/6-4.png", 0, 0 {} }
-Sprite PTRKN0, 189, 78
-{ XScale 3.23214286 YScale 3.23214286 Offset 94, 76 Patch "PATCHES/Patrick/6-4.png", 0, 0 {} }
-Graphic PATFACE, 133, 77 { XScale 2.891304347826087 YScale 1.5714285714285714 Patch "PATCHES/PATFACE.png", 0, 0 }
-Sprite PETRA1, 141, 192
-{ XScale 3.35714286 YScale 3.35714286 Offset 70, 190 Patch "PATCHES/Peter/0-0.png", 0, 0 {} }
-Sprite PETRA2, 141, 192
-{ XScale 3.35714286 YScale 3.35714286 Offset 70, 190 Patch "PATCHES/Peter/0-1.png", 0, 0 { FlipX } }
-Sprite PETRA3, 155, 191
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 189 Patch "PATCHES/Peter/0-2.png", 0, 0 { FlipX } }
-Sprite PETRA4, 157, 191
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 189 Patch "PATCHES/Peter/0-3.png", 0, 0 { FlipX } }
-Sprite PETRA5, 154, 192
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 190 Patch "PATCHES/Peter/0-4.png", 0, 0 {} }
-Sprite PETRA6, 157, 191
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 189 Patch "PATCHES/Peter/0-3.png", 0, 0 {} }
-Sprite PETRA7, 155, 191
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 189 Patch "PATCHES/Peter/0-2.png", 0, 0 {} }
-Sprite PETRA8, 141, 192
-{ XScale 3.35714286 YScale 3.35714286 Offset 70, 190 Patch "PATCHES/Peter/0-1.png", 0, 0 {} }
-Sprite PETRB1, 143, 197
-{ XScale 3.35714286 YScale 3.35714286 Offset 71, 195 Patch "PATCHES/Peter/1-0.png", 0, 0 {} }
-Sprite PETRB2, 140, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 70, 193 Patch "PATCHES/Peter/1-1.png", 0, 0 { FlipX } }
-Sprite PETRB3, 158, 194
-{ XScale 3.35714286 YScale 3.35714286 Offset 79, 192 Patch "PATCHES/Peter/1-2.png", 0, 0 { FlipX } }
-Sprite PETRB4, 157, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 193 Patch "PATCHES/Peter/1-3.png", 0, 0 { FlipX } }
-Sprite PETRB5, 155, 193
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 191 Patch "PATCHES/Peter/1-4.png", 0, 0 {} }
-Sprite PETRB6, 157, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 193 Patch "PATCHES/Peter/1-3.png", 0, 0 {} }
-Sprite PETRB7, 158, 194
-{ XScale 3.35714286 YScale 3.35714286 Offset 79, 192 Patch "PATCHES/Peter/1-2.png", 0, 0 {} }
-Sprite PETRB8, 140, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 70, 193 Patch "PATCHES/Peter/1-1.png", 0, 0 {} }
-Sprite PETRC1, 143, 196
-{ XScale 3.35714286 YScale 3.35714286 Offset 71, 194 Patch "PATCHES/Peter/2-0.png", 0, 0 {} }
-Sprite PETRC2, 139, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 69, 193 Patch "PATCHES/Peter/2-1.png", 0, 0 { FlipX } }
-Sprite PETRC3, 164, 194
-{ XScale 3.35714286 YScale 3.35714286 Offset 82, 192 Patch "PATCHES/Peter/2-2.png", 0, 0 { FlipX } }
-Sprite PETRC4, 156, 193
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 191 Patch "PATCHES/Peter/2-3.png", 0, 0 { FlipX } }
-Sprite PETRC5, 155, 193
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 191 Patch "PATCHES/Peter/2-4.png", 0, 0 {} }
-Sprite PETRC6, 156, 193
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 191 Patch "PATCHES/Peter/2-3.png", 0, 0 {} }
-Sprite PETRC7, 164, 194
-{ XScale 3.35714286 YScale 3.35714286 Offset 82, 192 Patch "PATCHES/Peter/2-2.png", 0, 0 {} }
-Sprite PETRC8, 139, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 69, 193 Patch "PATCHES/Peter/2-1.png", 0, 0 {} }
-Sprite PETRD1, 143, 197
-{ XScale 3.35714286 YScale 3.35714286 Offset 71, 195 Patch "PATCHES/Peter/1-0.png", 0, 0 {} }
-Sprite PETRD2, 140, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 70, 193 Patch "PATCHES/Peter/1-1.png", 0, 0 { FlipX } }
-Sprite PETRD3, 158, 194
-{ XScale 3.35714286 YScale 3.35714286 Offset 79, 192 Patch "PATCHES/Peter/1-2.png", 0, 0 { FlipX } }
-Sprite PETRD4, 157, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 193 Patch "PATCHES/Peter/1-3.png", 0, 0 { FlipX } }
-Sprite PETRD5, 155, 193
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 191 Patch "PATCHES/Peter/1-4.png", 0, 0 {} }
-Sprite PETRD6, 157, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 78, 193 Patch "PATCHES/Peter/1-3.png", 0, 0 {} }
-Sprite PETRD7, 158, 194
-{ XScale 3.35714286 YScale 3.35714286 Offset 79, 192 Patch "PATCHES/Peter/1-2.png", 0, 0 {} }
-Sprite PETRD8, 140, 195
-{ XScale 3.35714286 YScale 3.35714286 Offset 70, 193 Patch "PATCHES/Peter/1-1.png", 0, 0 {} }
-Sprite PETRE1, 145, 186
-{ XScale 3.35714286 YScale 3.35714286 Offset 72, 184 Patch "PATCHES/Peter/3-0.png", 0, 0 {} }
-Sprite PETRE2, 164, 186
-{ XScale 3.35714286 YScale 3.35714286 Offset 82, 184 Patch "PATCHES/Peter/3-1.png", 0, 0 { FlipX } }
-Sprite PETRE3, 166, 185
-{ XScale 3.35714286 YScale 3.35714286 Offset 83, 183 Patch "PATCHES/Peter/3-2.png", 0, 0 { FlipX } }
-Sprite PETRE4, 146, 186
-{ XScale 3.35714286 YScale 3.35714286 Offset 73, 184 Patch "PATCHES/Peter/3-3.png", 0, 0 { FlipX } }
-Sprite PETRE5, 134, 186
-{ XScale 3.35714286 YScale 3.35714286 Offset 67, 184 Patch "PATCHES/Peter/3-4.png", 0, 0 {} }
-Sprite PETRE6, 146, 186
-{ XScale 3.35714286 YScale 3.35714286 Offset 73, 184 Patch "PATCHES/Peter/3-3.png", 0, 0 {} }
-Sprite PETRE7, 166, 185
-{ XScale 3.35714286 YScale 3.35714286 Offset 83, 183 Patch "PATCHES/Peter/3-2.png", 0, 0 {} }
-Sprite PETRE8, 164, 186
-{ XScale 3.35714286 YScale 3.35714286 Offset 82, 184 Patch "PATCHES/Peter/3-1.png", 0, 0 {} }
-Sprite PETRF1, 163, 191
-{ XScale 3.35714286 YScale 3.35714286 Offset 81, 189 Patch "PATCHES/Peter/4-0.png", 0, 0 {} }
-Sprite PETRF2, 170, 190
-{ XScale 3.35714286 YScale 3.35714286 Offset 85, 188 Patch "PATCHES/Peter/4-1.png", 0, 0 { FlipX } }
-Sprite PETRF3, 178, 190
-{ XScale 3.35714286 YScale 3.35714286 Offset 89, 188 Patch "PATCHES/Peter/4-2.png", 0, 0 { FlipX } }
-Sprite PETRF4, 149, 189
-{ XScale 3.35714286 YScale 3.35714286 Offset 74, 187 Patch "PATCHES/Peter/4-3.png", 0, 0 { FlipX } }
-Sprite PETRF5, 134, 186
-{ XScale 3.35714286 YScale 3.35714286 Offset 67, 184 Patch "PATCHES/Peter/3-4.png", 0, 0 {} }
-Sprite PETRF6, 149, 189
-{ XScale 3.35714286 YScale 3.35714286 Offset 74, 187 Patch "PATCHES/Peter/4-3.png", 0, 0 {} }
-Sprite PETRF7, 178, 190
-{ XScale 3.35714286 YScale 3.35714286 Offset 89, 188 Patch "PATCHES/Peter/4-2.png", 0, 0 {} }
-Sprite PETRF8, 170, 190
-{ XScale 3.35714286 YScale 3.35714286 Offset 85, 188 Patch "PATCHES/Peter/4-1.png", 0, 0 {} }
-Sprite PETRG1, 143, 209
-{ XScale 3.35714286 YScale 3.35714286 Offset 71, 207 Patch "PATCHES/Peter/5-0.png", 0, 0 {} }
-Sprite PETRG2, 142, 207
-{ XScale 3.35714286 YScale 3.35714286 Offset 71, 205 Patch "PATCHES/Peter/5-1.png", 0, 0 { FlipX } }
-Sprite PETRG3, 148, 207
-{ XScale 3.35714286 YScale 3.35714286 Offset 74, 205 Patch "PATCHES/Peter/5-2.png", 0, 0 { FlipX } }
-Sprite PETRG4, 155, 202
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 200 Patch "PATCHES/Peter/5-3.png", 0, 0 { FlipX } }
-Sprite PETRG5, 158, 204
-{ XScale 3.35714286 YScale 3.35714286 Offset 79, 202 Patch "PATCHES/Peter/5-4.png", 0, 0 {} }
-Sprite PETRG6, 155, 202
-{ XScale 3.35714286 YScale 3.35714286 Offset 77, 200 Patch "PATCHES/Peter/5-3.png", 0, 0 {} }
-Sprite PETRG7, 148, 207
-{ XScale 3.35714286 YScale 3.35714286 Offset 74, 205 Patch "PATCHES/Peter/5-2.png", 0, 0 {} }
-Sprite PETRG8, 142, 207
-{ XScale 3.35714286 YScale 3.35714286 Offset 71, 205 Patch "PATCHES/Peter/5-1.png", 0, 0 {} }
-Sprite PETRI0, 161, 172
-{ XScale 3.35714286 YScale 3.35714286 Offset 80, 170 Patch "PATCHES/Peter/6-0.png", 0, 0 {} }
-Sprite PETRJ0, 216, 175
-{ XScale 3.35714286 YScale 3.35714286 Offset 108, 173 Patch "PATCHES/Peter/6-1.png", 0, 0 {} }
-Sprite PETRK0, 190, 160
-{ XScale 3.35714286 YScale 3.35714286 Offset 95, 158 Patch "PATCHES/Peter/6-2.png", 0, 0 {} }
-Sprite PETRL0, 198, 140
-{ XScale 3.35714286 YScale 3.35714286 Offset 99, 138 Patch "PATCHES/Peter/6-3.png", 0, 0 {} }
-Sprite PETRM0, 179, 126
-{ XScale 3.35714286 YScale 3.35714286 Offset 89, 124 Patch "PATCHES/Peter/6-4.png", 0, 0 {} }
-Sprite PETRN0, 179, 126
-{ XScale 3.35714286 YScale 3.35714286 Offset 89, 124 Patch "PATCHES/Peter/6-4.png", 0, 0 {} }
-Graphic PETFACE, 115, 63 { XScale 2.5 YScale 1.2857142857142858 Patch "PATCHES/PETFACE.png", 0, 0 }
+Sprite PTRKA1, 137, 170
+{ XScale 2.96428571 YScale 2.96428571 Offset 68, 168 Patch "PATCHES/Patrick/0-0.png", 0, 0 {} }
+Sprite PTRKA2, 154, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 77, 170 Patch "PATCHES/Patrick/0-1.png", 0, 0 { FlipX } }
+Sprite PTRKA3, 140, 173
+{ XScale 2.96428571 YScale 2.96428571 Offset 70, 171 Patch "PATCHES/Patrick/0-2.png", 0, 0 { FlipX } }
+Sprite PTRKA4, 144, 170
+{ XScale 2.96428571 YScale 2.96428571 Offset 72, 168 Patch "PATCHES/Patrick/0-3.png", 0, 0 { FlipX } }
+Sprite PTRKA5, 142, 173
+{ XScale 2.96428571 YScale 2.96428571 Offset 71, 171 Patch "PATCHES/Patrick/0-4.png", 0, 0 {} }
+Sprite PTRKA6, 144, 170
+{ XScale 2.96428571 YScale 2.96428571 Offset 72, 168 Patch "PATCHES/Patrick/0-3.png", 0, 0 {} }
+Sprite PTRKA7, 140, 173
+{ XScale 2.96428571 YScale 2.96428571 Offset 70, 171 Patch "PATCHES/Patrick/0-2.png", 0, 0 {} }
+Sprite PTRKA8, 154, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 77, 170 Patch "PATCHES/Patrick/0-1.png", 0, 0 {} }
+Sprite PTRKB1, 135, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 67, 170 Patch "PATCHES/Patrick/1-0.png", 0, 0 {} }
+Sprite PTRKB2, 148, 175
+{ XScale 2.96428571 YScale 2.96428571 Offset 74, 173 Patch "PATCHES/Patrick/1-1.png", 0, 0 { FlipX } }
+Sprite PTRKB3, 147, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 73, 166 Patch "PATCHES/Patrick/1-2.png", 0, 0 { FlipX } }
+Sprite PTRKB4, 142, 176
+{ XScale 2.96428571 YScale 2.96428571 Offset 71, 174 Patch "PATCHES/Patrick/1-3.png", 0, 0 { FlipX } }
+Sprite PTRKB5, 139, 178
+{ XScale 2.96428571 YScale 2.96428571 Offset 69, 176 Patch "PATCHES/Patrick/1-4.png", 0, 0 {} }
+Sprite PTRKB6, 142, 176
+{ XScale 2.96428571 YScale 2.96428571 Offset 71, 174 Patch "PATCHES/Patrick/1-3.png", 0, 0 {} }
+Sprite PTRKB7, 147, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 73, 166 Patch "PATCHES/Patrick/1-2.png", 0, 0 {} }
+Sprite PTRKB8, 148, 175
+{ XScale 2.96428571 YScale 2.96428571 Offset 74, 173 Patch "PATCHES/Patrick/1-1.png", 0, 0 {} }
+Sprite PTRKC1, 134, 173
+{ XScale 2.96428571 YScale 2.96428571 Offset 67, 171 Patch "PATCHES/Patrick/2-0.png", 0, 0 {} }
+Sprite PTRKC2, 148, 174
+{ XScale 2.96428571 YScale 2.96428571 Offset 74, 172 Patch "PATCHES/Patrick/2-1.png", 0, 0 { FlipX } }
+Sprite PTRKC3, 144, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 72, 166 Patch "PATCHES/Patrick/2-2.png", 0, 0 { FlipX } }
+Sprite PTRKC4, 142, 173
+{ XScale 2.96428571 YScale 2.96428571 Offset 71, 171 Patch "PATCHES/Patrick/2-3.png", 0, 0 { FlipX } }
+Sprite PTRKC5, 138, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 69, 170 Patch "PATCHES/Patrick/2-4.png", 0, 0 {} }
+Sprite PTRKC6, 142, 173
+{ XScale 2.96428571 YScale 2.96428571 Offset 71, 171 Patch "PATCHES/Patrick/2-3.png", 0, 0 {} }
+Sprite PTRKC7, 144, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 72, 166 Patch "PATCHES/Patrick/2-2.png", 0, 0 {} }
+Sprite PTRKC8, 148, 174
+{ XScale 2.96428571 YScale 2.96428571 Offset 74, 172 Patch "PATCHES/Patrick/2-1.png", 0, 0 {} }
+Sprite PTRKD1, 135, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 67, 170 Patch "PATCHES/Patrick/1-0.png", 0, 0 {} }
+Sprite PTRKD2, 148, 175
+{ XScale 2.96428571 YScale 2.96428571 Offset 74, 173 Patch "PATCHES/Patrick/1-1.png", 0, 0 { FlipX } }
+Sprite PTRKD3, 147, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 73, 166 Patch "PATCHES/Patrick/1-2.png", 0, 0 { FlipX } }
+Sprite PTRKD4, 142, 176
+{ XScale 2.96428571 YScale 2.96428571 Offset 71, 174 Patch "PATCHES/Patrick/1-3.png", 0, 0 { FlipX } }
+Sprite PTRKD5, 139, 178
+{ XScale 2.96428571 YScale 2.96428571 Offset 69, 176 Patch "PATCHES/Patrick/1-4.png", 0, 0 {} }
+Sprite PTRKD6, 142, 176
+{ XScale 2.96428571 YScale 2.96428571 Offset 71, 174 Patch "PATCHES/Patrick/1-3.png", 0, 0 {} }
+Sprite PTRKD7, 147, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 73, 166 Patch "PATCHES/Patrick/1-2.png", 0, 0 {} }
+Sprite PTRKD8, 148, 175
+{ XScale 2.96428571 YScale 2.96428571 Offset 74, 173 Patch "PATCHES/Patrick/1-1.png", 0, 0 {} }
+Sprite PTRKE1, 126, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 63, 166 Patch "PATCHES/Patrick/3-0.png", 0, 0 {} }
+Sprite PTRKE2, 146, 169
+{ XScale 2.96428571 YScale 2.96428571 Offset 73, 167 Patch "PATCHES/Patrick/3-1.png", 0, 0 { FlipX } }
+Sprite PTRKE3, 161, 164
+{ XScale 2.96428571 YScale 2.96428571 Offset 80, 162 Patch "PATCHES/Patrick/3-2.png", 0, 0 { FlipX } }
+Sprite PTRKE4, 138, 169
+{ XScale 2.96428571 YScale 2.96428571 Offset 69, 167 Patch "PATCHES/Patrick/3-3.png", 0, 0 { FlipX } }
+Sprite PTRKE5, 128, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 64, 170 Patch "PATCHES/Patrick/3-4.png", 0, 0 {} }
+Sprite PTRKE6, 138, 169
+{ XScale 2.96428571 YScale 2.96428571 Offset 69, 167 Patch "PATCHES/Patrick/3-3.png", 0, 0 {} }
+Sprite PTRKE7, 161, 164
+{ XScale 2.96428571 YScale 2.96428571 Offset 80, 162 Patch "PATCHES/Patrick/3-2.png", 0, 0 {} }
+Sprite PTRKE8, 146, 169
+{ XScale 2.96428571 YScale 2.96428571 Offset 73, 167 Patch "PATCHES/Patrick/3-1.png", 0, 0 {} }
+Sprite PTRKF1, 126, 170
+{ XScale 2.96428571 YScale 2.96428571 Offset 63, 168 Patch "PATCHES/Patrick/4-0.png", 0, 0 {} }
+Sprite PTRKF2, 169, 170
+{ XScale 2.96428571 YScale 2.96428571 Offset 84, 168 Patch "PATCHES/Patrick/4-1.png", 0, 0 { FlipX } }
+Sprite PTRKF3, 180, 164
+{ XScale 2.96428571 YScale 2.96428571 Offset 90, 162 Patch "PATCHES/Patrick/4-2.png", 0, 0 { FlipX } }
+Sprite PTRKF4, 151, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 75, 166 Patch "PATCHES/Patrick/4-3.png", 0, 0 { FlipX } }
+Sprite PTRKF5, 128, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 64, 170 Patch "PATCHES/Patrick/3-4.png", 0, 0 {} }
+Sprite PTRKF6, 151, 168
+{ XScale 2.96428571 YScale 2.96428571 Offset 75, 166 Patch "PATCHES/Patrick/4-3.png", 0, 0 {} }
+Sprite PTRKF7, 180, 164
+{ XScale 2.96428571 YScale 2.96428571 Offset 90, 162 Patch "PATCHES/Patrick/4-2.png", 0, 0 {} }
+Sprite PTRKF8, 169, 170
+{ XScale 2.96428571 YScale 2.96428571 Offset 84, 168 Patch "PATCHES/Patrick/4-1.png", 0, 0 {} }
+Sprite PTRKG1, 140, 200
+{ XScale 2.96428571 YScale 2.96428571 Offset 70, 198 Patch "PATCHES/Patrick/5-0.png", 0, 0 {} }
+Sprite PTRKG2, 140, 191
+{ XScale 2.96428571 YScale 2.96428571 Offset 70, 189 Patch "PATCHES/Patrick/5-1.png", 0, 0 { FlipX } }
+Sprite PTRKG3, 140, 180
+{ XScale 2.96428571 YScale 2.96428571 Offset 70, 178 Patch "PATCHES/Patrick/5-2.png", 0, 0 { FlipX } }
+Sprite PTRKG4, 138, 191
+{ XScale 2.96428571 YScale 2.96428571 Offset 69, 189 Patch "PATCHES/Patrick/5-3.png", 0, 0 { FlipX } }
+Sprite PTRKG5, 127, 191
+{ XScale 2.96428571 YScale 2.96428571 Offset 63, 189 Patch "PATCHES/Patrick/5-4.png", 0, 0 {} }
+Sprite PTRKG6, 138, 191
+{ XScale 2.96428571 YScale 2.96428571 Offset 69, 189 Patch "PATCHES/Patrick/5-3.png", 0, 0 {} }
+Sprite PTRKG7, 140, 180
+{ XScale 2.96428571 YScale 2.96428571 Offset 70, 178 Patch "PATCHES/Patrick/5-2.png", 0, 0 {} }
+Sprite PTRKG8, 140, 191
+{ XScale 2.96428571 YScale 2.96428571 Offset 70, 189 Patch "PATCHES/Patrick/5-1.png", 0, 0 {} }
+Sprite PTRKI0, 155, 177
+{ XScale 2.96428571 YScale 2.96428571 Offset 77, 175 Patch "PATCHES/Patrick/6-0.png", 0, 0 {} }
+Sprite PTRKJ0, 160, 172
+{ XScale 2.96428571 YScale 2.96428571 Offset 80, 170 Patch "PATCHES/Patrick/6-1.png", 0, 0 {} }
+Sprite PTRKK0, 171, 132
+{ XScale 2.96428571 YScale 2.96428571 Offset 85, 130 Patch "PATCHES/Patrick/6-2.png", 0, 0 {} }
+Sprite PTRKL0, 179, 102
+{ XScale 2.96428571 YScale 2.96428571 Offset 89, 100 Patch "PATCHES/Patrick/6-3.png", 0, 0 {} }
+Sprite PTRKM0, 183, 86
+{ XScale 2.96428571 YScale 2.96428571 Offset 91, 84 Patch "PATCHES/Patrick/6-4.png", 0, 0 {} }
+Sprite PTRKN0, 183, 86
+{ XScale 2.96428571 YScale 2.96428571 Offset 91, 84 Patch "PATCHES/Patrick/6-4.png", 0, 0 {} }
+Graphic PATFACE, 111, 71 { XScale 2.4130434782608696 YScale 1.4489795918367347 Patch "PATCHES/PATFACE.png", 0, 0 }
+Sprite PETRA1, 157, 194
+{ XScale 3.39285714 YScale 3.39285714 Offset 78, 192 Patch "PATCHES/Peter/0-0.png", 0, 0 {} }
+Sprite PETRA2, 161, 193
+{ XScale 3.39285714 YScale 3.39285714 Offset 80, 191 Patch "PATCHES/Peter/0-1.png", 0, 0 { FlipX } }
+Sprite PETRA3, 137, 194
+{ XScale 3.39285714 YScale 3.39285714 Offset 68, 192 Patch "PATCHES/Peter/0-2.png", 0, 0 { FlipX } }
+Sprite PETRA4, 145, 194
+{ XScale 3.39285714 YScale 3.39285714 Offset 72, 192 Patch "PATCHES/Peter/0-3.png", 0, 0 { FlipX } }
+Sprite PETRA5, 147, 194
+{ XScale 3.39285714 YScale 3.39285714 Offset 73, 192 Patch "PATCHES/Peter/0-4.png", 0, 0 {} }
+Sprite PETRA6, 145, 194
+{ XScale 3.39285714 YScale 3.39285714 Offset 72, 192 Patch "PATCHES/Peter/0-3.png", 0, 0 {} }
+Sprite PETRA7, 137, 194
+{ XScale 3.39285714 YScale 3.39285714 Offset 68, 192 Patch "PATCHES/Peter/0-2.png", 0, 0 {} }
+Sprite PETRA8, 161, 193
+{ XScale 3.39285714 YScale 3.39285714 Offset 80, 191 Patch "PATCHES/Peter/0-1.png", 0, 0 {} }
+Sprite PETRB1, 150, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 75, 186 Patch "PATCHES/Peter/1-0.png", 0, 0 {} }
+Sprite PETRB2, 158, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-1.png", 0, 0 { FlipX } }
+Sprite PETRB3, 159, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-2.png", 0, 0 { FlipX } }
+Sprite PETRB4, 141, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 70, 186 Patch "PATCHES/Peter/1-3.png", 0, 0 { FlipX } }
+Sprite PETRB5, 136, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 68, 186 Patch "PATCHES/Peter/1-4.png", 0, 0 {} }
+Sprite PETRB6, 141, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 70, 186 Patch "PATCHES/Peter/1-3.png", 0, 0 {} }
+Sprite PETRB7, 159, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-2.png", 0, 0 {} }
+Sprite PETRB8, 158, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-1.png", 0, 0 {} }
+Sprite PETRC1, 148, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 74, 185 Patch "PATCHES/Peter/2-0.png", 0, 0 {} }
+Sprite PETRC2, 154, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 77, 185 Patch "PATCHES/Peter/2-1.png", 0, 0 { FlipX } }
+Sprite PETRC3, 160, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 80, 185 Patch "PATCHES/Peter/2-2.png", 0, 0 { FlipX } }
+Sprite PETRC4, 146, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 73, 185 Patch "PATCHES/Peter/2-3.png", 0, 0 { FlipX } }
+Sprite PETRC5, 136, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 68, 185 Patch "PATCHES/Peter/2-4.png", 0, 0 {} }
+Sprite PETRC6, 146, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 73, 185 Patch "PATCHES/Peter/2-3.png", 0, 0 {} }
+Sprite PETRC7, 160, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 80, 185 Patch "PATCHES/Peter/2-2.png", 0, 0 {} }
+Sprite PETRC8, 154, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 77, 185 Patch "PATCHES/Peter/2-1.png", 0, 0 {} }
+Sprite PETRD1, 150, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 75, 186 Patch "PATCHES/Peter/1-0.png", 0, 0 {} }
+Sprite PETRD2, 158, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-1.png", 0, 0 { FlipX } }
+Sprite PETRD3, 159, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-2.png", 0, 0 { FlipX } }
+Sprite PETRD4, 141, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 70, 186 Patch "PATCHES/Peter/1-3.png", 0, 0 { FlipX } }
+Sprite PETRD5, 136, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 68, 186 Patch "PATCHES/Peter/1-4.png", 0, 0 {} }
+Sprite PETRD6, 141, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 70, 186 Patch "PATCHES/Peter/1-3.png", 0, 0 {} }
+Sprite PETRD7, 159, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-2.png", 0, 0 {} }
+Sprite PETRD8, 158, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 186 Patch "PATCHES/Peter/1-1.png", 0, 0 {} }
+Sprite PETRE1, 141, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 70, 188 Patch "PATCHES/Peter/3-0.png", 0, 0 {} }
+Sprite PETRE2, 147, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 73, 188 Patch "PATCHES/Peter/3-1.png", 0, 0 { FlipX } }
+Sprite PETRE3, 164, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 82, 188 Patch "PATCHES/Peter/3-2.png", 0, 0 { FlipX } }
+Sprite PETRE4, 163, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 81, 188 Patch "PATCHES/Peter/3-3.png", 0, 0 { FlipX } }
+Sprite PETRE5, 138, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 69, 188 Patch "PATCHES/Peter/3-4.png", 0, 0 {} }
+Sprite PETRE6, 163, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 81, 188 Patch "PATCHES/Peter/3-3.png", 0, 0 {} }
+Sprite PETRE7, 164, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 82, 188 Patch "PATCHES/Peter/3-2.png", 0, 0 {} }
+Sprite PETRE8, 147, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 73, 188 Patch "PATCHES/Peter/3-1.png", 0, 0 {} }
+Sprite PETRF1, 139, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 69, 185 Patch "PATCHES/Peter/4-0.png", 0, 0 {} }
+Sprite PETRF2, 197, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 98, 186 Patch "PATCHES/Peter/4-1.png", 0, 0 { FlipX } }
+Sprite PETRF3, 202, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 101, 186 Patch "PATCHES/Peter/4-2.png", 0, 0 { FlipX } }
+Sprite PETRF4, 186, 186
+{ XScale 3.39285714 YScale 3.39285714 Offset 93, 184 Patch "PATCHES/Peter/4-3.png", 0, 0 { FlipX } }
+Sprite PETRF5, 138, 190
+{ XScale 3.39285714 YScale 3.39285714 Offset 69, 188 Patch "PATCHES/Peter/3-4.png", 0, 0 {} }
+Sprite PETRF6, 186, 186
+{ XScale 3.39285714 YScale 3.39285714 Offset 93, 184 Patch "PATCHES/Peter/4-3.png", 0, 0 {} }
+Sprite PETRF7, 202, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 101, 186 Patch "PATCHES/Peter/4-2.png", 0, 0 {} }
+Sprite PETRF8, 197, 188
+{ XScale 3.39285714 YScale 3.39285714 Offset 98, 186 Patch "PATCHES/Peter/4-1.png", 0, 0 {} }
+Sprite PETRG1, 156, 200
+{ XScale 3.39285714 YScale 3.39285714 Offset 78, 198 Patch "PATCHES/Peter/5-0.png", 0, 0 {} }
+Sprite PETRG2, 151, 201
+{ XScale 3.39285714 YScale 3.39285714 Offset 75, 199 Patch "PATCHES/Peter/5-1.png", 0, 0 { FlipX } }
+Sprite PETRG3, 144, 198
+{ XScale 3.39285714 YScale 3.39285714 Offset 72, 196 Patch "PATCHES/Peter/5-2.png", 0, 0 { FlipX } }
+Sprite PETRG4, 153, 189
+{ XScale 3.39285714 YScale 3.39285714 Offset 76, 187 Patch "PATCHES/Peter/5-3.png", 0, 0 { FlipX } }
+Sprite PETRG5, 147, 187
+{ XScale 3.39285714 YScale 3.39285714 Offset 73, 185 Patch "PATCHES/Peter/5-4.png", 0, 0 {} }
+Sprite PETRG6, 153, 189
+{ XScale 3.39285714 YScale 3.39285714 Offset 76, 187 Patch "PATCHES/Peter/5-3.png", 0, 0 {} }
+Sprite PETRG7, 144, 198
+{ XScale 3.39285714 YScale 3.39285714 Offset 72, 196 Patch "PATCHES/Peter/5-2.png", 0, 0 {} }
+Sprite PETRG8, 151, 201
+{ XScale 3.39285714 YScale 3.39285714 Offset 75, 199 Patch "PATCHES/Peter/5-1.png", 0, 0 {} }
+Sprite PETRI0, 187, 194
+{ XScale 3.39285714 YScale 3.39285714 Offset 93, 192 Patch "PATCHES/Peter/6-0.png", 0, 0 {} }
+Sprite PETRJ0, 197, 170
+{ XScale 3.39285714 YScale 3.39285714 Offset 98, 168 Patch "PATCHES/Peter/6-1.png", 0, 0 {} }
+Sprite PETRK0, 210, 154
+{ XScale 3.39285714 YScale 3.39285714 Offset 105, 152 Patch "PATCHES/Peter/6-2.png", 0, 0 {} }
+Sprite PETRL0, 199, 138
+{ XScale 3.39285714 YScale 3.39285714 Offset 99, 136 Patch "PATCHES/Peter/6-3.png", 0, 0 {} }
+Sprite PETRM0, 184, 121
+{ XScale 3.39285714 YScale 3.39285714 Offset 92, 119 Patch "PATCHES/Peter/6-4.png", 0, 0 {} }
+Sprite PETRN0, 184, 121
+{ XScale 3.39285714 YScale 3.39285714 Offset 92, 119 Patch "PATCHES/Peter/6-4.png", 0, 0 {} }
+Graphic PETFACE, 120, 63 { XScale 2.608695652173913 YScale 1.2857142857142858 Patch "PATCHES/PETFACE.png", 0, 0 }
 Graphic TINFACE, 1015, 1146 { XScale 22.065217391304348 YScale 23.387755102040817 Patch "PATCHES/TINFACE.png", 0, 0 }
 Graphic TINLEFT, 1015, 1146 { XScale 22.065217391304348 YScale 23.387755102040817 Patch "PATCHES/TINLEFT.png", 0, 0 }
 Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }

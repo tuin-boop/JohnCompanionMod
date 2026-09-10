@@ -96,11 +96,8 @@ class NNR_BrianRegistry : Actor {States {Spawn: BRIN ABCDEFGIJKLMN -1;Stop;}}
 class NNR_SpongeBobMarine : NNR_HimikoMarine {override int Member(){return 16;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("SPNG");}}
 class NNR_SpongeBobRegistry : Actor {States {Spawn: SPNG ABCDEFGIJKLMN -1;Stop;}}
 
-class NNR_PatrickMarine : NNR_HimikoMarine {override int Member(){return 17;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("PTRK");} States { Missile: PTRK E 3 A_FaceTarget; PTRK F 5 { A_FaceTarget(); A_CustomBulletAttack(3,2,1,4,"NNR_ExtraWaterPuff"); } PTRK E 4; Goto See; }}
+class NNR_PatrickMarine : NNR_HimikoMarine {override int Member(){return 17;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("PTRK");} States { Missile: Goto Shotgun; } }
 class NNR_PatrickRegistry : Actor {States {Spawn: PTRK ABCDEFGIJKLMN -1;Stop;}}
 
-class NNR_PeterMarine : NNR_HimikoMarine {override int Member(){return 18;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("PETR");} States { Missile: PETR E 3 A_FaceTarget; PETR F 5 { A_FaceTarget(); A_CustomBulletAttack(3,2,1,4,"NNR_ExtraWaterPuff"); } PETR E 4; Goto See; }}
+class NNR_PeterMarine : NNR_HimikoMarine {override int Member(){return 18;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("PETR");} States { Missile: Goto Shotgun; } }
 class NNR_PeterRegistry : Actor {States {Spawn: PETR ABCDEFGIJKLMN -1;Stop;}}
-
-// The toy skins use a quiet water burst instead of the inherited weapon rotation.
-class NNR_ExtraWaterPuff : Actor { Default { +NOBLOCKMAP +NOGRAVITY RenderStyle "Add"; Alpha .6; Scale .08; Translation "0:255=[0,140,230]:[160,240,255]"; } States { Spawn: PLSS AB 2 Bright; Stop; } }
