@@ -1,4 +1,4 @@
-"""Build all six extra companions. Source art stays at its original resolution."""
+"""Build all seven extra companions. Source art stays at its original resolution."""
 from pathlib import Path
 import runpy
 from PIL import Image
@@ -7,11 +7,12 @@ from zipfile import ZipFile, ZIP_DEFLATED
 root=Path(__file__).resolve().parent
 ctx=runpy.run_path(str(root/'import_assets.py'))
 runs=ctx['runs'];defs=[]
-for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7)]:
+for name,prefix,expected in [('Tina','TINA',8),('Karin','KARN',7),('Frier','FRIR',7),('Tuin','TUIN',7),('Esther','ESTH',7),('Kumi','KUMI',7)]:
  im=Image.open(root/f'../../art/{name}/{name}-Sprite-Sheet.png').convert('RGBA')
  a=np.array(im);r,g,b=[a[:,:,i].astype(int) for i in range(3)]
  key_delta=65 if name=="Tina" else 12
- a[(r-g>key_delta)&(b-g>key_delta)&(r>25)&(b>25),3]=0
+ if name=="Kumi":a[(b-r>20)&(b-g>20)&(b>35),3]=0
+ else:a[(r-g>key_delta)&(b-g>key_delta)&(r>25)&(b>25),3]=0
  a[a[:,:,3]==0,:3]=0;im=Image.fromarray(a)
  ys=runs((a[:,:,3]>0).sum(axis=1)>5);assert len(ys)==expected,(name,ys)
  arts={};out=root/f'mod/PATCHES/{name}';out.mkdir(exist_ok=True)
@@ -47,9 +48,10 @@ r,g,b=[a[:,:,i].astype(int) for i in range(3)]
 a[(r-g>12)&(b-g>12)&(r>25)&(b>25),3]=0;a[a[:,:,3]==0,:3]=0
 face=Image.fromarray(a);face=face.crop(face.getbbox());face.save(root/'mod/PATCHES/FRIFACE.png')
 defs.append(f'Graphic FRIFACE, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/FRIFACE.png", 0, 0 }}\n')
-for who,texture in [('Tuin','TUINFACE'),('Esther','ESTFACE')]:
+for who,texture in [('Tuin','TUINFACE'),('Esther','ESTFACE'),('Kumi','KUMIFACE')]:
  face=Image.open(root/f'../../art/{who}/{who}-Portrait.png').convert('RGBA');a=np.array(face)
- if who=='Tuin':
+ if who=='Kumi':pass # supplied PNG already has transparency; preserve its black outlines
+ elif who=='Tuin':
   # Remove only border-connected black background, preserving eyes and dark facial shading.
   from collections import deque
   mask=(a[:,:,:3].max(axis=2)<28);seen=np.zeros(mask.shape,dtype=bool);h,w=mask.shape
@@ -67,4 +69,4 @@ with (root/'mod/TEXTURES').open('a') as f:f.write(''.join(defs))
 with ZipFile(root/'../../dist/Himiko_Companion_Addon.pk3','w',ZIP_DEFLATED) as z:
  for f in sorted((root/'mod').rglob('*')):
   if f.is_file():z.write(f,f.relative_to(root/'mod').as_posix())
-print('Packaged all six extras.')
+print('Packaged all seven extras.')

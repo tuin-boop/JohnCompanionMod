@@ -9,8 +9,8 @@ class NNR_HimikoRegistry : Actor { States { Spawn: HIMK ABCDEFGIJKLMN -1;Stop; }
 class NNR_HimikoMenu : NNR_StyledCompanionMenu {
  int selected;
  int Current(){return 6+selected;}
- String Prefix(){return selected==5?"ESTH":selected==4?"TUIN":selected==3?"FRIR":selected==2?"KARN":selected==1?"TINA":"HIMK";}
- void Browse(int delta){selected=(selected+delta+6)%6;MenuSound("menu/change");}
+ String Prefix(){return selected==6?"KUMI":selected==5?"ESTH":selected==4?"TUIN":selected==3?"FRIR":selected==2?"KARN":selected==1?"TINA":"HIMK";}
+ void Browse(int delta){selected=(selected+delta+7)%7;MenuSound("menu/change");}
  void Apply(int delta){
   if(choice==2){Browse(delta);return;}
   if(choice==0){ToggleMember(1<<(Current()-1));return;}
@@ -39,7 +39,7 @@ class NNR_HimikoMenu : NNR_StyledCompanionMenu {
   Panel(48,164,44,42,choice==2);Label(62,177,"<",Font.CR_CYAN,2);
   Panel(396,164,44,42,choice==2);Label(410,177,">",Font.CR_CYAN,2);
   Label(112,175,NNR_Team.Name(Current()),Font.CR_WHITE,2.4);
-  Label(340,140,String.Format("%d / 6",selected+1),Font.CR_GRAY,1.35);
+  Label(340,140,String.Format("%d / 7",selected+1),Font.CR_GRAY,1.35);
   String pose=PreviewTics%28<7?"A":PreviewTics%28<14?"B":PreviewTics%28<21?"C":"D";
   let pic=TexMan.CheckForTexture(Prefix()..pose.."8",TexMan.Type_Sprite);
   Screen.DrawTexture(pic,false,px+205*uiScale,py+220*uiScale,DTA_DestWidth,int(160*uiScale),DTA_DestHeight,int(220*uiScale),DTA_LeftOffset,0,DTA_TopOffset,0);
@@ -80,3 +80,6 @@ class NNR_FrierRegistry : Actor {States {Spawn: FRIR ABCDEFGIJKLMN -1;Stop;}}
 class NNR_TuinMarine : NNR_HimikoMarine {override int Member(){return 10;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("TUIN");}}
 class NNR_EstherMarine : NNR_HimikoMarine {override int Member(){return 11;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("ESTH");}}
 class NNR_TuinEstherRegistry : Actor {States {Spawn: TUIN ABCDEFGIJKLMN -1; ESTH ABCDEFGIJKLMN -1;Stop;}}
+
+class NNR_KumiMarine : NNR_HimikoMarine {override int Member(){return 12;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("KUMI");}}
+class NNR_KumiRegistry : Actor {States {Spawn: KUMI ABCDEFGIJKLMN -1;Stop;}}

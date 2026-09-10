@@ -746,8 +746,133 @@ Sprite ESTHM0, 217, 99
 { XScale 3.35714286 YScale 3.35714286 Offset 108, 97 Patch "PATCHES/Esther/6-4.png", 0, 0 {} }
 Sprite ESTHN0, 217, 99
 { XScale 3.35714286 YScale 3.35714286 Offset 108, 97 Patch "PATCHES/Esther/6-4.png", 0, 0 {} }
+Sprite KUMIA1, 142, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 200 Patch "PATCHES/Kumi/0-0.png", 0, 0 {} }
+Sprite KUMIA2, 142, 200
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 198 Patch "PATCHES/Kumi/0-1.png", 0, 0 { FlipX } }
+Sprite KUMIA3, 153, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 76, 200 Patch "PATCHES/Kumi/0-2.png", 0, 0 { FlipX } }
+Sprite KUMIA4, 145, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 72, 200 Patch "PATCHES/Kumi/0-3.png", 0, 0 { FlipX } }
+Sprite KUMIA5, 143, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 200 Patch "PATCHES/Kumi/0-4.png", 0, 0 {} }
+Sprite KUMIA6, 145, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 72, 200 Patch "PATCHES/Kumi/0-3.png", 0, 0 {} }
+Sprite KUMIA7, 153, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 76, 200 Patch "PATCHES/Kumi/0-2.png", 0, 0 {} }
+Sprite KUMIA8, 142, 200
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 198 Patch "PATCHES/Kumi/0-1.png", 0, 0 {} }
+Sprite KUMIB1, 143, 206
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 204 Patch "PATCHES/Kumi/1-0.png", 0, 0 {} }
+Sprite KUMIB2, 149, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 74, 200 Patch "PATCHES/Kumi/1-1.png", 0, 0 { FlipX } }
+Sprite KUMIB3, 151, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 75, 200 Patch "PATCHES/Kumi/1-2.png", 0, 0 { FlipX } }
+Sprite KUMIB4, 145, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 72, 200 Patch "PATCHES/Kumi/1-3.png", 0, 0 { FlipX } }
+Sprite KUMIB5, 143, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 200 Patch "PATCHES/Kumi/1-4.png", 0, 0 {} }
+Sprite KUMIB6, 145, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 72, 200 Patch "PATCHES/Kumi/1-3.png", 0, 0 {} }
+Sprite KUMIB7, 151, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 75, 200 Patch "PATCHES/Kumi/1-2.png", 0, 0 {} }
+Sprite KUMIB8, 149, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 74, 200 Patch "PATCHES/Kumi/1-1.png", 0, 0 {} }
+Sprite KUMIC1, 143, 204
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 202 Patch "PATCHES/Kumi/2-0.png", 0, 0 {} }
+Sprite KUMIC2, 149, 204
+{ XScale 3.53571429 YScale 3.53571429 Offset 74, 202 Patch "PATCHES/Kumi/2-1.png", 0, 0 { FlipX } }
+Sprite KUMIC3, 150, 204
+{ XScale 3.53571429 YScale 3.53571429 Offset 75, 202 Patch "PATCHES/Kumi/2-2.png", 0, 0 { FlipX } }
+Sprite KUMIC4, 147, 206
+{ XScale 3.53571429 YScale 3.53571429 Offset 73, 204 Patch "PATCHES/Kumi/2-3.png", 0, 0 { FlipX } }
+Sprite KUMIC5, 143, 203
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 201 Patch "PATCHES/Kumi/2-4.png", 0, 0 {} }
+Sprite KUMIC6, 147, 206
+{ XScale 3.53571429 YScale 3.53571429 Offset 73, 204 Patch "PATCHES/Kumi/2-3.png", 0, 0 {} }
+Sprite KUMIC7, 150, 204
+{ XScale 3.53571429 YScale 3.53571429 Offset 75, 202 Patch "PATCHES/Kumi/2-2.png", 0, 0 {} }
+Sprite KUMIC8, 149, 204
+{ XScale 3.53571429 YScale 3.53571429 Offset 74, 202 Patch "PATCHES/Kumi/2-1.png", 0, 0 {} }
+Sprite KUMID1, 143, 206
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 204 Patch "PATCHES/Kumi/1-0.png", 0, 0 {} }
+Sprite KUMID2, 149, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 74, 200 Patch "PATCHES/Kumi/1-1.png", 0, 0 { FlipX } }
+Sprite KUMID3, 151, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 75, 200 Patch "PATCHES/Kumi/1-2.png", 0, 0 { FlipX } }
+Sprite KUMID4, 145, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 72, 200 Patch "PATCHES/Kumi/1-3.png", 0, 0 { FlipX } }
+Sprite KUMID5, 143, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 200 Patch "PATCHES/Kumi/1-4.png", 0, 0 {} }
+Sprite KUMID6, 145, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 72, 200 Patch "PATCHES/Kumi/1-3.png", 0, 0 {} }
+Sprite KUMID7, 151, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 75, 200 Patch "PATCHES/Kumi/1-2.png", 0, 0 {} }
+Sprite KUMID8, 149, 202
+{ XScale 3.53571429 YScale 3.53571429 Offset 74, 200 Patch "PATCHES/Kumi/1-1.png", 0, 0 {} }
+Sprite KUMIE1, 144, 194
+{ XScale 3.53571429 YScale 3.53571429 Offset 72, 192 Patch "PATCHES/Kumi/3-0.png", 0, 0 {} }
+Sprite KUMIE2, 162, 191
+{ XScale 3.53571429 YScale 3.53571429 Offset 81, 189 Patch "PATCHES/Kumi/3-1.png", 0, 0 { FlipX } }
+Sprite KUMIE3, 167, 192
+{ XScale 3.53571429 YScale 3.53571429 Offset 83, 190 Patch "PATCHES/Kumi/3-2.png", 0, 0 { FlipX } }
+Sprite KUMIE4, 166, 194
+{ XScale 3.53571429 YScale 3.53571429 Offset 83, 192 Patch "PATCHES/Kumi/3-3.png", 0, 0 { FlipX } }
+Sprite KUMIE5, 143, 193
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 191 Patch "PATCHES/Kumi/3-4.png", 0, 0 {} }
+Sprite KUMIE6, 166, 194
+{ XScale 3.53571429 YScale 3.53571429 Offset 83, 192 Patch "PATCHES/Kumi/3-3.png", 0, 0 {} }
+Sprite KUMIE7, 167, 192
+{ XScale 3.53571429 YScale 3.53571429 Offset 83, 190 Patch "PATCHES/Kumi/3-2.png", 0, 0 {} }
+Sprite KUMIE8, 162, 191
+{ XScale 3.53571429 YScale 3.53571429 Offset 81, 189 Patch "PATCHES/Kumi/3-1.png", 0, 0 {} }
+Sprite KUMIF1, 142, 192
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 190 Patch "PATCHES/Kumi/4-0.png", 0, 0 {} }
+Sprite KUMIF2, 182, 189
+{ XScale 3.53571429 YScale 3.53571429 Offset 91, 187 Patch "PATCHES/Kumi/4-1.png", 0, 0 { FlipX } }
+Sprite KUMIF3, 182, 187
+{ XScale 3.53571429 YScale 3.53571429 Offset 91, 185 Patch "PATCHES/Kumi/4-2.png", 0, 0 { FlipX } }
+Sprite KUMIF4, 178, 194
+{ XScale 3.53571429 YScale 3.53571429 Offset 89, 192 Patch "PATCHES/Kumi/4-3.png", 0, 0 { FlipX } }
+Sprite KUMIF5, 143, 193
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 191 Patch "PATCHES/Kumi/3-4.png", 0, 0 {} }
+Sprite KUMIF6, 178, 194
+{ XScale 3.53571429 YScale 3.53571429 Offset 89, 192 Patch "PATCHES/Kumi/4-3.png", 0, 0 {} }
+Sprite KUMIF7, 182, 187
+{ XScale 3.53571429 YScale 3.53571429 Offset 91, 185 Patch "PATCHES/Kumi/4-2.png", 0, 0 {} }
+Sprite KUMIF8, 182, 189
+{ XScale 3.53571429 YScale 3.53571429 Offset 91, 187 Patch "PATCHES/Kumi/4-1.png", 0, 0 {} }
+Sprite KUMIG1, 142, 198
+{ XScale 3.53571429 YScale 3.53571429 Offset 71, 196 Patch "PATCHES/Kumi/5-0.png", 0, 0 {} }
+Sprite KUMIG2, 153, 193
+{ XScale 3.53571429 YScale 3.53571429 Offset 76, 191 Patch "PATCHES/Kumi/5-1.png", 0, 0 { FlipX } }
+Sprite KUMIG3, 137, 195
+{ XScale 3.53571429 YScale 3.53571429 Offset 68, 193 Patch "PATCHES/Kumi/5-2.png", 0, 0 { FlipX } }
+Sprite KUMIG4, 139, 190
+{ XScale 3.53571429 YScale 3.53571429 Offset 69, 188 Patch "PATCHES/Kumi/5-3.png", 0, 0 { FlipX } }
+Sprite KUMIG5, 141, 184
+{ XScale 3.53571429 YScale 3.53571429 Offset 70, 182 Patch "PATCHES/Kumi/5-4.png", 0, 0 {} }
+Sprite KUMIG6, 139, 190
+{ XScale 3.53571429 YScale 3.53571429 Offset 69, 188 Patch "PATCHES/Kumi/5-3.png", 0, 0 {} }
+Sprite KUMIG7, 137, 195
+{ XScale 3.53571429 YScale 3.53571429 Offset 68, 193 Patch "PATCHES/Kumi/5-2.png", 0, 0 {} }
+Sprite KUMIG8, 153, 193
+{ XScale 3.53571429 YScale 3.53571429 Offset 76, 191 Patch "PATCHES/Kumi/5-1.png", 0, 0 {} }
+Sprite KUMII0, 179, 184
+{ XScale 3.53571429 YScale 3.53571429 Offset 89, 182 Patch "PATCHES/Kumi/6-0.png", 0, 0 {} }
+Sprite KUMIJ0, 176, 181
+{ XScale 3.53571429 YScale 3.53571429 Offset 88, 179 Patch "PATCHES/Kumi/6-1.png", 0, 0 {} }
+Sprite KUMIK0, 165, 164
+{ XScale 3.53571429 YScale 3.53571429 Offset 82, 162 Patch "PATCHES/Kumi/6-2.png", 0, 0 {} }
+Sprite KUMIL0, 179, 157
+{ XScale 3.53571429 YScale 3.53571429 Offset 89, 155 Patch "PATCHES/Kumi/6-3.png", 0, 0 {} }
+Sprite KUMIM0, 195, 136
+{ XScale 3.53571429 YScale 3.53571429 Offset 97, 134 Patch "PATCHES/Kumi/6-4.png", 0, 0 {} }
+Sprite KUMIN0, 195, 136
+{ XScale 3.53571429 YScale 3.53571429 Offset 97, 134 Patch "PATCHES/Kumi/6-4.png", 0, 0 {} }
 Graphic TINFACE, 1124, 1148 { XScale 24.434782608695652 YScale 23.428571428571427 Patch "PATCHES/TINFACE.png", 0, 0 }
 Graphic TINLEFT, 1022, 1062 { XScale 22.217391304347824 YScale 21.6734693877551 Patch "PATCHES/TINLEFT.png", 0, 0 }
 Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }
 Graphic TUINFACE, 953, 1208 { XScale 20.717391304347824 YScale 24.653061224489797 Patch "PATCHES/TUINFACE.png", 0, 0 }
 Graphic ESTFACE, 1119, 1109 { XScale 24.32608695652174 YScale 22.632653061224488 Patch "PATCHES/ESTFACE.png", 0, 0 }
+Graphic KUMIFACE, 1109, 1066 { XScale 24.108695652173914 YScale 21.755102040816325 Patch "PATCHES/KUMIFACE.png", 0, 0 }

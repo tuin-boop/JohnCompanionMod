@@ -308,3 +308,5 @@ class NNR_FrierLevelKillCounter : NNR_JohnLevelKillCounter {}
 
 class NNR_TuinLevelKillCounter : NNR_JohnLevelKillCounter {}
 class NNR_EstherLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_KumiLevelKillCounter : NNR_JohnLevelKillCounter {}
