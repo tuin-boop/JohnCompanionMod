@@ -2,7 +2,7 @@
 
 These are original fictional game lines, not authentic quotations. Extracted from NNR_Banter.zsc.
 
-Romero, John Carmack and Jay each have 50 lines. Tom Hall and Adrian currently have no text banter or borrowed voice recordings. Skins share the character’s dialogue.
+All five characters have 50 lines each (250 total). Tom and Adrian have text banter but no borrowed voice recordings. Skins share the character’s dialogue.
 
 ## When text appears
 
@@ -111,3 +111,63 @@ Romero, John Carmack and Jay each have 50 lines. Tom Hall and Adrian currently h
 | Sunflare | Sunflare. Now that is a hot launch. | We have made an impression. |
 | Eye of Zeus | Zeus. The premium package. | That purchase just justified itself. |
 | Other boss | Boss down. On to the next milestone. | That is a big item off the schedule. |
+
+## Tom Hall
+
+| Situation | Line 1 | Line 2 |
+| --- | --- | --- |
+| First quiet introduction | New chapter! Hopefully we survive the opening paragraph. | Adventure awaits. So do several locked doors. |
+| Idle / exploring | I wonder what that switch does. Famous last words. | This place needs a secret room with something ridiculous in it. |
+| Camping | Base camp established. Sadly, no marshmallows. | You explore. I will discourage the welcoming committee. |
+| Generic kill | And our heroes live to see the next hallway. | That subplot wrapped up quickly. |
+| Imp | Imp down. Someone needs a less fiery hobby. | Bad imp! No throwing things indoors. |
+| Cyberdemon | Cyberdemon down! Now THAT is a chapter ending. | All those rockets, and not one escape plan. |
+| Spider Mastermind | Giant spider defeated. Can we have a smaller sequel? | That is quite enough legs for one adventure. |
+| Arch-vile | No, arch-vile. We already finished that chapter. | Resurrection cancelled. Let the supporting cast rest. |
+| Revenant | Revenant down. A skeleton with a rocket backpack? Of course. | The skeleton left, but its mail is still coming. |
+| Cacodemon | A flying tomato with teeth. I love a weird universe. | Cacodemon down. The sky is slightly less grumpy. |
+| Pinky / Spectre | Pinky down. All teeth, no patience. | That one really needed a reverse gear. |
+| Shotgun | Shotgun punctuation. Full stop. | That got the point across. Several points, actually. |
+| Super shotgun | Two barrels and a very short conversation. | Double-barrelled plot twist! |
+| Chaingun | Chaingun says brrrr. The demon disagrees. | That was a rather long sound effect. |
+| Rocket launcher | Special delivery from the Department of Explosions. | Rocket science! Mostly the explosion part. |
+| Plasma | Pew pew pew! Yes, I supply my own sound effects. | Now that is a proper space-adventure blaster. |
+| BFG | BFG! The happy ending arrived early. | And everyone in the room learned a valuable lesson. |
+| Glove / melee | That was a very personal plot development. | Glove versus demon. Glove wins this round. |
+| Hammer | Hammer time! I have been waiting to say that. | A little slapstick. Quite a lot of hammer. |
+| Discus | Discus down the hallway! Indoor sports are getting strange. | That is one way to put a spin on the story. |
+| Venom | Venom. Definitely not a health potion. | Note to self: do not taste the green stuff. |
+| Trident | Three prongs, one very surprised demon. | The trident has a point. Three, technically. |
+| Sunflare | Sunflare! We brought our own sunshine. | A sunny disposition can be surprisingly dangerous. |
+| Eye of Zeus | Eye of Zeus! Subtlety has left the building. | Now THAT is a special effect. |
+| Other boss | Boss defeated. There had better be an exit in this chapter. | Our heroes prevail! Briefly. Check the next room. |
+
+## Adrian Carmack
+
+| Situation | Line 1 | Line 2 |
+| --- | --- | --- |
+| First quiet introduction | Interesting shapes in here. Let us hope they stay on the walls. | I will watch the shadows. Something usually walks out of them. |
+| Idle / exploring | Good atmosphere. Terrible place to sit and draw. | That wall could use more texture. Maybe fewer faces. |
+| Camping | I can watch this corner. Strong silhouettes against that light. | Holding here. Let the monsters come into the frame. |
+| Generic kill | That looks better standing still. | One less moving shape in the dark. |
+| Imp | Imp down. Those spikes read well at a distance. | Good claws. Bad timing. |
+| Cyberdemon | Cyberdemon down. Hard to miss that silhouette. | That much metal hits the floor pretty hard. |
+| Spider Mastermind | Spider down. That is a lot of machinery around one brain. | An ugly shape. I mean that as a compliment. |
+| Arch-vile | Arch-vile down. Leave the finished poses alone. | That flame effect was getting in the way. |
+| Revenant | Revenant down. Plenty of anatomy on display. | Bones and shoulder rockets. Hard to keep that subtle. |
+| Cacodemon | Cacodemon down. Strong color, simple shape. | That eye really draws your attention. |
+| Pinky / Spectre | Pinky down. Mostly jaw with legs attached. | Heavy shoulders. Not much turning room. |
+| Shotgun | Shotgun. A few marks in the right places. | That left a rougher texture. |
+| Super shotgun | Two barrels. Broad strokes. | Not a delicate touch. It worked. |
+| Chaingun | Chaingun. There goes the clean outline. | That put some detail into the wall. |
+| Rocket launcher | Rocket impact. The composition has changed. | A little more rubble in the foreground. |
+| Plasma | Plasma throws a good blue light. | That lit up the teeth nicely. |
+| BFG | BFG. There goes the entire color palette. | Green light, then a room full of still life. |
+| Glove / melee | Close enough to study the teeth. Too close. | The glove left an impression. |
+| Hammer | Hammer. Sculpting with a heavier tool. | That knocked the rough edges off. |
+| Discus | Nice arc. Sharp edge. | The discus found a new cutting surface. |
+| Venom | Venom. That green does not look healthy. | That added an unpleasant finish. |
+| Trident | Three points make a strong shape. | The trident filled the frame. |
+| Sunflare | Sunflare. Warm lighting, briefly. | That brought out the shadows. |
+| Eye of Zeus | Zeus. Nothing subtle about that lighting. | A heavy weapon makes a messy reference. |
+| Other boss | Boss down. Hold that pose. | That is a good final frame. |

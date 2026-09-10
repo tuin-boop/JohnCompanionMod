@@ -1,8 +1,8 @@
 // Original fictional game banter, inspired by interviews; not authentic quotes.
 class NNR_CompanionBanter : EventHandler
 {
- int NextLine[MAXPLAYERS];int NextIdle[MAXPLAYERS];int PersonalReady[MAXPLAYERS*3];
- int LastChoice[MAXPLAYERS*3*25];String Message[MAXPLAYERS];int MessageUntil[MAXPLAYERS];int Speaker[MAXPLAYERS];
+ int NextLine[MAXPLAYERS];int NextIdle[MAXPLAYERS];int PersonalReady[MAXPLAYERS*5];
+ int LastChoice[MAXPLAYERS*5*25];String Message[MAXPLAYERS];int MessageUntil[MAXPLAYERS];int Speaker[MAXPLAYERS];
  bool Introduced[MAXPLAYERS];
  static String Line(int member,int category,int variant)
  {
@@ -156,7 +156,107 @@ class NNR_CompanionBanter : EventHandler
    "Zeus. The premium package.",
    "That purchase just justified itself.",
    "Boss down. On to the next milestone.",
-   "That is a big item off the schedule."
+   "That is a big item off the schedule.",
+   "New chapter! Hopefully we survive the opening paragraph.",
+   "Adventure awaits. So do several locked doors.",
+   "I wonder what that switch does. Famous last words.",
+   "This place needs a secret room with something ridiculous in it.",
+   "Base camp established. Sadly, no marshmallows.",
+   "You explore. I will discourage the welcoming committee.",
+   "And our heroes live to see the next hallway.",
+   "That subplot wrapped up quickly.",
+   "Imp down. Someone needs a less fiery hobby.",
+   "Bad imp! No throwing things indoors.",
+   "Cyberdemon down! Now THAT is a chapter ending.",
+   "All those rockets, and not one escape plan.",
+   "Giant spider defeated. Can we have a smaller sequel?",
+   "That is quite enough legs for one adventure.",
+   "No, arch-vile. We already finished that chapter.",
+   "Resurrection cancelled. Let the supporting cast rest.",
+   "Revenant down. A skeleton with a rocket backpack? Of course.",
+   "The skeleton left, but its mail is still coming.",
+   "A flying tomato with teeth. I love a weird universe.",
+   "Cacodemon down. The sky is slightly less grumpy.",
+   "Pinky down. All teeth, no patience.",
+   "That one really needed a reverse gear.",
+   "Shotgun punctuation. Full stop.",
+   "That got the point across. Several points, actually.",
+   "Two barrels and a very short conversation.",
+   "Double-barrelled plot twist!",
+   "Chaingun says brrrr. The demon disagrees.",
+   "That was a rather long sound effect.",
+   "Special delivery from the Department of Explosions.",
+   "Rocket science! Mostly the explosion part.",
+   "Pew pew pew! Yes, I supply my own sound effects.",
+   "Now that is a proper space-adventure blaster.",
+   "BFG! The happy ending arrived early.",
+   "And everyone in the room learned a valuable lesson.",
+   "That was a very personal plot development.",
+   "Glove versus demon. Glove wins this round.",
+   "Hammer time! I have been waiting to say that.",
+   "A little slapstick. Quite a lot of hammer.",
+   "Discus down the hallway! Indoor sports are getting strange.",
+   "That is one way to put a spin on the story.",
+   "Venom. Definitely not a health potion.",
+   "Note to self: do not taste the green stuff.",
+   "Three prongs, one very surprised demon.",
+   "The trident has a point. Three, technically.",
+   "Sunflare! We brought our own sunshine.",
+   "A sunny disposition can be surprisingly dangerous.",
+   "Eye of Zeus! Subtlety has left the building.",
+   "Now THAT is a special effect.",
+   "Boss defeated. There had better be an exit in this chapter.",
+   "Our heroes prevail! Briefly. Check the next room.",
+   "Interesting shapes in here. Let us hope they stay on the walls.",
+   "I will watch the shadows. Something usually walks out of them.",
+   "Good atmosphere. Terrible place to sit and draw.",
+   "That wall could use more texture. Maybe fewer faces.",
+   "I can watch this corner. Strong silhouettes against that light.",
+   "Holding here. Let the monsters come into the frame.",
+   "That looks better standing still.",
+   "One less moving shape in the dark.",
+   "Imp down. Those spikes read well at a distance.",
+   "Good claws. Bad timing.",
+   "Cyberdemon down. Hard to miss that silhouette.",
+   "That much metal hits the floor pretty hard.",
+   "Spider down. That is a lot of machinery around one brain.",
+   "An ugly shape. I mean that as a compliment.",
+   "Arch-vile down. Leave the finished poses alone.",
+   "That flame effect was getting in the way.",
+   "Revenant down. Plenty of anatomy on display.",
+   "Bones and shoulder rockets. Hard to keep that subtle.",
+   "Cacodemon down. Strong color, simple shape.",
+   "That eye really draws your attention.",
+   "Pinky down. Mostly jaw with legs attached.",
+   "Heavy shoulders. Not much turning room.",
+   "Shotgun. A few marks in the right places.",
+   "That left a rougher texture.",
+   "Two barrels. Broad strokes.",
+   "Not a delicate touch. It worked.",
+   "Chaingun. There goes the clean outline.",
+   "That put some detail into the wall.",
+   "Rocket impact. The composition has changed.",
+   "A little more rubble in the foreground.",
+   "Plasma throws a good blue light.",
+   "That lit up the teeth nicely.",
+   "BFG. There goes the entire color palette.",
+   "Green light, then a room full of still life.",
+   "Close enough to study the teeth. Too close.",
+   "The glove left an impression.",
+   "Hammer. Sculpting with a heavier tool.",
+   "That knocked the rough edges off.",
+   "Nice arc. Sharp edge.",
+   "The discus found a new cutting surface.",
+   "Venom. That green does not look healthy.",
+   "That added an unpleasant finish.",
+   "Three points make a strong shape.",
+   "The trident filled the frame.",
+   "Sunflare. Warm lighting, briefly.",
+   "That brought out the shadows.",
+   "Zeus. Nothing subtle about that lighting.",
+   "A heavy weapon makes a messy reference.",
+   "Boss down. Hold that pose.",
+   "That is a good final frame."
   };
   return lines[member*50+category*2+variant];
  }
@@ -188,19 +288,19 @@ class NNR_CompanionBanter : EventHandler
  }
  bool Say(NNR_JohnMarine john,int category)
  {
-  if(!CVar.FindCVar("blnk_banter").GetBool() || !john || john.IsTom() || john.IsAdrian() || !john.master || !john.master.player || john.health<=0 || !john.bSHOOTABLE)return false;
+  if(!CVar.FindCVar("blnk_banter").GetBool() || !john || !john.master || !john.master.player || john.health<=0 || !john.bSHOOTABLE)return false;
   int who=john.master.PlayerNumber();if(who<0 || who>=MAXPLAYERS)return false;
-  int member=john.IsJay()?2:john.IsCarmack()?1:0;
-  if(level.time<NextLine[who] || level.time<PersonalReady[who*3+member])return false;
+  int member=john.Member()-1;
+  if(level.time<NextLine[who] || level.time<PersonalReady[who*5+member])return false;
   // Do not place text chatter on top of a long interview/voice clip.
   if(john.CompanionVoiceBusy())return false;
-  int key=(who*3+member)*25+category;
+  int key=(who*5+member)*25+category;
   int variant=Random[NNRBanter](0,1);
   if(LastChoice[key]==variant+1)variant=1-variant;
   LastChoice[key]=variant+1;
   Message[who]=Line(member,category,variant);Speaker[who]=member;MessageUntil[who]=level.time+245;
   NextLine[who]=level.time+Random[NNRBanter](30,50)*35;
-  PersonalReady[who*3+member]=level.time+75*35;
+  PersonalReady[who*5+member]=level.time+75*35;
   NextIdle[who]=level.time+Random[NNRBanter](90,150)*35;
   return true;
  }
@@ -230,10 +330,10 @@ class NNR_CompanionBanter : EventHandler
    NNR_JohnMarine selected;let it=ThinkerIterator.Create("NNR_JohnMarine");NNR_JohnMarine a;int count=0;
    while((a=NNR_JohnMarine(it.Next()))!=null)
    {
-    if(a.IsTom() || a.IsAdrian() || a.master!=players[who].mo || !a.bSHOOTABLE || a.health<=0 || a.Distance3D(a.master)>2048)continue;
+    if(a.master!=players[who].mo || !a.bSHOOTABLE || a.health<=0 || a.Distance3D(a.master)>2048)continue;
     if(a.CombatTarget(a.target) || level.time-a.LastShotTime<175)continue;
-    int member=a.IsJay()?2:a.IsCarmack()?1:0;
-    if(level.time<PersonalReady[who*3+member])continue;
+    int member=a.Member()-1;
+    if(level.time<PersonalReady[who*5+member])continue;
     count++;if(Random[NNRBanter](1,count)==1)selected=a;
    }
    if(selected && Say(selected,Introduced[who]?(selected.Camping?2:1):0))Introduced[who]=true;
@@ -245,7 +345,7 @@ class NNR_CompanionBanter : EventHandler
   int who=consoleplayer;if(who<0 || who>=MAXPLAYERS || level.time>=MessageUntil[who])return;
   int member=Speaker[who];int team=CVar.FindCVar("blnk_companions").GetInt();
   if((NNR_Team.Mask(team)&(1<<member))==0)return;
-  String name=member==2?"JAY WILBUR":member==1?"CARMACK":"ROMERO";
+  String name=member==4?"ADRIAN CARMACK":member==3?"TOM HALL":member==2?"JAY WILBUR":member==1?"CARMACK":"ROMERO";
   int color=member==2?Font.CR_GOLD:member==1?Font.CR_LIGHTBLUE:Font.CR_GREEN;
   double alpha=Min(1.,(MessageUntil[who]-level.time)/35.0);
   Screen.DrawText(SmallFont,color,8,18,String.Format("%s:",name),DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_KeepRatio,true,DTA_Alpha,alpha);

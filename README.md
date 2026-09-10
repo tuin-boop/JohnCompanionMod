@@ -60,9 +60,9 @@ Load `TuinRPG.pk3` first, followed by `Romero_Carmack_Companion_Control.pk3`. A 
 
 ## Companion chat
 
-Optional top-left text banter includes 150 original fictional lines (not real quotes), tailored to Romero, John Carmack and Jay, enemy type, and weapon. Toggle **Chat** in Companion Control. Regular kills have a 12% chance to request a line; boss kills 85%, always subject to a shared 30-50 second cooldown and a 75-second per-character cooldown. Idle/camp chatter waits 90-150 seconds after a line. One message appears for seven seconds, with no queue of delayed kill reactions. Voice clips already playing defer chatter. Enemy-specific dialogue recognizes vanilla classes and subclasses; other monsters use generic or boss lines.
+Optional top-left text banter includes 250 original fictional lines (not real quotes), tailored to all five characters, enemy type, and weapon. Toggle **Chat** in Companion Control. Regular kills have a 12% chance to request a line; boss kills 85%, always subject to a shared 30-50 second cooldown and a 75-second per-character cooldown. Idle/camp chatter waits 90-150 seconds after a line. One message appears for seven seconds, with no queue of delayed kill reactions. Voice clips already playing defer chatter. Enemy-specific dialogue recognizes vanilla classes and subclasses; other monsters use generic or boss lines.
 
-The [full chat list and trigger rules](CHAT-LIST.md) lists all 150 lines. Tom and Adrian currently have no text banter.
+The [full chat list and trigger rules](CHAT-LIST.md) lists all 250 lines. Tom uses playful sci-fi and story humor; Adrian uses dry observations about monster art, lighting and animation.
 
 Persona research and dialogue attribution: [BANTER-SOURCES.md](mod/BANTER-SOURCES.md).
 
@@ -70,6 +70,6 @@ Jay asset extraction scripts use Pillow and NumPy; the ordinary PK3 build still 
 
 Each character card has a separate Turn On / Turn Off button. Skin controls only change appearance. All companions can be disabled (None). Enabling a third companion replaces the first active companion in menu order (Romero, John Carmack, Jay, Tom, Adrian), keeping the limit at two, and shows a five-second warning naming the replacement.
 
-Young Adrian Carmack wears a dark teal shirt, glasses and long brown hair. His three supplied 1254-pixel portraits drive the HUD and tally without downsampling. He has his own kill counter and camp cooldown, with no borrowed voice or banter. `tools/import_adrian.py` regenerates his assets using Pillow and NumPy. `tests/adrian-test.zs` checks all 16 roster choices, both camp slots, menu replacement, and asset registration.
+Young Adrian Carmack wears a dark teal shirt, glasses and long brown hair. His three supplied 1254-pixel portraits drive the HUD and tally without downsampling. He has his own kill counter and camp cooldown, with his own text banter and no borrowed voice recordings. `tools/import_adrian.py` regenerates his assets using Pillow and NumPy. `tests/adrian-test.zs` checks all 16 roster choices, both camp slots, menu replacement, and asset registration.
 
 Adrian also has a Present-day skin: short brown-gray hair, thick dark glasses, gray stubble and a black Quake shirt. Change Skin on his card switches the live companion and title display without altering the team. His existing supplied HUD portrait remains in use pending the new portrait artwork. The title camera follows a slow 36-degree arc around the lineup, moving back and forth over about 34 seconds while looking inward; status labels track each character.
