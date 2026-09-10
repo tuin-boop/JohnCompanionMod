@@ -5,7 +5,7 @@ Open ESC > Extras (or Options > Extra Companions: Himiko).
 
 The animated character card uses the main mod's TINYBABY font. Character arrows currently show 1 / 1 because this is the first addon character. Select a partner with left/right, then Turn On. This chooses Himiko solo or a pair, replacing the previous team and keeping the maximum at two. Turn Off keeps the selected creator partner. Return to Companion Control for creator-only pairs.
 
-Himiko uses the shared weapon/AI and K/L camp controls, with an independent camp cooldown, HUD and tally kill counter. No borrowed creator chatter or voice clips. Her portrait is extracted from the sprite sheet. The decorative title lineup stays the five creators.
+Himiko uses the shared weapon/AI and K/L camp controls, with an independent camp cooldown, HUD and tally kill counter. No borrowed creator chatter or voice clips. Her full-resolution supplied portraits animate left/center/right in the HUD, with the center portrait on the tally. The decorative title lineup stays the five creators.
 
 Requires the companion mod update packaged alongside this addon, not the older v1.1.0 release. Removing the addon removes its menu and character; a saved Himiko pair falls back to its creator partner.
 

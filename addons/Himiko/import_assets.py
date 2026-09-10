@@ -39,10 +39,14 @@ def sprite(frame,rot,row,col,flip=False):
 for row,frame in enumerate('ABCDEFG'):
  for rot,(col,flip) in mapping.items():sprite(frame,rot,4 if frame=='F' and rot==5 else row,col,flip)
 for frame,col in zip('IJKLMN',[0,1,2,3,4,4]):sprite(frame,0,7,col)
-# Extract the head from the front idle cell; preserve original pixel detail.
-face=arts[0,0].crop((0,0,arts[0,0].width,round(arts[0,0].height*.43)))
-face.save(out/'face.png')
-defs.append(f'Graphic HIKFACE, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/face.png", 0, 0 }}')
+# Preserve the full supplied portraits; key blue and its darker edge fringe.
+for name in ['HIKFACE','HIKLEFT','HIKRIGHT']:
+ face=Image.open(root/f'art/portraits/{name}.png').convert('RGBA')
+ pixels=np.array(face);r,g,b=[pixels[:,:,i].astype(int) for i in range(3)]
+ pixels[(b-r>20)&(b-g>20)&(b>35),3]=0
+ pixels[pixels[:,:,3]==0,:3]=0
+ Image.fromarray(pixels).save(out/f'{name}.png')
+ defs.append(f'Graphic {name}, {face.width}, {face.height} {{ XScale {face.width/46} YScale {face.height/49} Patch "PATCHES/{name}.png", 0, 0 }}\n')
 (root/'mod/TEXTURES').write_text(''.join(defs))
 with ZipFile(root/'../../dist/Himiko_Companion_Addon.pk3','w') as z:
  for f in sorted((root/'mod').rglob('*')):

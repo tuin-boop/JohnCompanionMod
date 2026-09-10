@@ -7,7 +7,7 @@ class NNR_Team : Object
  static String Name(int member){return member==6?"HIMIKO":member==5?"ADRIAN":member==4?"TOM HALL":member==3?"JAY WILBUR":member==2?"CARMACK":member==1?"ROMERO":"NO COMPANION";}
  static String Counter(int member){return member==6?"NNR_ExtraLevelKillCounter":member==5?"NNR_AdrianLevelKillCounter":member==4?"NNR_TomLevelKillCounter":member==3?"NNR_JayLevelKillCounter":member==2?"NNR_CarmackLevelKillCounter":"NNR_JohnLevelKillCounter";}
  static String Face(int member,int frame,bool tally=false){
- if(member==6)return "HIKFACE";
+ if(member==6)return tally?"HIKFACE":frame==0?"HIKLEFT":frame==2?"HIKRIGHT":"HIKFACE";
  if(member==5)return tally?"ADRFACE":frame==0?"ADRLEFT":frame==2?"ADRRIGHT":"ADRFACE";
  if(member==4 && CVar.FindCVar("blnk_tomskin").GetInt()!=0)return tally?"TMPFACE":frame==0?"TMPLEFT":frame==2?"TMPRIGHT":"TMPFACE";
  if(member==4)return tally?"TOMFACE":frame==0?"TOMLEFT":frame==2?"TOMRIGHT":"TOMFACE";
