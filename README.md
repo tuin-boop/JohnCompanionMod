@@ -2,7 +2,7 @@
 
 ![Doom: Creators at Your Side - Romero and Carmack](art/creators-at-your-side.png)
 
-A Doom II companion mod for UZDoom/GZDoom, featuring John Romero, John Carmack, and Jay Wilbur, selectable skins, voices, independent kill tallies, a companion control panel, and a torch-lit Hell titlemap.
+A Doom II companion mod for UZDoom/GZDoom, featuring John Romero, John Carmack, Jay Wilbur, and Tom Hall Young, selectable skins, voices, independent kill tallies, a companion control panel, and a torch-lit Hell titlemap.
 
 ## Play
 
@@ -18,7 +18,7 @@ Load `dist/Romero_Carmack_Companion_Control.pk3` with your own Doom II IWAD. Loa
 | J | Hold to aim Jay Wilbur's camp circle; release to teleport and camp. |
 | L | Hold to aim Carmack’s camp circle; release to teleport and camp. |
 
-K, L and J each have a separate **10-second cooldown**. Pressing them again never releases camping: after the cooldown, it relocates that John's camp. Aim at clear ground within 1024 map units. A green circle shows a valid landing; red means blocked or cooling down. The companion lands at the circle’s center. Invalid placements do not consume the cooldown. F7 also cancels a held placement. Bottom-screen messages confirm orders or show the remaining cooldown. Keys can be rebound in Customize Controls under Romero and Carmack; existing bindings take precedence over defaults.
+Each companion has a separate **10-second cooldown**. Pressing them again never releases camping: after the cooldown, it relocates that companion�s camp. Aim at clear ground within 1024 map units. A green circle shows a valid landing; red means blocked or cooling down. The companion lands at the circle’s center. Invalid placements do not consume the cooldown. F7 also cancels a held placement. Bottom-screen messages confirm orders or show the remaining cooldown. Keys can be rebound in Customize Controls under Companion controls; existing bindings take precedence over defaults.
 
 Campers wander slightly around their individual spots and use ranged attacks without pursuing enemies. Close following also keeps them with the player during combat. Normal retains the original movement behavior. Camp spots belong to the current level.
 
@@ -28,7 +28,9 @@ Campers wander slightly around their individual spots and use ranged attacks wit
 
 - Carmack: Young Carmack, John Carmack 2006, **SwoleMack**.
 
-Select skins independently and choose any one character or any pair. Maximum two companions: Romero, Carmack, Jay, Romero + Carmack, Romero + Jay, or Carmack + Jay. SwoleMack features short silver hair, glasses, a black T-shirt, and stronger arms. Skins include directional walking, shooting, pain, and non-bloody falling frames. Only selected companions appear in the title scene, HUD, and level tally. Jay has his own striped rugby-shirt sprite set, animated HUD portrait, and forward-looking tally portrait. His nickname is Bizz Guy; no borrowed Romero/Carmack voice lines play for him.
+Select skins independently and choose any one character or any pair. Maximum two companions, chosen from Romero, Carmack, Jay and Tom; all six pairings are supported. K and L follow roster order (Romero, Carmack, Jay, Tom), and their current names appear at the bottom of the menu. SwoleMack features short silver hair, glasses, a black T-shirt, and stronger arms. Skins include directional walking, shooting, pain, and non-bloody falling frames. Only selected companions appear in the title scene, HUD, and level tally. Jay has his own striped rugby-shirt sprite set, animated HUD portrait, and forward-looking tally portrait. His nickname is Bizz Guy; no borrowed Romero/Carmack voice lines play for him.
+
+Tom Hall Young wears a cream overshirt over a black shirt. His supplied three portraits animate in the HUD; the forward-looking portrait appears on the tally. He has no borrowed voice recordings.
 
 ## Build
 

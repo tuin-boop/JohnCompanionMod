@@ -18,47 +18,20 @@ Class FriendSpawnHandler : EventHandler
             mode.SetInt(oldBoth ? 2 : (oldSkin == 2 || (oldSkin == 4 || oldSkin == 5)) ? 1 : 0);
         }
 
-        bool duo = mode.GetInt() == 2;
-        CVar.FindCVar("blnk_jay").SetBool(mode.GetInt() >= 3 && mode.GetInt() <= 5);
-        if (CVar.FindCVar("blnk_both").GetBool() != duo) CVar.FindCVar("blnk_both").SetBool(duo);
-        int skin = (mode.GetInt() == 1 || mode.GetInt() == 5) ? (CVar.FindCVar("blnk_duocarmack").GetInt() == 2 ? 5 : CVar.FindCVar("blnk_duocarmack").GetInt() == 1 ? 4 : 2) : CVar.FindCVar("blnk_duoromero").GetInt();
-        if (CVar.FindCVar("blnk_bodyskin").GetInt() != skin) CVar.FindCVar("blnk_bodyskin").SetInt(skin);
-bool both = CVar.FindCVar("blnk_both").GetBool();
-        for (int i = 0; i < MAXPLAYERS; i++)
+        int selected=mode.GetInt();int mask=NNR_Team.Mask(selected);
+        CVar.FindCVar("blnk_both").SetBool(selected==2);
+        CVar.FindCVar("blnk_jay").SetBool((mask&4)!=0);
+        CVar.FindCVar("blnk_bodyskin").SetInt(CVar.FindCVar("blnk_duoromero").GetInt());
+        for(int i=0;i<MAXPLAYERS;i++)
         {
-            if (!playeringame[i] || !players[i].mo || players[i].mo.health <= 0) continue;
-            Actor pl = players[i].mo;
-            NNR_JohnMarine romero;
-            NNR_JohnMarine carmack;
-            NNR_JohnMarine jay;
-            let it = ThinkerIterator.Create("NNR_JohnMarine");
-            NNR_JohnMarine a;
-            while ((a = NNR_JohnMarine(it.Next())) != null)
-            {
-                if (a.Master != pl) continue;
-                if (a.IsJay())
-                {
-                    if (!CVar.FindCVar("blnk_jay").GetBool() || jay) a.Destroy();
-                    else jay=a;
-                }
-                else if (a is "NNR_CarmackMarine")
-                {
-                    if (!both || carmack) a.Destroy();
-                    else carmack = a;
-                }
-                else
-                {
-                    if (mode.GetInt()==3 || mode.GetInt()==6 || romero) a.Destroy();
-                    else romero = a;
-                }
+            if(!playeringame[i] || !players[i].mo || players[i].mo.health<=0)continue;
+            int found=0;let it=ThinkerIterator.Create("NNR_JohnMarine");NNR_JohnMarine a;
+            while((a=NNR_JohnMarine(it.Next()))!=null){if(a.master!=players[i].mo)continue;int bit=1<<(a.Member()-1);if(!(mask&bit) || (found&bit))a.Destroy();else found|=bit;}
+            for(int slot=0;slot<2;slot++){
+                int member=NNR_Team.Slot(selected,slot);if(!member || (found&(1<<(member-1))))continue;
+                class<Actor> kind=member==4?"NNR_TomMarine":member==3?"NNR_JayMarine":member==2?"NNR_CarmackMarine":"NNR_JohnMarine";
+                let a=Actor.Spawn(kind,players[i].mo.pos);if(a){a.master=players[i].mo;a.Warp(a.master,-64,slot==0?-40:40,0,0,WARPF_STOP|WARPF_TOFLOOR);a.A_FaceMaster();}
             }
-            if (CVar.FindCVar("blnk_jay").GetBool() && !jay)
-            {
-                let j=Actor.Spawn("NNR_JayMarine",pl.pos);
-                if(j) { j.Master=pl;j.Warp(pl,-96,0,0,0,WARPF_STOP|WARPF_TOFLOOR);j.A_FaceMaster(); }
-            }
-            if (mode.GetInt()!=3 && mode.GetInt()!=6 && !romero) SpawnFriend(pl, false);
-            if (both && !carmack) SpawnFriend(pl, true);
         }
     }
     void SpawnFriend(Actor pl, bool carmack)

@@ -3,7 +3,7 @@ class NNR_JohnStatusScreen : DoomStatusScreen
 {
 	int JohnKills;
     int CarmackKills;
-    int JayKills;
+    int JayKills;int TomKills;
 	int FaceFrame;
 	int FaceTicks;
 	int FaceSeed;
@@ -44,12 +44,12 @@ class NNR_JohnStatusScreen : DoomStatusScreen
 	{
 		Super.Start(data);
 		JohnKills = 0;
-        CarmackKills = 0;JayKills=0;
+        CarmackKills = 0;JayKills=0;TomKills=0;
 		if (me >= 0 && me < MAXPLAYERS && players[me].mo)
 		{
 			JohnKills = players[me].mo.CountInv("NNR_JohnLevelKillCounter");
             CarmackKills = players[me].mo.CountInv("NNR_CarmackLevelKillCounter");
-            JayKills=players[me].mo.CountInv("NNR_JayLevelKillCounter");
+            JayKills=players[me].mo.CountInv("NNR_JayLevelKillCounter");TomKills=players[me].mo.CountInv("NNR_TomLevelKillCounter");
 		}
 		FaceFrame = 1;
 		FaceTicks = 70;
@@ -83,40 +83,14 @@ class NNR_JohnStatusScreen : DoomStatusScreen
 		CVar enabled = CVar.FindCVar("blnk_intermission");
 		if (enabled && !enabled.GetBool()) return;
 
-		CVar hudStyle = CVar.FindCVar("blnk_hudstyle");
-		bool classic = hudStyle && hudStyle.GetInt() != 0;
-		String faceName = classic ? "JICCENTR" : "JIFCENTR";
-		if (FaceFrame == 0) faceName = classic ? "JICLEFT" : "JIFLEFT";
-		else if (FaceFrame == 2) faceName = classic ? "JICRIGHT" : "JIFRIGHT";
-
-		CVar bodySkin = CVar.FindCVar("blnk_bodyskin");
-        bool both = CVar.FindCVar("blnk_both").GetBool();
-        bool carmack = !both && bodySkin && (bodySkin.GetInt() == 2 || (bodySkin.GetInt() == 4 || bodySkin.GetInt() == 5));
-        if (carmack) faceName = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
-        bool jayOnly=CVar.FindCVar("blnk_companions").GetInt()==3;
-        if(jayOnly)faceName="JAYFACE";
-        TextureID face = TexMan.CheckForTexture(faceName, TexMan.Type_Any);
-		DrawTexture(face, 2, 50);
-
-		String nameText = jayOnly?"JAY":carmack ? "CARMACK" : "ROMERO";
-		String killText = String.Format("%d KILLS", jayOnly?JayKills:carmack ? CarmackKills : JohnKills);
-		DrawText(SmallFont, Font.CR_GOLD, 25 - SmallFont.StringWidth(nameText) / 2, 100, nameText, shadow:true);
-		DrawText(SmallFont, Font.CR_GOLD, 25 - SmallFont.StringWidth(killText) / 2, 108, killText, shadow:true);
-		if (both)
-        {
-            String cmFace = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
-            DrawTexture(TexMan.CheckForTexture(cmFace, TexMan.Type_Any), 272, 50);
-            String cmName = "CARMACK";
-            String cmKills = String.Format("%d KILLS", CarmackKills);
-            DrawText(SmallFont, Font.CR_GOLD, 295 - SmallFont.StringWidth(cmName) / 2, 100, cmName, shadow:true);
-            DrawText(SmallFont, Font.CR_GOLD, 295 - SmallFont.StringWidth(cmKills) / 2, 108, cmKills, shadow:true);
+        int mode=CVar.FindCVar("blnk_companions").GetInt();
+        for(int slot=0;slot<2;slot++){
+            int member=NNR_Team.Slot(mode,slot);if(!member)continue;int x=slot==0?2:272;int center=x+23;
+            DrawTexture(TexMan.CheckForTexture(NNR_Team.Face(member,1,true),TexMan.Type_Any),x,50);
+            String name=member==4?"TOM":member==3?"JAY":NNR_Team.Name(member);String kills=String.Format("%d KILLS",member==4?TomKills:member==3?JayKills:member==2?CarmackKills:JohnKills);
+            DrawText(SmallFont,Font.CR_GOLD,center-SmallFont.StringWidth(name)/2,100,name,shadow:true);
+            DrawText(SmallFont,Font.CR_GOLD,center-SmallFont.StringWidth(kills)/2,108,kills,shadow:true);
         }
-        if (CVar.FindCVar("blnk_jay").GetBool() && !jayOnly)
-        {
-            DrawTexture(TexMan.CheckForTexture("JAYFACE",TexMan.Type_Any),272,50);
-            DrawText(SmallFont,Font.CR_GOLD,295-SmallFont.StringWidth("JAY")/2,100,"JAY",shadow:true);
-            DrawText(SmallFont,Font.CR_GOLD,295-SmallFont.StringWidth(String.Format("%d KILLS",JayKills))/2,108,String.Format("%d KILLS",JayKills),shadow:true);
-        }
-        if (!carmack && !jayOnly) DrawText(SmallFont, Font.CR_GOLD, 160 - SmallFont.StringWidth(JohnRemark) / 2, 196, JohnRemark, shadow:true);
-	}
+        if(NNR_Team.Mask(mode)&1)DrawText(SmallFont,Font.CR_GOLD,160-SmallFont.StringWidth(JohnRemark)/2,196,JohnRemark,shadow:true);
+    }
 }

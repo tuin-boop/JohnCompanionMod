@@ -13,6 +13,7 @@ Class FriendTauntHandler : EventHandler
                 players[i].mo.TakeInventory("NNR_CarmackLevelKillCounter", 2147483647);
                 players[i].mo.TakeInventory("NNR_CarmackKillCounter", 2147483647);
                 players[i].mo.TakeInventory("NNR_JayLevelKillCounter", 2147483647);
+                players[i].mo.TakeInventory("NNR_TomLevelKillCounter", 2147483647);
 
 				int previousFact = players[i].mo.CountInv("NNR_JohnFactToken");
 				int nextFact = Random(1, 100);
@@ -39,7 +40,8 @@ Class FriendTauntHandler : EventHandler
 			{
 				if (john.Master && john.Master.Player)
 				{
-					if (john.IsJay()) john.Master.GiveInventory("NNR_JayLevelKillCounter",1);
+					if (john.IsTom()) john.Master.GiveInventory("NNR_TomLevelKillCounter",1);
+                    else if (john.IsJay()) john.Master.GiveInventory("NNR_JayLevelKillCounter",1);
                     else if (john.IsCarmack())
                     {
                         john.Master.GiveInventory("NNR_CarmackKillCounter", 1);
@@ -125,49 +127,14 @@ Class NNR_JohnHUDHandler : EventHandler
         if (Menu.GetCurrentMenu() is "NNR_CompanionPreviewMenu") return;
 		if (consoleplayer < 0 || !players[consoleplayer].mo) return;
 
-        if(CVar.FindCVar("blnk_companions").GetInt()==3){DrawJayHud(6);return;}
-		CVar hudStyle = CVar.FindCVar("blnk_hudstyle");
-		bool classic = hudStyle && hudStyle.GetInt() != 0;
-		String faceName = classic ? "JHCCENTR" : "JHFCENTR";
-		if (FaceFrame == 0) faceName = classic ? "JHCLEFT" : "JHFLEFT";
-		else if (FaceFrame == 2) faceName = classic ? "JHCRIGHT" : "JHFRIGHT";
-
-		CVar bodySkin = CVar.FindCVar("blnk_bodyskin");
-        bool both = CVar.FindCVar("blnk_both").GetBool();
-        bool carmack = !both && bodySkin && (bodySkin.GetInt() == 2 || (bodySkin.GetInt() == 4 || bodySkin.GetInt() == 5));
-        if (carmack) faceName = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
-        TextureID face = TexMan.CheckForTexture(faceName, TexMan.Type_Any);
-		int kills = carmack ? players[consoleplayer].mo.CountInv("NNR_CarmackLevelKillCounter") : players[consoleplayer].mo.CountInv("NNR_JohnLevelKillCounter");
-		String killText = String.Format(carmack ? "CARMACK  KILLS: %d" : "ROMERO  KILLS: %d", kills);
-
-		Screen.DrawTexture(face, false, 584, 6,
-			DTA_VirtualWidth, 640,
-			DTA_VirtualHeight, 360,
-			DTA_DestWidth, 46,
-			DTA_DestHeight, 49,
-			DTA_LeftOffset, 0,
-			DTA_TopOffset, 0,
-			DTA_KeepRatio, true);
-
-		int textWidth = SmallFont.StringWidth(killText);
-        Screen.DrawText(SmallFont, Font.CR_GOLD, 632 - textWidth, 58, killText,
-			DTA_VirtualWidth, 640,
-			DTA_VirtualHeight, 360,
-			DTA_KeepRatio, true);
-
-        if (both)
-        {
-            String cmFace = FaceFrame == 0 ? "CMLEFT" : FaceFrame == 2 ? "CMRIGHT" : "CMCENTR";
-            TextureID cm = TexMan.CheckForTexture(cmFace, TexMan.Type_Any);
-            Screen.DrawTexture(cm, false, 584, 82,
-                DTA_VirtualWidth, 640, DTA_VirtualHeight, 360,
-                DTA_DestWidth, 46, DTA_DestHeight, 49,
-                DTA_LeftOffset, 0, DTA_TopOffset, 0, DTA_KeepRatio, true);
-            String cmKills = String.Format("CARMACK  KILLS: %d", players[consoleplayer].mo.CountInv("NNR_CarmackLevelKillCounter"));
-            Screen.DrawText(SmallFont, Font.CR_GOLD, 632 - SmallFont.StringWidth(cmKills), 134, cmKills,
-                DTA_VirtualWidth, 640, DTA_VirtualHeight, 360, DTA_KeepRatio, true);
+        int mode=CVar.FindCVar("blnk_companions").GetInt();
+        for(int slot=0;slot<2;slot++){
+            int member=NNR_Team.Slot(mode,slot);if(!member)continue;int y=6+76*slot;
+            Screen.DrawTexture(TexMan.CheckForTexture(NNR_Team.Face(member,FaceFrame),TexMan.Type_Any),false,584,y,DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_DestWidth,46,DTA_DestHeight,49,DTA_LeftOffset,0,DTA_TopOffset,0,DTA_KeepRatio,true);
+            String text=String.Format("%s  KILLS: %d",NNR_Team.Name(member),players[consoleplayer].mo.CountInv(NNR_Team.Counter(member)));
+            Screen.DrawText(SmallFont,Font.CR_GOLD,632-SmallFont.StringWidth(text),y+52,text,DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_KeepRatio,true);
         }
-        if (CVar.FindCVar("blnk_jay").GetBool()) DrawJayHud(82);
+        bool carmack=(NNR_Team.Mask(mode)&1)==0;
 		CVar factsEnabled = CVar.FindCVar("blnk_mapfacts");
 		if (!carmack && factsEnabled && factsEnabled.GetBool() && LastFact > 0 && FactDelay <= 0 && FactTicks > 0)
 		{

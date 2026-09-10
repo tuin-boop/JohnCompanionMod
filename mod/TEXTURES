@@ -2751,3 +2751,255 @@ Sprite JAYWN0, 183, 85
 }
 
 Graphic JAYTALLY,46,49 { XScale 1.4375 YScale 1.4375 Patch "GRAPHICS/JAYFACE.png",0,0 }
+
+// Tom Hall sprites
+Sprite TOMHA1, 94, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 47, 191
+ Patch "PATCHES/tomhall/0-0.png", 0, 0 {}
+}
+Sprite TOMHA2, 113, 195
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 195
+ Patch "PATCHES/tomhall/0-1.png", 0, 0 { FlipX }
+}
+Sprite TOMHA3, 109, 194
+{ XScale 3.41071429 YScale 3.41071429 Offset 54, 194
+ Patch "PATCHES/tomhall/0-2.png", 0, 0 { FlipX }
+}
+Sprite TOMHA4, 98, 196
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 196
+ Patch "PATCHES/tomhall/0-3.png", 0, 0 { FlipX }
+}
+Sprite TOMHA5, 95, 195
+{ XScale 3.41071429 YScale 3.41071429 Offset 47, 195
+ Patch "PATCHES/tomhall/0-4.png", 0, 0 {}
+}
+Sprite TOMHA6, 98, 196
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 196
+ Patch "PATCHES/tomhall/0-3.png", 0, 0 {}
+}
+Sprite TOMHA7, 109, 194
+{ XScale 3.41071429 YScale 3.41071429 Offset 54, 194
+ Patch "PATCHES/tomhall/0-2.png", 0, 0 {}
+}
+Sprite TOMHA8, 113, 195
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 195
+ Patch "PATCHES/tomhall/0-1.png", 0, 0 {}
+}
+Sprite TOMHB1, 94, 190
+{ XScale 3.41071429 YScale 3.41071429 Offset 47, 190
+ Patch "PATCHES/tomhall/1-0.png", 0, 0 {}
+}
+Sprite TOMHB2, 112, 190
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 190
+ Patch "PATCHES/tomhall/1-1.png", 0, 0 { FlipX }
+}
+Sprite TOMHB3, 113, 188
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 188
+ Patch "PATCHES/tomhall/1-2.png", 0, 0 { FlipX }
+}
+Sprite TOMHB4, 99, 194
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 194
+ Patch "PATCHES/tomhall/1-3.png", 0, 0 { FlipX }
+}
+Sprite TOMHB5, 96, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 48, 191
+ Patch "PATCHES/tomhall/1-4.png", 0, 0 {}
+}
+Sprite TOMHB6, 99, 194
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 194
+ Patch "PATCHES/tomhall/1-3.png", 0, 0 {}
+}
+Sprite TOMHB7, 113, 188
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 188
+ Patch "PATCHES/tomhall/1-2.png", 0, 0 {}
+}
+Sprite TOMHB8, 112, 190
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 190
+ Patch "PATCHES/tomhall/1-1.png", 0, 0 {}
+}
+Sprite TOMHC1, 95, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 47, 191
+ Patch "PATCHES/tomhall/2-0.png", 0, 0 {}
+}
+Sprite TOMHC2, 112, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 191
+ Patch "PATCHES/tomhall/2-1.png", 0, 0 { FlipX }
+}
+Sprite TOMHC3, 109, 189
+{ XScale 3.41071429 YScale 3.41071429 Offset 54, 189
+ Patch "PATCHES/tomhall/2-2.png", 0, 0 { FlipX }
+}
+Sprite TOMHC4, 99, 192
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 192
+ Patch "PATCHES/tomhall/2-3.png", 0, 0 { FlipX }
+}
+Sprite TOMHC5, 96, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 48, 191
+ Patch "PATCHES/tomhall/2-4.png", 0, 0 {}
+}
+Sprite TOMHC6, 99, 192
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 192
+ Patch "PATCHES/tomhall/2-3.png", 0, 0 {}
+}
+Sprite TOMHC7, 109, 189
+{ XScale 3.41071429 YScale 3.41071429 Offset 54, 189
+ Patch "PATCHES/tomhall/2-2.png", 0, 0 {}
+}
+Sprite TOMHC8, 112, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 56, 191
+ Patch "PATCHES/tomhall/2-1.png", 0, 0 {}
+}
+Sprite TOMHD1, 95, 191
+{ XScale 3.41071429 YScale 3.41071429 Offset 47, 191
+ Patch "PATCHES/tomhall/3-0.png", 0, 0 {}
+}
+Sprite TOMHD2, 122, 190
+{ XScale 3.41071429 YScale 3.41071429 Offset 61, 190
+ Patch "PATCHES/tomhall/3-1.png", 0, 0 { FlipX }
+}
+Sprite TOMHD3, 110, 189
+{ XScale 3.41071429 YScale 3.41071429 Offset 55, 189
+ Patch "PATCHES/tomhall/3-2.png", 0, 0 { FlipX }
+}
+Sprite TOMHD4, 99, 192
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 192
+ Patch "PATCHES/tomhall/3-3.png", 0, 0 { FlipX }
+}
+Sprite TOMHD5, 96, 192
+{ XScale 3.41071429 YScale 3.41071429 Offset 48, 192
+ Patch "PATCHES/tomhall/3-4.png", 0, 0 {}
+}
+Sprite TOMHD6, 99, 192
+{ XScale 3.41071429 YScale 3.41071429 Offset 49, 192
+ Patch "PATCHES/tomhall/3-3.png", 0, 0 {}
+}
+Sprite TOMHD7, 110, 189
+{ XScale 3.41071429 YScale 3.41071429 Offset 55, 189
+ Patch "PATCHES/tomhall/3-2.png", 0, 0 {}
+}
+Sprite TOMHD8, 122, 190
+{ XScale 3.41071429 YScale 3.41071429 Offset 61, 190
+ Patch "PATCHES/tomhall/3-1.png", 0, 0 {}
+}
+Sprite TOMHE1, 97, 186
+{ XScale 3.41071429 YScale 3.41071429 Offset 48, 186
+ Patch "PATCHES/tomhall/4-0.png", 0, 0 {}
+}
+Sprite TOMHE2, 136, 186
+{ XScale 3.41071429 YScale 3.41071429 Offset 68, 186
+ Patch "PATCHES/tomhall/4-1.png", 0, 0 { FlipX }
+}
+Sprite TOMHE3, 149, 185
+{ XScale 3.41071429 YScale 3.41071429 Offset 74, 185
+ Patch "PATCHES/tomhall/4-2.png", 0, 0 { FlipX }
+}
+Sprite TOMHE4, 125, 187
+{ XScale 3.41071429 YScale 3.41071429 Offset 62, 187
+ Patch "PATCHES/tomhall/4-3.png", 0, 0 { FlipX }
+}
+Sprite TOMHE5, 105, 190
+{ XScale 3.41071429 YScale 3.41071429 Offset 52, 190
+ Patch "PATCHES/tomhall/4-4.png", 0, 0 {}
+}
+Sprite TOMHE6, 125, 187
+{ XScale 3.41071429 YScale 3.41071429 Offset 62, 187
+ Patch "PATCHES/tomhall/4-3.png", 0, 0 {}
+}
+Sprite TOMHE7, 149, 185
+{ XScale 3.41071429 YScale 3.41071429 Offset 74, 185
+ Patch "PATCHES/tomhall/4-2.png", 0, 0 {}
+}
+Sprite TOMHE8, 136, 186
+{ XScale 3.41071429 YScale 3.41071429 Offset 68, 186
+ Patch "PATCHES/tomhall/4-1.png", 0, 0 {}
+}
+Sprite TOMHF1, 101, 185
+{ XScale 3.41071429 YScale 3.41071429 Offset 50, 185
+ Patch "PATCHES/tomhall/5-0.png", 0, 0 {}
+}
+Sprite TOMHF2, 174, 184
+{ XScale 3.41071429 YScale 3.41071429 Offset 87, 184
+ Patch "PATCHES/tomhall/5-1.png", 0, 0 { FlipX }
+}
+Sprite TOMHF3, 190, 184
+{ XScale 3.41071429 YScale 3.41071429 Offset 95, 184
+ Patch "PATCHES/tomhall/5-2.png", 0, 0 { FlipX }
+}
+Sprite TOMHF4, 168, 184
+{ XScale 3.41071429 YScale 3.41071429 Offset 84, 184
+ Patch "PATCHES/tomhall/5-3.png", 0, 0 { FlipX }
+}
+Sprite TOMHF5, 105, 190
+{ XScale 3.41071429 YScale 3.41071429 Offset 52, 190
+ Patch "PATCHES/tomhall/4-4.png", 0, 0 {}
+}
+Sprite TOMHF6, 168, 184
+{ XScale 3.41071429 YScale 3.41071429 Offset 84, 184
+ Patch "PATCHES/tomhall/5-3.png", 0, 0 {}
+}
+Sprite TOMHF7, 190, 184
+{ XScale 3.41071429 YScale 3.41071429 Offset 95, 184
+ Patch "PATCHES/tomhall/5-2.png", 0, 0 {}
+}
+Sprite TOMHF8, 174, 184
+{ XScale 3.41071429 YScale 3.41071429 Offset 87, 184
+ Patch "PATCHES/tomhall/5-1.png", 0, 0 {}
+}
+Sprite TOMHG1, 96, 178
+{ XScale 3.41071429 YScale 3.41071429 Offset 48, 178
+ Patch "PATCHES/tomhall/6-0.png", 0, 0 {}
+}
+Sprite TOMHG2, 91, 181
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 181
+ Patch "PATCHES/tomhall/6-1.png", 0, 0 { FlipX }
+}
+Sprite TOMHG3, 90, 179
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 179
+ Patch "PATCHES/tomhall/6-2.png", 0, 0 { FlipX }
+}
+Sprite TOMHG4, 90, 177
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 177
+ Patch "PATCHES/tomhall/6-3.png", 0, 0 { FlipX }
+}
+Sprite TOMHG5, 91, 176
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 176
+ Patch "PATCHES/tomhall/6-4.png", 0, 0 {}
+}
+Sprite TOMHG6, 90, 177
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 177
+ Patch "PATCHES/tomhall/6-3.png", 0, 0 {}
+}
+Sprite TOMHG7, 90, 179
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 179
+ Patch "PATCHES/tomhall/6-2.png", 0, 0 {}
+}
+Sprite TOMHG8, 91, 181
+{ XScale 3.41071429 YScale 3.41071429 Offset 45, 181
+ Patch "PATCHES/tomhall/6-1.png", 0, 0 {}
+}
+Sprite TOMHI0, 172, 157
+{ XScale 3.41071429 YScale 3.41071429 Offset 86, 157
+ Patch "PATCHES/tomhall/7-0.png", 0, 0 {}
+}
+Sprite TOMHJ0, 199, 143
+{ XScale 3.41071429 YScale 3.41071429 Offset 99, 143
+ Patch "PATCHES/tomhall/7-1.png", 0, 0 {}
+}
+Sprite TOMHK0, 199, 131
+{ XScale 3.41071429 YScale 3.41071429 Offset 99, 131
+ Patch "PATCHES/tomhall/7-2.png", 0, 0 {}
+}
+Sprite TOMHL0, 199, 102
+{ XScale 3.41071429 YScale 3.41071429 Offset 99, 102
+ Patch "PATCHES/tomhall/7-3.png", 0, 0 {}
+}
+Sprite TOMHM0, 182, 85
+{ XScale 3.41071429 YScale 3.41071429 Offset 91, 85
+ Patch "PATCHES/tomhall/7-4.png", 0, 0 {}
+}
+Sprite TOMHN0, 182, 85
+{ XScale 3.41071429 YScale 3.41071429 Offset 91, 85
+ Patch "PATCHES/tomhall/7-4.png", 0, 0 {}
+}
+
+Graphic TOMTALLY,46,49 { XScale 1.4375 YScale 1.4375 Patch "GRAPHICS/TOMFACE.png",0,0 }

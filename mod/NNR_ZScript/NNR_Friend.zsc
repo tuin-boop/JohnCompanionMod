@@ -2,8 +2,10 @@ class NNR_JohnMarine : actor
 {
 	virtual bool IsCarmack()
     {
-        return GetCVar("blnk_both") == 0 && (GetCVar("blnk_bodyskin") == 2 || (GetCVar("blnk_bodyskin") == 4 || GetCVar("blnk_bodyskin") == 5));
+        return false;
     }
+    virtual bool IsTom() { return false; }
+    virtual int Member() { return IsTom()?4:IsJay()?3:IsCarmack()?2:1; }
     virtual bool IsJay() { return false; }
     int NextCarmackSpeech;
     int VoiceUntil;
@@ -42,7 +44,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
     }
     void A_RomeroVoice(Sound sound, int channel = CHAN_VOICE, int flags = CHANF_DEFAULT, double volume = 1, double attenuation = ATTN_NORM)
     {
-        if (IsJay()) return;
+        if (IsJay() || IsTom()) return;
         if (IsCarmack())
         {
             // Full interviews fit idle/kill chatter, not a death reaction.
@@ -108,9 +110,9 @@ case 5: clip="carmack/line5"; duration=2421; break;
         CloseSettled = false;
         if (!HoldsPosition() || !master || master.health <= 0) return false;
         if (!Camping && !CheckSight(master)) return true;
-        double behind = master.radius + radius + (IsJay() ? 64 : 24);
-        double side = GetCVar("blnk_both") ? (IsCarmack() ? 28 : -28) : 0;
-        if (IsJay()) side = 0;
+        double behind = master.radius + radius + 32;
+        double side = NNR_Team.Slot(int(GetCVar("blnk_companions")),1)!=0 ? (NNR_Team.Slot(int(GetCVar("blnk_companions")),0)==Member()?-32:32) : 0;
+
         Vector2 forward = (cos(master.angle), sin(master.angle));
         Vector2 right = (-forward.Y, forward.X);
         Vector2 goal = master.pos.XY - forward * behind + right * side;
@@ -250,13 +252,14 @@ case 5: clip="carmack/line5"; duration=2421; break;
         if (frame >= 0 && frame <= 3 && (pos.XY-positionBeforeTick).Length() < 0.01)
             frame = 0;
         // Appearance changes do not restart states or alter weapon behavior.
-        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK") || sprite == GetSpriteIndex("JAYW"))
+        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK") || sprite == GetSpriteIndex("JAYW") || sprite == GetSpriteIndex("TOMH"))
         {
-            if (IsJay()) sprite = GetSpriteIndex("JAYW");
+            if (IsTom()) sprite = GetSpriteIndex("TOMH");
+            else if (IsJay()) sprite = GetSpriteIndex("JAYW");
             else if (IsCarmack())
             {
-                bool later = GetCVar("blnk_both") != 0 ? GetCVar("blnk_duocarmack") == 1 : (GetCVar("blnk_bodyskin") == 4 || GetCVar("blnk_bodyskin") == 5);
-                if ((GetCVar("blnk_both") != 0 ? GetCVar("blnk_duocarmack") == 2 : GetCVar("blnk_bodyskin") == 5)) sprite = GetSpriteIndex("SWMK");
+                bool later = GetCVar("blnk_duocarmack") == 1;
+                if (GetCVar("blnk_duocarmack") == 2) sprite = GetSpriteIndex("SWMK");
                 else if (later) sprite = GetSpriteIndex("JC06");
                 else sprite = GetSpriteIndex("JCMA");
             }
@@ -792,3 +795,5 @@ class NNR_JayMarine : NNR_JohnMarine
  override bool IsJay() { return true; }
  Default { PainSound ""; }
 }
+
+class NNR_TomMarine : NNR_JohnMarine { override bool IsTom(){return true;} override bool IsCarmack(){return false;} Default { PainSound ""; } }

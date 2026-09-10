@@ -188,7 +188,7 @@ class NNR_CompanionBanter : EventHandler
  }
  bool Say(NNR_JohnMarine john,int category)
  {
-  if(!CVar.FindCVar("blnk_banter").GetBool() || !john || !john.master || !john.master.player || john.health<=0 || !john.bSHOOTABLE)return false;
+  if(!CVar.FindCVar("blnk_banter").GetBool() || !john || john.IsTom() || !john.master || !john.master.player || john.health<=0 || !john.bSHOOTABLE)return false;
   int who=john.master.PlayerNumber();if(who<0 || who>=MAXPLAYERS)return false;
   int member=john.IsJay()?2:john.IsCarmack()?1:0;
   if(level.time<NextLine[who] || level.time<PersonalReady[who*3+member])return false;
@@ -230,7 +230,7 @@ class NNR_CompanionBanter : EventHandler
    NNR_JohnMarine selected;let it=ThinkerIterator.Create("NNR_JohnMarine");NNR_JohnMarine a;int count=0;
    while((a=NNR_JohnMarine(it.Next()))!=null)
    {
-    if(a.master!=players[who].mo || !a.bSHOOTABLE || a.health<=0 || a.Distance3D(a.master)>2048)continue;
+    if(a.IsTom() || a.master!=players[who].mo || !a.bSHOOTABLE || a.health<=0 || a.Distance3D(a.master)>2048)continue;
     if(a.CombatTarget(a.target) || level.time-a.LastShotTime<175)continue;
     int member=a.IsJay()?2:a.IsCarmack()?1:0;
     if(level.time<PersonalReady[who*3+member])continue;
@@ -244,10 +244,7 @@ class NNR_CompanionBanter : EventHandler
   if(level.MapName=="TITLEMAP" || Menu.GetCurrentMenu()!=null || !CVar.FindCVar("blnk_banter").GetBool())return;
   int who=consoleplayer;if(who<0 || who>=MAXPLAYERS || level.time>=MessageUntil[who])return;
   int member=Speaker[who];int team=CVar.FindCVar("blnk_companions").GetInt();
-  if(team==6)return;
-  if(member==0 && team!=0 && team!=2 && team!=4)return;
-  if(member==1 && team!=1 && team!=2 && team!=5)return;
-  if(member==2 && team<3)return;
+  if((NNR_Team.Mask(team)&(1<<member))==0)return;
   String name=member==2?"JAY WILBUR":member==1?"CARMACK":"ROMERO";
   int color=member==2?Font.CR_GOLD:member==1?Font.CR_LIGHTBLUE:Font.CR_GREEN;
   double alpha=Min(1.,(MessageUntil[who]-level.time)/35.0);
