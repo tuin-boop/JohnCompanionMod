@@ -4,8 +4,9 @@ class NNR_JohnMarine : actor
     {
         return false;
     }
+    virtual bool IsAdrian(){return false;}
     virtual bool IsTom() { return false; }
-    virtual int Member() { return IsTom()?4:IsJay()?3:IsCarmack()?2:1; }
+    virtual int Member() { return IsAdrian()?5:IsTom()?4:IsJay()?3:IsCarmack()?2:1; }
     virtual bool IsJay() { return false; }
     int NextCarmackSpeech;
     int VoiceUntil;
@@ -44,7 +45,7 @@ case 5: clip="carmack/line5"; duration=2421; break;
     }
     void A_RomeroVoice(Sound sound, int channel = CHAN_VOICE, int flags = CHANF_DEFAULT, double volume = 1, double attenuation = ATTN_NORM)
     {
-        if (IsJay() || IsTom()) return;
+        if (IsJay() || IsTom() || IsAdrian()) return;
         if (IsCarmack())
         {
             // Full interviews fit idle/kill chatter, not a death reaction.
@@ -252,9 +253,10 @@ case 5: clip="carmack/line5"; duration=2421; break;
         if (frame >= 0 && frame <= 3 && (pos.XY-positionBeforeTick).Length() < 0.01)
             frame = 0;
         // Appearance changes do not restart states or alter weapon behavior.
-        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK") || sprite == GetSpriteIndex("JAYW") || sprite == GetSpriteIndex("TOMH") || sprite == GetSpriteIndex("TMPR"))
+        if (sprite == GetSpriteIndex("YOHN") || sprite == GetSpriteIndex("JCLS") || sprite == GetSpriteIndex("JCMA") || sprite == GetSpriteIndex("JR05") || sprite == GetSpriteIndex("JC06") || sprite == GetSpriteIndex("SWMK") || sprite == GetSpriteIndex("JAYW") || sprite == GetSpriteIndex("TOMH") || sprite == GetSpriteIndex("TMPR") || sprite == GetSpriteIndex("ADRN"))
         {
-            if (IsTom()) sprite = GetSpriteIndex(GetCVar("blnk_tomskin")!=0?"TMPR":"TOMH");
+            if (IsAdrian()) sprite=GetSpriteIndex("ADRN");
+            else if (IsTom()) sprite = GetSpriteIndex(GetCVar("blnk_tomskin")!=0?"TMPR":"TOMH");
             else if (IsJay()) sprite = GetSpriteIndex("JAYW");
             else if (IsCarmack())
             {
@@ -797,3 +799,5 @@ class NNR_JayMarine : NNR_JohnMarine
 }
 
 class NNR_TomMarine : NNR_JohnMarine { override bool IsTom(){return true;} override bool IsCarmack(){return false;} Default { PainSound ""; } }
+
+class NNR_AdrianMarine : NNR_JohnMarine { override bool IsAdrian(){return true;} Default { PainSound ""; } }

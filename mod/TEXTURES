@@ -3284,3 +3284,266 @@ Graphic TMPRIGHT, 724, 724
  Patch "PATCHES/tompresent/TMPRIGHT.png", 0, 0
 }
 // End present-day Tom assets
+
+// Young Adrian assets
+Sprite ADRNA1, 99, 193
+{ XScale 3.37500000 YScale 3.37500000 Offset 49, 191
+ Patch "PATCHES/adrian/0-0.png", 0, 0 {}
+}
+Sprite ADRNA2, 118, 197
+{ XScale 3.37500000 YScale 3.37500000 Offset 59, 195
+ Patch "PATCHES/adrian/0-1.png", 0, 0 { FlipX }
+}
+Sprite ADRNA3, 116, 199
+{ XScale 3.37500000 YScale 3.37500000 Offset 58, 197
+ Patch "PATCHES/adrian/0-2.png", 0, 0 { FlipX }
+}
+Sprite ADRNA4, 104, 200
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 198
+ Patch "PATCHES/adrian/0-3.png", 0, 0 { FlipX }
+}
+Sprite ADRNA5, 101, 200
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 198
+ Patch "PATCHES/adrian/0-4.png", 0, 0 {}
+}
+Sprite ADRNA6, 104, 200
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 198
+ Patch "PATCHES/adrian/0-3.png", 0, 0 {}
+}
+Sprite ADRNA7, 116, 199
+{ XScale 3.37500000 YScale 3.37500000 Offset 58, 197
+ Patch "PATCHES/adrian/0-2.png", 0, 0 {}
+}
+Sprite ADRNA8, 118, 197
+{ XScale 3.37500000 YScale 3.37500000 Offset 59, 195
+ Patch "PATCHES/adrian/0-1.png", 0, 0 {}
+}
+Sprite ADRNB1, 99, 192
+{ XScale 3.37500000 YScale 3.37500000 Offset 49, 190
+ Patch "PATCHES/adrian/1-0.png", 0, 0 {}
+}
+Sprite ADRNB2, 118, 194
+{ XScale 3.37500000 YScale 3.37500000 Offset 59, 192
+ Patch "PATCHES/adrian/1-1.png", 0, 0 { FlipX }
+}
+Sprite ADRNB3, 117, 193
+{ XScale 3.37500000 YScale 3.37500000 Offset 58, 191
+ Patch "PATCHES/adrian/1-2.png", 0, 0 { FlipX }
+}
+Sprite ADRNB4, 105, 197
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 195
+ Patch "PATCHES/adrian/1-3.png", 0, 0 { FlipX }
+}
+Sprite ADRNB5, 101, 195
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 193
+ Patch "PATCHES/adrian/1-4.png", 0, 0 {}
+}
+Sprite ADRNB6, 105, 197
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 195
+ Patch "PATCHES/adrian/1-3.png", 0, 0 {}
+}
+Sprite ADRNB7, 117, 193
+{ XScale 3.37500000 YScale 3.37500000 Offset 58, 191
+ Patch "PATCHES/adrian/1-2.png", 0, 0 {}
+}
+Sprite ADRNB8, 118, 194
+{ XScale 3.37500000 YScale 3.37500000 Offset 59, 192
+ Patch "PATCHES/adrian/1-1.png", 0, 0 {}
+}
+Sprite ADRNC1, 100, 194
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 192
+ Patch "PATCHES/adrian/2-0.png", 0, 0 {}
+}
+Sprite ADRNC2, 118, 195
+{ XScale 3.37500000 YScale 3.37500000 Offset 59, 193
+ Patch "PATCHES/adrian/2-1.png", 0, 0 { FlipX }
+}
+Sprite ADRNC3, 114, 196
+{ XScale 3.37500000 YScale 3.37500000 Offset 57, 194
+ Patch "PATCHES/adrian/2-2.png", 0, 0 { FlipX }
+}
+Sprite ADRNC4, 105, 196
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 194
+ Patch "PATCHES/adrian/2-3.png", 0, 0 { FlipX }
+}
+Sprite ADRNC5, 101, 195
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 193
+ Patch "PATCHES/adrian/2-4.png", 0, 0 {}
+}
+Sprite ADRNC6, 105, 196
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 194
+ Patch "PATCHES/adrian/2-3.png", 0, 0 {}
+}
+Sprite ADRNC7, 114, 196
+{ XScale 3.37500000 YScale 3.37500000 Offset 57, 194
+ Patch "PATCHES/adrian/2-2.png", 0, 0 {}
+}
+Sprite ADRNC8, 118, 195
+{ XScale 3.37500000 YScale 3.37500000 Offset 59, 193
+ Patch "PATCHES/adrian/2-1.png", 0, 0 {}
+}
+Sprite ADRND1, 100, 193
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 191
+ Patch "PATCHES/adrian/3-0.png", 0, 0 {}
+}
+Sprite ADRND2, 126, 195
+{ XScale 3.37500000 YScale 3.37500000 Offset 63, 193
+ Patch "PATCHES/adrian/3-1.png", 0, 0 { FlipX }
+}
+Sprite ADRND3, 114, 193
+{ XScale 3.37500000 YScale 3.37500000 Offset 57, 191
+ Patch "PATCHES/adrian/3-2.png", 0, 0 { FlipX }
+}
+Sprite ADRND4, 105, 196
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 194
+ Patch "PATCHES/adrian/3-3.png", 0, 0 { FlipX }
+}
+Sprite ADRND5, 101, 196
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 194
+ Patch "PATCHES/adrian/3-4.png", 0, 0 {}
+}
+Sprite ADRND6, 105, 196
+{ XScale 3.37500000 YScale 3.37500000 Offset 52, 194
+ Patch "PATCHES/adrian/3-3.png", 0, 0 {}
+}
+Sprite ADRND7, 114, 193
+{ XScale 3.37500000 YScale 3.37500000 Offset 57, 191
+ Patch "PATCHES/adrian/3-2.png", 0, 0 {}
+}
+Sprite ADRND8, 126, 195
+{ XScale 3.37500000 YScale 3.37500000 Offset 63, 193
+ Patch "PATCHES/adrian/3-1.png", 0, 0 {}
+}
+Sprite ADRNE1, 103, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 51, 187
+ Patch "PATCHES/adrian/4-0.png", 0, 0 {}
+}
+Sprite ADRNE2, 140, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 70, 187
+ Patch "PATCHES/adrian/4-1.png", 0, 0 { FlipX }
+}
+Sprite ADRNE3, 155, 188
+{ XScale 3.37500000 YScale 3.37500000 Offset 77, 186
+ Patch "PATCHES/adrian/4-2.png", 0, 0 { FlipX }
+}
+Sprite ADRNE4, 132, 191
+{ XScale 3.37500000 YScale 3.37500000 Offset 66, 189
+ Patch "PATCHES/adrian/4-3.png", 0, 0 { FlipX }
+}
+Sprite ADRNE5, 109, 194
+{ XScale 3.37500000 YScale 3.37500000 Offset 54, 192
+ Patch "PATCHES/adrian/4-4.png", 0, 0 {}
+}
+Sprite ADRNE6, 132, 191
+{ XScale 3.37500000 YScale 3.37500000 Offset 66, 189
+ Patch "PATCHES/adrian/4-3.png", 0, 0 {}
+}
+Sprite ADRNE7, 155, 188
+{ XScale 3.37500000 YScale 3.37500000 Offset 77, 186
+ Patch "PATCHES/adrian/4-2.png", 0, 0 {}
+}
+Sprite ADRNE8, 140, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 70, 187
+ Patch "PATCHES/adrian/4-1.png", 0, 0 {}
+}
+Sprite ADRNF1, 106, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 53, 187
+ Patch "PATCHES/adrian/5-0.png", 0, 0 {}
+}
+Sprite ADRNF2, 179, 188
+{ XScale 3.37500000 YScale 3.37500000 Offset 89, 186
+ Patch "PATCHES/adrian/5-1.png", 0, 0 { FlipX }
+}
+Sprite ADRNF3, 195, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 97, 187
+ Patch "PATCHES/adrian/5-2.png", 0, 0 { FlipX }
+}
+Sprite ADRNF4, 176, 188
+{ XScale 3.37500000 YScale 3.37500000 Offset 88, 186
+ Patch "PATCHES/adrian/5-3.png", 0, 0 { FlipX }
+}
+Sprite ADRNF5, 109, 194
+{ XScale 3.37500000 YScale 3.37500000 Offset 54, 192
+ Patch "PATCHES/adrian/4-4.png", 0, 0 {}
+}
+Sprite ADRNF6, 176, 188
+{ XScale 3.37500000 YScale 3.37500000 Offset 88, 186
+ Patch "PATCHES/adrian/5-3.png", 0, 0 {}
+}
+Sprite ADRNF7, 195, 189
+{ XScale 3.37500000 YScale 3.37500000 Offset 97, 187
+ Patch "PATCHES/adrian/5-2.png", 0, 0 {}
+}
+Sprite ADRNF8, 179, 188
+{ XScale 3.37500000 YScale 3.37500000 Offset 89, 186
+ Patch "PATCHES/adrian/5-1.png", 0, 0 {}
+}
+Sprite ADRNG1, 100, 182
+{ XScale 3.37500000 YScale 3.37500000 Offset 50, 180
+ Patch "PATCHES/adrian/6-0.png", 0, 0 {}
+}
+Sprite ADRNG2, 95, 185
+{ XScale 3.37500000 YScale 3.37500000 Offset 47, 183
+ Patch "PATCHES/adrian/6-1.png", 0, 0 { FlipX }
+}
+Sprite ADRNG3, 96, 184
+{ XScale 3.37500000 YScale 3.37500000 Offset 48, 182
+ Patch "PATCHES/adrian/6-2.png", 0, 0 { FlipX }
+}
+Sprite ADRNG4, 94, 183
+{ XScale 3.37500000 YScale 3.37500000 Offset 47, 181
+ Patch "PATCHES/adrian/6-3.png", 0, 0 { FlipX }
+}
+Sprite ADRNG5, 95, 181
+{ XScale 3.37500000 YScale 3.37500000 Offset 47, 179
+ Patch "PATCHES/adrian/6-4.png", 0, 0 {}
+}
+Sprite ADRNG6, 94, 183
+{ XScale 3.37500000 YScale 3.37500000 Offset 47, 181
+ Patch "PATCHES/adrian/6-3.png", 0, 0 {}
+}
+Sprite ADRNG7, 96, 184
+{ XScale 3.37500000 YScale 3.37500000 Offset 48, 182
+ Patch "PATCHES/adrian/6-2.png", 0, 0 {}
+}
+Sprite ADRNG8, 95, 185
+{ XScale 3.37500000 YScale 3.37500000 Offset 47, 183
+ Patch "PATCHES/adrian/6-1.png", 0, 0 {}
+}
+Sprite ADRNI0, 132, 161
+{ XScale 3.37500000 YScale 3.37500000 Offset 66, 159
+ Patch "PATCHES/adrian/7-0.png", 0, 0 {}
+}
+Sprite ADRNJ0, 165, 147
+{ XScale 3.37500000 YScale 3.37500000 Offset 82, 145
+ Patch "PATCHES/adrian/7-1.png", 0, 0 {}
+}
+Sprite ADRNK0, 178, 133
+{ XScale 3.37500000 YScale 3.37500000 Offset 89, 131
+ Patch "PATCHES/adrian/7-2.png", 0, 0 {}
+}
+Sprite ADRNL0, 183, 105
+{ XScale 3.37500000 YScale 3.37500000 Offset 91, 103
+ Patch "PATCHES/adrian/7-3.png", 0, 0 {}
+}
+Sprite ADRNM0, 207, 86
+{ XScale 3.37500000 YScale 3.37500000 Offset 103, 84
+ Patch "PATCHES/adrian/7-4.png", 0, 0 {}
+}
+Sprite ADRNN0, 207, 86
+{ XScale 3.37500000 YScale 3.37500000 Offset 103, 84
+ Patch "PATCHES/adrian/7-4.png", 0, 0 {}
+}
+Graphic ADRLEFT, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/adrianfaces/ADRLEFT.png", 0, 0
+}
+Graphic ADRFACE, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/adrianfaces/ADRFACE.png", 0, 0
+}
+Graphic ADRRIGHT, 1254, 1254
+{ XScale 27.26086957 YScale 25.59183673
+ Patch "PATCHES/adrianfaces/ADRRIGHT.png", 0, 0
+}
+// End Young Adrian assets

@@ -2,7 +2,7 @@
 
 ![Doom: Creators at Your Side - Romero and Carmack](art/creators-at-your-side.png)
 
-A Doom II companion mod for UZDoom/GZDoom, featuring John Romero, John Carmack, Jay Wilbur, and Tom Hall Young, selectable skins, voices, independent kill tallies, a companion control panel, and a torch-lit Hell titlemap.
+A Doom II companion mod for UZDoom/GZDoom, featuring John Romero, John Carmack, Jay Wilbur, Tom Hall, and Young Adrian Carmack, selectable skins, voices, independent kill tallies, a companion control panel, and a torch-lit Hell titlemap.
 
 ## Play
 
@@ -28,7 +28,7 @@ Campers wander slightly around their individual spots and use ranged attacks wit
 
 - Carmack: Young Carmack, John Carmack 2006, **SwoleMack**.
 
-Select skins independently and choose any one character or any pair. Maximum two companions, chosen from Romero, Carmack, Jay and Tom; all six pairings are supported. K and L follow roster order (Romero, Carmack, Jay, Tom), and their current names appear at the bottom of the menu. SwoleMack features short silver hair, glasses, a black T-shirt, and stronger arms. Skins include directional walking, shooting, pain, and non-bloody falling frames. Only selected companions appear in the title scene, HUD, and level tally. Jay has his own striped rugby-shirt sprite set, animated HUD portrait, and forward-looking tally portrait. His nickname is Bizz Guy; no borrowed Romero/Carmack voice lines play for him.
+Select skins independently and choose any one character or any pair. Maximum two companions, chosen from Romero, John Carmack, Jay, Tom and Adrian; all ten pairings are supported. K and L follow roster order (Romero, John Carmack, Jay, Tom, Adrian), and their current names appear at the bottom of the menu. SwoleMack features short silver hair, glasses, a black T-shirt, and stronger arms. Skins include directional walking, shooting, pain, and non-bloody falling frames. All five characters appear in the title scene with ENABLED or DISABLED beneath them. Only selected companions appear in gameplay, the HUD and level tally. Jay has his own striped rugby-shirt sprite set, animated HUD portrait, and forward-looking tally portrait. His nickname is Bizz Guy; no borrowed Romero/Carmack voice lines play for him.
 
 Tom has Young and Present-day skins, selected with Change Skin on his card. Young Tom wears a cream overshirt over a black shirt; present-day Tom is bald with black glasses, a white beard, and a patterned black shirt. Jay and young Tom retain their full 1254-pixel portrait artwork rather than downsampled thumbnails. Both Tom skins have matching portraits that animate in the HUD; the forward-looking portrait appears on the tally. He has no borrowed voice recordings.
 
@@ -60,10 +60,12 @@ Load `TuinRPG.pk3` first, followed by `Romero_Carmack_Companion_Control.pk3`. A 
 
 ## Companion chat
 
-Optional top-left text banter includes 150 original fictional lines (not real quotes), tailored to each character, enemy type, and weapon. Toggle **Chat** in Companion Control. Regular kills have a 12% chance to request a line; boss kills 85%, always subject to a shared 30-50 second cooldown and a 75-second per-character cooldown. Idle/camp chatter waits 90-150 seconds after a line. One message appears for seven seconds, with no queue of delayed kill reactions. Voice clips already playing defer chatter. Enemy-specific dialogue recognizes vanilla classes and subclasses; other monsters use generic or boss lines.
+Optional top-left text banter includes 150 original fictional lines (not real quotes), tailored to Romero, John Carmack and Jay, enemy type, and weapon. Toggle **Chat** in Companion Control. Regular kills have a 12% chance to request a line; boss kills 85%, always subject to a shared 30-50 second cooldown and a 75-second per-character cooldown. Idle/camp chatter waits 90-150 seconds after a line. One message appears for seven seconds, with no queue of delayed kill reactions. Voice clips already playing defer chatter. Enemy-specific dialogue recognizes vanilla classes and subclasses; other monsters use generic or boss lines.
 
 Persona research and dialogue attribution: [BANTER-SOURCES.md](mod/BANTER-SOURCES.md).
 
 Jay asset extraction scripts use Pillow and NumPy; the ordinary PK3 build still only requires Python's standard library. Jay roster/camp/kill tests and banter cooldown/category tests are in `tests/jay-test.zs` and `tests/banter-test.zs`.
 
-Each character card has a separate Turn On / Turn Off button. Skin controls only change appearance. All companions can be disabled (None). Enabling a third companion replaces the first active companion in menu order (Romero, Carmack, Jay), keeping the limit at two, and shows a five-second warning naming the replacement.
+Each character card has a separate Turn On / Turn Off button. Skin controls only change appearance. All companions can be disabled (None). Enabling a third companion replaces the first active companion in menu order (Romero, John Carmack, Jay, Tom, Adrian), keeping the limit at two, and shows a five-second warning naming the replacement.
+
+Young Adrian Carmack wears a dark teal shirt, glasses and long brown hair. His three supplied 1254-pixel portraits drive the HUD and tally without downsampling. He has his own kill counter and camp cooldown, with no borrowed voice or banter. `tools/import_adrian.py` regenerates his assets using Pillow and NumPy. `tests/adrian-test.zs` checks all 16 roster choices, both camp slots, menu replacement, and asset registration.

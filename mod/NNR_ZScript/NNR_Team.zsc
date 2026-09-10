@@ -1,11 +1,12 @@
 class NNR_Team : Object
 {
- static int Mask(int mode){switch(mode){case 0:return 1;case 1:return 2;case 2:return 3;case 3:return 4;case 4:return 5;case 5:return 6;case 7:return 8;case 8:return 9;case 9:return 10;case 10:return 12;}return 0;}
- static int Mode(int mask){switch(mask){case 1:return 0;case 2:return 1;case 3:return 2;case 4:return 3;case 5:return 4;case 6:return 5;case 8:return 7;case 9:return 8;case 10:return 9;case 12:return 10;}return 6;}
- static int Slot(int mode,int slot){int mask=Mask(mode);for(int m=1;m<=4;m++)if(mask & (1<<(m-1))){if(slot==0)return m;slot--;}return 0;}
- static String Name(int member){return member==4?"TOM HALL":member==3?"JAY WILBUR":member==2?"CARMACK":member==1?"ROMERO":"NO COMPANION";}
- static String Counter(int member){return member==4?"NNR_TomLevelKillCounter":member==3?"NNR_JayLevelKillCounter":member==2?"NNR_CarmackLevelKillCounter":"NNR_JohnLevelKillCounter";}
+ static int Mask(int mode){switch(mode){case 0:return 1;case 1:return 2;case 2:return 3;case 3:return 4;case 4:return 5;case 5:return 6;case 7:return 8;case 8:return 9;case 9:return 10;case 10:return 12;case 11:return 16;case 12:return 17;case 13:return 18;case 14:return 20;case 15:return 24;}return 0;}
+ static int Mode(int mask){switch(mask){case 1:return 0;case 2:return 1;case 3:return 2;case 4:return 3;case 5:return 4;case 6:return 5;case 8:return 7;case 9:return 8;case 10:return 9;case 12:return 10;case 16:return 11;case 17:return 12;case 18:return 13;case 20:return 14;case 24:return 15;}return 6;}
+ static int Slot(int mode,int slot){int mask=Mask(mode);for(int m=1;m<=5;m++)if(mask & (1<<(m-1))){if(slot==0)return m;slot--;}return 0;}
+ static String Name(int member){return member==5?"ADRIAN":member==4?"TOM HALL":member==3?"JAY WILBUR":member==2?"CARMACK":member==1?"ROMERO":"NO COMPANION";}
+ static String Counter(int member){return member==5?"NNR_AdrianLevelKillCounter":member==4?"NNR_TomLevelKillCounter":member==3?"NNR_JayLevelKillCounter":member==2?"NNR_CarmackLevelKillCounter":"NNR_JohnLevelKillCounter";}
  static String Face(int member,int frame,bool tally=false){
+ if(member==5)return tally?"ADRFACE":frame==0?"ADRLEFT":frame==2?"ADRRIGHT":"ADRFACE";
  if(member==4 && CVar.FindCVar("blnk_tomskin").GetInt()!=0)return tally?"TMPFACE":frame==0?"TMPLEFT":frame==2?"TMPRIGHT":"TMPFACE";
  if(member==4)return tally?"TOMFACE":frame==0?"TOMLEFT":frame==2?"TOMRIGHT":"TOMFACE";
  if(member==3)return tally?"JAYFACE":frame==0?"JAYLEFT":frame==2?"JAYRIGHT":"JAYFACE";

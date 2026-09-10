@@ -3,7 +3,7 @@ class NNR_JohnStatusScreen : DoomStatusScreen
 {
 	int JohnKills;
     int CarmackKills;
-    int JayKills;int TomKills;
+    int JayKills;int TomKills;int AdrianKills;
 	int FaceFrame;
 	int FaceTicks;
 	int FaceSeed;
@@ -44,12 +44,12 @@ class NNR_JohnStatusScreen : DoomStatusScreen
 	{
 		Super.Start(data);
 		JohnKills = 0;
-        CarmackKills = 0;JayKills=0;TomKills=0;
+        CarmackKills = 0;JayKills=0;TomKills=0;AdrianKills=0;
 		if (me >= 0 && me < MAXPLAYERS && players[me].mo)
 		{
 			JohnKills = players[me].mo.CountInv("NNR_JohnLevelKillCounter");
             CarmackKills = players[me].mo.CountInv("NNR_CarmackLevelKillCounter");
-            JayKills=players[me].mo.CountInv("NNR_JayLevelKillCounter");TomKills=players[me].mo.CountInv("NNR_TomLevelKillCounter");
+            JayKills=players[me].mo.CountInv("NNR_JayLevelKillCounter");TomKills=players[me].mo.CountInv("NNR_TomLevelKillCounter");AdrianKills=players[me].mo.CountInv("NNR_AdrianLevelKillCounter");
 		}
 		FaceFrame = 1;
 		FaceTicks = 70;
@@ -87,7 +87,7 @@ class NNR_JohnStatusScreen : DoomStatusScreen
         for(int slot=0;slot<2;slot++){
             int member=NNR_Team.Slot(mode,slot);if(!member)continue;int x=slot==0?2:272;int center=x+23;
             DrawTexture(TexMan.CheckForTexture(NNR_Team.Face(member,1,true),TexMan.Type_Any),x,50);
-            String name=member==4?"TOM":member==3?"JAY":NNR_Team.Name(member);String kills=String.Format("%d KILLS",member==4?TomKills:member==3?JayKills:member==2?CarmackKills:JohnKills);
+            String name=member==4?"TOM":member==3?"JAY":NNR_Team.Name(member);String kills=String.Format("%d KILLS",member==5?AdrianKills:member==4?TomKills:member==3?JayKills:member==2?CarmackKills:JohnKills);
             DrawText(SmallFont,Font.CR_GOLD,center-SmallFont.StringWidth(name)/2,100,name,shadow:true);
             DrawText(SmallFont,Font.CR_GOLD,center-SmallFont.StringWidth(kills)/2,108,kills,shadow:true);
         }

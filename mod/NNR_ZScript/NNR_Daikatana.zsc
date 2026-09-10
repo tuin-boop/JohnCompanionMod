@@ -296,3 +296,5 @@ class NNR_CarmackKillCounter : NNR_JohnKillCounter {}
 class NNR_JayLevelKillCounter : NNR_JohnLevelKillCounter {}
 
 class NNR_TomLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_AdrianLevelKillCounter : NNR_JohnLevelKillCounter {}
