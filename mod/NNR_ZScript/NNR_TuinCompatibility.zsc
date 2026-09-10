@@ -3,7 +3,10 @@ class NNR_TuinCompatibility : EventHandler
  bool detected;
  override void WorldLoaded(WorldEvent e)
  {
-  detected=CVar.FindCVar("tuin_enabled")!=null;
+  // Archived CVars survive after the RPG package is removed. Its class does not.
+  String rpgName="TuinRPGHandler";
+  class<StaticEventHandler> rpgType=(class<StaticEventHandler>)(rpgName);
+  detected=rpgType!=null;
   if(!detected || level.MapName!="TITLEMAP")return;
   // These are per-map handlers. The engine creates fresh instances when
   // starting a real game; this decorative map must not initialize an RPG run.

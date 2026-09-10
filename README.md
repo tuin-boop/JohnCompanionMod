@@ -18,7 +18,7 @@ Load `dist/Romero_Carmack_Companion_Control.pk3` with your own Doom II IWAD. Loa
 | J | Hold to aim Jay Wilbur's camp circle; release to teleport and camp. |
 | L | Hold to aim Carmack’s camp circle; release to teleport and camp. |
 
-Each companion has a separate **10-second cooldown**. Pressing them again never releases camping: after the cooldown, it relocates that companion�s camp. Aim at clear ground within 1024 map units. A green circle shows a valid landing; red means blocked or cooling down. The companion lands at the circle’s center. Invalid placements do not consume the cooldown. F7 also cancels a held placement. Bottom-screen messages confirm orders or show the remaining cooldown. Keys can be rebound in Customize Controls under Companion controls; existing bindings take precedence over defaults.
+Each companion has a separate **10-second cooldown**. Pressing them again never releases camping: after the cooldown, it relocates that companion�s camp. Aim at clear ground within 1024 map units. A green circle shows a valid landing; red means blocked or cooling down. The companion lands at the circle’s center. Invalid placements do not consume the cooldown. F7 also cancels a held placement. Bottom-screen messages confirm orders or show the remaining cooldown. Keys can be rebound in Customize Controls under Companion controls; existing bindings take precedence over defaults.
 
 Campers wander slightly around their individual spots and use ranged attacks without pursuing enemies. Close following also keeps them with the player during combat. Normal retains the original movement behavior. Camp spots belong to the current level.
 
@@ -56,11 +56,13 @@ If updating from the old instant camp bindings, rebind the two camp commands in 
 
 ## TuinDoomRPG compatibility
 
-Load `TuinRPG.pk3` first, followed by `Romero_Carmack_Companion_Control.pk3`. A green **TUIN RPG DETECTED - COMPATIBILITY ACTIVE** message confirms detection. The companion titlemap skips the RPG's per-level gameplay/HUD handlers so the mandatory class chooser does not open in the decorative title scene. The engine recreates those handlers normally on a real map; class selection and gameplay remain active. No TuinDoomRPG files are modified. Verified with the supplied TuinRPG package in UZDoom 4.14.3.
+Load `TuinRPG.pk3` first, followed by `Romero_Carmack_Companion_Control.pk3`. A green **TUIN RPG DETECTED - COMPATIBILITY ACTIVE** message confirms detection. Detection checks the loaded RPG class, so saved RPG settings cannot trigger it when the RPG is absent. The companion titlemap skips the RPG's per-level gameplay/HUD handlers so the mandatory class chooser does not open in the decorative title scene. The engine recreates those handlers normally on a real map; class selection and gameplay remain active. No TuinDoomRPG files are modified. Verified with the supplied TuinRPG package in UZDoom 4.14.3.
 
 ## Companion chat
 
 Optional top-left text banter includes 150 original fictional lines (not real quotes), tailored to Romero, John Carmack and Jay, enemy type, and weapon. Toggle **Chat** in Companion Control. Regular kills have a 12% chance to request a line; boss kills 85%, always subject to a shared 30-50 second cooldown and a 75-second per-character cooldown. Idle/camp chatter waits 90-150 seconds after a line. One message appears for seven seconds, with no queue of delayed kill reactions. Voice clips already playing defer chatter. Enemy-specific dialogue recognizes vanilla classes and subclasses; other monsters use generic or boss lines.
+
+The [full chat list and trigger rules](CHAT-LIST.md) lists all 150 lines. Tom and Adrian currently have no text banter.
 
 Persona research and dialogue attribution: [BANTER-SOURCES.md](mod/BANTER-SOURCES.md).
 
@@ -70,4 +72,4 @@ Each character card has a separate Turn On / Turn Off button. Skin controls only
 
 Young Adrian Carmack wears a dark teal shirt, glasses and long brown hair. His three supplied 1254-pixel portraits drive the HUD and tally without downsampling. He has his own kill counter and camp cooldown, with no borrowed voice or banter. `tools/import_adrian.py` regenerates his assets using Pillow and NumPy. `tests/adrian-test.zs` checks all 16 roster choices, both camp slots, menu replacement, and asset registration.
 
-Adrian also has a Present-day skin: short brown-gray hair, thick dark glasses, gray stubble and a black Quake shirt. Change Skin on his card switches the live companion and title display without altering the team. His existing supplied HUD portrait remains in use pending the new portrait artwork. The title camera now sways slowly left/right over about 34 seconds; status labels track its movement.
+Adrian also has a Present-day skin: short brown-gray hair, thick dark glasses, gray stubble and a black Quake shirt. Change Skin on his card switches the live companion and title display without altering the team. His existing supplied HUD portrait remains in use pending the new portrait artwork. The title camera follows a slow 36-degree arc around the lineup, moving back and forth over about 34 seconds while looking inward; status labels track each character.

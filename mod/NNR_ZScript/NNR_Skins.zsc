@@ -487,9 +487,10 @@ class NNR_HellTitle : EventHandler
    if(!lineup[i])lineup[i]=Actor.Spawn(kinds[i],((i-2)*80,72,24));
    if(lineup[i])lineup[i].angle=270;
   }
-  // Gentle 34-second left/right dolly; fixed heading keeps all five in frame.
-  camera.SetOrigin((sin(level.time*.3)*28,-220,74),false);
-  camera.angle=90;camera.pitch=5;
+  // Sweep an arc around the lineup, always looking toward its center.
+  double orbit=sin(level.time*.3)*18;
+  camera.SetOrigin((sin(orbit)*292,72-cos(orbit)*292,74),false);
+  camera.angle=VectorAngle(-camera.pos.X,72-camera.pos.Y);camera.pitch=5;
   if(players[0].mo)players[0].camera=camera;
  }
  override void RenderOverlay(RenderEvent e)
@@ -503,8 +504,16 @@ class NNR_HellTitle : EventHandler
   int mask=NNR_Team.Mask(CVar.FindCVar("blnk_companions").GetInt());
   for(int i=0;i<5;i++){
    bool active=(mask&(1<<i))!=0;String status=active?"ENABLED":"DISABLED";
-   double center=320+((i-2)*80-e.ViewPos.X)*(73.0/80);
-   Screen.DrawText(f,active?Font.CR_GREEN:Font.CR_GRAY,center-f.StringWidth(status)*.6,220,status,DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_ScaleX,1.2,DTA_ScaleY,1.2,DTA_KeepRatio,true);
+   // Project the feet using the rendered camera, including its interpolated yaw.
+   Vector3 delta=((i-2)*80,72,24)-e.ViewPos;
+   double forward=delta.X*cos(e.ViewAngle)+delta.Y*sin(e.ViewAngle);
+   double side=delta.X*sin(e.ViewAngle)-delta.Y*cos(e.ViewAngle);
+   double depth=Max(1.,forward*cos(e.ViewPitch)-delta.Z*sin(e.ViewPitch));
+   double up=delta.Z*cos(e.ViewPitch)+forward*sin(e.ViewPitch);
+   double fovScale=1./tan(Clamp(players[consoleplayer].FOV,30.,140.)*.5);
+   double center=320+side/depth*(800./3.)*fovScale;
+   double bottom=180-up/depth*320*fovScale+12;
+   Screen.DrawText(f,active?Font.CR_GREEN:Font.CR_GRAY,center-f.StringWidth(status)*.6,bottom,status,DTA_VirtualWidth,640,DTA_VirtualHeight,360,DTA_ScaleX,1.2,DTA_ScaleY,1.2,DTA_KeepRatio,true);
   }
   if(Menu.GetCurrentMenu()==null)
   {
