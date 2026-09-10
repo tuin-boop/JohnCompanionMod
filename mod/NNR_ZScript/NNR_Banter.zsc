@@ -244,6 +244,7 @@ class NNR_CompanionBanter : EventHandler
   if(level.MapName=="TITLEMAP" || Menu.GetCurrentMenu()!=null || !CVar.FindCVar("blnk_banter").GetBool())return;
   int who=consoleplayer;if(who<0 || who>=MAXPLAYERS || level.time>=MessageUntil[who])return;
   int member=Speaker[who];int team=CVar.FindCVar("blnk_companions").GetInt();
+  if(team==6)return;
   if(member==0 && team!=0 && team!=2 && team!=4)return;
   if(member==1 && team!=1 && team!=2 && team!=5)return;
   if(member==2 && team<3)return;

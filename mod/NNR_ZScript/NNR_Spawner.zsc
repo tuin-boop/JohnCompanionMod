@@ -19,7 +19,7 @@ Class FriendSpawnHandler : EventHandler
         }
 
         bool duo = mode.GetInt() == 2;
-        CVar.FindCVar("blnk_jay").SetBool(mode.GetInt() >= 3);
+        CVar.FindCVar("blnk_jay").SetBool(mode.GetInt() >= 3 && mode.GetInt() <= 5);
         if (CVar.FindCVar("blnk_both").GetBool() != duo) CVar.FindCVar("blnk_both").SetBool(duo);
         int skin = (mode.GetInt() == 1 || mode.GetInt() == 5) ? (CVar.FindCVar("blnk_duocarmack").GetInt() == 2 ? 5 : CVar.FindCVar("blnk_duocarmack").GetInt() == 1 ? 4 : 2) : CVar.FindCVar("blnk_duoromero").GetInt();
         if (CVar.FindCVar("blnk_bodyskin").GetInt() != skin) CVar.FindCVar("blnk_bodyskin").SetInt(skin);
@@ -48,7 +48,7 @@ bool both = CVar.FindCVar("blnk_both").GetBool();
                 }
                 else
                 {
-                    if (mode.GetInt()==3 || romero) a.Destroy();
+                    if (mode.GetInt()==3 || mode.GetInt()==6 || romero) a.Destroy();
                     else romero = a;
                 }
             }
@@ -57,7 +57,7 @@ bool both = CVar.FindCVar("blnk_both").GetBool();
                 let j=Actor.Spawn("NNR_JayMarine",pl.pos);
                 if(j) { j.Master=pl;j.Warp(pl,-96,0,0,0,WARPF_STOP|WARPF_TOFLOOR);j.A_FaceMaster(); }
             }
-            if (mode.GetInt()!=3 && !romero) SpawnFriend(pl, false);
+            if (mode.GetInt()!=3 && mode.GetInt()!=6 && !romero) SpawnFriend(pl, false);
             if (both && !carmack) SpawnFriend(pl, true);
         }
     }

@@ -121,6 +121,7 @@ Class NNR_JohnHUDHandler : EventHandler
 	{
         if (!CVar.FindCVar("blnk_companionhud").GetBool()) return;
         if (level.MapName=="TITLEMAP") return;
+        if(CVar.FindCVar("blnk_companions").GetInt()==6)return;
         if (Menu.GetCurrentMenu() is "NNR_CompanionPreviewMenu") return;
 		if (consoleplayer < 0 || !players[consoleplayer].mo) return;
 

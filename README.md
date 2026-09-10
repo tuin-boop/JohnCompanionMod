@@ -63,3 +63,5 @@ Optional top-left text banter includes 150 original fictional lines (not real qu
 Persona research and dialogue attribution: [BANTER-SOURCES.md](mod/BANTER-SOURCES.md).
 
 Jay asset extraction scripts use Pillow and NumPy; the ordinary PK3 build still only requires Python's standard library. Jay roster/camp/kill tests and banter cooldown/category tests are in `tests/jay-test.zs` and `tests/banter-test.zs`.
+
+Each character card has a separate Turn On / Turn Off button. Skin controls only change appearance. All companions can be disabled (None). Enabling a third companion replaces the first active companion in menu order (Romero, Carmack, Jay), keeping the limit at two, and shows a five-second warning naming the replacement.

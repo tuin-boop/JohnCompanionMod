@@ -79,6 +79,7 @@ class NNR_JohnStatusScreen : DoomStatusScreen
 	override void drawStats(void)
 	{
 		Super.drawStats();
+        if(CVar.FindCVar("blnk_companions").GetInt()==6)return;
 		CVar enabled = CVar.FindCVar("blnk_intermission");
 		if (enabled && !enabled.GetBool()) return;
 

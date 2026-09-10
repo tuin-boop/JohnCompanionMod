@@ -1,4 +1,4 @@
-OptionValue "NNR_CompanionChoice" { 0, "Romero only" 1, "Carmack only" 2, "Romero + Carmack" 3, "Jay Wilbur" 4, "Romero + Jay" 5, "Carmack + Jay" }
+OptionValue "NNR_CompanionChoice" { 0, "Romero only" 1, "Carmack only" 2, "Romero + Carmack" 3, "Jay Wilbur" 4, "Romero + Jay" 5, "Carmack + Jay" 6, "None" }
 OptionValue "NNR_DuoCarmack" { 0, "Young Carmack" 1, "John Carmack 2006" 2, "SwoleMack" }
 OptionValue "NNR_DuoRomero" { 0, "Present-day Romero" 1, "Daikatana-era Romero" 3, "John Romero 2005" }
 OptionValue "NNR_JohnBodySkins"
