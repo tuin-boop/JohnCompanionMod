@@ -1020,20 +1020,14 @@ Sprite JCLSJ0, 240, 325
  Patch "PATCHES/classicjohn/fall1.png", 0, 0 {}
 }
 
-Sprite JCLSK0, 290, 235
-{
- XScale 6.55357143
- YScale 6.55357143
- Offset 145, 235
- Patch "PATCHES/classicjohn/fall2.png", 0, 0 {}
+Sprite JCLSK0, 935, 630
+{ XScale 21.03922414 YScale 21.03922414 Offset 467, 628
+ Patch "PATCHES/deathfixed/JCLS/K.png", 0, 0 {}
 }
 
-Sprite JCLSL0, 352, 173
-{
- XScale 6.55357143
- YScale 6.55357143
- Offset 176, 173
- Patch "PATCHES/classicjohn/fall3.png", 0, 0 {}
+Sprite JCLSL0, 977, 481
+{ XScale 18.11541194 YScale 18.11541194 Offset 488, 479
+ Patch "PATCHES/deathfixed/JCLS/L.png", 0, 0 {}
 }
 
 Sprite JCLSM0, 380, 148
@@ -1500,52 +1494,34 @@ Sprite JCMAG8, 140, 167
  Patch "PATCHES/carmack/6-1.png", 0, 0 {}
 }
 
-Sprite JCMAI0, 124, 143
-{
- XScale 3.53571429
- YScale 3.53571429
- Offset 62, 143
- Patch "PATCHES/carmack/fall0.png", 0, 0 {}
+Sprite JCMAI0, 128, 147
+{ XScale 3.53571429 YScale 3.53571429 Offset 64, 145
+ Patch "PATCHES/deathfixed/JCMA/I.png", 0, 0 {}
 }
 
-Sprite JCMAJ0, 166, 131
-{
- XScale 3.53571429
- YScale 3.53571429
- Offset 83, 131
- Patch "PATCHES/carmack/fall1.png", 0, 0 {}
+Sprite JCMAJ0, 170, 135
+{ XScale 3.53571429 YScale 3.53571429 Offset 85, 133
+ Patch "PATCHES/deathfixed/JCMA/J.png", 0, 0 {}
 }
 
-Sprite JCMAK0, 180, 113
-{
- XScale 3.53571429
- YScale 3.53571429
- Offset 90, 113
- Patch "PATCHES/carmack/fall2.png", 0, 0 {}
+Sprite JCMAK0, 162, 117
+{ XScale 3.53571429 YScale 3.53571429 Offset 81, 115
+ Patch "PATCHES/deathfixed/JCMA/K.png", 0, 0 {}
 }
 
-Sprite JCMAL0, 199, 90
-{
- XScale 3.53571429
- YScale 3.53571429
- Offset 99, 90
- Patch "PATCHES/carmack/fall3.png", 0, 0 {}
+Sprite JCMAL0, 186, 94
+{ XScale 3.53571429 YScale 3.53571429 Offset 93, 92
+ Patch "PATCHES/deathfixed/JCMA/L.png", 0, 0 {}
 }
 
-Sprite JCMAM0, 180, 72
-{
- XScale 3.53571429
- YScale 3.53571429
- Offset 90, 72
- Patch "PATCHES/carmack/fall4.png", 0, 0 {}
+Sprite JCMAM0, 188, 76
+{ XScale 3.53571429 YScale 3.53571429 Offset 94, 74
+ Patch "PATCHES/deathfixed/JCMA/M.png", 0, 0 {}
 }
 
-Sprite JCMAN0, 180, 72
-{
- XScale 3.53571429
- YScale 3.53571429
- Offset 90, 72
- Patch "PATCHES/carmack/fall4.png", 0, 0 {}
+Sprite JCMAN0, 188, 76
+{ XScale 3.53571429 YScale 3.53571429 Offset 94, 74
+ Patch "PATCHES/deathfixed/JCMA/N.png", 0, 0 {}
 }
 
 Graphic CMLEFT, 1254, 1254
@@ -1849,34 +1825,34 @@ Sprite JR05G8, 111, 167
  Patch "PATCHES/romero2005/6-1.png", 0, 0 {}
 }
 
-Sprite JR05I0, 98, 162
-{ XScale 3.39285714 YScale 3.39285714 Offset 49, 162
- Patch "PATCHES/romero2005/fall0.png", 0, 0 {}
+Sprite JR05I0, 102, 163
+{ XScale 3.39285714 YScale 3.39285714 Offset 51, 161
+ Patch "PATCHES/deathfixed/JR05/I.png", 0, 0 {}
 }
 
-Sprite JR05J0, 189, 147
-{ XScale 3.39285714 YScale 3.39285714 Offset 94, 147
- Patch "PATCHES/romero2005/fall1.png", 0, 0 {}
+Sprite JR05J0, 142, 151
+{ XScale 3.39285714 YScale 3.39285714 Offset 71, 149
+ Patch "PATCHES/deathfixed/JR05/J.png", 0, 0 {}
 }
 
-Sprite JR05K0, 198, 117
-{ XScale 3.39285714 YScale 3.39285714 Offset 99, 117
- Patch "PATCHES/romero2005/fall2.png", 0, 0 {}
+Sprite JR05K0, 183, 121
+{ XScale 3.39285714 YScale 3.39285714 Offset 91, 119
+ Patch "PATCHES/deathfixed/JR05/K.png", 0, 0 {}
 }
 
-Sprite JR05L0, 199, 86
-{ XScale 3.39285714 YScale 3.39285714 Offset 99, 86
- Patch "PATCHES/romero2005/fall3.png", 0, 0 {}
+Sprite JR05L0, 202, 90
+{ XScale 3.39285714 YScale 3.39285714 Offset 101, 88
+ Patch "PATCHES/deathfixed/JR05/L.png", 0, 0 {}
 }
 
-Sprite JR05M0, 180, 71
-{ XScale 3.39285714 YScale 3.39285714 Offset 90, 71
- Patch "PATCHES/romero2005/fall4.png", 0, 0 {}
+Sprite JR05M0, 208, 75
+{ XScale 3.39285714 YScale 3.39285714 Offset 104, 73
+ Patch "PATCHES/deathfixed/JR05/M.png", 0, 0 {}
 }
 
-Sprite JR05N0, 180, 71
-{ XScale 3.39285714 YScale 3.39285714 Offset 90, 71
- Patch "PATCHES/romero2005/fall4.png", 0, 0 {}
+Sprite JR05N0, 208, 75
+{ XScale 3.39285714 YScale 3.39285714 Offset 104, 73
+ Patch "PATCHES/deathfixed/JR05/N.png", 0, 0 {}
 }
 
 Sprite JC06A1, 89, 192
@@ -2159,34 +2135,34 @@ Sprite JC06G8, 89, 180
  Patch "PATCHES/carmack2006/6-1.png", 0, 0 {}
 }
 
-Sprite JC06I0, 124, 160
-{ XScale 3.42857143 YScale 3.42857143 Offset 62, 160
- Patch "PATCHES/carmack2006/fall0.png", 0, 0 {}
+Sprite JC06I0, 128, 164
+{ XScale 3.42857143 YScale 3.42857143 Offset 64, 162
+ Patch "PATCHES/deathfixed/JC06/I.png", 0, 0 {}
 }
 
-Sprite JC06J0, 192, 142
-{ XScale 3.42857143 YScale 3.42857143 Offset 96, 142
- Patch "PATCHES/carmack2006/fall1.png", 0, 0 {}
+Sprite JC06J0, 159, 146
+{ XScale 3.42857143 YScale 3.42857143 Offset 79, 144
+ Patch "PATCHES/deathfixed/JC06/J.png", 0, 0 {}
 }
 
-Sprite JC06K0, 198, 127
-{ XScale 3.42857143 YScale 3.42857143 Offset 99, 127
- Patch "PATCHES/carmack2006/fall2.png", 0, 0 {}
+Sprite JC06K0, 173, 131
+{ XScale 3.42857143 YScale 3.42857143 Offset 86, 129
+ Patch "PATCHES/deathfixed/JC06/K.png", 0, 0 {}
 }
 
-Sprite JC06L0, 199, 99
-{ XScale 3.42857143 YScale 3.42857143 Offset 99, 99
- Patch "PATCHES/carmack2006/fall3.png", 0, 0 {}
+Sprite JC06L0, 185, 103
+{ XScale 3.42857143 YScale 3.42857143 Offset 92, 101
+ Patch "PATCHES/deathfixed/JC06/L.png", 0, 0 {}
 }
 
-Sprite JC06M0, 183, 83
-{ XScale 3.42857143 YScale 3.42857143 Offset 91, 83
- Patch "PATCHES/carmack2006/fall4.png", 0, 0 {}
+Sprite JC06M0, 679, 276
+{ XScale 11.28919861 YScale 11.28919861 Offset 339, 274
+ Patch "PATCHES/deathfixed/JC06/M.png", 0, 0 {}
 }
 
-Sprite JC06N0, 183, 83
-{ XScale 3.42857143 YScale 3.42857143 Offset 91, 83
- Patch "PATCHES/carmack2006/fall4.png", 0, 0 {}
+Sprite JC06N0, 679, 276
+{ XScale 11.28919861 YScale 11.28919861 Offset 339, 274
+ Patch "PATCHES/deathfixed/JC06/N.png", 0, 0 {}
 }
 
 Sprite SWMKA1, 91, 190
@@ -2469,36 +2445,35 @@ Sprite SWMKG8, 88, 180
  Patch "PATCHES/swolemack/6-1.png", 0, 0 {}
 }
 
-Sprite SWMKI0, 125, 160
-{ XScale 3.39285714 YScale 3.39285714 Offset 62, 160
- Patch "PATCHES/swolemack/fall0.png", 0, 0 {}
+Sprite SWMKI0, 129, 164
+{ XScale 3.39285714 YScale 3.39285714 Offset 64, 162
+ Patch "PATCHES/deathfixed/SWMK/I.png", 0, 0 {}
 }
 
-Sprite SWMKJ0, 192, 140
-{ XScale 3.39285714 YScale 3.39285714 Offset 96, 140
- Patch "PATCHES/swolemack/fall1.png", 0, 0 {}
+Sprite SWMKJ0, 159, 144
+{ XScale 3.39285714 YScale 3.39285714 Offset 79, 142
+ Patch "PATCHES/deathfixed/SWMK/J.png", 0, 0 {}
 }
 
-Sprite SWMKK0, 198, 127
-{ XScale 3.39285714 YScale 3.39285714 Offset 99, 127
- Patch "PATCHES/swolemack/fall2.png", 0, 0 {}
+Sprite SWMKK0, 171, 131
+{ XScale 3.39285714 YScale 3.39285714 Offset 85, 129
+ Patch "PATCHES/deathfixed/SWMK/K.png", 0, 0 {}
 }
 
-Sprite SWMKL0, 199, 101
-{ XScale 3.39285714 YScale 3.39285714 Offset 99, 101
- Patch "PATCHES/swolemack/fall3.png", 0, 0 {}
+Sprite SWMKL0, 183, 105
+{ XScale 3.39285714 YScale 3.39285714 Offset 91, 103
+ Patch "PATCHES/deathfixed/SWMK/L.png", 0, 0 {}
 }
 
-Sprite SWMKM0, 182, 85
-{ XScale 3.39285714 YScale 3.39285714 Offset 91, 85
- Patch "PATCHES/swolemack/fall4.png", 0, 0 {}
+Sprite SWMKM0, 677, 282
+{ XScale 11.19310223 YScale 11.19310223 Offset 338, 280
+ Patch "PATCHES/deathfixed/SWMK/M.png", 0, 0 {}
 }
 
-Sprite SWMKN0, 182, 85
-{ XScale 3.39285714 YScale 3.39285714 Offset 91, 85
- Patch "PATCHES/swolemack/fall4.png", 0, 0 {}
+Sprite SWMKN0, 677, 282
+{ XScale 11.19310223 YScale 11.19310223 Offset 338, 280
+ Patch "PATCHES/deathfixed/SWMK/N.png", 0, 0 {}
 }
-
 
 // Jay Wilbur sprites
 Sprite JAYWA1, 94, 190
@@ -2725,29 +2700,34 @@ Sprite JAYWG8, 91, 180
 { XScale 3.39285714 YScale 3.39285714 Offset 45, 180
  Patch "PATCHES/jaywilbur/6-1.png", 0, 0 {}
 }
-Sprite JAYWI0, 128, 157
-{ XScale 3.39285714 YScale 3.39285714 Offset 64, 157
- Patch "PATCHES/jaywilbur/7-0.png", 0, 0 {}
+Sprite JAYWI0, 132, 161
+{ XScale 3.39285714 YScale 3.39285714 Offset 66, 159
+ Patch "PATCHES/deathfixed/JAYW/I.png", 0, 0 {}
 }
-Sprite JAYWJ0, 195, 141
-{ XScale 3.39285714 YScale 3.39285714 Offset 97, 141
- Patch "PATCHES/jaywilbur/7-1.png", 0, 0 {}
+
+Sprite JAYWJ0, 163, 145
+{ XScale 3.39285714 YScale 3.39285714 Offset 81, 143
+ Patch "PATCHES/deathfixed/JAYW/J.png", 0, 0 {}
 }
-Sprite JAYWK0, 199, 128
-{ XScale 3.39285714 YScale 3.39285714 Offset 99, 128
- Patch "PATCHES/jaywilbur/7-2.png", 0, 0 {}
+
+Sprite JAYWK0, 174, 132
+{ XScale 3.39285714 YScale 3.39285714 Offset 87, 130
+ Patch "PATCHES/deathfixed/JAYW/K.png", 0, 0 {}
 }
-Sprite JAYWL0, 199, 105
-{ XScale 3.39285714 YScale 3.39285714 Offset 99, 105
- Patch "PATCHES/jaywilbur/7-3.png", 0, 0 {}
+
+Sprite JAYWL0, 183, 109
+{ XScale 3.39285714 YScale 3.39285714 Offset 91, 107
+ Patch "PATCHES/deathfixed/JAYW/L.png", 0, 0 {}
 }
-Sprite JAYWM0, 183, 85
-{ XScale 3.39285714 YScale 3.39285714 Offset 91, 85
- Patch "PATCHES/jaywilbur/7-4.png", 0, 0 {}
+
+Sprite JAYWM0, 683, 292
+{ XScale 11.18325242 YScale 11.18325242 Offset 341, 290
+ Patch "PATCHES/deathfixed/JAYW/M.png", 0, 0 {}
 }
-Sprite JAYWN0, 183, 85
-{ XScale 3.39285714 YScale 3.39285714 Offset 91, 85
- Patch "PATCHES/jaywilbur/7-4.png", 0, 0 {}
+
+Sprite JAYWN0, 683, 292
+{ XScale 11.18325242 YScale 11.18325242 Offset 341, 290
+ Patch "PATCHES/deathfixed/JAYW/N.png", 0, 0 {}
 }
 
 Graphic JAYTALLY,46,49 { XScale 1.4375 YScale 1.4375 Patch "GRAPHICS/JAYFACE.png",0,0 }
@@ -2977,29 +2957,34 @@ Sprite TOMHG8, 91, 181
 { XScale 3.41071429 YScale 3.41071429 Offset 45, 181
  Patch "PATCHES/tomhall/6-1.png", 0, 0 {}
 }
-Sprite TOMHI0, 172, 157
-{ XScale 3.41071429 YScale 3.41071429 Offset 86, 157
- Patch "PATCHES/tomhall/7-0.png", 0, 0 {}
+Sprite TOMHI0, 133, 161
+{ XScale 3.41071429 YScale 3.41071429 Offset 66, 159
+ Patch "PATCHES/deathfixed/TOMH/I.png", 0, 0 {}
 }
-Sprite TOMHJ0, 199, 143
-{ XScale 3.41071429 YScale 3.41071429 Offset 99, 143
- Patch "PATCHES/tomhall/7-1.png", 0, 0 {}
+
+Sprite TOMHJ0, 168, 147
+{ XScale 3.41071429 YScale 3.41071429 Offset 84, 145
+ Patch "PATCHES/deathfixed/TOMH/J.png", 0, 0 {}
 }
-Sprite TOMHK0, 199, 131
-{ XScale 3.41071429 YScale 3.41071429 Offset 99, 131
- Patch "PATCHES/tomhall/7-2.png", 0, 0 {}
+
+Sprite TOMHK0, 179, 135
+{ XScale 3.41071429 YScale 3.41071429 Offset 89, 133
+ Patch "PATCHES/deathfixed/TOMH/K.png", 0, 0 {}
 }
-Sprite TOMHL0, 199, 102
-{ XScale 3.41071429 YScale 3.41071429 Offset 99, 102
- Patch "PATCHES/tomhall/7-3.png", 0, 0 {}
+
+Sprite TOMHL0, 184, 106
+{ XScale 3.41071429 YScale 3.41071429 Offset 92, 104
+ Patch "PATCHES/deathfixed/TOMH/L.png", 0, 0 {}
 }
-Sprite TOMHM0, 182, 85
-{ XScale 3.41071429 YScale 3.41071429 Offset 91, 85
- Patch "PATCHES/tomhall/7-4.png", 0, 0 {}
+
+Sprite TOMHM0, 677, 283
+{ XScale 11.25201332 YScale 11.25201332 Offset 338, 281
+ Patch "PATCHES/deathfixed/TOMH/M.png", 0, 0 {}
 }
-Sprite TOMHN0, 182, 85
-{ XScale 3.41071429 YScale 3.41071429 Offset 91, 85
- Patch "PATCHES/tomhall/7-4.png", 0, 0 {}
+
+Sprite TOMHN0, 677, 283
+{ XScale 11.25201332 YScale 11.25201332 Offset 338, 281
+ Patch "PATCHES/deathfixed/TOMH/N.png", 0, 0 {}
 }
 
 Graphic TOMTALLY,46,49 { XScale 1.4375 YScale 1.4375 Patch "GRAPHICS/TOMFACE.png",0,0 }
@@ -3256,30 +3241,36 @@ Sprite TMPRG8, 93, 179
 { XScale 3.32142857 YScale 3.32142857 Offset 46, 179
  Patch "PATCHES/tompresent/5-1.png", 0, 0 {}
 }
-Sprite TMPRI0, 138, 155
-{ XScale 3.32142857 YScale 3.32142857 Offset 69, 155
- Patch "PATCHES/tompresent/7-0.png", 0, 0 {}
+Sprite TMPRI0, 142, 159
+{ XScale 3.32142857 YScale 3.32142857 Offset 71, 157
+ Patch "PATCHES/deathfixed/TMPR/I.png", 0, 0 {}
 }
-Sprite TMPRJ0, 197, 143
-{ XScale 3.32142857 YScale 3.32142857 Offset 98, 143
- Patch "PATCHES/tompresent/7-1.png", 0, 0 {}
+
+Sprite TMPRJ0, 170, 147
+{ XScale 3.32142857 YScale 3.32142857 Offset 85, 145
+ Patch "PATCHES/deathfixed/TMPR/J.png", 0, 0 {}
 }
-Sprite TMPRK0, 199, 130
-{ XScale 3.32142857 YScale 3.32142857 Offset 99, 130
- Patch "PATCHES/tompresent/7-2.png", 0, 0 {}
+
+Sprite TMPRK0, 172, 134
+{ XScale 3.32142857 YScale 3.32142857 Offset 86, 132
+ Patch "PATCHES/deathfixed/TMPR/K.png", 0, 0 {}
 }
-Sprite TMPRL0, 199, 108
-{ XScale 3.32142857 YScale 3.32142857 Offset 99, 108
- Patch "PATCHES/tompresent/7-3.png", 0, 0 {}
+
+Sprite TMPRL0, 186, 112
+{ XScale 3.32142857 YScale 3.32142857 Offset 93, 110
+ Patch "PATCHES/deathfixed/TMPR/L.png", 0, 0 {}
 }
-Sprite TMPRM0, 182, 89
-{ XScale 3.32142857 YScale 3.32142857 Offset 91, 89
- Patch "PATCHES/tompresent/7-4.png", 0, 0 {}
+
+Sprite TMPRM0, 692, 309
+{ XScale 10.93369788 YScale 10.93369788 Offset 346, 307
+ Patch "PATCHES/deathfixed/TMPR/M.png", 0, 0 {}
 }
-Sprite TMPRN0, 182, 89
-{ XScale 3.32142857 YScale 3.32142857 Offset 91, 89
- Patch "PATCHES/tompresent/7-4.png", 0, 0 {}
+
+Sprite TMPRN0, 692, 309
+{ XScale 10.93369788 YScale 10.93369788 Offset 346, 307
+ Patch "PATCHES/deathfixed/TMPR/N.png", 0, 0 {}
 }
+
 Graphic TMPLEFT, 724, 724
 { XScale 15.73913043 YScale 14.77551020
  Patch "PATCHES/tompresent/TMPLEFT.png", 0, 0
