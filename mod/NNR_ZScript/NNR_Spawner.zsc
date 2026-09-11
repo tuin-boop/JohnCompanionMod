@@ -30,7 +30,7 @@ Class FriendSpawnHandler : EventHandler
             for(int slot=0;slot<2;slot++){
                 int member=NNR_Team.Slot(selected,slot);if(!member || (found&(1<<(member-1))))continue;
                 class<Actor> kind=member==5?"NNR_AdrianMarine":member==4?"NNR_TomMarine":member==3?"NNR_JayMarine":member==2?"NNR_CarmackMarine":"NNR_JohnMarine";
-                if(member>=6){String extra=member==19?"NNR_MonekoMarine":member==18?"NNR_PeterMarine":member==17?"NNR_PatrickMarine":member==16?"NNR_SpongeBobMarine":member==15?"NNR_BrianMarine":member==14?"NNR_StewieMarine":member==13?"NNR_ErnieMarine":member==12?"NNR_KumiMarine":member==11?"NNR_EstherMarine":member==10?"NNR_TuinMarine":member==9?"NNR_FrierMarine":member==8?"NNR_KarinMarine":member==7?"NNR_TinaMarine":"NNR_HimikoMarine";kind=(class<Actor>)(extra);}
+                if(member>=6){String extra=member==21?"NNR_PopeMarine":member==20?"NNR_KnootewootMarine":member==19?"NNR_MonekoMarine":member==18?"NNR_PeterMarine":member==17?"NNR_PatrickMarine":member==16?"NNR_SpongeBobMarine":member==15?"NNR_BrianMarine":member==14?"NNR_StewieMarine":member==13?"NNR_ErnieMarine":member==12?"NNR_KumiMarine":member==11?"NNR_EstherMarine":member==10?"NNR_TuinMarine":member==9?"NNR_FrierMarine":member==8?"NNR_KarinMarine":member==7?"NNR_TinaMarine":"NNR_HimikoMarine";kind=(class<Actor>)(extra);}
                 let a=Actor.Spawn(kind,players[i].mo.pos);if(a){a.master=players[i].mo;a.Warp(a.master,-64,slot==0?-40:40,0,0,WARPF_STOP|WARPF_TOFLOOR);a.A_FaceMaster();}
             }
         }

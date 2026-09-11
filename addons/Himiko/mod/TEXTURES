@@ -1744,6 +1744,254 @@ Sprite MONKM0, 182, 91
 Sprite MONKN0, 182, 91
 { XScale 3.42857143 YScale 3.42857143 Offset 91, 89 Patch "PATCHES/Moneko/6-4.png", 0, 0 {} }
 Graphic MONFACE, 118, 97 { XScale 2.5652173913043477 YScale 1.9795918367346939 Patch "PATCHES/MONFACE.png", 0, 0 }
+Sprite KNWTA1, 125, 212
+{ XScale 3.71428571 YScale 3.71428571 Offset 62, 210 Patch "PATCHES/Knootewoot/0-0.png", 0, 0 {} }
+Sprite KNWTA2, 127, 209
+{ XScale 3.71428571 YScale 3.71428571 Offset 63, 207 Patch "PATCHES/Knootewoot/0-1.png", 0, 0 { FlipX } }
+Sprite KNWTA3, 130, 212
+{ XScale 3.71428571 YScale 3.71428571 Offset 65, 210 Patch "PATCHES/Knootewoot/0-2.png", 0, 0 { FlipX } }
+Sprite KNWTA4, 120, 211
+{ XScale 3.71428571 YScale 3.71428571 Offset 60, 209 Patch "PATCHES/Knootewoot/0-3.png", 0, 0 { FlipX } }
+Sprite KNWTA5, 126, 211
+{ XScale 3.71428571 YScale 3.71428571 Offset 63, 209 Patch "PATCHES/Knootewoot/0-4.png", 0, 0 {} }
+Sprite KNWTA6, 120, 211
+{ XScale 3.71428571 YScale 3.71428571 Offset 60, 209 Patch "PATCHES/Knootewoot/0-3.png", 0, 0 {} }
+Sprite KNWTA7, 130, 212
+{ XScale 3.71428571 YScale 3.71428571 Offset 65, 210 Patch "PATCHES/Knootewoot/0-2.png", 0, 0 {} }
+Sprite KNWTA8, 127, 209
+{ XScale 3.71428571 YScale 3.71428571 Offset 63, 207 Patch "PATCHES/Knootewoot/0-1.png", 0, 0 {} }
+Sprite KNWTB1, 123, 207
+{ XScale 3.71428571 YScale 3.71428571 Offset 61, 205 Patch "PATCHES/Knootewoot/1-0.png", 0, 0 {} }
+Sprite KNWTB2, 129, 201
+{ XScale 3.71428571 YScale 3.71428571 Offset 64, 199 Patch "PATCHES/Knootewoot/1-1.png", 0, 0 { FlipX } }
+Sprite KNWTB3, 143, 205
+{ XScale 3.71428571 YScale 3.71428571 Offset 71, 203 Patch "PATCHES/Knootewoot/1-2.png", 0, 0 { FlipX } }
+Sprite KNWTB4, 121, 208
+{ XScale 3.71428571 YScale 3.71428571 Offset 60, 206 Patch "PATCHES/Knootewoot/1-3.png", 0, 0 { FlipX } }
+Sprite KNWTB5, 125, 207
+{ XScale 3.71428571 YScale 3.71428571 Offset 62, 205 Patch "PATCHES/Knootewoot/1-4.png", 0, 0 {} }
+Sprite KNWTB6, 121, 208
+{ XScale 3.71428571 YScale 3.71428571 Offset 60, 206 Patch "PATCHES/Knootewoot/1-3.png", 0, 0 {} }
+Sprite KNWTB7, 143, 205
+{ XScale 3.71428571 YScale 3.71428571 Offset 71, 203 Patch "PATCHES/Knootewoot/1-2.png", 0, 0 {} }
+Sprite KNWTB8, 129, 201
+{ XScale 3.71428571 YScale 3.71428571 Offset 64, 199 Patch "PATCHES/Knootewoot/1-1.png", 0, 0 {} }
+Sprite KNWTC1, 118, 203
+{ XScale 3.71428571 YScale 3.71428571 Offset 59, 201 Patch "PATCHES/Knootewoot/2-0.png", 0, 0 {} }
+Sprite KNWTC2, 122, 197
+{ XScale 3.71428571 YScale 3.71428571 Offset 61, 195 Patch "PATCHES/Knootewoot/2-1.png", 0, 0 { FlipX } }
+Sprite KNWTC3, 144, 200
+{ XScale 3.71428571 YScale 3.71428571 Offset 72, 198 Patch "PATCHES/Knootewoot/2-2.png", 0, 0 { FlipX } }
+Sprite KNWTC4, 116, 206
+{ XScale 3.71428571 YScale 3.71428571 Offset 58, 204 Patch "PATCHES/Knootewoot/2-3.png", 0, 0 { FlipX } }
+Sprite KNWTC5, 125, 206
+{ XScale 3.71428571 YScale 3.71428571 Offset 62, 204 Patch "PATCHES/Knootewoot/2-4.png", 0, 0 {} }
+Sprite KNWTC6, 116, 206
+{ XScale 3.71428571 YScale 3.71428571 Offset 58, 204 Patch "PATCHES/Knootewoot/2-3.png", 0, 0 {} }
+Sprite KNWTC7, 144, 200
+{ XScale 3.71428571 YScale 3.71428571 Offset 72, 198 Patch "PATCHES/Knootewoot/2-2.png", 0, 0 {} }
+Sprite KNWTC8, 122, 197
+{ XScale 3.71428571 YScale 3.71428571 Offset 61, 195 Patch "PATCHES/Knootewoot/2-1.png", 0, 0 {} }
+Sprite KNWTD1, 123, 207
+{ XScale 3.71428571 YScale 3.71428571 Offset 61, 205 Patch "PATCHES/Knootewoot/1-0.png", 0, 0 {} }
+Sprite KNWTD2, 129, 201
+{ XScale 3.71428571 YScale 3.71428571 Offset 64, 199 Patch "PATCHES/Knootewoot/1-1.png", 0, 0 { FlipX } }
+Sprite KNWTD3, 143, 205
+{ XScale 3.71428571 YScale 3.71428571 Offset 71, 203 Patch "PATCHES/Knootewoot/1-2.png", 0, 0 { FlipX } }
+Sprite KNWTD4, 121, 208
+{ XScale 3.71428571 YScale 3.71428571 Offset 60, 206 Patch "PATCHES/Knootewoot/1-3.png", 0, 0 { FlipX } }
+Sprite KNWTD5, 125, 207
+{ XScale 3.71428571 YScale 3.71428571 Offset 62, 205 Patch "PATCHES/Knootewoot/1-4.png", 0, 0 {} }
+Sprite KNWTD6, 121, 208
+{ XScale 3.71428571 YScale 3.71428571 Offset 60, 206 Patch "PATCHES/Knootewoot/1-3.png", 0, 0 {} }
+Sprite KNWTD7, 143, 205
+{ XScale 3.71428571 YScale 3.71428571 Offset 71, 203 Patch "PATCHES/Knootewoot/1-2.png", 0, 0 {} }
+Sprite KNWTD8, 129, 201
+{ XScale 3.71428571 YScale 3.71428571 Offset 64, 199 Patch "PATCHES/Knootewoot/1-1.png", 0, 0 {} }
+Sprite KNWTE1, 104, 202
+{ XScale 3.71428571 YScale 3.71428571 Offset 52, 200 Patch "PATCHES/Knootewoot/3-0.png", 0, 0 {} }
+Sprite KNWTE2, 147, 202
+{ XScale 3.71428571 YScale 3.71428571 Offset 73, 200 Patch "PATCHES/Knootewoot/3-1.png", 0, 0 { FlipX } }
+Sprite KNWTE3, 154, 203
+{ XScale 3.71428571 YScale 3.71428571 Offset 77, 201 Patch "PATCHES/Knootewoot/3-2.png", 0, 0 { FlipX } }
+Sprite KNWTE4, 131, 202
+{ XScale 3.71428571 YScale 3.71428571 Offset 65, 200 Patch "PATCHES/Knootewoot/3-3.png", 0, 0 { FlipX } }
+Sprite KNWTE5, 132, 205
+{ XScale 3.71428571 YScale 3.71428571 Offset 66, 203 Patch "PATCHES/Knootewoot/3-4.png", 0, 0 {} }
+Sprite KNWTE6, 131, 202
+{ XScale 3.71428571 YScale 3.71428571 Offset 65, 200 Patch "PATCHES/Knootewoot/3-3.png", 0, 0 {} }
+Sprite KNWTE7, 154, 203
+{ XScale 3.71428571 YScale 3.71428571 Offset 77, 201 Patch "PATCHES/Knootewoot/3-2.png", 0, 0 {} }
+Sprite KNWTE8, 147, 202
+{ XScale 3.71428571 YScale 3.71428571 Offset 73, 200 Patch "PATCHES/Knootewoot/3-1.png", 0, 0 {} }
+Sprite KNWTF1, 106, 205
+{ XScale 3.71428571 YScale 3.71428571 Offset 53, 203 Patch "PATCHES/Knootewoot/4-0.png", 0, 0 {} }
+Sprite KNWTF2, 166, 200
+{ XScale 3.71428571 YScale 3.71428571 Offset 83, 198 Patch "PATCHES/Knootewoot/4-1.png", 0, 0 { FlipX } }
+Sprite KNWTF3, 182, 203
+{ XScale 3.71428571 YScale 3.71428571 Offset 91, 201 Patch "PATCHES/Knootewoot/4-2.png", 0, 0 { FlipX } }
+Sprite KNWTF4, 177, 197
+{ XScale 3.71428571 YScale 3.71428571 Offset 88, 195 Patch "PATCHES/Knootewoot/4-3.png", 0, 0 { FlipX } }
+Sprite KNWTF5, 132, 205
+{ XScale 3.71428571 YScale 3.71428571 Offset 66, 203 Patch "PATCHES/Knootewoot/3-4.png", 0, 0 {} }
+Sprite KNWTF6, 177, 197
+{ XScale 3.71428571 YScale 3.71428571 Offset 88, 195 Patch "PATCHES/Knootewoot/4-3.png", 0, 0 {} }
+Sprite KNWTF7, 182, 203
+{ XScale 3.71428571 YScale 3.71428571 Offset 91, 201 Patch "PATCHES/Knootewoot/4-2.png", 0, 0 {} }
+Sprite KNWTF8, 166, 200
+{ XScale 3.71428571 YScale 3.71428571 Offset 83, 198 Patch "PATCHES/Knootewoot/4-1.png", 0, 0 {} }
+Sprite KNWTG1, 119, 201
+{ XScale 3.71428571 YScale 3.71428571 Offset 59, 199 Patch "PATCHES/Knootewoot/5-0.png", 0, 0 {} }
+Sprite KNWTG2, 129, 203
+{ XScale 3.71428571 YScale 3.71428571 Offset 64, 201 Patch "PATCHES/Knootewoot/5-1.png", 0, 0 { FlipX } }
+Sprite KNWTG3, 133, 199
+{ XScale 3.71428571 YScale 3.71428571 Offset 66, 197 Patch "PATCHES/Knootewoot/5-2.png", 0, 0 { FlipX } }
+Sprite KNWTG4, 137, 199
+{ XScale 3.71428571 YScale 3.71428571 Offset 68, 197 Patch "PATCHES/Knootewoot/5-3.png", 0, 0 { FlipX } }
+Sprite KNWTG5, 122, 207
+{ XScale 3.71428571 YScale 3.71428571 Offset 61, 205 Patch "PATCHES/Knootewoot/5-4.png", 0, 0 {} }
+Sprite KNWTG6, 137, 199
+{ XScale 3.71428571 YScale 3.71428571 Offset 68, 197 Patch "PATCHES/Knootewoot/5-3.png", 0, 0 {} }
+Sprite KNWTG7, 133, 199
+{ XScale 3.71428571 YScale 3.71428571 Offset 66, 197 Patch "PATCHES/Knootewoot/5-2.png", 0, 0 {} }
+Sprite KNWTG8, 129, 203
+{ XScale 3.71428571 YScale 3.71428571 Offset 64, 201 Patch "PATCHES/Knootewoot/5-1.png", 0, 0 {} }
+Sprite KNWTI0, 99, 134
+{ XScale 3.71428571 YScale 3.71428571 Offset 49, 132 Patch "PATCHES/Knootewoot/6-0.png", 0, 0 {} }
+Sprite KNWTJ0, 172, 115
+{ XScale 3.71428571 YScale 3.71428571 Offset 86, 113 Patch "PATCHES/Knootewoot/6-1.png", 0, 0 {} }
+Sprite KNWTK0, 187, 76
+{ XScale 3.71428571 YScale 3.71428571 Offset 93, 74 Patch "PATCHES/Knootewoot/6-2.png", 0, 0 {} }
+Sprite KNWTL0, 179, 67
+{ XScale 3.71428571 YScale 3.71428571 Offset 89, 65 Patch "PATCHES/Knootewoot/6-3.png", 0, 0 {} }
+Sprite KNWTM0, 208, 62
+{ XScale 3.71428571 YScale 3.71428571 Offset 104, 60 Patch "PATCHES/Knootewoot/6-4.png", 0, 0 {} }
+Sprite KNWTN0, 208, 62
+{ XScale 3.71428571 YScale 3.71428571 Offset 104, 60 Patch "PATCHES/Knootewoot/6-4.png", 0, 0 {} }
+Sprite POPEA1, 129, 221
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 219 Patch "PATCHES/Pope/0-0.png", 0, 0 {} }
+Sprite POPEA2, 136, 220
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 218 Patch "PATCHES/Pope/0-1.png", 0, 0 { FlipX } }
+Sprite POPEA3, 113, 222
+{ XScale 3.87500000 YScale 3.87500000 Offset 56, 220 Patch "PATCHES/Pope/0-2.png", 0, 0 { FlipX } }
+Sprite POPEA4, 118, 220
+{ XScale 3.87500000 YScale 3.87500000 Offset 59, 218 Patch "PATCHES/Pope/0-3.png", 0, 0 { FlipX } }
+Sprite POPEA5, 135, 222
+{ XScale 3.87500000 YScale 3.87500000 Offset 67, 220 Patch "PATCHES/Pope/0-4.png", 0, 0 {} }
+Sprite POPEA6, 118, 220
+{ XScale 3.87500000 YScale 3.87500000 Offset 59, 218 Patch "PATCHES/Pope/0-3.png", 0, 0 {} }
+Sprite POPEA7, 113, 222
+{ XScale 3.87500000 YScale 3.87500000 Offset 56, 220 Patch "PATCHES/Pope/0-2.png", 0, 0 {} }
+Sprite POPEA8, 136, 220
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 218 Patch "PATCHES/Pope/0-1.png", 0, 0 {} }
+Sprite POPEB1, 127, 219
+{ XScale 3.87500000 YScale 3.87500000 Offset 63, 217 Patch "PATCHES/Pope/1-0.png", 0, 0 {} }
+Sprite POPEB2, 133, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 211 Patch "PATCHES/Pope/1-1.png", 0, 0 { FlipX } }
+Sprite POPEB3, 136, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 211 Patch "PATCHES/Pope/1-2.png", 0, 0 { FlipX } }
+Sprite POPEB4, 128, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 211 Patch "PATCHES/Pope/1-3.png", 0, 0 { FlipX } }
+Sprite POPEB5, 112, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 56, 211 Patch "PATCHES/Pope/1-4.png", 0, 0 {} }
+Sprite POPEB6, 128, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 211 Patch "PATCHES/Pope/1-3.png", 0, 0 {} }
+Sprite POPEB7, 136, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 211 Patch "PATCHES/Pope/1-2.png", 0, 0 {} }
+Sprite POPEB8, 133, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 211 Patch "PATCHES/Pope/1-1.png", 0, 0 {} }
+Sprite POPEC1, 127, 219
+{ XScale 3.87500000 YScale 3.87500000 Offset 63, 217 Patch "PATCHES/Pope/1-0.png", 0, 0 {} }
+Sprite POPEC2, 133, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 211 Patch "PATCHES/Pope/1-1.png", 0, 0 { FlipX } }
+Sprite POPEC3, 136, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 211 Patch "PATCHES/Pope/1-2.png", 0, 0 { FlipX } }
+Sprite POPEC4, 128, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 211 Patch "PATCHES/Pope/1-3.png", 0, 0 { FlipX } }
+Sprite POPEC5, 112, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 56, 211 Patch "PATCHES/Pope/1-4.png", 0, 0 {} }
+Sprite POPEC6, 128, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 211 Patch "PATCHES/Pope/1-3.png", 0, 0 {} }
+Sprite POPEC7, 136, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 211 Patch "PATCHES/Pope/1-2.png", 0, 0 {} }
+Sprite POPEC8, 133, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 211 Patch "PATCHES/Pope/1-1.png", 0, 0 {} }
+Sprite POPED1, 127, 219
+{ XScale 3.87500000 YScale 3.87500000 Offset 63, 217 Patch "PATCHES/Pope/1-0.png", 0, 0 {} }
+Sprite POPED2, 133, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 211 Patch "PATCHES/Pope/1-1.png", 0, 0 { FlipX } }
+Sprite POPED3, 136, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 211 Patch "PATCHES/Pope/1-2.png", 0, 0 { FlipX } }
+Sprite POPED4, 128, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 211 Patch "PATCHES/Pope/1-3.png", 0, 0 { FlipX } }
+Sprite POPED5, 112, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 56, 211 Patch "PATCHES/Pope/1-4.png", 0, 0 {} }
+Sprite POPED6, 128, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 211 Patch "PATCHES/Pope/1-3.png", 0, 0 {} }
+Sprite POPED7, 136, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 211 Patch "PATCHES/Pope/1-2.png", 0, 0 {} }
+Sprite POPED8, 133, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 211 Patch "PATCHES/Pope/1-1.png", 0, 0 {} }
+Sprite POPEE1, 108, 219
+{ XScale 3.87500000 YScale 3.87500000 Offset 54, 217 Patch "PATCHES/Pope/2-0.png", 0, 0 {} }
+Sprite POPEE2, 140, 217
+{ XScale 3.87500000 YScale 3.87500000 Offset 70, 215 Patch "PATCHES/Pope/2-1.png", 0, 0 { FlipX } }
+Sprite POPEE3, 157, 219
+{ XScale 3.87500000 YScale 3.87500000 Offset 78, 217 Patch "PATCHES/Pope/2-2.png", 0, 0 { FlipX } }
+Sprite POPEE4, 129, 221
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 219 Patch "PATCHES/Pope/2-3.png", 0, 0 { FlipX } }
+Sprite POPEE5, 112, 222
+{ XScale 3.87500000 YScale 3.87500000 Offset 56, 220 Patch "PATCHES/Pope/2-4.png", 0, 0 {} }
+Sprite POPEE6, 129, 221
+{ XScale 3.87500000 YScale 3.87500000 Offset 64, 219 Patch "PATCHES/Pope/2-3.png", 0, 0 {} }
+Sprite POPEE7, 157, 219
+{ XScale 3.87500000 YScale 3.87500000 Offset 78, 217 Patch "PATCHES/Pope/2-2.png", 0, 0 {} }
+Sprite POPEE8, 140, 217
+{ XScale 3.87500000 YScale 3.87500000 Offset 70, 215 Patch "PATCHES/Pope/2-1.png", 0, 0 {} }
+Sprite POPEF1, 139, 215
+{ XScale 3.87500000 YScale 3.87500000 Offset 69, 213 Patch "PATCHES/Pope/3-0.png", 0, 0 {} }
+Sprite POPEF2, 160, 214
+{ XScale 3.87500000 YScale 3.87500000 Offset 80, 212 Patch "PATCHES/Pope/3-1.png", 0, 0 { FlipX } }
+Sprite POPEF3, 172, 215
+{ XScale 3.87500000 YScale 3.87500000 Offset 86, 213 Patch "PATCHES/Pope/3-2.png", 0, 0 { FlipX } }
+Sprite POPEF4, 163, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 81, 211 Patch "PATCHES/Pope/3-3.png", 0, 0 { FlipX } }
+Sprite POPEF5, 112, 222
+{ XScale 3.87500000 YScale 3.87500000 Offset 56, 220 Patch "PATCHES/Pope/2-4.png", 0, 0 {} }
+Sprite POPEF6, 163, 213
+{ XScale 3.87500000 YScale 3.87500000 Offset 81, 211 Patch "PATCHES/Pope/3-3.png", 0, 0 {} }
+Sprite POPEF7, 172, 215
+{ XScale 3.87500000 YScale 3.87500000 Offset 86, 213 Patch "PATCHES/Pope/3-2.png", 0, 0 {} }
+Sprite POPEF8, 160, 214
+{ XScale 3.87500000 YScale 3.87500000 Offset 80, 212 Patch "PATCHES/Pope/3-1.png", 0, 0 {} }
+Sprite POPEG1, 120, 238
+{ XScale 3.87500000 YScale 3.87500000 Offset 60, 236 Patch "PATCHES/Pope/4-0.png", 0, 0 {} }
+Sprite POPEG2, 132, 237
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 235 Patch "PATCHES/Pope/4-1.png", 0, 0 { FlipX } }
+Sprite POPEG3, 142, 237
+{ XScale 3.87500000 YScale 3.87500000 Offset 71, 235 Patch "PATCHES/Pope/4-2.png", 0, 0 { FlipX } }
+Sprite POPEG4, 137, 232
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 230 Patch "PATCHES/Pope/4-3.png", 0, 0 { FlipX } }
+Sprite POPEG5, 115, 238
+{ XScale 3.87500000 YScale 3.87500000 Offset 57, 236 Patch "PATCHES/Pope/4-4.png", 0, 0 {} }
+Sprite POPEG6, 137, 232
+{ XScale 3.87500000 YScale 3.87500000 Offset 68, 230 Patch "PATCHES/Pope/4-3.png", 0, 0 {} }
+Sprite POPEG7, 142, 237
+{ XScale 3.87500000 YScale 3.87500000 Offset 71, 235 Patch "PATCHES/Pope/4-2.png", 0, 0 {} }
+Sprite POPEG8, 132, 237
+{ XScale 3.87500000 YScale 3.87500000 Offset 66, 235 Patch "PATCHES/Pope/4-1.png", 0, 0 {} }
+Sprite POPEI0, 162, 186
+{ XScale 3.87500000 YScale 3.87500000 Offset 81, 184 Patch "PATCHES/Pope/5-0.png", 0, 0 {} }
+Sprite POPEJ0, 155, 139
+{ XScale 3.87500000 YScale 3.87500000 Offset 77, 137 Patch "PATCHES/Pope/5-1.png", 0, 0 {} }
+Sprite POPEK0, 179, 112
+{ XScale 3.87500000 YScale 3.87500000 Offset 89, 110 Patch "PATCHES/Pope/5-2.png", 0, 0 {} }
+Sprite POPEL0, 204, 93
+{ XScale 3.87500000 YScale 3.87500000 Offset 102, 91 Patch "PATCHES/Pope/5-3.png", 0, 0 {} }
+Sprite POPEM0, 191, 79
+{ XScale 3.87500000 YScale 3.87500000 Offset 95, 77 Patch "PATCHES/Pope/5-4.png", 0, 0 {} }
+Sprite POPEN0, 191, 79
+{ XScale 3.87500000 YScale 3.87500000 Offset 95, 77 Patch "PATCHES/Pope/5-4.png", 0, 0 {} }
 Graphic TINFACE, 1015, 1146 { XScale 22.065217391304348 YScale 23.387755102040817 Patch "PATCHES/TINFACE.png", 0, 0 }
 Graphic TINLEFT, 1015, 1146 { XScale 22.065217391304348 YScale 23.387755102040817 Patch "PATCHES/TINLEFT.png", 0, 0 }
 Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }
@@ -1751,3 +1999,5 @@ Graphic TUINFACE, 953, 1208 { XScale 20.717391304347824 YScale 24.65306122448979
 Graphic ESTFACE, 1119, 1109 { XScale 24.32608695652174 YScale 22.632653061224488 Patch "PATCHES/ESTFACE.png", 0, 0 }
 Graphic KUMIFACE, 1109, 1066 { XScale 24.108695652173914 YScale 21.755102040816325 Patch "PATCHES/KUMIFACE.png", 0, 0 }
 Graphic ERNFACE, 809, 1177 { XScale 17.58695652173913 YScale 24.020408163265305 Patch "PATCHES/ERNFACE.png", 0, 0 }
+Graphic KNWFACE, 829, 1086 { XScale 18.02173913043478 YScale 22.163265306122447 Patch "PATCHES/KNWFACE.png", 0, 0 }
+Graphic POPFACE, 1238, 1236 { XScale 26.91304347826087 YScale 25.224489795918366 Patch "PATCHES/POPFACE.png", 0, 0 }

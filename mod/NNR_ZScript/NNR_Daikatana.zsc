@@ -324,3 +324,7 @@ class NNR_PatrickLevelKillCounter : NNR_JohnLevelKillCounter {}
 class NNR_PeterLevelKillCounter : NNR_JohnLevelKillCounter {}
 
 class NNR_MonekoLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_KnootewootLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_PopeLevelKillCounter : NNR_JohnLevelKillCounter {}
