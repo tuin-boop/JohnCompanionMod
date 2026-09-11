@@ -1619,6 +1619,131 @@ Sprite PETRM0, 184, 121
 Sprite PETRN0, 184, 121
 { XScale 3.39285714 YScale 3.39285714 Offset 92, 119 Patch "PATCHES/Peter/6-4.png", 0, 0 {} }
 Graphic PETFACE, 120, 63 { XScale 2.608695652173913 YScale 1.2857142857142858 Patch "PATCHES/PETFACE.png", 0, 0 }
+Sprite MONKA1, 128, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 64, 194 Patch "PATCHES/Moneko/0-0.png", 0, 0 {} }
+Sprite MONKA2, 139, 194
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 192 Patch "PATCHES/Moneko/0-1.png", 0, 0 { FlipX } }
+Sprite MONKA3, 138, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 194 Patch "PATCHES/Moneko/0-2.png", 0, 0 { FlipX } }
+Sprite MONKA4, 134, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 67, 193 Patch "PATCHES/Moneko/0-3.png", 0, 0 { FlipX } }
+Sprite MONKA5, 131, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 193 Patch "PATCHES/Moneko/0-4.png", 0, 0 {} }
+Sprite MONKA6, 134, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 67, 193 Patch "PATCHES/Moneko/0-3.png", 0, 0 {} }
+Sprite MONKA7, 138, 196
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 194 Patch "PATCHES/Moneko/0-2.png", 0, 0 {} }
+Sprite MONKA8, 139, 194
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 192 Patch "PATCHES/Moneko/0-1.png", 0, 0 {} }
+Sprite MONKB1, 124, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 62, 190 Patch "PATCHES/Moneko/1-0.png", 0, 0 {} }
+Sprite MONKB2, 133, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 66, 190 Patch "PATCHES/Moneko/1-1.png", 0, 0 { FlipX } }
+Sprite MONKB3, 140, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 70, 190 Patch "PATCHES/Moneko/1-2.png", 0, 0 { FlipX } }
+Sprite MONKB4, 130, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 190 Patch "PATCHES/Moneko/1-3.png", 0, 0 { FlipX } }
+Sprite MONKB5, 125, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 62, 190 Patch "PATCHES/Moneko/1-4.png", 0, 0 {} }
+Sprite MONKB6, 130, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 190 Patch "PATCHES/Moneko/1-3.png", 0, 0 {} }
+Sprite MONKB7, 140, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 70, 190 Patch "PATCHES/Moneko/1-2.png", 0, 0 {} }
+Sprite MONKB8, 133, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 66, 190 Patch "PATCHES/Moneko/1-1.png", 0, 0 {} }
+Sprite MONKC1, 130, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 190 Patch "PATCHES/Moneko/2-0.png", 0, 0 {} }
+Sprite MONKC2, 133, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 66, 190 Patch "PATCHES/Moneko/2-1.png", 0, 0 { FlipX } }
+Sprite MONKC3, 143, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 71, 190 Patch "PATCHES/Moneko/2-2.png", 0, 0 { FlipX } }
+Sprite MONKC4, 128, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 64, 190 Patch "PATCHES/Moneko/2-3.png", 0, 0 { FlipX } }
+Sprite MONKC5, 136, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 68, 190 Patch "PATCHES/Moneko/2-4.png", 0, 0 {} }
+Sprite MONKC6, 128, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 64, 190 Patch "PATCHES/Moneko/2-3.png", 0, 0 {} }
+Sprite MONKC7, 143, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 71, 190 Patch "PATCHES/Moneko/2-2.png", 0, 0 {} }
+Sprite MONKC8, 133, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 66, 190 Patch "PATCHES/Moneko/2-1.png", 0, 0 {} }
+Sprite MONKD1, 124, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 62, 190 Patch "PATCHES/Moneko/1-0.png", 0, 0 {} }
+Sprite MONKD2, 133, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 66, 190 Patch "PATCHES/Moneko/1-1.png", 0, 0 { FlipX } }
+Sprite MONKD3, 140, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 70, 190 Patch "PATCHES/Moneko/1-2.png", 0, 0 { FlipX } }
+Sprite MONKD4, 130, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 190 Patch "PATCHES/Moneko/1-3.png", 0, 0 { FlipX } }
+Sprite MONKD5, 125, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 62, 190 Patch "PATCHES/Moneko/1-4.png", 0, 0 {} }
+Sprite MONKD6, 130, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 190 Patch "PATCHES/Moneko/1-3.png", 0, 0 {} }
+Sprite MONKD7, 140, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 70, 190 Patch "PATCHES/Moneko/1-2.png", 0, 0 {} }
+Sprite MONKD8, 133, 192
+{ XScale 3.42857143 YScale 3.42857143 Offset 66, 190 Patch "PATCHES/Moneko/1-1.png", 0, 0 {} }
+Sprite MONKE1, 123, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 61, 186 Patch "PATCHES/Moneko/3-0.png", 0, 0 {} }
+Sprite MONKE2, 150, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 75, 186 Patch "PATCHES/Moneko/3-1.png", 0, 0 { FlipX } }
+Sprite MONKE3, 159, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 79, 186 Patch "PATCHES/Moneko/3-2.png", 0, 0 { FlipX } }
+Sprite MONKE4, 146, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 73, 186 Patch "PATCHES/Moneko/3-3.png", 0, 0 { FlipX } }
+Sprite MONKE5, 134, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 67, 186 Patch "PATCHES/Moneko/3-4.png", 0, 0 {} }
+Sprite MONKE6, 146, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 73, 186 Patch "PATCHES/Moneko/3-3.png", 0, 0 {} }
+Sprite MONKE7, 159, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 79, 186 Patch "PATCHES/Moneko/3-2.png", 0, 0 {} }
+Sprite MONKE8, 150, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 75, 186 Patch "PATCHES/Moneko/3-1.png", 0, 0 {} }
+Sprite MONKF1, 134, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 67, 187 Patch "PATCHES/Moneko/4-0.png", 0, 0 {} }
+Sprite MONKF2, 167, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 83, 187 Patch "PATCHES/Moneko/4-1.png", 0, 0 { FlipX } }
+Sprite MONKF3, 170, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 85, 187 Patch "PATCHES/Moneko/4-2.png", 0, 0 { FlipX } }
+Sprite MONKF4, 151, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 75, 186 Patch "PATCHES/Moneko/4-3.png", 0, 0 { FlipX } }
+Sprite MONKF5, 134, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 67, 186 Patch "PATCHES/Moneko/3-4.png", 0, 0 {} }
+Sprite MONKF6, 151, 188
+{ XScale 3.42857143 YScale 3.42857143 Offset 75, 186 Patch "PATCHES/Moneko/4-3.png", 0, 0 {} }
+Sprite MONKF7, 170, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 85, 187 Patch "PATCHES/Moneko/4-2.png", 0, 0 {} }
+Sprite MONKF8, 167, 189
+{ XScale 3.42857143 YScale 3.42857143 Offset 83, 187 Patch "PATCHES/Moneko/4-1.png", 0, 0 {} }
+Sprite MONKG1, 143, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 71, 196 Patch "PATCHES/Moneko/5-0.png", 0, 0 {} }
+Sprite MONKG2, 146, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 73, 196 Patch "PATCHES/Moneko/5-1.png", 0, 0 { FlipX } }
+Sprite MONKG3, 138, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 196 Patch "PATCHES/Moneko/5-2.png", 0, 0 { FlipX } }
+Sprite MONKG4, 140, 197
+{ XScale 3.42857143 YScale 3.42857143 Offset 70, 195 Patch "PATCHES/Moneko/5-3.png", 0, 0 { FlipX } }
+Sprite MONKG5, 130, 195
+{ XScale 3.42857143 YScale 3.42857143 Offset 65, 193 Patch "PATCHES/Moneko/5-4.png", 0, 0 {} }
+Sprite MONKG6, 140, 197
+{ XScale 3.42857143 YScale 3.42857143 Offset 70, 195 Patch "PATCHES/Moneko/5-3.png", 0, 0 {} }
+Sprite MONKG7, 138, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 69, 196 Patch "PATCHES/Moneko/5-2.png", 0, 0 {} }
+Sprite MONKG8, 146, 198
+{ XScale 3.42857143 YScale 3.42857143 Offset 73, 196 Patch "PATCHES/Moneko/5-1.png", 0, 0 {} }
+Sprite MONKI0, 142, 178
+{ XScale 3.42857143 YScale 3.42857143 Offset 71, 176 Patch "PATCHES/Moneko/6-0.png", 0, 0 {} }
+Sprite MONKJ0, 150, 163
+{ XScale 3.42857143 YScale 3.42857143 Offset 75, 161 Patch "PATCHES/Moneko/6-1.png", 0, 0 {} }
+Sprite MONKK0, 173, 124
+{ XScale 3.42857143 YScale 3.42857143 Offset 86, 122 Patch "PATCHES/Moneko/6-2.png", 0, 0 {} }
+Sprite MONKL0, 191, 99
+{ XScale 3.42857143 YScale 3.42857143 Offset 95, 97 Patch "PATCHES/Moneko/6-3.png", 0, 0 {} }
+Sprite MONKM0, 182, 91
+{ XScale 3.42857143 YScale 3.42857143 Offset 91, 89 Patch "PATCHES/Moneko/6-4.png", 0, 0 {} }
+Sprite MONKN0, 182, 91
+{ XScale 3.42857143 YScale 3.42857143 Offset 91, 89 Patch "PATCHES/Moneko/6-4.png", 0, 0 {} }
+Graphic MONFACE, 118, 97 { XScale 2.5652173913043477 YScale 1.9795918367346939 Patch "PATCHES/MONFACE.png", 0, 0 }
 Graphic TINFACE, 1015, 1146 { XScale 22.065217391304348 YScale 23.387755102040817 Patch "PATCHES/TINFACE.png", 0, 0 }
 Graphic TINLEFT, 1015, 1146 { XScale 22.065217391304348 YScale 23.387755102040817 Patch "PATCHES/TINLEFT.png", 0, 0 }
 Graphic FRIFACE, 1181, 1006 { XScale 25.67391304347826 YScale 20.53061224489796 Patch "PATCHES/FRIFACE.png", 0, 0 }

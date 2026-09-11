@@ -8,9 +8,9 @@ class NNR_HimikoRegistry : Actor { States { Spawn: HIMK ABCDEFGIJKLMN -1;Stop; }
 
 class NNR_HimikoMenu : NNR_StyledCompanionMenu {
  int selected;
- int Current(){static const int roster[]={6,7,9,10,12,13,14,15,16,17,18};return roster[selected];}
- String Prefix(){return selected==10?"PETR":selected==9?"PTRK":selected==8?"SPNG":selected==7?"BRIN":selected==6?"STEW":selected==5?"ERNI":selected==4?"KUMI":selected==3?"TUIN":selected==2?"FRIR":selected==1?"TINA":"HIMK";}
- void Browse(int delta){selected=(selected+delta+11)%11;MenuSound("menu/change");}
+ int Current(){static const int roster[]={6,7,9,10,12,13,14,15,16,17,18,19};return roster[selected];}
+ String Prefix(){return selected==11?"MONK":selected==10?"PETR":selected==9?"PTRK":selected==8?"SPNG":selected==7?"BRIN":selected==6?"STEW":selected==5?"ERNI":selected==4?"KUMI":selected==3?"TUIN":selected==2?"FRIR":selected==1?"TINA":"HIMK";}
+ void Browse(int delta){selected=(selected+delta+12)%12;MenuSound("menu/change");}
  void Apply(int delta){
   if(choice==2){Browse(delta);return;}
   if(choice==0){ToggleMember(1<<(Current()-1));return;}
@@ -39,7 +39,7 @@ class NNR_HimikoMenu : NNR_StyledCompanionMenu {
   Panel(48,164,44,42,choice==2);Label(62,177,"<",Font.CR_CYAN,2);
   Panel(396,164,44,42,choice==2);Label(410,177,">",Font.CR_CYAN,2);
   Label(112,175,NNR_Team.Name(Current()),Font.CR_WHITE,Current()>=16?1.45:2.4);
-  Label(340,140,String.Format("%d / 11",selected+1),Font.CR_GRAY,1.35);
+  Label(340,140,String.Format("%d / 12",selected+1),Font.CR_GRAY,1.35);
   String pose=PreviewTics%28<7?"A":PreviewTics%28<14?"B":PreviewTics%28<21?"C":"D";
   let pic=TexMan.CheckForTexture(Prefix()..pose.."8",TexMan.Type_Sprite);
   Screen.DrawTexture(pic,false,px+205*uiScale,py+220*uiScale,DTA_DestWidth,int(160*uiScale),DTA_DestHeight,int(220*uiScale),DTA_LeftOffset,0,DTA_TopOffset,0);
@@ -101,3 +101,6 @@ class NNR_PatrickRegistry : Actor {States {Spawn: PTRK ABCDEFGIJKLMN -1;Stop;}}
 
 class NNR_PeterMarine : NNR_HimikoMarine {override int Member(){return 18;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("PETR");} States { Missile: Goto Shotgun; } }
 class NNR_PeterRegistry : Actor {States {Spawn: PETR ABCDEFGIJKLMN -1;Stop;}}
+
+class NNR_MonekoMarine : NNR_HimikoMarine {override int Member(){return 19;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("MONK");}}
+class NNR_MonekoRegistry : Actor {States {Spawn: MONK ABCDEFGIJKLMN -1;Stop;}}

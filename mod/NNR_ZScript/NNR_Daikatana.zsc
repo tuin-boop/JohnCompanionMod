@@ -322,3 +322,5 @@ class NNR_SpongeBobLevelKillCounter : NNR_JohnLevelKillCounter {}
 class NNR_PatrickLevelKillCounter : NNR_JohnLevelKillCounter {}
 
 class NNR_PeterLevelKillCounter : NNR_JohnLevelKillCounter {}
+
+class NNR_MonekoLevelKillCounter : NNR_JohnLevelKillCounter {}
