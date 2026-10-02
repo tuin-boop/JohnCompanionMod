@@ -76,4 +76,6 @@ Adrian also has a Present-day skin: short brown-gray hair, thick dark glasses, g
 
 ## Optional character addons
 
-Load [Himiko_Companion_Addon.pk3](dist/Himiko_Companion_Addon.pk3) after the updated main PK3. ESC > Extras opens her animated character card and partner selector. Maximum two companions. See [addon instructions](addons/Himiko/README.md). The main ESC menu now uses the supplied five-creator background.
+Load `Romero_Carmack_Companion_Control.pk3` first, then [Himiko_Companion_Addon.pk3](dist/Himiko_Companion_Addon.pk3), using both files from the same current release. The v1.2.0 main PK3 is too old for Moneko, Knootewoot and Pope.
+
+The addon contains 14 extras: Himiko, Tina, Frier, Tuin, Kumi, Ernie, Stewie, Brian, Muscle SpongeBob, Muscle Patrick, Peter Griffin, Moneko, Knootewoot and Pope. ESC > Extras opens the character carousel. Browse with left/right, then use Add to team or Remove from team. The shared team limit is two, including creators. The title map remains the five creators. See [addon instructions](addons/Himiko/README.md).

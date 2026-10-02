@@ -71,15 +71,13 @@ class NNR_HimikoMenu : NNR_StyledCompanionMenu {
 }
 
 class NNR_TinaMarine : NNR_HimikoMarine {override int Member(){return 7;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("TINA");}}
-class NNR_KarinMarine : NNR_HimikoMarine {override int Member(){return 8;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("KARN");}}
-class NNR_NewExtrasRegistry : Actor {States {Spawn: TINA ABCDEFGIJKLMN -1; KARN ABCDEFGIJKLMN -1;Stop;}}
+class NNR_NewExtrasRegistry : Actor {States {Spawn: TINA ABCDEFGIJKLMN -1;Stop;}}
 
 class NNR_FrierMarine : NNR_HimikoMarine {override int Member(){return 9;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("FRIR");}}
 class NNR_FrierRegistry : Actor {States {Spawn: FRIR ABCDEFGIJKLMN -1;Stop;}}
 
 class NNR_TuinMarine : NNR_HimikoMarine {override int Member(){return 10;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("TUIN");}}
-class NNR_EstherMarine : NNR_HimikoMarine {override int Member(){return 11;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("ESTH");}}
-class NNR_TuinEstherRegistry : Actor {States {Spawn: TUIN ABCDEFGIJKLMN -1; ESTH ABCDEFGIJKLMN -1;Stop;}}
+class NNR_TuinRegistry : Actor {States {Spawn: TUIN ABCDEFGIJKLMN -1;Stop;}}
 
 class NNR_KumiMarine : NNR_HimikoMarine {override int Member(){return 12;} override void Tick(){Super.Tick();sprite=GetSpriteIndex("KUMI");}}
 class NNR_KumiRegistry : Actor {States {Spawn: KUMI ABCDEFGIJKLMN -1;Stop;}}
